@@ -109,23 +109,37 @@ I [EVIDENCE NEEDED: action] because [EVIDENCE NEEDED: reason]. This [EVIDENCE NE
 
 ## Part C: Evaluating my organisation's sustainable technology practices (K20 Distinction)
 
-> Guidance: Distinction requires **evaluation of impact at organisation level**, not only your team. Structure it as evidence, judgement, limitation and recommendation. Aim for about 300 words.
+> Guidance: the Distinction asks you to **evaluate the impact** of your organisation's practices, not describe them. This draft builds the evaluation from what your seven modules show about the registry's technology, and leaves the organisation's own published data as placeholders. The five evaluation points are judgements for you to test: keep the ones you agree with and can defend in the discussion, and delete the rest. Aim for 350 to 450 words once filled.
 
-**What the organisation does.** A UK government registry [EVIDENCE NEEDED: its actual practices, e.g. "reports ICT emissions under the Greening Government Commitments", "is migrating from on-premises data centres to cloud", "has a device reuse and recycling policy"].
+### C1. What the organisation does
 
-**Evidence of impact.** [EVIDENCE NEEDED: data you can cite, e.g. "the AWS Customer Carbon Footprint Tool shows X tCO2e for our account over 12 months", an internal sustainability report, cloud migration figures, device lifecycle data. If no data exists, say so: that absence is itself an evaluation point.]
+As a public body, the registry falls under the Greening Government Commitments, which require government organisations to reduce emissions and report on ICT and digital sustainability, supported by the Greening Government ICT and Digital Services Strategy 2020–2025 (Defra, 2020). [EVIDENCE NEEDED: confirm the registry reports under these commitments, and add what it publishes, e.g. the sustainability section of its annual report and any ICT energy or waste figures.]
 
-**My judgement.** These practices are [EVIDENCE NEEDED: effective or limited] because [EVIDENCE NEEDED: reasoning]. For example:
+In practice, the registry's main technology direction is moving from on-premises systems to cloud. My modules show this at several levels: legacy Oracle databases hosted on-premises (Module 4), a Windows file share replaced by cloud storage (Module 6), and a five-year plan to move the legacy stack to cloud-native services (Module 1). [EVIDENCE NEEDED: any explicit sustainability policy for digital services, e.g. a net zero target, sustainable procurement rules, device reuse or recycling.]
 
-> Guidance: points you could test against your organisation's reality.
-> - Cloud migration usually lowers operational emissions, but carbon tools often exclude or estimate embodied (manufacturing) emissions, so savings can be overstated.
-> - Data residency rules can force a UK region, which limits the choice of lower-carbon regions: a real trade-off between compliance and carbon.
-> - Cost optimisation and carbon reduction often align, but not always (e.g. reserved capacity lowers cost but can lock in idle resources).
-> - Without measurement at service level (e.g. SCI per request), teams cannot see the carbon effect of their own decisions.
+### C2. Evidence of impact
 
-**Recommendation.** I recommend [EVIDENCE NEEDED: one specific, feasible improvement, e.g. "adding SCI per request to our service dashboards"], which would [EVIDENCE NEEDED: expected benefit and how it could be measured].
+[EVIDENCE NEEDED: the best figures you can get, in this order of strength:
+1. Carbon data, e.g. the AWS Customer Carbon Footprint Tool or Azure Emissions Impact Dashboard for your team's accounts.
+2. The registry's published emissions or ICT energy figures.
+3. Cost figures as a proxy, e.g. Module 6's $41.12 a month.
+If none exist, say so. The absence of data is itself the main evaluation point in C3.]
 
----
+### C3. My evaluation
+
+1. **The move to cloud is probably the registry's biggest sustainability gain, but it is not measured.** Large cloud data centres are generally more energy-efficient than small on-premises server rooms, so migrating is likely to cut operational emissions. However, [EVIDENCE NEEDED: whether the registry measured before-and-after energy or carbon]. Without a baseline, the organisation cannot show the impact or tell whether a migration made things better or worse.
+2. **Sustainability is not part of how we make technical decisions.** In five technical projects (Modules 2 to 6), I never measured carbon or energy, and the Module 5 decision matrix weighted cost, data protection, root cause and speed, with no sustainability criterion. Where sustainability improved, it was a side effect of cutting cost, not a goal. My own work is one data point, not proof for the whole registry, but it suggests sustainability commitments made at organisation level do not reach engineering decisions. [EVIDENCE NEEDED: is this true of your wider team? Do design reviews or architecture boards ask about sustainability?]
+3. **Cost optimisation and carbon reduction overlap, but not fully.** Choosing a hosted AI API over dedicated GPUs (Module 6) lowered both. But my always-on EC2 instance was justified on cost ($30.37 a month) while sitting idle outside working hours: a cheap resource can still waste energy. Cost reports alone would never flag this.
+4. **Data residency limits the carbon options.** UK data protection requirements push workloads into UK regions (Module 5), which removes the option of lower-carbon regions. This is the right trade-off for personal data, but it should be a conscious decision, and non-personal workloads such as build pipelines may not need the same constraint. [EVIDENCE NEEDED: confirm which region Module 6 ran in. The cost suggests US East, which would change this point.]
+5. **AI adoption is increasing compute demand.** Three of my projects (Modules 2, 5 and 6) add AI features. Each is small, but together they grow compute use, and there is no guidance I am aware of on when an AI feature is worth its energy cost. Module 5's choice of retrieval over fine-tuning shows how design choices can limit this. [EVIDENCE NEEDED: is there any registry or government guidance on AI energy use that you know of?]
+
+### C4. Limitations of this evaluation
+
+My evidence comes from my own team's projects, several of which were proposals or proofs of concept, and I have not seen organisation-wide carbon data. [EVIDENCE NEEDED: adjust once C2 is filled.]
+
+### C5. Recommendation
+
+I recommend the registry adds a sustainability criterion to technical decision-making: a line in architecture decision records and design reviews asking for the expected compute and carbon impact, backed by enabling the cloud providers' carbon reporting tools for every account. This targets the gap in point 2, costs little, and turns sustainability from a side effect of cost saving into something teams measure. Success would be measured by [EVIDENCE NEEDED: a metric, e.g. "share of architecture decision records with a sustainability section" or "carbon per request for the three AI services"].
 
 ## Reflection
 
@@ -139,6 +153,7 @@ Working on this made me realise [EVIDENCE NEEDED: honest insight]. Next, I will 
 
 - Amazon Web Services (2021) *AWS Well-Architected Framework: Sustainability Pillar*. Available at: https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/ (Accessed: [date]).
 - Department for Environment, Food and Rural Affairs (2020) *Greening Government: ICT and Digital Services Strategy 2020–2025*. London: Defra.
+- Department for Environment, Food and Rural Affairs (2022) *Greening Government Commitments 2021 to 2025*. London: Defra. [Check the edition and date before citing.]
 - Government Digital Service (no date) *Service Standard: 5. Make sure everyone can use the service*. Available at: https://www.gov.uk/service-manual/service-standard (Accessed: [date]).
 - Green Software Foundation (no date) *Principles of Green Software Engineering*. Available at: https://learn.greensoftware.foundation/ (Accessed: [date]).
 - ISO/IEC 21031:2024 *Information technology: Software Carbon Intensity (SCI) specification*. Geneva: ISO.
