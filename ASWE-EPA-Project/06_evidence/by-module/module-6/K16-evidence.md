@@ -41,7 +41,7 @@ I chose a stateless container behind API Gateway. Because any instance can serve
 | TLS | Encrypts data in transit | Meets NFR4. TLS 1.3 needs one handshake round trip instead of two in TLS 1.2, which cuts connection set-up time [EVIDENCE NEEDED: which TLS versions API Gateway accepts in your build: 1.2 and 1.3, or 1.3 only] |
 | API Gateway | Layer 7 entry point: routing, rate limiting (throttling), authentication and request-level logging | Centralises the governance controls in one place in front of the application |
 | Load balancer | Spreads requests across instances. An ALB works at Layer 7 and can route by path or header; an NLB works at Layer 4 and is faster but cannot inspect requests | [EVIDENCE NEEDED: the report both recommends an ALB and uses API Gateway as the front door. State which the build uses, and whether an ALB sits behind API Gateway for scaling.] |
-| Identity-based access | Access decided by who the user is, not which network they are on | The old file share relied on a network perimeter that did not work for remote workers |
+| Identity-based access | Access decided by who the caller is, not which network they are on | Applied to **services**: IAM roles control what the EC2 instance can reach. Not yet applied to **users**: the build relies on the network perimeter until API key and Cognito authentication are added (see `S9-evidence.md`, Action 5) |
 
 ### Quality of service: measuring and trading it off
 Quality of service here means latency, throughput, availability and error rate.

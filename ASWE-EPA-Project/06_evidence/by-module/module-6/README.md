@@ -34,6 +34,10 @@ Not in the target list, but this module already has Strong or Present evidence f
 | S12 | Plan, design and manage simple networks | 🟡 Present |
 | S21 | Determine and adapt SE methods to evaluate outcomes | 🟡 Present (📝 draft: `S21-evidence.md`) |
 
+## Drafts outside the target list
+
+- `S9-evidence.md`, `S21-evidence.md`
+
 ## Evidence kept elsewhere
 
 - **K20:** this module's green computing decisions are drafted in `../../by-ksb/sustainability-and-accessibility.md`, Part A2, Example 2.

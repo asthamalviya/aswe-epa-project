@@ -99,6 +99,7 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 |---|---|---|---|
 | Must | Section 4.1 Change 1 | Says "the development environment ran Python 3.9", then that "the developer's machine happened to have Python 3.10, but CI ran 3.9". Section 3.1 says the tool was built with Python 3.12, and the Docker image is python:3.12-slim. | Establish which versions actually ran locally, in CI and in Docker, and state them consistently. |
 | Must | Section 3.2 CI narrative | Runs 1 to 3 failed on a lint error, missing dummy credentials and the Change 2 fix. The next paragraph says GitHub Actions "caught a Python 3.9 compatibility issue", which is not one of those three failures. | Match the run history to Figure 10 exactly. |
+| Must | Sections 1.1, 2.2 vs 5.1 | Claims API Gateway "centralises authentication" and the design provides "identity-based access control", but recommendation 6 says the build relies on "network-perimeter-only security" and user identity (Cognito) is long-term. The audit log therefore cannot record who asked each question. | State plainly that user authentication is not yet in place, and make it a release condition. |
 | Must | Section 5.1 vs rest of report | Recommends "Deploy to EC2 behind an Application Load Balancer" in week 1, while the design uses API Gateway throughout and section 4.3 describes the system "after deploying". | Decide whether the system is deployed and which front door it uses, then make sections 3, 4 and 5 agree. |
 | Must | Section 4.4 | Claims "each adaptation was faster to resolve than the one before", but Change 1 took 12 minutes and Change 3 took 30. | Remove the claim, or support it with figures that show it. |
 | Should | Section 1.3 vs 4.1 | Describes a "two-person project" but says the Python fix unblocked "two team members". | Clarify who was blocked and how many people were on the team. |
@@ -137,6 +138,6 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | M3 | 2 | 4 | 0 | [ ] |
 | M4 | 2 | 1 | 1 | [ ] |
 | M5 | 6 | 2 | 0 | [ ] |
-| M6 | 5 | 10 | 0 | [ ] |
+| M6 | 6 | 10 | 0 | [ ] |
 | M7 | 1 | 3 | 0 | [ ] |
-| **Total** | **26** | **24** | **2** | |
+| **Total** | **27** | **24** | **2** | |
