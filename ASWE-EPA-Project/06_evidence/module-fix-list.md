@@ -63,6 +63,8 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | Must | Section 3.2 firewall allowlist | Permits TCP 80 from the internet, but the text says "Only HTTPS is exposed externally". | Remove port 80, or state it only redirects to 443. |
 | Should | Section 3.2 firewall allowlist | The admin rule allows the whole Admin VLAN to reach app servers on SSH and RDP, so the jump host can be bypassed; the database rule opens both 5432 and 3306. | Make the jump host the rule's source; open only the database port in use. |
 | Should | Section 4 risk matrix | Likelihood and impact scores have no rationale. Guest Wi-Fi's impact (3) is inconsistent with its consequence ("breach of internal systems"), and unpatched systems, named as a top exposure, have no row. | Add a rationale per risk, rescore guest Wi-Fi, and add a patch management row. See `by-module/module-3/S9-evidence.md`. |
+| Should | WannaCry case study | Attributes the £92 million cost to "NAO, 2018". The figure appears to come from the Department of Health and Social Care (October 2018); the NAO investigation did not estimate a cost. | Check and correct the citation. |
+| Should | Conclusion | Refers to "the proposed roadmap", but the report contains no roadmap or migration plan. | Add a phased migration plan (see `by-module/module-3/S12-evidence.md`), or remove the reference. |
 | Should | References | Only one source is cited in the text (NAO, 2018); the others appear only in the reference list. | Cite the sources where they support a claim, or remove them. |
 
 ---
@@ -135,9 +137,9 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | All (first person) | 1 | 0 | 0 | [ ] |
 | M1 | 2 | 1 | 0 | [ ] |
 | M2 | 4 | 2 | 1 | [ ] |
-| M3 | 2 | 4 | 0 | [ ] |
+| M3 | 2 | 6 | 0 | [ ] |
 | M4 | 2 | 1 | 1 | [ ] |
 | M5 | 6 | 2 | 0 | [ ] |
 | M6 | 6 | 10 | 0 | [ ] |
 | M7 | 1 | 3 | 0 | [ ] |
-| **Total** | **27** | **24** | **2** | |
+| **Total** | **27** | **26** | **2** | |

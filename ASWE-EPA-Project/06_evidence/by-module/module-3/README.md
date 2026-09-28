@@ -16,7 +16,7 @@ Source: Multiverse AM2 Portfolio Readiness Tool navigation for this project.
 | K12 | Role of data management systems | — | 🟠 Weak | `K12-evidence.md` | ⬜ TODO |
 | K16 | Computer networking concepts | — | 🟢 Strong | `K16-evidence.md` | 📝 Draft |
 | S9 | Security and resilience techniques | — | 🟢 Strong | `S9-evidence.md` | 📝 Draft |
-| S12 | Plan, design and manage simple networks | — | 🟡 Present | `S12-evidence.md` | ⬜ TODO |
+| S12 | Plan, design and manage simple networks | — | 🟡 Present | `S12-evidence.md` | 📝 Draft |
 | B4 | Continuous professional development | — | 🔴 None | `B4-evidence.md` | ⬜ TODO |
 | B7 | Awareness of trends and innovations | — | 🟡 Present | `B7-evidence.md` | ⬜ TODO |
 

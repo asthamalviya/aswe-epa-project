@@ -65,7 +65,7 @@ Distinction column: ✅ means the KSB has a Distinction criterion.
 | S9 | Applied Technical Solutions | Security and resilience techniques | — | 🟢 | M3 risk matrix, mitigations; M6 SR1-SR6, failure scenarios | Strong; M6 lacks scored risk assessment. Planned: `by-module/module-3/S9-evidence.md`, `by-module/module-6/S9-evidence.md` |
 | S10 | Applied Technical Solutions | Initiate, design, implement and debug a data product | — | 🟢 | M4 §4, §6 ETL pipeline | Strong; debugging evidence minimal |
 | S11 | Applied Technical Solutions | Data analysis techniques | — | 🟡 | M2 model evaluation; M4 §5 | Technique choice never justified; no measured improvement |
-| S12 | Applied Technical Solutions | Plan, design and manage simple networks | — | 🟡 | M3 §3 VLAN plan, allowlist; M6 Fig 2 | Planned and designed only; "manages" not evidenced |
+| S12 | Applied Technical Solutions | Plan, design and manage simple networks | — | 🟡 | M3 §3 VLAN plan, allowlist; M6 Fig 2 | Planned and designed only; "manages" not evidenced. Planned: `by-module/module-3/S12-evidence.md` |
 | K8 | Leading and Working Together | Teams and organisational theory [wording to confirm] | — | 🟠 | M2 roles table (thin) | No team-effectiveness theory anywhere. Planned: `by-ksb/leading-and-working-together.md` |
 | K9 | Leading and Working Together | Leadership concepts and principles | — | 🟠 | M1 "my role as Lead" slide (thin) | No leadership concepts or how you apply them. Planned: `by-ksb/leading-and-working-together.md` |
 | K10 | Leading and Working Together | Management techniques and theories | — | 🟡 | M5 (Kepner-Tregoe, MoSCoW, WBS); M1 Kotter | Techniques used on projects, not linked to your own management practice. Planned: `by-ksb/leading-and-working-together.md`, `by-ksb/changing-priorities.md` |
@@ -173,6 +173,7 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 | `06_evidence/by-module/module-3/K16-evidence.md` | K16 | Draft: VLAN plan, allowlist, components, hybrid cloud, QoS; companion to Module 6 | State which parts reflect the real network; tighten three firewall rules |
 | `06_evidence/by-module/module-3/S9-evidence.md` | S9 | Draft: risk matrix, CVE mapping, prioritised mitigations, resilience, KPIs, self-critique of scores | Add score rationales and what was implemented; Module 6 S9 still needed for applied controls |
 | `06_evidence/by-module/module-6/S9-evidence.md` | S9 | Draft: controls applied per requirement, failure scenarios, risk table to score, four gaps incl. no user authentication | Score the risks; state which gaps were fixed |
+| `06_evidence/by-module/module-3/S12-evidence.md` | S12 | Draft: services-led planning, suggested phased migration, design decisions, proposed management | Add real network management experience; defend or drop the migration phases |
 | `06_evidence/module-fix-list.md` | All AM2 | 37 corrections to module submissions (20 Must) | Work through the Must items first |
 
 ## Evidence files index
