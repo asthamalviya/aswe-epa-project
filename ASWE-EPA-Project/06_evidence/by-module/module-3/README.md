@@ -20,11 +20,6 @@ Source: Multiverse AM2 Portfolio Readiness Tool navigation for this project.
 | B4 | Continuous professional development | — | 🔴 None | `B4-evidence.md` | ⬜ TODO |
 | B7 | Awareness of trends and innovations | — | 🟡 Present | `B7-evidence.md` | ⬜ TODO |
 
-## Other files in this folder
-
-- `K19-evidence.md`: not a target KSB for this module (current rating here: 🟠 Weak).
-
-> ⚠️ `K19-evidence.md` contains invented content (figures such as "22 minutes to 4 minutes" and a customer data project unrelated to this module) and labels K19 "Architectural Patterns". Official K19 is legal, ethical, social and professional standards. Rewrite it with the Evidence Builder skill using your real work, or delete it. Module 5 has the strongest K19 evidence.
 
 ## How to add evidence
 
