@@ -102,6 +102,8 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | Should | Section 1.3 vs 4.1 | Describes a "two-person project" but says the Python fix unblocked "two team members". | Clarify who was blocked and how many people were on the team. |
 | Should | Sections 2.3 and 3.3 | Latency and load results (0.49 ms, 1,662 rps) come from health-check tests only, but are presented as evidence for "non-AI endpoints". AI endpoints have no latency target or measurement. | State that the figures are for the health-check endpoint, and add AI-endpoint results or a target (see `by-module/module-6/S21-evidence.md`, Action 4). |
 | Should | Section 3.2.5 vs 4.3 | "Defect escape rate to production: zero", but the CORS problem appeared "after deploying the FastAPI backend". | Say which environment that deployment was to. |
+| Must | Section 1.3 | "Internal users tolerate up to 200ms before noticing latency (Nielsen, 1993)" misquotes the source. Nielsen's limits are 0.1 s, 1 s and 10 s. | Reword as in `by-module/module-6/K16-evidence.md`, "Corrections". |
+| Should | Section 1.3 | Rejects Lambda because cold starts would push AI responses past the 2,000 ms NFR, but NFR2 covers non-AI endpoints only. | Argue against the right target, or add an AI-endpoint target. |
 | Should | Section 3.1 vs 3.2 | Terraform is "five files" in section 3.1 and the appendix, but "nine resources in four configuration files" in section 3.2. | Use one count. |
 | Should | Section 3.2 vs Appendix H | Section 3.2 describes GitHub Flow with feature branches and pull requests, but the appendix describes "four commits on the main branch". | Describe how you actually worked. |
 | Should | Section 3.2 | Claims the CI debugging is "precisely the evidence S20 requires". Official S20 is about changing priorities and revised plans; this is S4 and K28 evidence. | Remove the claim, and relabel section 4 as S4 unless a plan actually changed. |
@@ -131,6 +133,6 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | M3 | 1 | 3 | 0 | [ ] |
 | M4 | 2 | 1 | 1 | [ ] |
 | M5 | 6 | 2 | 0 | [ ] |
-| M6 | 4 | 7 | 0 | [ ] |
+| M6 | 5 | 8 | 0 | [ ] |
 | M7 | 1 | 3 | 0 | [ ] |
-| **Total** | **24** | **20** | **2** | |
+| **Total** | **25** | **21** | **2** | |
