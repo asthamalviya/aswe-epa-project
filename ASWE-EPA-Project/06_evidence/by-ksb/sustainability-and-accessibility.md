@@ -44,18 +44,17 @@ I work as a [EVIDENCE NEEDED: job title] at a UK government registry, where I [E
 
 At a UK government registry, sustainability in digital services is shaped by [EVIDENCE NEEDED: organisational policy or government strategy that applies, e.g. "the Greening Government ICT strategy" or an internal net zero commitment]. In my role, I apply [EVIDENCE NEEDED: framework and citation] when I [EVIDENCE NEEDED: the decisions it affects, e.g. "choose compute, storage and scheduling for new services"].
 
-### A2. A green computing decision I made
+### A2. Green computing decisions I made (Module 5)
 
-When [EVIDENCE NEEDED: situation], I [EVIDENCE NEEDED: specific action]. Examples to choose from if true:
+> Guidance: drafted from the Module 5 proposal (AI knowledge search system). Every claim below comes from the module text; fill the placeholders and remove anything that did not happen. If you have a live system with measured results (e.g. Module 6 on AWS), add it as a second example: a measured result is stronger than a design intention.
 
-> Guidance: pick one or two you actually did.
-> - Right-sized over-provisioned compute, or moved a steady workload to ARM-based instances (e.g. AWS Graviton), which AWS reports use less energy for the same work.
-> - Replaced always-on servers with serverless or scheduled scale-down for non-production environments outside working hours.
-> - Set S3 lifecycle rules to move or delete data no longer needed.
-> - Reduced model size, e.g. choosing a smaller language model where accuracy allowed (your M5 PESTLE mentions Llama 8B energy use).
-> - Cut unnecessary data transfer, logging volume or build pipeline runs.
+In my proposal for an AI knowledge search system for developers at a UK government registry, I made three design choices that reduce the compute, and so the energy, the system needs:
 
-I chose this because [EVIDENCE NEEDED: reasoning, including any trade-off such as cost, performance or data residency]. The effect was [EVIDENCE NEEDED: measured result, e.g. "compute hours down from X to Y per month", "storage down Z GB", or cost as a proxy if carbon data is not available].
+1. **Retrieval rather than fine-tuning.** I chose retrieval-augmented generation over fine-tuning a model on the registry's documentation. Fine-tuning needs significant GPU compute to train, and would have to be repeated every time the documentation changed. Retrieval indexes documents once and updates the index as content changes, so the heavy compute happens once rather than on every documentation update. [EVIDENCE NEEDED: an estimate of the training compute avoided, or a source that quantifies it.]
+2. **A small open-source model.** I specified Llama 3.1 8B, which needs far less compute per query than large commercial models. [EVIDENCE NEEDED: which model handles most queries. The PESTLE calls Llama 8B the default, but the architecture table makes GPT-4o via Azure the primary model and Llama the fallback. If GPT-4o is primary, the energy saving only applies when the fallback is active, so say that honestly.]
+3. **Reusing existing infrastructure.** The vector database is self-hosted inside the registry's existing infrastructure, and the model runs on Azure, which is already in the registry's procurement framework, so the project adds no new dedicated hardware. [EVIDENCE NEEDED: confirm ChromaDB runs on existing servers rather than new ones.]
+
+I made these choices because the registry has government sustainability obligations, and because in each case the lower-compute option also cost less: the whole build needed only £12,100 of additional spend. The trade-off is accuracy: a smaller model may give weaker answers, so the 50-query benchmark (80% recall or higher) decides whether the small model is good enough. [EVIDENCE NEEDED: any measured result, e.g. benchmark recall for Llama 8B versus GPT-4o, compute or cost per query. If the system was not built, state that these are design decisions and how you would measure their effect.]
 
 ### A3. How diversity and inclusion relate to sustainable development (K20)
 

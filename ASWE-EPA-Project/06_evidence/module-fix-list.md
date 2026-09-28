@@ -82,6 +82,7 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | Must | Table 4 weighted decision matrix | Totals do not match the scores and weights. Recalculated: Do Nothing 3.25 (stated 2.75), COTS 4.85 (stated 5.05), RAG 9.10 (stated 8.80). The ranking does not change. | Correct the three totals and the sentence below the table that repeats them. |
 | Must | Table 5 and CBA table | Text says 6 extra sprints at £80,000 (£480,000) and 10 week-long spikes at £40,000 (£400,000), but gives total waste as ~£592,000. In the CBA table, £592,000 is the spike cost alone. | Recalculate the waste total, then update the 50% saving (£296,000), ROI and payback figures that depend on it. |
 | Must | Business case goal vs CBA | Goal recovers "£160,000–£240,000"; the CBA gives a £296,000 annual benefit. | Align the two, or explain the difference. |
+| Must | PESTLE, Environmental row vs architecture table | PESTLE says "Llama 3.1 8B as default reduces energy consumption", but the architecture table makes GPT-4o via Azure the primary model and Llama 3.1 8B the fallback. | State which model handles most queries, and qualify the energy claim to match. |
 | Must | PESTLE, Legal row | "UK GDPR Article 44-49 restricts data processing to UK jurisdiction" misstates the law. Articles 44 to 49 restrict international transfers without adequate safeguards; they do not require UK-only processing. | Reword as in `by-module/module-5/K19-evidence.md`, "Corrections needed". |
 | Must | Architecture table and closing argument | "No data leaves CH boundary" sits alongside "GPT-4o via Azure OpenAI" as the primary LLM. | State the Azure region and data processing terms, or qualify the claim. |
 | Should | Section 2.4 and Table 19 | Labelled "KSB S1 — Distinction" and "KSB K3". Both are AM1 KSBs, not portfolio KSBs. | Relabel as K24/K28 (section 2.4) and S9/S20 (Table 19), or remove the labels. |
@@ -122,7 +123,7 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | M2 | 4 | 2 | 1 | [ ] |
 | M3 | 1 | 3 | 0 | [ ] |
 | M4 | 2 | 1 | 1 | [ ] |
-| M5 | 5 | 2 | 0 | [ ] |
+| M5 | 6 | 2 | 0 | [ ] |
 | M6 | 3 | 2 | 0 | [ ] |
 | M7 | 1 | 3 | 0 | [ ] |
-| **Total** | **21** | **15** | **2** | |
+| **Total** | **22** | **15** | **2** | |

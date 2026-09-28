@@ -40,6 +40,10 @@ Not in the target list, but this module already has Strong or Present evidence f
 | S9 | Security and resilience techniques | 🟡 Present |
 | S21 | Determine and adapt SE methods to evaluate outcomes | 🟡 Present |
 
+## Evidence kept elsewhere
+
+- **K20:** this module's green computing decisions are drafted in `../../by-ksb/sustainability-and-accessibility.md`, Part A2, so all K20 evidence stays in one place.
+
 ## How to add evidence
 
 Tell Kiro: *"Use the Evidence Builder for Module 5, {KSB}. Here is what I actually did: ..."* It will ask for anything missing and mark gaps `[EVIDENCE NEEDED]` rather than inventing detail.
