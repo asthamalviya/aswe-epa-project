@@ -85,7 +85,7 @@ Distinction column: ✅ means the KSB has a Distinction criterion.
 | K23 | Underlying Principles (SWE) | Development methods and approaches [wording to confirm] | — | 🟢 | M5 §2.5 Waterfall/Scrum/Hybrid | Strong in M5 only |
 | K24 | Technical Solutions (SWE) | Interpreting and implementing a compliant design; legacy issues | — | 🟢 | M6 §2.1 requirements traced to design, §2.2 legacy | Strong; OS and hardware legacy omitted |
 | K28 | Technical Solutions (SWE) | Tools that support teamwork [wording to confirm] | — | 🟡 | M5 §2.4; M6 §3.2 | Tools listed; how they made teamwork effective not described |
-| S20 | Innovation and Response (SWE) | Respond to changing priorities and adapt plans | ✅ | 🟡 | M6 §4.1-4.4 | Examples are bug fixes, not changing priorities. Planned: `by-ksb/changing-priorities.md` |
+| S20 | Innovation and Response (SWE) | Respond to changing priorities and adapt plans | ✅ | 🟡 | M6 §4.1-4.4 | Examples are bug fixes, not changing priorities. Planned: `by-ksb/changing-priorities.md`, `by-module/module-6/S20-evidence.md` |
 | S21 | Innovation and Response (SWE) | Determine and adapt SE methods to evaluate outcomes | — | 🟡 | M2, M4, M5, M6, M7 | Evaluates outcomes; never shows refining or adapting methods. Planned: `by-ksb/changing-priorities.md` |
 | S23 | Legal, Ethics and Landscape (SWE) | Research to update knowledge and lead improvements | — | 🟡 | M5 §6.2-6.3; M7 references | Research informs design; no improvement led in organisation |
 
@@ -165,6 +165,7 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 | `06_evidence/by-module/module-{1..7}/README.md` | Target KSBs per module | Folder indexes: official labels, current ratings, file status | Use with the Evidence Builder skill |
 | `06_evidence/by-module/module-5/K19-evidence.md` | K19 (Pass and Distinction), S15 | Draft from Module 5 text; role, result and three facts marked `[EVIDENCE NEEDED]` | Confirm your role and what was approved or delivered |
 | `06_evidence/by-module/module-5/S15-evidence.md` | S15 (Pass and Distinction) | Draft: application by lifecycle stage; flags personal data in Slack | Confirm which steps happened; answer the DPIA question |
+| `06_evidence/by-module/module-6/S20-evidence.md` | S20 (Pass and Distinction) | Draft: three problems arising with options, decisions and comparison; no priority change yet | Add a real priority change; confirm your role |
 | `06_evidence/module-fix-list.md` | All AM2 | 37 corrections to module submissions (20 Must) | Work through the Must items first |
 
 ## Evidence files index
