@@ -76,9 +76,15 @@ Three decisions reduced the resources the system consumes:
 
 ### A3. How diversity and inclusion relate to sustainable development (K20)
 
-> Guidance: the Pass criterion explicitly includes diversity and inclusion. Social sustainability covers who can use a service and who builds it. Link one real example here, then go deeper in Part B.
+> Guidance: the Pass criterion explicitly includes diversity and inclusion. This draft uses only what your modules show. The examples are about **who can use** the technology; none is about **who builds** it, so the last paragraph needs your own experience. Part B then covers accessibility and championing in more depth (B8).
 
-Sustainable digital services must also be socially sustainable: usable by everyone and built by teams that reflect their users. In my work, this means [EVIDENCE NEEDED: one concrete link, e.g. "designing for users with low digital skills" or "reviewing an AI model for bias across groups"].
+Sustainable development means meeting present needs without compromising the ability of future generations to meet theirs (WCED, 1987), and that includes social as well as environmental sustainability. In digital services, a system is only socially sustainable if everyone who needs it can use it and it treats the people and organisations it affects fairly. Otherwise it creates workarounds, exclusion and eventually replacement. In my role, this has shaped my work in three ways:
+
+1. **Designing for people with different technical skills.** In the cloud ETL proof of concept (Module 4), analysts and caseworkers depended on specialist technical colleagues to access data held in Oracle systems. I designed secure self-service access so non-technical users could query data themselves within least-privilege controls. In the AI governance assistant (Module 6), I planned for staff used to drag-and-drop file shares: a four-week parallel run and onboarding sessions structured with ADKAR (Hiatt, 2006), so less confident users were not left behind or pushed into untracked workarounds. The same design replaced a perimeter security model that did not work for remote workers with identity-based access. [EVIDENCE NEEDED: did these happen, and what was the uptake?]
+2. **Fairness in AI.** In the dissolution risk model (Module 2), I avoided biased proxy features, reviewed misclassification patterns across company types, industries and geographic areas, and recorded possible sector bias as a known limitation with monitoring to track fairness over time. Unfair predictions would fall hardest on particular regions or types of small business, and on the people who run them. [EVIDENCE NEEDED: what the misclassification review found, e.g. whether any region or sector was misclassified more often, and what you changed.]
+3. **Fair access to knowledge.** The knowledge search proposal (Module 5) targets knowledge silos, which disadvantage new joiners most because they lack the informal networks that longer-serving colleagues rely on. Making knowledge searchable lets new joiners self-serve, and crediting the original authors in every answer recognises the expertise of permanent staff rather than replacing it.
+
+[EVIDENCE NEEDED: one example about the diversity of **who builds** the technology, from your own experience, e.g. mentoring a colleague from an under-represented group, inclusive team practices, or inclusive recruitment. If you have none, say how you would contribute, and cover it in Part B.]
 
 ---
 
@@ -152,12 +158,14 @@ Working on this made me realise [EVIDENCE NEEDED: honest insight]. Next, I will 
 > Guidance: keep only the sources you actually cite, in Harvard style. Check each entry, date and URL before submitting.
 
 - Amazon Web Services (2021) *AWS Well-Architected Framework: Sustainability Pillar*. Available at: https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/ (Accessed: [date]).
+- Hiatt, J. (2006) *ADKAR: A Model for Change in Business, Government and Our Community*. Loveland: Prosci.
 - Department for Environment, Food and Rural Affairs (2020) *Greening Government: ICT and Digital Services Strategy 2020–2025*. London: Defra.
 - Department for Environment, Food and Rural Affairs (2022) *Greening Government Commitments 2021 to 2025*. London: Defra. [Check the edition and date before citing.]
 - Government Digital Service (no date) *Service Standard: 5. Make sure everyone can use the service*. Available at: https://www.gov.uk/service-manual/service-standard (Accessed: [date]).
 - Green Software Foundation (no date) *Principles of Green Software Engineering*. Available at: https://learn.greensoftware.foundation/ (Accessed: [date]).
 - ISO/IEC 21031:2024 *Information technology: Software Carbon Intensity (SCI) specification*. Geneva: ISO.
 - The Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (SI 2018/952).
+- World Commission on Environment and Development (1987) *Our Common Future*. Oxford: Oxford University Press.
 - W3C (2023) *Web Content Accessibility Guidelines (WCAG) 2.2*. Available at: https://www.w3.org/TR/WCAG22/ (Accessed: [date]).
 
 ---
