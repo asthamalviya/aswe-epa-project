@@ -36,13 +36,20 @@ I work as a [EVIDENCE NEEDED: job title] at a UK government registry, where I [E
 
 ### A1. The approach I apply
 
-> Guidance: name one framework and use its language. Candidates:
-> - **Green Software Foundation principles:** carbon efficiency, energy efficiency, carbon awareness, hardware efficiency, measurement and demand shaping.
-> - **Software Carbon Intensity (SCI) specification**, published as ISO/IEC 21031:2024: a rate of carbon per functional unit, e.g. per request or per user.
-> - **AWS Well-Architected Framework, Sustainability Pillar** (2021): good if your system runs on AWS.
-> - **Greening Government: ICT and Digital Services Strategy 2020–2025** (Defra): the UK government's own commitments, which makes the link to your organisation direct.
+> Guidance: none of your seven modules names a sustainability framework, so this draft applies one honestly **in hindsight** to the decisions in A2. If you did use a framework at the time, replace the first paragraph. The Green Software Foundation's principles are carbon efficiency, energy efficiency, carbon awareness, hardware efficiency, measurement and climate commitments; the table uses the four that match your work. Check the current wording at learn.greensoftware.foundation before submitting.
 
-At a UK government registry, sustainability in digital services is shaped by [EVIDENCE NEEDED: organisational policy or government strategy that applies, e.g. "the Greening Government ICT strategy" or an internal net zero commitment]. In my role, I apply [EVIDENCE NEEDED: framework and citation] when I [EVIDENCE NEEDED: the decisions it affects, e.g. "choose compute, storage and scheduling for new services"].
+As a public body, the registry works within the government's Greening Government Commitments and its ICT and Digital Services Strategy (Defra, 2020), which expect digital teams to reduce the energy and resources their services use. [EVIDENCE NEEDED: any registry-level policy that applies to your team, e.g. a net zero target or sustainable procurement rule. If none reaches your team, say so: it supports Part C, point 2.]
+
+At the time, I made my design decisions mainly on cost, security and delivery speed. Looking back at them through the Green Software Foundation's principles (Green Software Foundation, no date) shows where my choices were already sustainable and where they were not:
+
+| Principle | What it asks | Where I applied it | Gap |
+|---|---|---|---|
+| Energy efficiency | Use the least energy for the same result | Retrieval over fine-tuning; a small open-source model (Module 5) | Not measured |
+| Hardware efficiency | Get the most from hardware that already exists | Hosted AI API over dedicated GPUs (Module 6); reusing existing infrastructure (Module 5) | Always-on EC2 instance idle outside working hours (Module 6) |
+| Carbon awareness | Run work where and when electricity is cleaner | Not considered | Region chosen for data residency and cost only (Modules 5 and 6) |
+| Measurement | Measure to improve | Cost as a proxy ($41.12 a month, Module 6) | No carbon or energy figures in any module |
+
+In my role as [EVIDENCE NEEDED: job title], the principles now affect three decisions I make: choosing compute for a new service (serverless or scheduled capacity before always-on), choosing AI approaches (the smallest model and least training that meets the benchmark), and recording the expected resource impact in design decisions. [EVIDENCE NEEDED: one example of applying this since, if you have one. If not, keep it as your commitment and repeat it in the Reflection.]
 
 ### A2. Green computing decisions I made
 
