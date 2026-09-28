@@ -14,7 +14,7 @@ Source: The module's own section labels, which match the official meanings. [EVI
 |---|---|---|---|---|---|
 | K16 | Computer networking concepts | — | 🟢 Strong | `K16-evidence.md` | ⬜ TODO |
 | K24 | Interpreting and implementing a compliant design; legacy issues | — | 🟢 Strong | `K24-evidence.md` | ⬜ TODO |
-| K28 | Tools that support teamwork [wording to confirm] | — | 🟡 Present | `K28-evidence.md` | ⬜ TODO |
+| K28 | Tools that support teamwork [wording to confirm] | — | 🟡 Present | `K28-evidence.md` | 📝 Draft |
 | S20 | Respond to changing priorities and adapt plans | ✅ | 🟡 Present | `S20-evidence.md` | 📝 Draft |
 
 ## Also evidenced in this module

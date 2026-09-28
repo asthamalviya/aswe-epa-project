@@ -17,6 +17,7 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 |---|---|---|
 | Must | 6 of 7 PDFs are marked "Classification: Controlled" (M1: 22 pages, M2: 24, M3: 11, M5: 36, M6: 29, M7: 21; M4 has no marking). Under the Version 1 AI Policy, controlled material needs customer consent before AI processing and careful handling in source control. | Confirm with your line manager or the Service Desk that these files may sit in this repository and be processed by AI tools. Check that the GitHub repository is private. |
 | Must | M2 appendix links to an internal Version 1 GitLab URL that includes your username. | Remove the link, or replace it with a public or anonymised repository. |
+| Must | M6 section 3.2 says the project is "hosted publicly" on GitHub (`asthamalviya/ai-governance-assistant`), while the report is marked "Classification: Controlled". | Confirm that publishing this code was permitted. If not, make the repository private and remove the public link. |
 | Should | All modules name Companies House. Your new evidence refers to "a UK government registry". | Decide one approach for the whole portfolio so the assessor sees consistent naming. |
 
 ---
@@ -101,6 +102,8 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | Should | Section 1.3 vs 4.1 | Describes a "two-person project" but says the Python fix unblocked "two team members". | Clarify who was blocked and how many people were on the team. |
 | Should | Sections 2.3 and 3.3 | Latency and load results (0.49 ms, 1,662 rps) come from health-check tests only, but are presented as evidence for "non-AI endpoints". AI endpoints have no latency target or measurement. | State that the figures are for the health-check endpoint, and add AI-endpoint results or a target (see `by-module/module-6/S21-evidence.md`, Action 4). |
 | Should | Section 3.2.5 vs 4.3 | "Defect escape rate to production: zero", but the CORS problem appeared "after deploying the FastAPI backend". | Say which environment that deployment was to. |
+| Should | Section 3.1 vs 3.2 | Terraform is "five files" in section 3.1 and the appendix, but "nine resources in four configuration files" in section 3.2. | Use one count. |
+| Should | Section 3.2 vs Appendix H | Section 3.2 describes GitHub Flow with feature branches and pull requests, but the appendix describes "four commits on the main branch". | Describe how you actually worked. |
 | Should | Section 3.2 | Claims the CI debugging is "precisely the evidence S20 requires". Official S20 is about changing priorities and revised plans; this is S4 and K28 evidence. | Remove the claim, and relabel section 4 as S4 unless a plan actually changed. |
 | Should | Voice | Written about "the developer" and "two team members" in the third person. | Rewrite key sentences in the first person. |
 
@@ -121,13 +124,13 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 
 | Module | Must | Should | Could | Done |
 |---|---|---|---|---|
-| Data handling | 2 | 1 | 0 | [ ] |
+| Data handling | 3 | 1 | 0 | [ ] |
 | All (first person) | 1 | 0 | 0 | [ ] |
 | M1 | 2 | 1 | 0 | [ ] |
 | M2 | 4 | 2 | 1 | [ ] |
 | M3 | 1 | 3 | 0 | [ ] |
 | M4 | 2 | 1 | 1 | [ ] |
 | M5 | 6 | 2 | 0 | [ ] |
-| M6 | 4 | 5 | 0 | [ ] |
+| M6 | 4 | 7 | 0 | [ ] |
 | M7 | 1 | 3 | 0 | [ ] |
-| **Total** | **23** | **18** | **2** | |
+| **Total** | **24** | **20** | **2** | |
