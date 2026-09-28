@@ -83,7 +83,7 @@ Distinction column: ✅ means the KSB has a Distinction criterion.
 | K21 | Underlying Principles (SWE) | Development lifecycle scenarios [wording to confirm] | — | 🟡 | M2, M4, M6, M7 | Stages implicit; techniques per stage not named |
 | K22 | Underlying Principles (SWE) | Development techniques per SDLC stage [wording to confirm] | — | 🟢 | M7 §2 ADRs, §3 test techniques | Strong |
 | K23 | Underlying Principles (SWE) | Development methods and approaches [wording to confirm] | — | 🟢 | M5 §2.5 Waterfall/Scrum/Hybrid | Strong in M5 only |
-| K24 | Technical Solutions (SWE) | Interpreting and implementing a compliant design; legacy issues | — | 🟢 | M6 §2.1 requirements traced to design, §2.2 legacy | Strong; OS and hardware legacy omitted |
+| K24 | Technical Solutions (SWE) | Interpreting and implementing a compliant design; legacy issues | — | 🟢 | M6 §2.1 requirements traced to design, §2.2 legacy | Strong; OS and hardware legacy omitted. Planned: `by-module/module-6/K24-evidence.md` |
 | K28 | Technical Solutions (SWE) | Tools that support teamwork [wording to confirm] | — | 🟡 | M5 §2.4; M6 §3.2 | Tools listed; how they made teamwork effective not described. Planned: `by-module/module-6/K28-evidence.md` |
 | S20 | Innovation and Response (SWE) | Respond to changing priorities and adapt plans | ✅ | 🟡 | M6 §4.1-4.4 | Examples are bug fixes, not changing priorities. Planned: `by-ksb/changing-priorities.md`, `by-module/module-6/S20-evidence.md` |
 | S21 | Innovation and Response (SWE) | Determine and adapt SE methods to evaluate outcomes | — | 🟡 | M2, M4, M5, M6, M7 | Evaluates outcomes; never shows refining or adapting methods. Planned: `by-module/module-6/S21-evidence.md`, `by-ksb/changing-priorities.md` |
@@ -169,6 +169,7 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 | `06_evidence/by-module/module-6/S21-evidence.md` | S21 | Draft: methods matched to NFRs, results, refinements; health-check benchmark as the adapt example | Add your real response to the flawed benchmark |
 | `06_evidence/by-module/module-6/K28-evidence.md` | K28 | Draft: each tool reframed around teamwork; planning tools from Modules 2 and 5 | Add Module 6 planning and communication tools; confirm pull request use |
 | `06_evidence/by-module/module-6/K16-evidence.md` | K16 | Draft: concepts tied to build decisions (structure, architecture, components, QoS) | Describe the VPC layout from Figure 2; resolve ALB vs API Gateway |
+| `06_evidence/by-module/module-6/K24-evidence.md` | K24 | Draft: requirement traceability table, four compliance gaps in own code, legacy and ADKAR | Add OS, hardware and language legacy detail; answer the OpenAI data question |
 | `06_evidence/module-fix-list.md` | All AM2 | 37 corrections to module submissions (20 Must) | Work through the Must items first |
 
 ## Evidence files index
