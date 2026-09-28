@@ -32,7 +32,7 @@ Not in the target list, but this module already has Strong or Present evidence f
 | S8 | Apply organisational theories (change, ITSM) | 🟡 Present |
 | S9 | Security and resilience techniques | 🟢 Strong |
 | S12 | Plan, design and manage simple networks | 🟡 Present |
-| S21 | Determine and adapt SE methods to evaluate outcomes | 🟡 Present |
+| S21 | Determine and adapt SE methods to evaluate outcomes | 🟡 Present (📝 draft: `S21-evidence.md`) |
 
 ## Evidence kept elsewhere
 

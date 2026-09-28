@@ -99,6 +99,8 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | Must | Section 5.1 vs rest of report | Recommends "Deploy to EC2 behind an Application Load Balancer" in week 1, while the design uses API Gateway throughout and section 4.3 describes the system "after deploying". | Decide whether the system is deployed and which front door it uses, then make sections 3, 4 and 5 agree. |
 | Must | Section 4.4 | Claims "each adaptation was faster to resolve than the one before", but Change 1 took 12 minutes and Change 3 took 30. | Remove the claim, or support it with figures that show it. |
 | Should | Section 1.3 vs 4.1 | Describes a "two-person project" but says the Python fix unblocked "two team members". | Clarify who was blocked and how many people were on the team. |
+| Should | Sections 2.3 and 3.3 | Latency and load results (0.49 ms, 1,662 rps) come from health-check tests only, but are presented as evidence for "non-AI endpoints". AI endpoints have no latency target or measurement. | State that the figures are for the health-check endpoint, and add AI-endpoint results or a target (see `by-module/module-6/S21-evidence.md`, Action 4). |
+| Should | Section 3.2.5 vs 4.3 | "Defect escape rate to production: zero", but the CORS problem appeared "after deploying the FastAPI backend". | Say which environment that deployment was to. |
 | Should | Section 3.2 | Claims the CI debugging is "precisely the evidence S20 requires". Official S20 is about changing priorities and revised plans; this is S4 and K28 evidence. | Remove the claim, and relabel section 4 as S4 unless a plan actually changed. |
 | Should | Voice | Written about "the developer" and "two team members" in the third person. | Rewrite key sentences in the first person. |
 
@@ -126,6 +128,6 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | M3 | 1 | 3 | 0 | [ ] |
 | M4 | 2 | 1 | 1 | [ ] |
 | M5 | 6 | 2 | 0 | [ ] |
-| M6 | 4 | 3 | 0 | [ ] |
+| M6 | 4 | 5 | 0 | [ ] |
 | M7 | 1 | 3 | 0 | [ ] |
-| **Total** | **23** | **16** | **2** | |
+| **Total** | **23** | **18** | **2** | |
