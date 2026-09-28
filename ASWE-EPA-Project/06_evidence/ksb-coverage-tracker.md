@@ -76,7 +76,7 @@ Distinction column: ✅ means the KSB has a Distinction criterion.
 | B7 | Leading and Working Together | Awareness of trends and innovations | — | 🟡 | M1, M3, M5 trends and sources | Trends not linked to team delivery or business value. Planned: `by-ksb/leading-and-working-together.md` |
 | K19 | Social Infrastructure: Legal, Ethical and Sustainability | Legal, ethical, social and professional standards | ✅ | 🟢 | M5 PESTLE, GDPR, ethics framework | Pass met; M4 cites EU GDPR not UK GDPR/DPA 2018. Planned: `by-module/module-5/K19-evidence.md` (also S15) |
 | K20 | Social Infrastructure: Legal, Ethical and Sustainability | Sustainable development and green computing | ✅ | 🟠 | M1, M2, M5 (one-liners) | No green computing or sustainable development approach anywhere. Planned: `by-ksb/sustainability-and-accessibility.md` |
-| S15 | Social Infrastructure: Legal, Ethical and Sustainability | Apply legal, ethical, social and professional standards | ✅ | 🟡 | M2, M4 §10, M5, M7 §4 | Applied but audiences (technical vs non-technical) thin |
+| S15 | Social Infrastructure: Legal, Ethical and Sustainability | Apply legal, ethical, social and professional standards | ✅ | 🟡 | M2, M4 §10, M5, M7 §4 | Applied but audiences (technical vs non-technical) thin. Planned: `by-module/module-5/S15-evidence.md` |
 | B1 | Social Infrastructure: Legal, Ethical and Sustainability | [wording to confirm] | — | 🟡 | M2 "Developer's Ethical Commitment" | Wording unconfirmed (no saved page) |
 | B2 | Social Infrastructure: Legal, Ethical and Sustainability | Reliable, objective, independent and team working | — | 🟡 | M2 peer feedback; M7 limitations | Objectivity shown; independent and team working not evidenced |
 | B8 | Social Infrastructure: Legal, Ethical and Sustainability | Champions diversity, inclusion and accessibility | — | 🟡 | M1 DEI objectives (generic) | No accessibility of your solutions; no inclusion championed. Planned: `by-ksb/sustainability-and-accessibility.md` |
@@ -164,6 +164,7 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 | `06_evidence/by-ksb/changing-priorities.md` | S20 (Pass and Distinction), S21, K10 | Scaffold | Fill in with a real change that altered the plan |
 | `06_evidence/by-module/module-{1..7}/README.md` | Target KSBs per module | Folder indexes: official labels, current ratings, file status | Use with the Evidence Builder skill |
 | `06_evidence/by-module/module-5/K19-evidence.md` | K19 (Pass and Distinction), S15 | Draft from Module 5 text; role, result and three facts marked `[EVIDENCE NEEDED]` | Confirm your role and what was approved or delivered |
+| `06_evidence/by-module/module-5/S15-evidence.md` | S15 (Pass and Distinction) | Draft: application by lifecycle stage; flags personal data in Slack | Confirm which steps happened; answer the DPIA question |
 | `06_evidence/module-fix-list.md` | All AM2 | 37 corrections to module submissions (20 Must) | Work through the Must items first |
 
 ## Evidence files index

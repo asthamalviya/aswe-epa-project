@@ -17,7 +17,7 @@ Source: Multiverse AM2 Portfolio Readiness Tool navigation for this project.
 | K24 | Interpreting and implementing a compliant design; legacy issues | — | 🟡 Present | `K24-evidence.md` | ⬜ TODO |
 | S4 | Initiate, design, code, test and debug a software component | — | 🔴 None | `S4-evidence.md` | ⬜ TODO |
 | S7 | Work in and lead teams | — | 🟠 Weak | `S7-evidence.md` | ⬜ TODO |
-| S15 | Apply legal, ethical, social and professional standards | ✅ | 🟡 Present | `S15-evidence.md` | ⬜ TODO |
+| S15 | Apply legal, ethical, social and professional standards | ✅ | 🟡 Present | `S15-evidence.md` | 📝 Draft |
 | S23 | Research to update knowledge and lead improvements | — | 🟡 Present | `S23-evidence.md` | ⬜ TODO |
 | B2 | Reliable, objective, independent and team working | — | 🟠 Weak | `B2-evidence.md` | ⬜ TODO |
 | B6 | Shares best practice in organisation and community | — | 🟠 Weak | `B6-evidence.md` | ⬜ TODO |
