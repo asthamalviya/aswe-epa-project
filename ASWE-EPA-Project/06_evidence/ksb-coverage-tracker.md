@@ -4,6 +4,8 @@
 > Last updated: 2026-09-28. AM2 rated from module assessments 1 to 7 (`04_module-assessments/`). AM1 not assessed: capstone not yet written.
 >
 > Ratings are a judgement against the official Pass criteria, not a Multiverse assessment. Status shows the best rating across all modules.
+>
+> Scaffolds and drafts in `06_evidence/by-ksb/` and `06_evidence/by-module/` are listed as "Planned" and do not change any status until they contain your real evidence.
 
 ## Quick status
 
@@ -64,27 +66,27 @@ Distinction column: ✅ means the KSB has a Distinction criterion.
 | S10 | Applied Technical Solutions | Initiate, design, implement and debug a data product | — | 🟢 | M4 §4, §6 ETL pipeline | Strong; debugging evidence minimal |
 | S11 | Applied Technical Solutions | Data analysis techniques | — | 🟡 | M2 model evaluation; M4 §5 | Technique choice never justified; no measured improvement |
 | S12 | Applied Technical Solutions | Plan, design and manage simple networks | — | 🟡 | M3 §3 VLAN plan, allowlist; M6 Fig 2 | Planned and designed only; "manages" not evidenced |
-| K8 | Leading and Working Together | Teams and organisational theory [wording to confirm] | — | 🟠 | M2 roles table (thin) | No team-effectiveness theory anywhere |
-| K9 | Leading and Working Together | Leadership concepts and principles | — | 🟠 | M1 "my role as Lead" slide (thin) | No leadership concepts or how you apply them |
-| K10 | Leading and Working Together | Management techniques and theories | — | 🟡 | M5 (Kepner-Tregoe, MoSCoW, WBS); M1 Kotter | Techniques used on projects, not linked to your own management practice |
-| S7 | Leading and Working Together | Work in and lead teams | — | 🟠 | M6 "unblocking two team members" (thin) | No evidence of working in or leading a team |
-| S8 | Leading and Working Together | Apply organisational theories (change, ITSM) | — | 🟡 | M1 Kotter; M5 Mendelow, ELM; M6 ADKAR | Theories planned, not applied; no ITSM |
-| B4 | Leading and Working Together | Continuous professional development | — | 🟠 | M2, M7 reflections (thin) | No CPD activity evidenced |
-| B6 | Leading and Working Together | Shares best practice in organisation and community | — | 🟡 | M2 brown-bag session, checklist | Written as "we"; no outcome or feedback |
-| B7 | Leading and Working Together | Awareness of trends and innovations | — | 🟡 | M1, M3, M5 trends and sources | Trends not linked to team delivery or business value |
-| K19 | Social Infrastructure: Legal, Ethical and Sustainability | Legal, ethical, social and professional standards | ✅ | 🟢 | M5 PESTLE, GDPR, ethics framework | Pass met; M4 cites EU GDPR not UK GDPR/DPA 2018 |
-| K20 | Social Infrastructure: Legal, Ethical and Sustainability | Sustainable development and green computing | ✅ | 🟠 | M1, M2, M5 (one-liners) | No green computing or sustainable development approach anywhere |
+| K8 | Leading and Working Together | Teams and organisational theory [wording to confirm] | — | 🟠 | M2 roles table (thin) | No team-effectiveness theory anywhere. Planned: `by-ksb/leading-and-working-together.md` |
+| K9 | Leading and Working Together | Leadership concepts and principles | — | 🟠 | M1 "my role as Lead" slide (thin) | No leadership concepts or how you apply them. Planned: `by-ksb/leading-and-working-together.md` |
+| K10 | Leading and Working Together | Management techniques and theories | — | 🟡 | M5 (Kepner-Tregoe, MoSCoW, WBS); M1 Kotter | Techniques used on projects, not linked to your own management practice. Planned: `by-ksb/leading-and-working-together.md`, `by-ksb/changing-priorities.md` |
+| S7 | Leading and Working Together | Work in and lead teams | — | 🟠 | M6 "unblocking two team members" (thin) | No evidence of working in or leading a team. Planned: `by-ksb/leading-and-working-together.md` |
+| S8 | Leading and Working Together | Apply organisational theories (change, ITSM) | — | 🟡 | M1 Kotter; M5 Mendelow, ELM; M6 ADKAR | Theories planned, not applied; no ITSM. Planned: `by-ksb/leading-and-working-together.md` |
+| B4 | Leading and Working Together | Continuous professional development | — | 🟠 | M2, M7 reflections (thin) | No CPD activity evidenced. Planned: `by-ksb/leading-and-working-together.md` |
+| B6 | Leading and Working Together | Shares best practice in organisation and community | — | 🟡 | M2 brown-bag session, checklist | Written as "we"; no outcome or feedback. Planned: `by-ksb/leading-and-working-together.md` |
+| B7 | Leading and Working Together | Awareness of trends and innovations | — | 🟡 | M1, M3, M5 trends and sources | Trends not linked to team delivery or business value. Planned: `by-ksb/leading-and-working-together.md` |
+| K19 | Social Infrastructure: Legal, Ethical and Sustainability | Legal, ethical, social and professional standards | ✅ | 🟢 | M5 PESTLE, GDPR, ethics framework | Pass met; M4 cites EU GDPR not UK GDPR/DPA 2018. Planned: `by-module/module-3/K19-evidence.md` (see warning) |
+| K20 | Social Infrastructure: Legal, Ethical and Sustainability | Sustainable development and green computing | ✅ | 🟠 | M1, M2, M5 (one-liners) | No green computing or sustainable development approach anywhere. Planned: `by-ksb/sustainability-and-accessibility.md` |
 | S15 | Social Infrastructure: Legal, Ethical and Sustainability | Apply legal, ethical, social and professional standards | ✅ | 🟡 | M2, M4 §10, M5, M7 §4 | Applied but audiences (technical vs non-technical) thin |
 | B1 | Social Infrastructure: Legal, Ethical and Sustainability | [wording to confirm] | — | 🟡 | M2 "Developer's Ethical Commitment" | Wording unconfirmed (no saved page) |
 | B2 | Social Infrastructure: Legal, Ethical and Sustainability | Reliable, objective, independent and team working | — | 🟡 | M2 peer feedback; M7 limitations | Objectivity shown; independent and team working not evidenced |
-| B8 | Social Infrastructure: Legal, Ethical and Sustainability | Champions diversity, inclusion and accessibility | — | 🟡 | M1 DEI objectives (generic) | No accessibility of your solutions; no inclusion championed |
+| B8 | Social Infrastructure: Legal, Ethical and Sustainability | Champions diversity, inclusion and accessibility | — | 🟡 | M1 DEI objectives (generic) | No accessibility of your solutions; no inclusion championed. Planned: `by-ksb/sustainability-and-accessibility.md` |
 | K21 | Underlying Principles (SWE) | Development lifecycle scenarios [wording to confirm] | — | 🟡 | M2, M4, M6, M7 | Stages implicit; techniques per stage not named |
 | K22 | Underlying Principles (SWE) | Development techniques per SDLC stage [wording to confirm] | — | 🟢 | M7 §2 ADRs, §3 test techniques | Strong |
 | K23 | Underlying Principles (SWE) | Development methods and approaches [wording to confirm] | — | 🟢 | M5 §2.5 Waterfall/Scrum/Hybrid | Strong in M5 only |
 | K24 | Technical Solutions (SWE) | Interpreting and implementing a compliant design; legacy issues | — | 🟢 | M6 §2.1 requirements traced to design, §2.2 legacy | Strong; OS and hardware legacy omitted |
 | K28 | Technical Solutions (SWE) | Tools that support teamwork [wording to confirm] | — | 🟡 | M5 §2.4; M6 §3.2 | Tools listed; how they made teamwork effective not described |
-| S20 | Innovation and Response (SWE) | Respond to changing priorities and adapt plans | ✅ | 🟡 | M6 §4.1-4.4 | Examples are bug fixes, not changing priorities |
-| S21 | Innovation and Response (SWE) | Determine and adapt SE methods to evaluate outcomes | — | 🟡 | M2, M4, M5, M6, M7 | Evaluates outcomes; never shows refining or adapting methods |
+| S20 | Innovation and Response (SWE) | Respond to changing priorities and adapt plans | ✅ | 🟡 | M6 §4.1-4.4 | Examples are bug fixes, not changing priorities. Planned: `by-ksb/changing-priorities.md` |
+| S21 | Innovation and Response (SWE) | Determine and adapt SE methods to evaluate outcomes | — | 🟡 | M2, M4, M5, M6, M7 | Evaluates outcomes; never shows refining or adapting methods. Planned: `by-ksb/changing-priorities.md` |
 | S23 | Legal, Ethics and Landscape (SWE) | Research to update knowledge and lead improvements | — | 🟡 | M5 §6.2-6.3; M7 references | Research informs design; no improvement led in organisation |
 
 ## Coverage matrix by module
@@ -132,10 +134,10 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 
 | KSB | Status | Best evidence | What is missing |
 |---|---|---|---|
-| K19 | Partly | M5 (GDPR case for rejecting COTS), M4 §10 | Justify why each standard applies; weigh alternatives; fix EU GDPR → UK GDPR/DPA 2018 in M4 |
+| K19 | Partly | M5 (GDPR case for rejecting COTS), M4 §10 | Justify why each standard applies; weigh alternatives; fix EU GDPR → UK GDPR/DPA 2018 in M4. Planned: `by-module/module-3/K19-evidence.md` (see warning) |
 | S15 | Partly | Same as K19 | Same as K19 |
-| K20 | Not met | None | Evaluate the impact of your organisation's sustainable technology practices |
-| S20 | Partly | M6 §4.4 compares three adaptations | Needs a real change in priorities (not bug fixes) and your influence on team plans |
+| K20 | Not met | None | Evaluate the impact of your organisation's sustainable technology practices. Planned: `by-ksb/sustainability-and-accessibility.md` |
+| S20 | Partly | M6 §4.4 compares three adaptations | Needs a real change in priorities (not bug fixes) and your influence on team plans. Planned: `by-ksb/changing-priorities.md` |
 
 ## Gap analysis: prioritised actions
 
@@ -152,6 +154,22 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
    - M7: "0 critical gaps" vs Gap 5 not addressed; v0 size 90 vs 106 lines.
    - M1: "How the proposal aligns" slide pairs goals with the wrong justifications; DEI deadlines already passed.
 7. **Save the missing Multiverse pages** for K8, K13, B1, K21, K22, K23, K28, S20 and S21, so the standard wording can be checked (B1 ratings are provisional).
+
+## Work in progress (not yet evidence)
+
+| File | KSBs targeted | State | Next step |
+|---|---|---|---|
+| `06_evidence/by-ksb/leading-and-working-together.md` | K8, K9, K10, S7, S8, B4, B6, B7 | Scaffold: all personal facts are `[EVIDENCE NEEDED]` | Fill in from your real team and leadership examples |
+| `06_evidence/by-ksb/sustainability-and-accessibility.md` | K20 (Pass and Distinction), B8 | Scaffold | Fill in; Part C targets the K20 Distinction |
+| `06_evidence/by-ksb/changing-priorities.md` | S20 (Pass and Distinction), S21, K10 | Scaffold | Fill in with a real change that altered the plan |
+| `06_evidence/by-module/module-3/K19-evidence.md` | K19 | ⚠️ Draft with invented content | Do not submit as is: see warning below |
+| `06_evidence/by-module/module-{3..7}/README.md` | Various | ⚠️ Folder indexes with incorrect KSB labels | Correct before use: see warning below |
+| `06_evidence/module-fix-list.md` | All AM2 | 37 corrections to module submissions (20 Must) | Work through the Must items first |
+
+**Warning: `by-module/` files (added in commit 3140e1c)**
+- `K19-evidence.md` contains specific results that are not from your modules (e.g. "22 minutes to 4 minutes", "zero unplanned outages", an ADR "adopted as template") and describes a customer data project, not your Module 3 network review. It also labels K19 "Architectural Patterns"; official K19 is legal, ethical, social and professional standards. Portfolio evidence must be your own work, and the assessor will probe every figure.
+- The README tables reuse the incorrect labels this repo previously had (e.g. K20 "Version Control", S15 "Databases", K28 "AI/ML Concepts", S20 "DevOps in Practice"). Official wording: `.kiro/steering/ksb-quick-reference.md`.
+- Folder numbers follow `02_portfolio-AM2/module-*`, not the assessment PDFs. For example, `module-3/README.md` lists the KSBs of Project 4, which is assessment Module 2.
 
 ## Evidence files index
 
