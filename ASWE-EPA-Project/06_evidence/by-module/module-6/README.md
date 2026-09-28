@@ -1,14 +1,41 @@
 # Module 6 Evidence
 
-KSBs covered in this module: K16, K24, K28, S20
+**Assessment:** `04_module-assessments/9419910600_Module6_Assessment1.pdf`
+**Multiverse project:** Project 6: Cloud Computing and Scalable Architectures
+**Topic:** Cloud AI governance and knowledge assistant
 
-## Files in this folder
+Folder numbers match the assessment PDFs, not the Multiverse project numbers or the `02_portfolio-AM2/module-*` folders. KSB labels and criteria: `.kiro/steering/ksb-quick-reference.md`.
 
-| File | KSB | Topic | Status |
-|------|-----|-------|--------|
-| K16-evidence.md | K16 | DevOps & CI/CD | ⬜ TODO |
-| K24-evidence.md | K24 | Code Quality | ⬜ TODO |
-| K28-evidence.md | K28 | AI/ML Concepts | ⬜ TODO |
-| S20-evidence.md | S20 | DevOps in Practice | ⬜ TODO |
+## Target KSBs
 
-> Use the **Evidence Builder** skill to generate entries.
+Source: The module's own section labels, which match the official meanings. [EVIDENCE NEEDED: save the Project 6 page to confirm the full target list.]
+
+| KSB | Official topic | Distinction | Current rating in this module | File | Status |
+|---|---|---|---|---|---|
+| K16 | Computer networking concepts | — | 🟢 Strong | `K16-evidence.md` | ⬜ TODO |
+| K24 | Interpreting and implementing a compliant design; legacy issues | — | 🟢 Strong | `K24-evidence.md` | ⬜ TODO |
+| K28 | Tools that support teamwork [wording to confirm] | — | 🟡 Present | `K28-evidence.md` | ⬜ TODO |
+| S20 | Respond to changing priorities and adapt plans | ✅ | 🟡 Present | `S20-evidence.md` | ⬜ TODO |
+
+## Also evidenced in this module
+
+Not in the target list, but this module already has Strong or Present evidence for them. Reuse it rather than writing new evidence elsewhere.
+
+| KSB | Official topic | Current rating |
+|---|---|---|
+| K6 | Solution lifecycle approaches and organisational standards | 🟡 Present |
+| K11 | Common vulnerabilities (insecure code, networks) | 🟡 Present |
+| K12 | Role of data management systems | 🟡 Present |
+| K21 | Development lifecycle scenarios [wording to confirm] | 🟡 Present |
+| K22 | Development techniques per SDLC stage [wording to confirm] | 🟡 Present |
+| S4 | Initiate, design, code, test and debug a software component | 🟢 Strong |
+| S8 | Apply organisational theories (change, ITSM) | 🟡 Present |
+| S9 | Security and resilience techniques | 🟢 Strong |
+| S12 | Plan, design and manage simple networks | 🟡 Present |
+| S21 | Determine and adapt SE methods to evaluate outcomes | 🟡 Present |
+
+## How to add evidence
+
+Tell Kiro: *"Use the Evidence Builder for Module 6, {KSB}. Here is what I actually did: ..."* It will ask for anything missing and mark gaps `[EVIDENCE NEEDED]` rather than inventing detail.
+
+Ratings come from the gap analysis in `06_evidence/ksb-coverage-tracker.md`. Fixes for this module's submission: `06_evidence/module-fix-list.md`.

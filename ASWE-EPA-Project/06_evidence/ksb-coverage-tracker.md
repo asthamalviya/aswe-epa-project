@@ -163,13 +163,12 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 | `06_evidence/by-ksb/sustainability-and-accessibility.md` | K20 (Pass and Distinction), B8 | Scaffold | Fill in; Part C targets the K20 Distinction |
 | `06_evidence/by-ksb/changing-priorities.md` | S20 (Pass and Distinction), S21, K10 | Scaffold | Fill in with a real change that altered the plan |
 | `06_evidence/by-module/module-3/K19-evidence.md` | K19 | ⚠️ Draft with invented content | Do not submit as is: see warning below |
-| `06_evidence/by-module/module-{3..7}/README.md` | Various | ⚠️ Folder indexes with incorrect KSB labels | Correct before use: see warning below |
+| `06_evidence/by-module/module-{1..7}/README.md` | Target KSBs per module | Folder indexes: official labels, current ratings, file status | Use with the Evidence Builder skill |
 | `06_evidence/module-fix-list.md` | All AM2 | 37 corrections to module submissions (20 Must) | Work through the Must items first |
 
-**Warning: `by-module/` files (added in commit 3140e1c)**
+**Warning: `by-module/module-3/K19-evidence.md`**
 - `K19-evidence.md` contains specific results that are not from your modules (e.g. "22 minutes to 4 minutes", "zero unplanned outages", an ADR "adopted as template") and describes a customer data project, not your Module 3 network review. It also labels K19 "Architectural Patterns"; official K19 is legal, ethical, social and professional standards. Portfolio evidence must be your own work, and the assessor will probe every figure.
-- The README tables reuse the incorrect labels this repo previously had (e.g. K20 "Version Control", S15 "Databases", K28 "AI/ML Concepts", S20 "DevOps in Practice"). Official wording: `.kiro/steering/ksb-quick-reference.md`.
-- Folder numbers follow `02_portfolio-AM2/module-*`, not the assessment PDFs. For example, `module-3/README.md` lists the KSBs of Project 4, which is assessment Module 2.
+- Folder numbers in `by-module/` match the assessment PDFs (module-3 = assessment Module 3 = Project 1).
 
 ## Evidence files index
 

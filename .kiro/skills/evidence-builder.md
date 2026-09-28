@@ -1,114 +1,135 @@
 # Evidence Builder Skill
 
 ## Purpose
-Generate realistic, human-sounding portfolio evidence for ASWE apprenticeship modules. Each piece of evidence reads like a real engineer reflecting on real work — specific, personal, and mapped to KSBs.
+Turn the apprentice's **own, real work** into well-structured AM2 portfolio evidence. This skill structures, sharpens and maps evidence; it never supplies it. Every fact, figure, outcome and decision in the output must come from the apprentice or from their submitted module assessments.
 
-## How to Use This Skill
+Portfolio evidence must be the apprentice's own work. The assessor probes every claim in the 60-minute professional discussion, so invented content is both an integrity risk and easy to expose.
+
+## Non-negotiable rules
+
+1. **Never invent facts.** No made-up metrics, timings, team sizes, tools, outcomes, quotes, dates or events. If a detail is missing, insert `[EVIDENCE NEEDED: what is missing]`.
+2. **Never write a "realistic example" in place of real evidence.** Examples in this file show structure only.
+3. **Use official KSB wording.** Read `.kiro/steering/ksb-quick-reference.md` before writing. Never label a KSB from memory; many codes do not mean what they seem (e.g. K19 is legal, ethical, social and professional standards; K28 is teamwork tools; S15 is applying legal and ethical standards).
+4. **Map to the criterion, element by element.** Shared criteria (e.g. K8, S7, B4, B6, B7) need evidence for each KSB's own element.
+5. **First person.** "I designed", "I chose". Use "we" only for genuinely shared outcomes, and then say what your part was.
+6. **Anonymise the organisation** as "a UK government registry". No colleague names.
+7. **Flag, don't fix, weak material.** If the source work is hypothetical, proposed or illustrative, say so in the Assessor Notes rather than presenting it as delivered.
+
+## How to use this skill
 
 Tell me:
-1. Which module (3, 4, 5, 6, or 7)
-2. Which KSB (e.g. K19, S4, B2) — or say "all" for the full module
-3. Brief context about your actual work (tech stack, project type, team size, problem solved)
+1. **Which assessment module** (1 to 7, matching `04_module-assessments/9419910600_Module{N}_Assessment1.pdf`)
+2. **Which KSB**, or "all" for the module's target KSBs (listed in the module folder README)
+3. **Your real context:** what you did, why, and what happened, with any numbers you have
 
-I will generate:
-- A complete evidence entry per KSB
-- Filed in the correct folder structure
-- Written in first person, Distinction-level quality
-- With a KSB justification paragraph at the end of each piece
+I will:
+1. Read the KSB's Pass (and Distinction, if any) criterion from the quick reference.
+2. Read the relevant sections of your module assessment.
+3. Ask you up to five questions for anything the criterion needs that neither source provides.
+4. Draft the entry using only your answers and the module text, with `[EVIDENCE NEEDED]` for any remaining gaps.
+5. Save it and update `06_evidence/ksb-coverage-tracker.md` (status changes only once no `[EVIDENCE NEEDED]` remains).
 
 ---
 
-## Output Folder Structure
-
-Every evidence piece goes into:
+## Output location
 
 ```
 ASWE-EPA-Project/06_evidence/by-module/module-{N}/{KSB-ID}-evidence.md
 ```
 
-Each file follows this exact template:
+`{N}` is the **assessment module number** (the PDF), not the Multiverse project number. The mapping is in each folder's README.
+
+Cross-module pieces that cover several KSBs at once (e.g. leadership, sustainability, changing priorities) go in `06_evidence/by-ksb/`.
+
+## Template
 
 ```markdown
-# {KSB-ID} — {KSB Topic}
-**Module**: {N}  
-**Date**: {date}  
-**Project/Context**: {brief project description}
+# {KSB-ID}: {official short label from the quick reference}
+**Assessment method**: AM2
+**Module**: {N} (Multiverse Project {P})
+**Date of the work**: {month and year, from the apprentice}
+**Context**: {one line, organisation anonymised}
+**Status**: Draft | Ready for review | Final
+
+## Criterion
+**Pass:** {official Pass wording}
+**Distinction:** {official Distinction wording, or "None for this KSB"}
 
 ## Situation
-[2-3 sentences: what was the business context, what was the problem or need]
+[2 to 3 sentences: the business context and the problem. Real facts only.]
 
 ## Task
-[2-3 sentences: what was YOUR specific responsibility in this]
+[2 to 3 sentences: YOUR responsibility.]
 
 ## Action
-[4-6 sentences: exactly what YOU did, technical decisions made, tools/approaches used, and WHY]
+[4 to 6 sentences: what YOU did, the decisions you made and WHY. At least one "because". Name the method, standard or theory the criterion asks for.]
 
 ## Result
-[2-3 sentences: what changed, ideally with a metric or measurable outcome]
+[2 to 3 sentences: what changed, with at least one real number or named outcome. If there is no measured result, say what was proposed and why it was not measured.]
 
-## KSB Justification
-**This evidence demonstrates {KSB-ID} ({KSB topic}) because:**
-[2-3 sentences explicitly linking the actions taken to the KSB descriptor]
+## How this meets the criterion
+| Criterion element | Where it is evidenced above |
+|---|---|
+| {element 1 of the Pass wording} | {section and sentence} |
+| {element 2} | {section and sentence} |
 
-## Examiner Notes
-*Strength*: [what makes this strong evidence]  
-*To push to Distinction*: [one specific thing to add or sharpen]
+## Assessor Notes
+*Strength*: [what makes this evidence credible]
+*Gaps*: [any remaining `[EVIDENCE NEEDED]`, or anything proposed rather than delivered]
+*To reach Distinction* (only if the KSB has a Distinction criterion): [one specific addition]
 ```
 
 ---
 
-## Example — K19 (Architecture Patterns), Module 3
+## Structure example: K19 from Module 4
+
+This example uses only facts stated in the Module 4 assessment. Gaps the module does not answer are left as placeholders, which is how every draft should look before the apprentice fills it in.
 
 ```markdown
-# K19 — Architectural Patterns
-**Module**: 3  
-**Date**: March 2026  
-**Project/Context**: Internal tooling for automating customer onboarding at a fintech company
+# K19: Legal, ethical, social and professional standards
+**Assessment method**: AM2
+**Module**: 4 (Multiverse Project 2)
+**Date of the work**: [EVIDENCE NEEDED: month and year]
+**Context**: Cloud ETL proof of concept for a UK government registry
+**Status**: Draft
+
+## Criterion
+**Pass:** Applies relevant legal, ethical, social and professional standards to digital and technology solutions considering both technical and non-technical audiences and in line with organisational guidelines. (K19, S15, B1, B2)
+**Distinction:** Justifies the application of relevant legal, ethical, social and professional standards to digital and technology solutions. (K19, S15)
 
 ## Situation
-Our team was tasked with rebuilding a legacy onboarding flow that was a single monolithic script. 
-It was causing deployment bottlenecks — any change required a full redeploy, and a bug in one 
-step brought the entire process down. The business needed a more resilient, maintainable solution.
+The registry's bulk data was reconciled manually with SQL scripts and spreadsheets, with no systematic lineage tracking. That created an accountability risk under data protection law, which requires traceable, lawful processing.
 
 ## Task
-I was responsible for proposing and justifying the new architecture. I needed to evaluate options, 
-present a recommendation to the senior engineer, and then lead the implementation of the core services.
+[EVIDENCE NEEDED: your specific responsibility for governance and compliance in the PoC]
 
 ## Action
-I evaluated three architectural approaches: keeping the monolith with better error handling, 
-splitting into a microservices architecture, and using an event-driven pipeline with a message queue. 
-I documented the trade-offs in an Architecture Decision Record (ADR), comparing each option against 
-our criteria: deployment independence, fault isolation, and team size (3 engineers). I recommended 
-the event-driven pipeline using AWS SQS, arguing that microservices would introduce too much 
-operational overhead for a team of our size. I designed the message schema, implemented two of the 
-five services in Node.js, and wrote integration tests to validate the contract between services.
+I [EVIDENCE NEEDED: confirm your part; the module is written in the passive, e.g. "built"] data quality and duplicate checks at source that write every result to dedicated audit tables, and used the Glue Data Catalog to record schema and lineage from source to analytics. I did this because Articles 5 and 30 of UK GDPR require the registry to demonstrate accountability and keep records of processing [EVIDENCE NEEDED: confirm this was your reasoning, and correct the module's EU GDPR citation to UK GDPR and the Data Protection Act 2018]. [EVIDENCE NEEDED: how you explained these controls to non-technical stakeholders, e.g. governance or casework teams]. [EVIDENCE NEEDED: which organisational guidelines you followed].
 
 ## Result
-The new architecture reduced deployment time from 25 minutes (full redeploy) to under 3 minutes 
-per service. A failure in any single step now triggers a dead-letter queue rather than silently 
-failing, which reduced undetected onboarding errors by 90% in the first month post-launch.
+[EVIDENCE NEEDED: measured or observed outcome, e.g. number of records traced, audit query time, stakeholder sign-off]
 
-## KSB Justification
-**This evidence demonstrates K19 (Architectural Patterns) because:**
-I did not simply implement a pattern — I evaluated multiple architectural approaches against 
-specific technical and organisational constraints, produced a formal ADR, and justified my 
-recommendation to a senior engineer. This shows deep understanding of when event-driven 
-architecture is appropriate over alternatives like microservices or a monolith.
+## How this meets the criterion
+| Criterion element | Where it is evidenced above |
+|---|---|
+| Applies relevant legal standards | Action: audit tables and lineage mapped to UK GDPR Articles 5 and 30 |
+| Considers technical and non-technical audiences | Action: [EVIDENCE NEEDED] |
+| In line with organisational guidelines | Action: [EVIDENCE NEEDED] |
+| Distinction: justifies the application | Action: "because..." clause; strengthen by comparing with an alternative control |
 
-## Examiner Notes
-*Strength*: Decision-making process is explicit, trade-offs are named, outcome is quantified.  
-*To push to Distinction*: Add a sentence about what you would do differently in hindsight, 
-or how this decision influenced the team's future architectural thinking.
+## Assessor Notes
+*Strength*: Controls are concrete and tied to specific articles.
+*Gaps*: Audiences and organisational guidelines missing; jurisdiction must be corrected.
+*To reach Distinction*: Explain why audit tables and lineage were chosen over an alternative (e.g. manual records of processing) and what each would cost or risk.
 ```
 
 ---
 
-## Rules for Generation
+## Before saving any entry
 
-1. Always write in first person ("I designed", "I chose", not "we" or "the team")
-2. Every Action section must include at least one explicit "because" or "in order to"
-3. Every Result must include at least one number, metric, or named outcome
-4. The KSB Justification must name the specific KSB descriptor, not just repeat the action
-5. Examiner Notes must always include one concrete "To push to Distinction" suggestion
-6. Language must sound like a practising engineer, not a student — avoid "I learned that..." as the main point
-7. Difficulty should be calibrated to the module level (Module 3 = junior-mid, Module 7 = senior)
+- [ ] Every fact came from the apprentice or the module text
+- [ ] KSB label and criterion copied from the quick reference
+- [ ] Each criterion element mapped in the table
+- [ ] First person throughout
+- [ ] Organisation anonymised; no colleague names
+- [ ] Remaining gaps marked `[EVIDENCE NEEDED]`, not filled with plausible guesses
