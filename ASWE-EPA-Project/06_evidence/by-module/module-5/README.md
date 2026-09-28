@@ -13,7 +13,7 @@ Source: Multiverse AM2 Portfolio Readiness Tool navigation for this project.
 | KSB | Official topic | Distinction | Current rating in this module | File | Status |
 |---|---|---|---|---|---|
 | K6 | Solution lifecycle approaches and organisational standards | — | 🟡 Present | `K6-evidence.md` | ⬜ TODO |
-| K19 | Legal, ethical, social and professional standards | ✅ | 🟢 Strong | `K19-evidence.md` | ⬜ TODO |
+| K19 | Legal, ethical, social and professional standards | ✅ | 🟢 Strong | `K19-evidence.md` | 📝 Draft |
 | K24 | Interpreting and implementing a compliant design; legacy issues | — | 🟡 Present | `K24-evidence.md` | ⬜ TODO |
 | S4 | Initiate, design, code, test and debug a software component | — | 🔴 None | `S4-evidence.md` | ⬜ TODO |
 | S7 | Work in and lead teams | — | 🟠 Weak | `S7-evidence.md` | ⬜ TODO |

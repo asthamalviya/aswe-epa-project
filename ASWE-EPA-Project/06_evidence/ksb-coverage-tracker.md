@@ -74,7 +74,7 @@ Distinction column: ✅ means the KSB has a Distinction criterion.
 | B4 | Leading and Working Together | Continuous professional development | — | 🟠 | M2, M7 reflections (thin) | No CPD activity evidenced. Planned: `by-ksb/leading-and-working-together.md` |
 | B6 | Leading and Working Together | Shares best practice in organisation and community | — | 🟡 | M2 brown-bag session, checklist | Written as "we"; no outcome or feedback. Planned: `by-ksb/leading-and-working-together.md` |
 | B7 | Leading and Working Together | Awareness of trends and innovations | — | 🟡 | M1, M3, M5 trends and sources | Trends not linked to team delivery or business value. Planned: `by-ksb/leading-and-working-together.md` |
-| K19 | Social Infrastructure: Legal, Ethical and Sustainability | Legal, ethical, social and professional standards | ✅ | 🟢 | M5 PESTLE, GDPR, ethics framework | Pass met; M4 cites EU GDPR not UK GDPR/DPA 2018 |
+| K19 | Social Infrastructure: Legal, Ethical and Sustainability | Legal, ethical, social and professional standards | ✅ | 🟢 | M5 PESTLE, GDPR, ethics framework | Pass met; M4 cites EU GDPR not UK GDPR/DPA 2018. Planned: `by-module/module-5/K19-evidence.md` (also S15) |
 | K20 | Social Infrastructure: Legal, Ethical and Sustainability | Sustainable development and green computing | ✅ | 🟠 | M1, M2, M5 (one-liners) | No green computing or sustainable development approach anywhere. Planned: `by-ksb/sustainability-and-accessibility.md` |
 | S15 | Social Infrastructure: Legal, Ethical and Sustainability | Apply legal, ethical, social and professional standards | ✅ | 🟡 | M2, M4 §10, M5, M7 §4 | Applied but audiences (technical vs non-technical) thin |
 | B1 | Social Infrastructure: Legal, Ethical and Sustainability | [wording to confirm] | — | 🟡 | M2 "Developer's Ethical Commitment" | Wording unconfirmed (no saved page) |
@@ -163,6 +163,7 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 | `06_evidence/by-ksb/sustainability-and-accessibility.md` | K20 (Pass and Distinction), B8 | Scaffold | Fill in; Part C targets the K20 Distinction |
 | `06_evidence/by-ksb/changing-priorities.md` | S20 (Pass and Distinction), S21, K10 | Scaffold | Fill in with a real change that altered the plan |
 | `06_evidence/by-module/module-{1..7}/README.md` | Target KSBs per module | Folder indexes: official labels, current ratings, file status | Use with the Evidence Builder skill |
+| `06_evidence/by-module/module-5/K19-evidence.md` | K19 (Pass and Distinction), S15 | Draft from Module 5 text; role, result and three facts marked `[EVIDENCE NEEDED]` | Confirm your role and what was approved or delivered |
 | `06_evidence/module-fix-list.md` | All AM2 | 37 corrections to module submissions (20 Must) | Work through the Must items first |
 
 ## Evidence files index
