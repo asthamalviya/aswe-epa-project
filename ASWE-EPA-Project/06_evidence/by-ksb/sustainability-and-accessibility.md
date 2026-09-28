@@ -97,28 +97,27 @@ Sustainable development means meeting present needs without compromising the abi
 
 ## Part B: Championing diversity, inclusion and accessibility (B8)
 
+> Guidance: B8 asks you to **champion** diversity and inclusion **and** ensure solutions are **accessible**. Your modules are strongest on inclusion and fairness, and weakest on accessibility: accessibility appears only as intentions (Module 1's "accessible UI", Module 5's planned UX testing) and none of the seven modules records an accessibility test. B1 therefore needs new, real work; the guidance there shows the quickest way to get it. B2 and B3 are drafted from the modules.
+
 ### B1. Making a solution accessible
 
-> Guidance: public sector websites and apps must meet the Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018, which point to WCAG 2.1 AA. GDS now asks services to meet WCAG 2.2 AA. The Government Service Standard point 5 is "Make sure everyone can use the service". Use whichever applies to your system.
+> Guidance: public sector websites and apps must meet the Public Sector Bodies (Websites and Mobile Applications) Accessibility Regulations 2018, which point to WCAG 2.1 AA; GDS now asks services to meet WCAG 2.2 AA. The quickest way to real evidence: run an automated check (axe DevTools or Lighthouse) on the Module 6 web frontend or any interface you work on, do a keyboard-only pass and a screen reader pass (NVDA or VoiceOver), fix what you find, and record the before and after. Automated tools catch only part of WCAG failures, so say that you also tested manually. An afternoon's work gives you a genuine B1 example.
 
-For [EVIDENCE NEEDED: solution], I made sure [EVIDENCE NEEDED: accessibility standard, e.g. "WCAG 2.2 AA"] was met by [EVIDENCE NEEDED: actions, e.g. "running axe and Lighthouse checks in the CI pipeline", "testing with NVDA and VoiceOver", "fixing colour contrast and keyboard focus order"].
+Accessibility was an intention in my earlier work: my Module 1 proposal set out to replace a static JSP front end with an accessible, responsive interface, and my Module 5 plan included UX testing of the web interface. The Module 5 design also offered two ways to use the same service (a web app and a Slack bot), so people could use it within their existing workflow.
 
-I found [EVIDENCE NEEDED: number and type of issues, e.g. "17 issues, 4 of them blocking for screen reader users"] and [EVIDENCE NEEDED: what you fixed and how you know it worked].
+To make sure a solution I built was accessible, I tested [EVIDENCE NEEDED: which interface, e.g. "the Module 6 web frontend"] against [EVIDENCE NEEDED: standard, e.g. "WCAG 2.2 AA"] using [EVIDENCE NEEDED: tools and methods, e.g. "axe DevTools, a keyboard-only pass and NVDA"]. I found [EVIDENCE NEEDED: number and type of issues, e.g. "12 issues, including missing form labels and low colour contrast"], fixed [EVIDENCE NEEDED: what you fixed], and confirmed the fixes by [EVIDENCE NEEDED: retest result].
 
-### B2. Championing beyond my own code
+### B2. Championing beyond my own work
 
-"Champions" means influencing others, not only doing it yourself. I [EVIDENCE NEEDED: action that changed team or organisational practice, e.g. "added an accessibility check to our definition of done", "ran a session on inclusive design", "joined the accessibility community of practice", "pushed for user research with disabled users"]. As a result, [EVIDENCE NEEDED: effect, e.g. "the team now blocks merges on accessibility test failures"].
+I shared fairness practice beyond my own project. After building the dissolution risk model (Module 2), I delivered a brown-bag session demonstrating the model to colleagues and shared a best-practices checklist for future machine learning projects in the organisation. In my recommendations, I proposed that explainability and bias checks be included in all future model documentation, so that fairness reviews become a standard step rather than something one developer chooses to do. [EVIDENCE NEEDED: confirm the session and checklist happened; how many people attended; whether the checklist included bias checks; and whether anyone adopted the recommendation.]
 
-### B3. Inclusion in how I work or what I build (optional, strengthens B8)
+[EVIDENCE NEEDED: one accessibility or inclusion practice you have pushed for in your team, e.g. adding an accessibility check to the definition of done, raising accessibility in code review, or asking for user research with disabled users. If you run the B1 test above, sharing what you found with your team is the natural example.]
 
-> Guidance: pick one if true.
-> - Bias checks on an AI or data product (M2 mentions reviewing misclassifications; M5 mentions sex and racial bias). Explain what you checked, what you found and what changed.
-> - Plain English content, or support for users with low digital confidence (GOV.UK style guide).
-> - Inclusive team practice, e.g. meeting norms, documentation for neurodivergent colleagues, mentoring someone from an under-represented group.
+### B3. Inclusion in what I build and how I communicate
 
-I [EVIDENCE NEEDED: action] because [EVIDENCE NEEDED: reason]. This [EVIDENCE NEEDED: outcome].
+A3 sets out three inclusion examples from my projects: self-service data access for non-technical staff (Module 4), onboarding for less confident users and access for remote workers (Module 6), and fair access to knowledge for new joiners (Module 5). For B8, the fairness review in my dissolution risk model (Module 2) goes furthest: I avoided biased proxy features and checked misclassification patterns across company types, industries and regions, so that the model would not systematically disadvantage particular groups of businesses. I also made sure every stakeholder could follow progress by writing reports in plain, non-technical terms.
 
----
+> Guidance: keep B3 short so it does not repeat A3. The assessor needs to see that the inclusion work in A3 was deliberate and that you would champion it again.
 
 ## Part C: Evaluating my organisation's sustainable technology practices (K20 Distinction)
 
