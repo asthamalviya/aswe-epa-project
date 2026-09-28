@@ -2,7 +2,11 @@
 
 > Use the **Presentation Coach** agent to help develop each section, generate Q&A prep, and run mock interviews.
 
-## Presentation Structure (15-20 mins)
+This presentation is part of **AM1**. It runs for 30 minutes, followed by 30 minutes of questions, and is assessed against the 25 AM1 KSBs only. AM2 KSBs are assessed separately in the 60-minute portfolio discussion. KSB wording and criteria: `.kiro/steering/ksb-quick-reference.md`.
+
+The capstone brief requires the presentation to cover: project overview, project scope (including KPIs), summary of actions undertaken, project outcomes and how they were achieved, and strategic recommendations.
+
+## Presentation Structure (30 mins)
 
 ### Slide 1 — Title
 - Your name
@@ -24,7 +28,7 @@ _Talking points:_
 - Why did it matter to the organisation?
 - What were the constraints or risks?
 
-_KSBs demonstrated: K22 (requirements), B1 (professionalism)_
+_KSBs demonstrated: S1 (analyse the business problem), S16 (define a non-routine problem), K1 (competitive advantage), K2 (strategic decision making), S3 and B3 (legal, ethical and regulatory requirements)_
 
 _Talking points:_
 [ Add your notes here ]
@@ -36,7 +40,7 @@ _Talking points:_
 - Key technology choices and WHY
 - Design patterns used
 
-_KSBs demonstrated: K19 (architecture), K6 (SDLC), K20 (version control)_
+_KSBs demonstrated: S17 (recommend a solution), S18 (analysis methods), K5 and S5 (standard processes and tools), K18 (research and evaluation), S14 (innovative technologies)_
 
 _Talking points:_
 [ Add your notes here ]
@@ -48,7 +52,7 @@ _Talking points:_
 - Code snippet or diagram
 - What was the challenge and how did you solve it?
 
-_KSBs demonstrated: S4 (testing), S7 (security), S10 (APIs), S15 (databases)_
+_KSBs demonstrated: S19 (implement with SE methods), K26 (software tools), K27 (artefacts such as UML, tests, architecture), K25 (product quality)_
 
 _Talking points:_
 [ Add your notes here ]
@@ -60,7 +64,7 @@ _Talking points:_
 - How you diagnosed and resolved them
 - What you learned
 
-_KSBs demonstrated: S9 (debugging), B4 (problem ownership), B6 (learning)_
+_KSBs demonstrated: S2 and K3 (risks, mitigations, opportunities), S6 (manage the project, resolve deviations), K15 (cost and time constraints)_
 
 _Talking points:_
 [ Add your notes here ]
@@ -72,6 +76,8 @@ _Talking points:_
 - Metrics if available (performance, user adoption, time saved)
 - Stakeholder feedback
 
+_KSBs demonstrated: K4 (business case), K17, S13 and B5 (reporting to stakeholders)_
+
 _Talking points:_
 [ Add your notes here ]
 
@@ -82,7 +88,7 @@ _Talking points:_
 - What did this project teach you?
 - What would the natural next step be?
 
-_KSBs demonstrated: B6 (continuous learning), B7 (wider impact)_
+_KSBs demonstrated: S22 (lessons learnt, recommendations, comparison with alternatives)_
 
 _Talking points:_
 [ Add your notes here ]
@@ -90,7 +96,8 @@ _Talking points:_
 ---
 
 ### Slide 9 — KSB Summary
-- Visual map of KSBs demonstrated through your work
+- Visual map of the 25 AM1 KSBs demonstrated through your work
+- Flag the 9 AM1 Distinction criteria you meet (S1, K5, S5, K18, S13, K25, S17, S18, S22)
 - Brief narrative connecting the work to the framework
 
 ---
@@ -110,8 +117,8 @@ _Talking points:_
 - [ ] How did you ensure the quality of your work?
 - [ ] How does this demonstrate [specific KSB]?
 - [ ] What was the biggest technical challenge?
-- [ ] How did you handle a disagreement in your team?
-- [ ] What security considerations did you apply?
+- [ ] How did you compare your solution with alternative approaches? (K18, S13, S22)
+- [ ] What legal, ethical and regulatory requirements applied, and how did you protect personal data? (S3, B3)
 - [ ] How did you manage your time on this project?
 - [ ] What feedback did you receive from stakeholders?
 - [ ] Where do you want to go next in your engineering career?

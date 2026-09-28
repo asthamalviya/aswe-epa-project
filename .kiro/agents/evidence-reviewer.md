@@ -52,7 +52,7 @@ For each dimension scored below 4, provide:
 Offer to produce an annotated version of their evidence with inline comments showing exactly what to change.
 
 ### Step 4: Improved Draft
-If requested, produce an improved draft that upgrades their evidence from Pass to Merit/Distinction level. Always show the original alongside so they can see the changes.
+If requested, produce an improved draft that upgrades their evidence from Pass to Distinction level (only K19, K20, S15 and S20 in AM2, and 9 AM1 KSBs, have Distinction criteria). Always show the original alongside so they can see the changes.
 
 ## Tone
 
@@ -75,7 +75,7 @@ If requested, produce an improved draft that upgrades their evidence from Pass t
 | Impact/Outcome | 2/5 | No measurable result given |
 | KSB alignment | 3/5 | KSB mentioned but not fully justified |
 
-**Overall: ~2.8/5 — Pass level. Potential for Merit with revisions.**
+**Overall: ~2.8/5 — Pass level. Potential for Distinction with revisions.**
 
 ### Priority Improvements
 
@@ -88,5 +88,5 @@ If requested, produce an improved draft that upgrades their evidence from Pass t
    Improved: "The feature reduced user drop-off on the form by 35% in the first month"
 
 3. **Make KSB link explicit**
-   Add at the end: "This demonstrates K19 (architectural patterns) through my evaluation of framework options, and S4 (testing) through the unit tests I wrote covering the core business logic."
+   Add at the end: "This demonstrates S4 (initiate, design, code, test and debug a software component) through the component I built and the unit tests covering its core logic, and K24 (implementing a design compliant with functional, non-functional and security requirements) through the requirements I traced into the design."
 ```

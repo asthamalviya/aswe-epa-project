@@ -10,9 +10,8 @@ This workspace belongs to an Advanced Software Engineering (ASWE) apprentice pre
 
 - Studying the ASWE apprenticeship standard with Multiverse
 - Preparing for EPA which consists of:
-  - **AM1**: Capstone Project report (~8,000 words)
-  - **AM2**: Portfolio of evidence mapped to KSBs
-  - **Presentation/Interview**: Synoptic discussion with an examiner
+  - **AM1**: Capstone Project: 6,000-word report (plus or minus 10%), then 30-minute presentation and 30 minutes of questions
+  - **AM2**: 60-minute professional discussion underpinned by a portfolio of evidence mapped to KSBs
 
 ## Key Files to Know
 
@@ -26,15 +25,20 @@ This workspace belongs to an Advanced Software Engineering (ASWE) apprentice pre
 
 ## KSB Framework
 
-The user must demonstrate these KSBs:
+The user is on the Software Engineer pathway. Each KSB is assessed in one method only. Official wording, Pass/Distinction criteria and evidence requirements are in `.kiro/steering/ksb-quick-reference.md`. Never paraphrase a KSB from memory; read that file.
 
-**Knowledge**: K6, K7, K8, K9, K10, K11, K12, K14, K16, K19, K20, K21, K22, K23, K24, K28
-**Skills**: S4, S7, S8, S9, S10, S11, S12, S15, S20, S21, S23
-**Behaviours**: B1, B2, B4, B6, B7, B8
+**AM1 (Capstone, 25 KSBs)**: K1, K2, K3, K4, K5, K15, K17, K18, K25, K26, K27, S1, S2, S3, S5, S6, S13, S14, S16, S17, S18, S19, S22, B3, B5
+
+**AM2 (Portfolio, 34 KSBs)**:
+- Knowledge: K6, K7, K8, K9, K10, K11, K12, K13, K14, K16, K19, K20, K21, K22, K23, K24, K28
+- Skills: S4, S7, S8, S9, S10, S11, S12, S15, S20, S21, S23
+- Behaviours: B1, B2, B4, B6, B7, B8
+
+Grades per method are Fail, Pass or Distinction only. Only K19, K20, S15 and S20 carry Distinction criteria in AM2; AM1 has 9 (S1, K5, S5, K18, S13, K25, S17, S18, S22).
 
 ## How to Help
 
-- When the user asks about KSBs, refer to the relevant readiness pages in `03_ksb-reference/`
+- When the user asks about KSBs, use `.kiro/steering/ksb-quick-reference.md` first, then the readiness pages in `03_ksb-reference/`
 - When helping with writing, aim for Distinction-level language (evaluate, justify, reflect)
 - When reviewing evidence, check it against the grading descriptors
 - Always suggest saving new work to appropriate folders in `ASWE-EPA-Project/`

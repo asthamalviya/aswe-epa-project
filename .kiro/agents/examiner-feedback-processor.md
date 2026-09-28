@@ -45,7 +45,7 @@ When the user pastes or provides examiner/coach feedback:
   - What to do: Add a paragraph explaining WHY you chose microservices over monolith, referencing the non-functional requirements
   - Done when: Section includes explicit comparison of at least 2 approaches with rationale
 
-### Should Fix (affects Merit/Distinction)
+### Should Fix (affects Distinction)
 - [ ] **ACTION-002**: ...
 
 ### Nice to Have

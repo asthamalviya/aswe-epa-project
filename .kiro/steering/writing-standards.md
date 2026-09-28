@@ -42,8 +42,8 @@ The gap between Pass and Distinction is almost always **evaluation vs descriptio
 - "Stakeholders reported that..."
 
 **KSB linking:**
-- "This demonstrates K19 because I evaluated multiple architectural patterns..."
-- "This evidences S4 through the systematic testing strategy I applied..."
+- "This demonstrates K19 because I applied the Data Protection Act and accessibility standards to..."
+- "This evidences S4 because I initiated, designed, coded, tested and debugged the component..."
 
 ## What to Avoid
 
@@ -53,15 +53,17 @@ The gap between Pass and Distinction is almost always **evaluation vs descriptio
 - Jargon without explanation (explain technical terms briefly)
 - Lists without explanation (every bullet should have a "because" or "which meant that")
 
-## Word Count Guidance (AM1 Capstone ~8,000 words)
+## Word Count Guidance (AM1 Capstone 6,000 words, plus or minus 10%)
+
+Sections follow the capstone brief. Word splits are a suggested allocation, not a Multiverse requirement.
 
 | Section | Approx words |
 |---------|-------------|
-| Introduction | 400-500 |
-| Project Scope | 500-700 |
-| Project Plan | 600-800 |
-| Analysis & Problem Solving | 1,500-2,000 |
-| Technical Design | 1,500-2,000 |
-| Project Outcomes | 1,000-1,500 |
-| Recommendations & Conclusions | 600-800 |
-| References | not counted |
+| 1. Introduction | 400-500 |
+| 2. Project Scope | 400-500 |
+| 3. Methodology | 600-700 |
+| 4. Project Plan | 600-700 |
+| 5. Research and Findings | 1,300-1,500 |
+| 6. Project Outcomes | 1,300-1,500 |
+| 7. Recommendations and Conclusions | 600-700 |
+| 8. Appendices (KSB mapping, supporting documents, references) | [EVIDENCE NEEDED: confirm whether appendices count towards the limit] |
