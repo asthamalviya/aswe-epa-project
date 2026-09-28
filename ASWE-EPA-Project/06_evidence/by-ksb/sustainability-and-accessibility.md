@@ -44,9 +44,11 @@ I work as a [EVIDENCE NEEDED: job title] at a UK government registry, where I [E
 
 At a UK government registry, sustainability in digital services is shaped by [EVIDENCE NEEDED: organisational policy or government strategy that applies, e.g. "the Greening Government ICT strategy" or an internal net zero commitment]. In my role, I apply [EVIDENCE NEEDED: framework and citation] when I [EVIDENCE NEEDED: the decisions it affects, e.g. "choose compute, storage and scheduling for new services"].
 
-### A2. Green computing decisions I made (Module 5)
+### A2. Green computing decisions I made
 
-> Guidance: drafted from the Module 5 proposal (AI knowledge search system). Every claim below comes from the module text; fill the placeholders and remove anything that did not happen. If you have a live system with measured results (e.g. Module 6 on AWS), add it as a second example: a measured result is stronger than a design intention.
+#### Example 1: Module 5, AI knowledge search proposal
+
+> Guidance: Example 1 is drafted from the Module 5 proposal and Example 2 from the Module 6 build. Every claim comes from the module text; fill the placeholders and remove anything that did not happen. Example 2 is the stronger one because it has costed figures and an honest trade-off.
 
 In my proposal for an AI knowledge search system for developers at a UK government registry, I made three design choices that reduce the compute, and so the energy, the system needs:
 
@@ -55,6 +57,22 @@ In my proposal for an AI knowledge search system for developers at a UK governme
 3. **Reusing existing infrastructure.** The vector database is self-hosted inside the registry's existing infrastructure, and the model runs on Azure, which is already in the registry's procurement framework, so the project adds no new dedicated hardware. [EVIDENCE NEEDED: confirm ChromaDB runs on existing servers rather than new ones.]
 
 I made these choices because the registry has government sustainability obligations, and because in each case the lower-compute option also cost less: the whole build needed only £12,100 of additional spend. The trade-off is accuracy: a smaller model may give weaker answers, so the 50-query benchmark (80% recall or higher) decides whether the small model is good enough. [EVIDENCE NEEDED: any measured result, e.g. benchmark recall for Llama 8B versus GPT-4o, compute or cost per query. If the system was not built, state that these are design decisions and how you would measure their effect.]
+
+#### Example 2: Module 6, cloud AI governance assistant on AWS
+
+For the AI governance and knowledge assistant I built on AWS, I estimated the monthly running cost of the minimum viable product at $41.12, and used cost as a proxy for resource use because the build had no carbon data. [EVIDENCE NEEDED: if the AWS account has the Customer Carbon Footprint Tool enabled, add its figure here; a carbon number is stronger than a cost proxy.]
+
+Three decisions reduced the resources the system consumes:
+
+1. **No dedicated GPU.** I compared a self-hosted model (Llama 3 or Mistral) with a hosted API. Self-hosting needs GPU infrastructure at $200 to $400 a month, running whether or not anyone is using the tool. I chose the hosted API, which shares the provider's existing hardware, and kept the AI layer isolated in one service file so the provider can change later without touching the rest of the code.
+2. **Short log retention.** I set CloudWatch log retention to 90 days, which meets the governance requirement without storing logs indefinitely. [EVIDENCE NEEDED: confirm 90 days came from a governance rule, and name it.]
+3. **A small container image.** I used the python:3.12-slim base image, producing a 187 MB container, which keeps build, storage and transfer overhead low.
+
+**A trade-off I would revisit.** I chose an always-on EC2 t3.medium instance ($30.37 a month) over Lambda, which scales to zero when idle, because AI summarisation of large documents risked exceeding Lambda's 15-minute timeout and an always-on instance matched local development exactly. For an internal tool used mainly in working hours, this means the instance runs idle most of the week: at [EVIDENCE NEEDED: real usage hours, e.g. 50] hours of use a week, it is idle for about [EVIDENCE NEEDED: e.g. 70%] of its 168 hours. Since the 500-token response limit already keeps summarisation well inside Lambda's timeout, and the design is stateless, I would now either schedule the instance to stop outside working hours or move it to Lambda. [EVIDENCE NEEDED: whether you did either, and the result.]
+
+**Proposed improvements.** Response caching with ElastiCache would cut repeated calls to the AI API by an estimated 40%, and S3 Intelligent-Tiering would cut storage costs by an estimated 30%. Both reduce resource use as well as cost. [EVIDENCE NEEDED: were these implemented?]
+
+> Guidance: check which AWS region the build runs in. The $30.37 figure matches t3.medium on-demand pricing in US East (N. Virginia), not London. If the instance is in a US region, say so and explain it: data residency and grid carbon intensity both depend on region, which is a strong point for Part C. *(This is an inference from the price, so verify it.)*
 
 ### A3. How diversity and inclusion relate to sustainable development (K20)
 
