@@ -158,11 +158,11 @@ Working on this made me realise [EVIDENCE NEEDED: honest insight]. Next, I will 
 > Guidance: keep only the sources you actually cite, in Harvard style. Check each entry, date and URL before submitting.
 
 - Amazon Web Services (2021) *AWS Well-Architected Framework: Sustainability Pillar*. Available at: https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/ (Accessed: [date]).
-- Hiatt, J. (2006) *ADKAR: A Model for Change in Business, Government and Our Community*. Loveland: Prosci.
 - Department for Environment, Food and Rural Affairs (2020) *Greening Government: ICT and Digital Services Strategy 2020–2025*. London: Defra.
 - Department for Environment, Food and Rural Affairs (2022) *Greening Government Commitments 2021 to 2025*. London: Defra. [Check the edition and date before citing.]
 - Government Digital Service (no date) *Service Standard: 5. Make sure everyone can use the service*. Available at: https://www.gov.uk/service-manual/service-standard (Accessed: [date]).
 - Green Software Foundation (no date) *Principles of Green Software Engineering*. Available at: https://learn.greensoftware.foundation/ (Accessed: [date]).
+- Hiatt, J. (2006) *ADKAR: A Model for Change in Business, Government and Our Community*. Loveland: Prosci.
 - ISO/IEC 21031:2024 *Information technology: Software Carbon Intensity (SCI) specification*. Geneva: ISO.
 - The Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (SI 2018/952).
 - World Commission on Environment and Development (1987) *Our Common Future*. Oxford: Oxford University Press.
