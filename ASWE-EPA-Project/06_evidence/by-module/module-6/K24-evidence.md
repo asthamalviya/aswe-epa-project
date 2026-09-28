@@ -31,7 +31,7 @@ I started from an audit of the current state and traced every requirement back t
 |---|---|---|---|
 | NFR1 concurrency | FastAPI (asynchronous) over Flask and Django | Async route handlers | Load test: 1,662 requests per second at 50 users, zero failures (health-check endpoint only) |
 | NFR3 horizontal scaling | Stateless service; S3 rather than EBS, which ties storage to one instance | No local state in the container | [EVIDENCE NEEDED: not tested; say so, or describe a scaling test] |
-| SR2 encryption at rest | S3 with AES-256 | Encryption set on **every** upload call in `storage_service.py`, not only as a bucket default (Appendix E) | Code review; [EVIDENCE NEEDED: e.g. checking object metadata in S3] |
+| SR2 encryption at rest | S3 with AES-256 | Encryption set on **every** upload call in `storage_service.py`, not only as a bucket default (section 3.1; the code is not in the appendices) | Code review; [EVIDENCE NEEDED: e.g. checking object metadata in S3] |
 | SR3 least privilege | Custom IAM policy rather than AWS managed policies such as `AmazonS3FullAccess` | Exactly three S3 actions on one bucket and three CloudWatch log actions; no wildcards (Appendix G) | The policy file itself is the evidence |
 | SR4 audit trail, with data minimisation | Structured logging to CloudWatch | Each AI call logs timestamp, operation, document ID and the question truncated to 50 characters (Appendix F) | Log entries |
 | SR5 secrets | Environment variables and IAM instance roles | No access keys on EC2; keys never hard-coded | Code and configuration review |
