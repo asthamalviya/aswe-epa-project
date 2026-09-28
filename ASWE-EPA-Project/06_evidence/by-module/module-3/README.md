@@ -14,7 +14,7 @@ Source: Multiverse AM2 Portfolio Readiness Tool navigation for this project.
 |---|---|---|---|---|---|
 | K11 | Common vulnerabilities (insecure code, networks) | — | 🟡 Present | `K11-evidence.md` | ⬜ TODO |
 | K12 | Role of data management systems | — | 🟠 Weak | `K12-evidence.md` | ⬜ TODO |
-| K16 | Computer networking concepts | — | 🟢 Strong | `K16-evidence.md` | ⬜ TODO |
+| K16 | Computer networking concepts | — | 🟢 Strong | `K16-evidence.md` | 📝 Draft |
 | S9 | Security and resilience techniques | — | 🟢 Strong | `S9-evidence.md` | ⬜ TODO |
 | S12 | Plan, design and manage simple networks | — | 🟡 Present | `S12-evidence.md` | ⬜ TODO |
 | B4 | Continuous professional development | — | 🔴 None | `B4-evidence.md` | ⬜ TODO |

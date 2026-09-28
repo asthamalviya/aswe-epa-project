@@ -60,6 +60,8 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 |---|---|---|---|
 | Must | Executive summary | Typo: "Companies Households". | "Companies House". |
 | Should | Sections 3.1, 3.2 and 4.1 | Tables are labelled "Sample", "representative" and "illustrative", so the design reads as hypothetical. | Where the data is real, remove the labels. Where it is not, say so once and explain what you based it on. |
+| Must | Section 3.2 firewall allowlist | Permits TCP 80 from the internet, but the text says "Only HTTPS is exposed externally". | Remove port 80, or state it only redirects to 443. |
+| Should | Section 3.2 firewall allowlist | The admin rule allows the whole Admin VLAN to reach app servers on SSH and RDP, so the jump host can be bypassed; the database rule opens both 5432 and 3306. | Make the jump host the rule's source; open only the database port in use. |
 | Should | Section 4 risk matrix | Likelihood and impact scores have no rationale. | Add one line per risk explaining the score. |
 | Should | References | Only one source is cited in the text (NAO, 2018); the others appear only in the reference list. | Cite the sources where they support a claim, or remove them. |
 
@@ -132,9 +134,9 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | All (first person) | 1 | 0 | 0 | [ ] |
 | M1 | 2 | 1 | 0 | [ ] |
 | M2 | 4 | 2 | 1 | [ ] |
-| M3 | 1 | 3 | 0 | [ ] |
+| M3 | 2 | 4 | 0 | [ ] |
 | M4 | 2 | 1 | 1 | [ ] |
 | M5 | 6 | 2 | 0 | [ ] |
 | M6 | 5 | 10 | 0 | [ ] |
 | M7 | 1 | 3 | 0 | [ ] |
-| **Total** | **25** | **23** | **2** | |
+| **Total** | **26** | **24** | **2** | |

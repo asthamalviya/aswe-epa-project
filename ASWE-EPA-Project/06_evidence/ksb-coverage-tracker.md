@@ -59,7 +59,7 @@ Distinction column: ✅ means the KSB has a Distinction criterion.
 | K11 | Core Technical Concepts | Common vulnerabilities (insecure code, networks) | — | 🟡 | M3 §4 risk matrix, CVEs; M6 IAM, CORS | Network risks covered; insecure-coding risks not critically evaluated |
 | K12 | Core Technical Concepts | Role of data management systems | — | 🟢 | M4 §4.3 five-layer architecture | Solid; choice of data management system could be justified further |
 | K14 | Core Technical Concepts | Quantitative and qualitative data gathering methods | — | 🟡 | M5 interviews, surveys, benchmark | Methods listed, never appraised quantitative vs qualitative |
-| K16 | Core Technical Concepts | Computer networking concepts | — | 🟢 | M6 §1.1, Fig 2; M3 §2, §5 | Strong; quality of service only implied in M3. Planned: `by-module/module-6/K16-evidence.md` |
+| K16 | Core Technical Concepts | Computer networking concepts | — | 🟢 | M6 §1.1, Fig 2; M3 §2, §5 | Strong; quality of service only implied in M3. Planned: `by-module/module-6/K16-evidence.md`, `by-module/module-3/K16-evidence.md` |
 | K13 | Applied Technical Solutions | Principles of data analysis [wording to confirm] | — | 🟢 | M2 data analysis techniques | Strong, but KPI values labelled "Example" |
 | S4 | Applied Technical Solutions | Initiate, design, code, test and debug a software component | — | 🟢 | M6 §3.1, §4, appendices; M7 90 tests | Strong; voice impersonal so ownership unclear |
 | S9 | Applied Technical Solutions | Security and resilience techniques | — | 🟢 | M3 risk matrix, mitigations; M6 SR1-SR6, failure scenarios | Strong; M6 lacks scored risk assessment |
@@ -170,6 +170,7 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 | `06_evidence/by-module/module-6/K28-evidence.md` | K28 | Draft: each tool reframed around teamwork; planning tools from Modules 2 and 5 | Add Module 6 planning and communication tools; confirm pull request use |
 | `06_evidence/by-module/module-6/K16-evidence.md` | K16 | Draft: concepts tied to build decisions (structure, architecture, components, QoS) | Describe the VPC layout from Figure 2; resolve ALB vs API Gateway |
 | `06_evidence/by-module/module-6/K24-evidence.md` | K24 | Draft: requirement traceability table, four compliance gaps in own code, legacy and ADKAR | Add OS, hardware and language legacy detail; answer the OpenAI data question |
+| `06_evidence/by-module/module-3/K16-evidence.md` | K16 | Draft: VLAN plan, allowlist, components, hybrid cloud, QoS; companion to Module 6 | State which parts reflect the real network; tighten three firewall rules |
 | `06_evidence/module-fix-list.md` | All AM2 | 37 corrections to module submissions (20 Must) | Work through the Must items first |
 
 ## Evidence files index
