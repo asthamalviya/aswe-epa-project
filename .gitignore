@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# HTML companion asset folders (browser-saved JS/CSS — not needed in git)
+ASWE-EPA-Project/_assets/
+
+# Loose HTML asset folders still in root (if any remain)
+*_files/
+
+# Editor
+.vscode/
+*.swp
+*.swo
+
+# Sensitive / personal files
+*.env
