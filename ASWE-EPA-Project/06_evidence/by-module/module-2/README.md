@@ -13,7 +13,7 @@ Source: Multiverse AM2 Portfolio Readiness Tool navigation for this project.
 | KSB | Official topic | Distinction | Current rating in this module | File | Status |
 |---|---|---|---|---|---|
 | K6 | Solution lifecycle approaches and organisational standards | — | 🟡 Present | `K6-evidence.md` | ⬜ TODO |
-| K7 | Roles, functions and activities in technology | — | 🟡 Present | `K7-evidence.md` | ⬜ TODO |
+| K7 | Roles, functions and activities in technology | — | 🟡 Present | `K7-evidence.md` | 📝 Draft |
 | K9 | Leadership concepts and principles | — | 🟠 Weak | `K9-evidence.md` | ⬜ TODO |
 | K10 | Management techniques and theories | — | 🟠 Weak | `K10-evidence.md` | ⬜ TODO |
 | K19 | Legal, ethical, social and professional standards | ✅ | 🟡 Present | `K19-evidence.md` | ⬜ TODO |
