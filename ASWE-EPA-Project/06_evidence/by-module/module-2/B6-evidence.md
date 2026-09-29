@@ -37,7 +37,7 @@ Building the dissolution risk model taught me practical lessons about machine le
 | Blog post (planned) | Lessons learned from using the registry's open data | Public | [EVIDENCE NEEDED: publish it and add the link, or remove this row] |
 | Public code repositories | Module 7's pricing service refactor, including its tests and decision records, is public on GitHub | Other developers | [EVIDENCE NEEDED: any stars, forks, issues or comments] |
 
-> Guidance: Module 6's repository is also public, but it is marked "Classification: Controlled" work for the registry. Check it was permitted before listing it here (see the fix list).
+> Guidance: both the Module 6 and Module 7 reports are marked "Classification: Controlled", and both link to public repositories. QuickQuote looks like a training exercise rather than registry code, but check that publishing each repository was permitted before listing it here (see the fix list, data handling section).
 
 ### 3. Participating, not only presenting
 B6 says **participates in** as well as **shares**. [EVIDENCE NEEDED: communities you take part in regularly, e.g. an internal guild or community of practice, cross-government communities, online forums, code review of others' work. One ongoing example is worth more than several one-off events.]
