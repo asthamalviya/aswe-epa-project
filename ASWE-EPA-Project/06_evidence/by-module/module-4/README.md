@@ -25,7 +25,7 @@ Not in the target list, but this module already has Strong or Present evidence f
 |---|---|---|
 | K6 | Solution lifecycle approaches and organisational standards | 🟡 Present |
 | K7 | Roles, functions and activities in technology | 🟡 Present |
-| K12 | Role of data management systems | 🟢 Strong |
+| K12 | Role of data management systems | 🟢 Strong (📝 draft: `K12-evidence.md`) |
 | K19 | Legal, ethical, social and professional standards | 🟡 Present |
 | K21 | Development lifecycle scenarios [wording to confirm] | 🟡 Present |
 | K24 | Interpreting and implementing a compliant design; legacy issues | 🟡 Present |
