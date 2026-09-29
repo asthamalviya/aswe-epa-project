@@ -64,7 +64,7 @@ Distinction column: ✅ means the KSB has a Distinction criterion.
 | S4 | Applied Technical Solutions | Initiate, design, code, test and debug a software component | — | 🟢 | M6 §3.1, §4, appendices; M7 90 tests | Strong; voice impersonal so ownership unclear |
 | S9 | Applied Technical Solutions | Security and resilience techniques | — | 🟢 | M3 risk matrix, mitigations; M6 SR1-SR6, failure scenarios | Strong; M6 lacks scored risk assessment. Planned: `by-module/module-3/S9-evidence.md`, `by-module/module-6/S9-evidence.md` |
 | S10 | Applied Technical Solutions | Initiate, design, implement and debug a data product | — | 🟢 | M4 §4, §6 ETL pipeline | Strong; debugging evidence minimal. Planned: `by-module/module-4/S10-evidence.md` |
-| S11 | Applied Technical Solutions | Data analysis techniques | — | 🟡 | M2 model evaluation; M4 §5 | Technique choice never justified; no measured improvement |
+| S11 | Applied Technical Solutions | Data analysis techniques | — | 🟡 | M2 model evaluation; M4 §5 | Technique choice never justified; no measured improvement. Planned: `by-module/module-4/S11-evidence.md` (also supports K13) |
 | S12 | Applied Technical Solutions | Plan, design and manage simple networks | — | 🟡 | M3 §3 VLAN plan, allowlist; M6 Fig 2 | Planned and designed only; "manages" not evidenced. Planned: `by-module/module-3/S12-evidence.md` |
 | K8 | Leading and Working Together | Teams and organisational theory [wording to confirm] | — | 🟠 | M2 roles table (thin) | No team-effectiveness theory anywhere. Planned: `by-ksb/leading-and-working-together.md` |
 | K9 | Leading and Working Together | Leadership concepts and principles | — | 🟠 | M1 "my role as Lead" slide (thin) | No leadership concepts or how you apply them. Planned: `by-ksb/leading-and-working-together.md` |
@@ -179,6 +179,7 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 | `06_evidence/by-module/module-4/K12-evidence.md` | K12 (and data management part of K14) | Draft: six roles of a data management system, design decisions, Module 3 protection, critical evaluation | State your role; resolve merge vs flag; K14 still needs its own piece |
 | `06_evidence/by-module/module-4/K14-evidence.md` | K14 | Draft: range of methods across Modules 2, 4 and 5, selection factors, triangulation, limits | Name the Module 4 requirements method; state your role |
 | `06_evidence/by-module/module-4/S10-evidence.md` | S10 | Draft: initiate, design, implement with code figures; debugging structure | Add real code and data debugging examples |
+| `06_evidence/by-module/module-4/S11-evidence.md` | S11, K13 | Draft: text, statistical, diagnostic (Module 4) and predictive (Module 2) analysis with reasons | Measure match precision; add one decision analysis changed |
 | `06_evidence/module-fix-list.md` | All AM2 | 37 corrections to module submissions (20 Must) | Work through the Must items first |
 
 ## Evidence files index

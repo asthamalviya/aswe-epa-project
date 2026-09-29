@@ -15,7 +15,7 @@ Source: Multiverse AM2 Portfolio Readiness Tool navigation for this project.
 | K13 | Principles of data analysis [wording to confirm] | — | 🟡 Present | `K13-evidence.md` | ⬜ TODO |
 | K14 | Quantitative and qualitative data gathering methods | — | 🟠 Weak | `K14-evidence.md` | 📝 Draft |
 | S10 | Initiate, design, implement and debug a data product | — | 🟢 Strong | `S10-evidence.md` | 📝 Draft |
-| S11 | Data analysis techniques | — | 🟡 Present | `S11-evidence.md` | ⬜ TODO |
+| S11 | Data analysis techniques | — | 🟡 Present | `S11-evidence.md` | 📝 Draft |
 
 ## Also evidenced in this module
 
