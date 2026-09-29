@@ -98,6 +98,7 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | Must | PESTLE, Legal row | "UK GDPR Article 44-49 restricts data processing to UK jurisdiction" misstates the law. Articles 44 to 49 restrict international transfers without adequate safeguards; they do not require UK-only processing. | Reword as in `by-module/module-5/K19-evidence.md`, "Corrections needed". |
 | Must | Architecture table and closing argument | "No data leaves CH boundary" sits alongside "GPT-4o via Azure OpenAI" as the primary LLM. | State the Azure region and data processing terms, or qualify the claim. |
 | Should | Section 2.4 and Table 19 | Labelled "KSB S1 — Distinction" and "KSB K3". Both are AM1 KSBs, not portfolio KSBs. | Relabel as K24/K28 (section 2.4) and S9/S20 (Table 19), or remove the labels. |
+| Must | Sections 1.2, 6.2 and 6.3 | Xia et al. (2017) is cited for a "20-30%" search-time figure and for "semantic mismatch"; Peng et al. (2023) for AI tools working best "grounded in organisational context". Neither claim appears to match what those papers report (unverified: check the papers). | Recheck both papers; reword or remove the claims. |
 | Should | References | Some entries still read "Accessed: [date]". | Add the access dates. |
 
 ---
@@ -150,7 +151,7 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | M2 | 5 | 3 | 1 | [ ] |
 | M3 | 3 | 6 | 0 | [ ] |
 | M4 | 2 | 4 | 2 | [ ] |
-| M5 | 6 | 2 | 0 | [ ] |
+| M5 | 7 | 2 | 0 | [ ] |
 | M6 | 6 | 12 | 0 | [ ] |
 | M7 | 2 | 4 | 0 | [ ] |
-| **Total** | **30** | **33** | **3** | |
+| **Total** | **31** | **33** | **3** | |

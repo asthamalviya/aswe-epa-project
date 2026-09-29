@@ -87,7 +87,7 @@ Distinction column: ✅ means the KSB has a Distinction criterion.
 | K28 | Technical Solutions (SWE) | Tools that support teamwork [wording to confirm] | — | 🟡 | M5 §2.4; M6 §3.2 | Tools listed; how they made teamwork effective not described. Planned: `by-module/module-6/K28-evidence.md` |
 | S20 | Innovation and Response (SWE) | Respond to changing priorities and adapt plans | ✅ | 🟡 | M6 §4.1-4.4 | Examples are bug fixes, not changing priorities. Planned: `by-ksb/changing-priorities.md`, `by-module/module-6/S20-evidence.md` |
 | S21 | Innovation and Response (SWE) | Determine and adapt SE methods to evaluate outcomes | — | 🟡 | M2, M4, M5, M6, M7 | Evaluates outcomes; never shows refining or adapting methods. Planned: `by-module/module-6/S21-evidence.md`, `by-module/module-7/S21-evidence.md`, `by-ksb/changing-priorities.md` |
-| S23 | Legal, Ethics and Landscape (SWE) | Research to update knowledge and lead improvements | — | 🟡 | M5 §6.2-6.3; M7 references | Research informs design; no improvement led in organisation |
+| S23 | Legal, Ethics and Landscape (SWE) | Research to update knowledge and lead improvements | — | 🟡 | M5 §6.2-6.3; M7 references | Research informs design; no improvement led in organisation. Planned: `by-module/module-5/S23-evidence.md` |
 
 ## Coverage matrix by module
 
@@ -189,6 +189,7 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 | `06_evidence/by-module/module-3/B4-evidence.md` | B4 | Scaffold: learning cycle across modules drafted; CPD log, habits and changed practice are placeholders | Fill the CPD log with dated activities beyond the apprenticeship |
 | `06_evidence/by-module/module-7/B2-evidence.md` | B2 (and K19, S15 audiences) | Draft: objectivity and reliability from Module 7; team working from Modules 2 and 6 | Describe independent working; add a real team example |
 | `06_evidence/by-module/module-2/B6-evidence.md` | B6 | Draft: internal and community sharing from Module 2; practice shared through Modules 6 and 7 | Add audience sizes, dates and effect; publish the planned blog post |
+| `06_evidence/by-module/module-5/S23-evidence.md` | S23 | Draft: evidence types, research-led decisions, improvement led; two citations to verify | Describe research process; state outcome; recheck Xia and Peng |
 | `06_evidence/module-fix-list.md` | All AM2 | 37 corrections to module submissions (20 Must) | Work through the Must items first |
 
 ## Evidence files index
