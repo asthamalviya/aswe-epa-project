@@ -118,6 +118,8 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | Should | Section 1.3 | Rejects Lambda because cold starts would push AI responses past the 2,000 ms NFR, but NFR2 covers non-AI endpoints only. | Argue against the right target, or add an AI-endpoint target. |
 | Should | Section 2.2, socio-technical | Adoption is tracked "via the /health endpoint", but a health check cannot show who uses the tool. | Track adoption through request counts per user in CloudWatch or the audit log. |
 | Should | Appendix D, SR6 | The upload check trusts the client-supplied `content_type` and has no size limit, so SR6 is only partly met. | Acknowledge the limitation, or show a content-signature check and a maximum upload size. |
+| Should | Appendix A, load test | "1,662 requests per second" comes from a burst of 50 health-check requests, not sustained load on real endpoints. | Describe it as a 50-request burst, or run a sustained test on `/ask` and `/summarise`. |
+| Should | Appendix E | `generate_summary` sends the whole document to the model (only the response is capped at 500 tokens), and a comment still refers to Lambda. | Note the input limit risk; update the comment. |
 | Should | Section 3.1 vs 3.2 | Terraform is "five files" in section 3.1 and the appendix, but "nine resources in four configuration files" in section 3.2. | Use one count. |
 | Should | Section 3.2 vs Appendix H | Section 3.2 describes GitHub Flow with feature branches and pull requests, but the appendix describes "four commits on the main branch". | Describe how you actually worked. |
 | Should | Section 3.2 | Claims the CI debugging is "precisely the evidence S20 requires". Official S20 is about changing priorities and revised plans; this is S4 and K28 evidence. | Remove the claim, and relabel section 4 as S4 unless a plan actually changed. |
@@ -147,6 +149,6 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | M3 | 3 | 6 | 0 | [ ] |
 | M4 | 2 | 4 | 2 | [ ] |
 | M5 | 6 | 2 | 0 | [ ] |
-| M6 | 6 | 10 | 0 | [ ] |
+| M6 | 6 | 12 | 0 | [ ] |
 | M7 | 1 | 3 | 0 | [ ] |
-| **Total** | **29** | **30** | **3** | |
+| **Total** | **29** | **32** | **3** | |

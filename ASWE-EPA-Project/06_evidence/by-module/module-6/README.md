@@ -28,7 +28,7 @@ Not in the target list, but this module already has Strong or Present evidence f
 | K12 | Role of data management systems | 🟡 Present |
 | K21 | Development lifecycle scenarios [wording to confirm] | 🟡 Present |
 | K22 | Development techniques per SDLC stage [wording to confirm] | 🟡 Present |
-| S4 | Initiate, design, code, test and debug a software component | 🟢 Strong |
+| S4 | Initiate, design, code, test and debug a software component | 🟢 Strong (📝 draft: `S4-evidence.md`) |
 | S8 | Apply organisational theories (change, ITSM) | 🟡 Present |
 | S9 | Security and resilience techniques | 🟢 Strong |
 | S12 | Plan, design and manage simple networks | 🟡 Present |
@@ -36,7 +36,7 @@ Not in the target list, but this module already has Strong or Present evidence f
 
 ## Drafts outside the target list
 
-- `S9-evidence.md`, `S21-evidence.md`
+- `S4-evidence.md`, `S9-evidence.md`, `S21-evidence.md`
 
 ## Evidence kept elsewhere
 
