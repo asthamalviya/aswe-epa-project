@@ -34,7 +34,7 @@ Not in the target list, but this module already has Strong or Present evidence f
 | KSB | Official topic | Current rating |
 |---|---|---|
 | K12 | Role of data management systems | 🟡 Present |
-| K13 | Principles of data analysis [wording to confirm] | 🟢 Strong |
+| K13 | Principles of data analysis [wording to confirm] | 🟢 Strong (📝 draft: `K13-evidence.md`) |
 | K21 | Development lifecycle scenarios [wording to confirm] | 🟡 Present |
 | K28 | Tools that support teamwork [wording to confirm] | 🟡 Present |
 | S10 | Initiate, design, implement and debug a data product | 🟡 Present |

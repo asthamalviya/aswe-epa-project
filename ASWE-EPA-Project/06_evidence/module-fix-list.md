@@ -48,6 +48,8 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | Must | Ethical decision-making section | Leftover generated text: "Here is a visual representation of your ethical decision-making workflow…" | Delete the sentence and introduce the figure in your own words. |
 | Must | KPI matrix | Column headed "Value (Example)". The assessor cannot credit example metrics. | Replace with the real values from your model run, and remove "(Example)". |
 | Must | Tools list vs appendix link | Tools list says "GitHub"; the appendix link is GitLab. | Use the correct platform name throughout. |
+| Must | Data dictionary and model training | `DissolutionDate` appears in the feature list, and `TimeSinceFiling` may be measured at the snapshot date. Either would leak the outcome into the model and inflate the results. | Confirm both were handled correctly and say so in the report. |
+| Should | Model training | "Hyperparameter tuning via grid search or cross-validation" does not say which was used; the split ignores time order. | State the tuning method and folds; consider a time-based test split. |
 | Should | Project Summary | Promises a change management framework that the document never delivers. | Add a short section applying a named model (e.g. ADKAR), or remove the promise. |
 | Should | Stratified sampling example | Uses "70% active, 30% dissolved", while the text elsewhere says dissolved companies are "far fewer". | Use your dataset's real class ratio. |
 | Could | Heading "Emphasizing Compliance with Design Requirements" | US spelling. | "Emphasising". |
@@ -141,10 +143,10 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | Data handling | 3 | 1 | 0 | [ ] |
 | All (first person) | 1 | 0 | 0 | [ ] |
 | M1 | 2 | 1 | 0 | [ ] |
-| M2 | 4 | 2 | 1 | [ ] |
+| M2 | 5 | 3 | 1 | [ ] |
 | M3 | 3 | 6 | 0 | [ ] |
 | M4 | 2 | 4 | 2 | [ ] |
 | M5 | 6 | 2 | 0 | [ ] |
 | M6 | 6 | 10 | 0 | [ ] |
 | M7 | 1 | 3 | 0 | [ ] |
-| **Total** | **28** | **29** | **3** | |
+| **Total** | **29** | **30** | **3** | |

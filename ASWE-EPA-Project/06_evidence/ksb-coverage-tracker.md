@@ -60,7 +60,7 @@ Distinction column: ✅ means the KSB has a Distinction criterion.
 | K12 | Core Technical Concepts | Role of data management systems | — | 🟢 | M4 §4.3 five-layer architecture | Solid; choice of data management system could be justified further. Planned: `by-module/module-4/K12-evidence.md` |
 | K14 | Core Technical Concepts | Quantitative and qualitative data gathering methods | — | 🟡 | M5 interviews, surveys, benchmark | Methods listed, never appraised quantitative vs qualitative. Planned: `by-module/module-4/K14-evidence.md` |
 | K16 | Core Technical Concepts | Computer networking concepts | — | 🟢 | M6 §1.1, Fig 2; M3 §2, §5 | Strong; quality of service only implied in M3. Planned: `by-module/module-6/K16-evidence.md`, `by-module/module-3/K16-evidence.md` |
-| K13 | Applied Technical Solutions | Principles of data analysis [wording to confirm] | — | 🟢 | M2 data analysis techniques | Strong, but KPI values labelled "Example" |
+| K13 | Applied Technical Solutions | Principles of data analysis [wording to confirm] | — | 🟢 | M2 data analysis techniques | Strong, but KPI values labelled "Example". Planned: `by-module/module-2/K13-evidence.md` |
 | S4 | Applied Technical Solutions | Initiate, design, code, test and debug a software component | — | 🟢 | M6 §3.1, §4, appendices; M7 90 tests | Strong; voice impersonal so ownership unclear |
 | S9 | Applied Technical Solutions | Security and resilience techniques | — | 🟢 | M3 risk matrix, mitigations; M6 SR1-SR6, failure scenarios | Strong; M6 lacks scored risk assessment. Planned: `by-module/module-3/S9-evidence.md`, `by-module/module-6/S9-evidence.md` |
 | S10 | Applied Technical Solutions | Initiate, design, implement and debug a data product | — | 🟢 | M4 §4, §6 ETL pipeline | Strong; debugging evidence minimal. Planned: `by-module/module-4/S10-evidence.md` |
@@ -180,6 +180,7 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 | `06_evidence/by-module/module-4/K14-evidence.md` | K14 | Draft: range of methods across Modules 2, 4 and 5, selection factors, triangulation, limits | Name the Module 4 requirements method; state your role |
 | `06_evidence/by-module/module-4/S10-evidence.md` | S10 | Draft: initiate, design, implement with code figures; debugging structure | Add real code and data debugging examples |
 | `06_evidence/by-module/module-4/S11-evidence.md` | S11, K13 | Draft: text, statistical, diagnostic (Module 4) and predictive (Module 2) analysis with reasons | Measure match precision; add one decision analysis changed |
+| `06_evidence/by-module/module-2/K13-evidence.md` | K13 | Draft: eight data analysis principles applied to the risk model; leakage check | Confirm no target leakage; resolve predictor contradiction; paste K13 wording |
 | `06_evidence/module-fix-list.md` | All AM2 | 37 corrections to module submissions (20 Must) | Work through the Must items first |
 
 ## Evidence files index
