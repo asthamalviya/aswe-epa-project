@@ -30,6 +30,24 @@ My leadership responsibility is [EVIDENCE NEEDED: formal or informal, e.g. "tech
 
 ---
 
+## What your modules already give you
+
+> Guidance: this section lists material from your seven modules that fits this piece. It does **not** replace the personal examples below: K8, K9, S7 and B4 are about how **you** lead and work, and the assessor will ask about real situations. Use this material to support those examples, and delete anything that does not reflect what you did.
+
+| KSB | Module material you can use | Where |
+|---|---|---|
+| K8 (teams working effectively) | A five-role ML team (ML engineer, data analyst, business analyst, compliance officer, project manager) with weekly stand-ups, retrospectives and demos; reviewed for gaps in `../by-module/module-2/K7-evidence.md` | Module 2 |
+| K8, S7 | A two-person build where code review caught two logic issues the tools missed, and a shared CI pipeline gave both people the same view of every failure | Module 6 |
+| S7 (leading team activities) | Named "ML Engineer (Lead)" (Module 2) and responsible and accountable for all four deliverables in the RACI (Module 5); a Sprint 0 co-design with pilot developers and DevOps (Module 5) | Modules 2 and 5 |
+| K9 (leadership) | Module 1's slide on how the proposal affects "my role as a developer and Lead"; Module 5's framing of knowledge holders as "expertise amplified, not replaced" | Modules 1 and 5 |
+| K10 (management techniques) | Weighted decision matrix (Kepner and Tregoe, 1965); MoSCoW with the Iron Triangle; work breakdown structure; 12-sprint chronogram; SMART deliverables; RACI; risk register (ISO 31000) with fortnightly review | Module 5 |
+| S8 (organisational theories) | Kotter's eight steps applied to a legacy modernisation (Module 1); ADKAR for adoption of the governance assistant (Module 6); Mendelow's power and interest matrix plus the Salience Model for stakeholders, and the Elaboration Likelihood Model with the Minto Pyramid for persuasion (Module 5) | Modules 1, 5 and 6 |
+| B6 | Brown-bag session and ML checklist; see `../by-module/module-2/B6-evidence.md` | Module 2 |
+| B7 | See `../by-module/module-3/B7-evidence.md` and `../by-module/module-5/B7-evidence.md` | Modules 3 and 5 |
+| B4 | See `../by-module/module-3/B4-evidence.md` | All |
+
+**The gap to close:** every item above is a technique **used on a project**. K9, K10 and S8 ask how you apply these **in your role**. For each, add one sentence on when you used it at work, not only in a portfolio report.
+
 ## Part A: How my team works effectively (K8, S7, B4, B6, B7)
 
 ### A1. The theory I use to understand my team (K8)
@@ -89,6 +107,8 @@ When [EVIDENCE NEEDED: situation, e.g. "the team had 23 backlog items and capaci
 
 I also [EVIDENCE NEEDED: a delegation or time management example; delete if you only have one strong example].
 
+**Draft from Module 5 (edit to match your real use):** On the knowledge search proposal I used four management techniques, each for a different decision. A weighted decision matrix (Kepner and Tregoe, 1965) compared doing nothing, an off-the-shelf product and a bespoke system against cost, data protection, fit and speed. MoSCoW, framed by the Iron Triangle, kept scope fixed once time (six months) and cost (£12,100) were fixed. A work breakdown structure and a 12-sprint chronogram turned the plan into owned workstreams. A RACI matrix made clear who decided, who did the work and who needed to know. [EVIDENCE NEEDED: which of these you now use in your day-to-day role, and one decision it improved.]
+
 ### B3. The organisational theory I apply (S8)
 
 > Guidance: the KSB names change management principles, marketing approaches, strategic practice and IT service management. Choose the one you have really applied:
@@ -98,6 +118,8 @@ I also [EVIDENCE NEEDED: a delegation or time management example; delete if you 
 I applied [EVIDENCE NEEDED: theory and citation] when [EVIDENCE NEEDED: real change or service event]. Specifically, I [EVIDENCE NEEDED: which stages or practices you applied and what you did at each]. This [EVIDENCE NEEDED: result, e.g. "adoption rate", "incident resolution time", "fewer failed changes"].
 
 ---
+
+**Draft from Modules 1, 5 and 6 (edit to match your real use):** I have applied change management at three scales. In Module 1, Kotter's eight steps (Kotter, 1996) structured a five-year modernisation, from creating urgency about the legacy stack to anchoring new ways of working. In Module 6, ADKAR (Hiatt, 2006) structured the move from file shares to the governance assistant, with an intervention for each stage and a four-week parallel run so no one was forced to switch before they were able to. In Module 5, Mendelow's power and interest matrix and the Salience Model decided how closely to manage each stakeholder, and the Elaboration Likelihood Model shaped the message for each: evidence for the Technical Architects panel, value for Finance, and credit for their expertise for permanent staff. [EVIDENCE NEEDED: one change in your real workplace where you applied one of these, and what happened. S8 says "apply", and all three above are plans.]
 
 ## Reflection
 

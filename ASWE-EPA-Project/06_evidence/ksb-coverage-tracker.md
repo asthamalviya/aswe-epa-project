@@ -159,7 +159,7 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 
 | File | KSBs targeted | State | Next step |
 |---|---|---|---|
-| `06_evidence/by-ksb/leading-and-working-together.md` | K8, K9, K10, S7, S8, B4, B6, B7 | Scaffold: all personal facts are `[EVIDENCE NEEDED]` | Fill in from your real team and leadership examples |
+| `06_evidence/by-ksb/leading-and-working-together.md` | K8, K9, K10, S7, S8, B4, B6, B7 | Scaffold with module material mapped; K10 and S8 drafted from Modules 1, 5 and 6; personal examples still `[EVIDENCE NEEDED]` | Fill in from your real team and leadership examples |
 | `06_evidence/by-ksb/sustainability-and-accessibility.md` | K20 (Pass and Distinction), B8 | Scaffold; Part A2 drafted from Module 5 (retrieval vs fine-tuning, small model, infrastructure reuse) and Module 6 (no dedicated GPU, log retention, always-on EC2 trade-off); A1, A3, Part B (B8) and Part C drafted from all modules; B1 needs a real accessibility test | Fill in; Part C targets the K20 Distinction |
 | `06_evidence/by-ksb/changing-priorities.md` | S20 (Pass and Distinction), S21, K10 | Scaffold | Fill in with a real change that altered the plan |
 | `06_evidence/by-module/module-{1..7}/README.md` | Target KSBs per module | Folder indexes: official labels, current ratings, file status | Use with the Evidence Builder skill |
