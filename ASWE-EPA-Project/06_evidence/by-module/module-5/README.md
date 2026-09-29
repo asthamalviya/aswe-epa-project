@@ -21,7 +21,7 @@ Source: Multiverse AM2 Portfolio Readiness Tool navigation for this project.
 | S23 | Research to update knowledge and lead improvements | — | 🟡 Present | `S23-evidence.md` | 📝 Draft |
 | B2 | Reliable, objective, independent and team working | — | 🟠 Weak | `B2-evidence.md` | ⬜ TODO |
 | B6 | Shares best practice in organisation and community | — | 🟠 Weak | `B6-evidence.md` | ⬜ TODO |
-| B7 | Awareness of trends and innovations | — | 🟡 Present | `B7-evidence.md` | ⬜ TODO |
+| B7 | Awareness of trends and innovations | — | 🟡 Present | `B7-evidence.md` | 📝 Draft |
 
 ## Also evidenced in this module
 

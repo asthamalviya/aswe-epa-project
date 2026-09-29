@@ -73,7 +73,7 @@ Distinction column: ✅ means the KSB has a Distinction criterion.
 | S8 | Leading and Working Together | Apply organisational theories (change, ITSM) | — | 🟡 | M1 Kotter; M5 Mendelow, ELM; M6 ADKAR | Theories planned, not applied; no ITSM. Planned: `by-ksb/leading-and-working-together.md` |
 | B4 | Leading and Working Together | Continuous professional development | — | 🟠 | M2, M7 reflections (thin) | No CPD activity evidenced. Planned: `by-ksb/leading-and-working-together.md`, `by-module/module-3/B4-evidence.md` |
 | B6 | Leading and Working Together | Shares best practice in organisation and community | — | 🟡 | M2 brown-bag session, checklist | Written as "we"; no outcome or feedback. Planned: `by-ksb/leading-and-working-together.md`, `by-module/module-2/B6-evidence.md` |
-| B7 | Leading and Working Together | Awareness of trends and innovations | — | 🟡 | M1, M3, M5 trends and sources | Trends not linked to team delivery or business value. Planned: `by-ksb/leading-and-working-together.md`, `by-module/module-3/B7-evidence.md` |
+| B7 | Leading and Working Together | Awareness of trends and innovations | — | 🟡 | M1, M3, M5 trends and sources | Trends not linked to team delivery or business value. Planned: `by-ksb/leading-and-working-together.md`, `by-module/module-3/B7-evidence.md`, `by-module/module-5/B7-evidence.md` |
 | K19 | Social Infrastructure: Legal, Ethical and Sustainability | Legal, ethical, social and professional standards | ✅ | 🟢 | M5 PESTLE, GDPR, ethics framework | Pass met; M4 cites EU GDPR not UK GDPR/DPA 2018. Planned: `by-module/module-5/K19-evidence.md` (also S15) |
 | K20 | Social Infrastructure: Legal, Ethical and Sustainability | Sustainable development and green computing | ✅ | 🟠 | M1, M2, M5 (one-liners) | No green computing or sustainable development approach anywhere. Planned: `by-ksb/sustainability-and-accessibility.md` |
 | S15 | Social Infrastructure: Legal, Ethical and Sustainability | Apply legal, ethical, social and professional standards | ✅ | 🟡 | M2, M4 §10, M5, M7 §4 | Applied but audiences (technical vs non-technical) thin. Planned: `by-module/module-5/S15-evidence.md` |
@@ -190,6 +190,7 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 | `06_evidence/by-module/module-7/B2-evidence.md` | B2 (and K19, S15 audiences) | Draft: objectivity and reliability from Module 7; team working from Modules 2 and 6 | Describe independent working; add a real team example |
 | `06_evidence/by-module/module-2/B6-evidence.md` | B6 | Draft: internal and community sharing from Module 2; practice shared through Modules 6 and 7 | Add audience sizes, dates and effect; publish the planned blog post |
 | `06_evidence/by-module/module-5/S23-evidence.md` | S23 | Draft: evidence types, research-led decisions, improvement led; two citations to verify | Describe research process; state outcome; recheck Xia and Peng |
+| `06_evidence/by-module/module-5/B7-evidence.md` | B7 | Draft: five AI and delivery trends turned into decisions; fortnightly regulatory watch | Add community and conference input; personal habits |
 | `06_evidence/module-fix-list.md` | All AM2 | 37 corrections to module submissions (20 Must) | Work through the Must items first |
 
 ## Evidence files index
