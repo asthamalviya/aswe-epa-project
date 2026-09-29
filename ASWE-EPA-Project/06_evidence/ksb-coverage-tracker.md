@@ -55,7 +55,7 @@ Distinction column: ✅ means the KSB has a Distinction criterion.
 | KSB | Theme | Topic | Distinction | Status | Evidence file(s) | Notes |
 |---|---|---|---|---|---|---|
 | K7 | Organisational Context | Roles, functions and activities in technology | — | 🟡 | M5 §1.5, §5.3; M4 §3.1 | Roles and functions implied (RACI) but never reviewed; reuse across scenarios missing |
-| K6 | Core Technical Concepts | Solution lifecycle approaches and organisational standards | — | 🟡 | M1, M2, M5, M6 | Lifecycle techniques never tied to Companies House standards and existing tools |
+| K6 | Core Technical Concepts | Solution lifecycle approaches and organisational standards | — | 🟡 | M1, M2, M5, M6 | Lifecycle techniques never tied to Companies House standards and existing tools. Planned: `by-module/module-5/K6-evidence.md` |
 | K11 | Core Technical Concepts | Common vulnerabilities (insecure code, networks) | — | 🟡 | M3 §4 risk matrix, CVEs; M6 IAM, CORS | Network risks covered; insecure-coding risks not critically evaluated. Planned: `by-module/module-3/K11-evidence.md` (uses Module 6 code flaws for insecure coding) |
 | K12 | Core Technical Concepts | Role of data management systems | — | 🟢 | M4 §4.3 five-layer architecture | Solid; choice of data management system could be justified further. Planned: `by-module/module-4/K12-evidence.md` |
 | K14 | Core Technical Concepts | Quantitative and qualitative data gathering methods | — | 🟡 | M5 interviews, surveys, benchmark | Methods listed, never appraised quantitative vs qualitative. Planned: `by-module/module-4/K14-evidence.md` |
@@ -191,6 +191,7 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 | `06_evidence/by-module/module-2/B6-evidence.md` | B6 | Draft: internal and community sharing from Module 2; practice shared through Modules 6 and 7 | Add audience sizes, dates and effect; publish the planned blog post |
 | `06_evidence/by-module/module-5/S23-evidence.md` | S23 | Draft: evidence types, research-led decisions, improvement led; two citations to verify | Describe research process; state outcome; recheck Xia and Peng |
 | `06_evidence/by-module/module-5/B7-evidence.md` | B7 | Draft: five AI and delivery trends turned into decisions; fortnightly regulatory watch | Add community and conference input; personal habits |
+| `06_evidence/by-module/module-5/K6-evidence.md` | K6 | Draft: each lifecycle stage tied to a registry standard or existing tool; build and run from Modules 4 and 6 | State your role and the proposal outcome |
 | `06_evidence/module-fix-list.md` | All AM2 | 37 corrections to module submissions (20 Must) | Work through the Must items first |
 
 ## Evidence files index
