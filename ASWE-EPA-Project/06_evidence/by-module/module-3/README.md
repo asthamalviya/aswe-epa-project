@@ -12,7 +12,7 @@ Source: Multiverse AM2 Portfolio Readiness Tool navigation for this project.
 
 | KSB | Official topic | Distinction | Current rating in this module | File | Status |
 |---|---|---|---|---|---|
-| K11 | Common vulnerabilities (insecure code, networks) | — | 🟡 Present | `K11-evidence.md` | ⬜ TODO |
+| K11 | Common vulnerabilities (insecure code, networks) | — | 🟡 Present | `K11-evidence.md` | 📝 Draft |
 | K12 | Role of data management systems | — | 🟠 Weak | `K12-evidence.md` | ⬜ TODO |
 | K16 | Computer networking concepts | — | 🟢 Strong | `K16-evidence.md` | 📝 Draft |
 | S9 | Security and resilience techniques | — | 🟢 Strong | `S9-evidence.md` | 📝 Draft |

@@ -56,7 +56,7 @@ Distinction column: ✅ means the KSB has a Distinction criterion.
 |---|---|---|---|---|---|---|
 | K7 | Organisational Context | Roles, functions and activities in technology | — | 🟡 | M5 §1.5, §5.3; M4 §3.1 | Roles and functions implied (RACI) but never reviewed; reuse across scenarios missing |
 | K6 | Core Technical Concepts | Solution lifecycle approaches and organisational standards | — | 🟡 | M1, M2, M5, M6 | Lifecycle techniques never tied to Companies House standards and existing tools |
-| K11 | Core Technical Concepts | Common vulnerabilities (insecure code, networks) | — | 🟡 | M3 §4 risk matrix, CVEs; M6 IAM, CORS | Network risks covered; insecure-coding risks not critically evaluated |
+| K11 | Core Technical Concepts | Common vulnerabilities (insecure code, networks) | — | 🟡 | M3 §4 risk matrix, CVEs; M6 IAM, CORS | Network risks covered; insecure-coding risks not critically evaluated. Planned: `by-module/module-3/K11-evidence.md` (uses Module 6 code flaws for insecure coding) |
 | K12 | Core Technical Concepts | Role of data management systems | — | 🟢 | M4 §4.3 five-layer architecture | Solid; choice of data management system could be justified further |
 | K14 | Core Technical Concepts | Quantitative and qualitative data gathering methods | — | 🟡 | M5 interviews, surveys, benchmark | Methods listed, never appraised quantitative vs qualitative |
 | K16 | Core Technical Concepts | Computer networking concepts | — | 🟢 | M6 §1.1, Fig 2; M3 §2, §5 | Strong; quality of service only implied in M3. Planned: `by-module/module-6/K16-evidence.md`, `by-module/module-3/K16-evidence.md` |
@@ -174,6 +174,7 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 | `06_evidence/by-module/module-3/S9-evidence.md` | S9 | Draft: risk matrix, CVE mapping, prioritised mitigations, resilience, KPIs, self-critique of scores | Add score rationales and what was implemented; Module 6 S9 still needed for applied controls |
 | `06_evidence/by-module/module-6/S9-evidence.md` | S9 | Draft: controls applied per requirement, failure scenarios, risk table to score, four gaps incl. no user authentication | Score the risks; state which gaps were fixed |
 | `06_evidence/by-module/module-3/S12-evidence.md` | S12 | Draft: services-led planning, suggested phased migration, design decisions, proposed management | Add real network management experience; defend or drop the migration phases |
+| `06_evidence/by-module/module-3/K11-evidence.md` | K11 | Draft: root causes, scope, coding and network risks combined, critical evaluation; uses Module 3 and Module 6 | Describe the `/ask` sanitisation issue; state your role |
 | `06_evidence/module-fix-list.md` | All AM2 | 37 corrections to module submissions (20 Must) | Work through the Must items first |
 
 ## Evidence files index
