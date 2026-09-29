@@ -42,7 +42,7 @@ I turned the registry's problems into 7 functional, 6 non-functional and 6 secur
 
 ### 4. Test
 - **Unit and API tests.** 12 pytest tests, all passing in 1.69 seconds: upload (4: no file, unsupported type, text file, PDF), ask (3: empty question, missing document, answer returned), summarise (2: missing document, summary returned), health (1) and load (2).
-- **Negative tests.** Half the functional tests check that bad input is rejected, not only that good input works.
+- **Negative tests.** Five of the nine functional tests check that bad input is rejected (no file, unsupported type, empty question, missing document twice), not only that good input works.
 - **Performance.** 100 sequential health-check requests (average 0.49 ms, P99 0.63 ms) and a 50-request concurrent burst (100% success).
 - **Continuous integration.** Every push runs Ruff (linting), then pytest, then the Docker build; the build only runs if the tests pass, so untested code is never containerised. Over the project, Ruff caught 14 issues, pytest 3 regressions, the Docker build 1 environment problem and code review 2 logic issues.
 
