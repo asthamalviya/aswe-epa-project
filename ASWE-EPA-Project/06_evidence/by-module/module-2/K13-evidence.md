@@ -25,7 +25,7 @@ Businesses, lenders and public bodies benefit from early warning that a company 
 The question was "which companies are likely to dissolve?", and the costly mistake is a **false negative**: failing to flag a company that then dissolves. That shaped every later choice, including the metric (principle 5) and the emphasis on recall.
 
 ### 2. Understand and clean the data before modelling
-I built a data dictionary for the 13 fields used (e.g. company category, SIC code, accounts category, last accounts date, insolvency history), handled missing values, standardised field names, converted dates and removed variables that carried no information. I left out sensitive fields such as addresses and officer names.
+I built a data dictionary of the dataset's 12 fields (e.g. company category, SIC code, accounts category, last accounts date, insolvency history), handled missing values, standardised field names, converted dates and removed variables that carried no information. I left out sensitive fields such as addresses and officer names.
 
 ### 3. Keep the test fair: split first, and avoid leakage
 - I split the data 80/20 into training and test sets, **stratified** so both sets kept the same share of dissolved companies. A random split on imbalanced data can leave the test set unrepresentative and the metrics misleading.
