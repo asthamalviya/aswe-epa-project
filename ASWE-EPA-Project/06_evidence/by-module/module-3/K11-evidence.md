@@ -55,7 +55,7 @@ So neither is enough alone. That is why my Module 3 proposal pairs network contr
 - **Checklists catch known flaws, not design flaws.** The OWASP Top 10 helped classify my Module 6 issues, but the most serious one, no user authentication, was a design decision, not a coding mistake a scanner would flag.
 - **Automated tools miss logic flaws.** In Module 6, code review found two logic issues that linting, tests and the Docker build all missed. Tooling reduces risk; it does not replace a second person.
 - **Risk scores can hide scope.** My Module 3 matrix scored guest Wi-Fi as Low (6/25), but on a flat network it offers the same lateral movement as the Critical risk. Scoring each vulnerability in isolation understates how they combine.
-- **Patching alone is not a strategy.** All three CVEs in my review had patches available before they were widely exploited. The failure is usually organisational: knowing what is deployed, and patching it quickly.
+- **Patching alone is not a strategy.** Microsoft patched EternalBlue two months before WannaCry, so the NHS failure was organisational: knowing what is deployed and patching it quickly. But ProxyLogon and the Apache flaw were exploited as zero-days, before or as patches appeared, when no amount of patching discipline would have helped. Segmentation and monitoring are what limit the damage in that window. [Check these dates against the vendor advisories before citing them.]
 
 ## Result
 [EVIDENCE NEEDED: what came of this, e.g. which Module 6 vulnerabilities you fixed, or whether the Module 3 findings were shared with the security team.]
