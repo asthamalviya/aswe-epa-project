@@ -43,6 +43,7 @@ Not in the target list, but this module already has Strong or Present evidence f
 ## Evidence kept elsewhere
 
 - **K20:** this module's green computing decisions are drafted in `../../by-ksb/sustainability-and-accessibility.md`, Part A2, so all K20 evidence stays in one place.
+- **K23:** this module's methodology comparison (Table 10) is the core of `../module-7/K23-evidence.md`.
 
 ## How to add evidence
 

@@ -23,6 +23,10 @@ Source: [EVIDENCE NEEDED: Project 7 page not saved.] Listed here: KSBs this modu
 | S23 | Research to update knowledge and lead improvements | — | 🟡 Present | `S23-evidence.md` | ⬜ TODO |
 | B2 | Reliable, objective, independent and team working | — | 🟡 Present | `B2-evidence.md` | ⬜ TODO |
 
+## Drafts outside the target list
+
+- `K23-evidence.md` (K23 is Weak in this module alone; the draft uses Module 5's methodology comparison)
+
 ## How to add evidence
 
 Tell Kiro: *"Use the Evidence Builder for Module 7, {KSB}. Here is what I actually did: ..."* It will ask for anything missing and mark gaps `[EVIDENCE NEEDED]` rather than inventing detail.
