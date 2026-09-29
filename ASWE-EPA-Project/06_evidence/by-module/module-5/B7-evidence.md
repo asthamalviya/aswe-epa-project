@@ -4,7 +4,7 @@
 **Date of the work**: [EVIDENCE NEEDED: month and year]
 **Context**: Proposal for an AI knowledge search system for developers at a UK government registry
 **Status**: Draft
-**Companion piece**: `../module-3/B7-evidence.md` covers security and network trends and lists the full range of sources across the portfolio. This piece covers **AI and delivery trends** and shows a **process** for staying current. Two domains a year apart are stronger evidence of a sustained habit than either alone, so refer to both and do not repeat the source table.
+**Companion piece**: `../module-3/B7-evidence.md` covers security and network trends and lists the full range of sources across the portfolio. This piece covers **AI and delivery trends** and shows a **process** for staying current. Two different domains, at different points in the apprenticeship, are stronger evidence of a sustained habit than either alone, so refer to both and do not repeat the source table.
 
 ## Criterion
 **KSB:** Maintains awareness of trends and innovations in the subject area, utilising a range of academic literature, online sources, community interaction, conference attendance and other methods which can deliver business value.
