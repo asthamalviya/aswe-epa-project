@@ -73,7 +73,7 @@ Distinction column: ✅ means the KSB has a Distinction criterion.
 | S8 | Leading and Working Together | Apply organisational theories (change, ITSM) | — | 🟡 | M1 Kotter; M5 Mendelow, ELM; M6 ADKAR | Theories planned, not applied; no ITSM. Planned: `by-ksb/leading-and-working-together.md` |
 | B4 | Leading and Working Together | Continuous professional development | — | 🟠 | M2, M7 reflections (thin) | No CPD activity evidenced. Planned: `by-ksb/leading-and-working-together.md` |
 | B6 | Leading and Working Together | Shares best practice in organisation and community | — | 🟡 | M2 brown-bag session, checklist | Written as "we"; no outcome or feedback. Planned: `by-ksb/leading-and-working-together.md` |
-| B7 | Leading and Working Together | Awareness of trends and innovations | — | 🟡 | M1, M3, M5 trends and sources | Trends not linked to team delivery or business value. Planned: `by-ksb/leading-and-working-together.md` |
+| B7 | Leading and Working Together | Awareness of trends and innovations | — | 🟡 | M1, M3, M5 trends and sources | Trends not linked to team delivery or business value. Planned: `by-ksb/leading-and-working-together.md`, `by-module/module-3/B7-evidence.md` |
 | K19 | Social Infrastructure: Legal, Ethical and Sustainability | Legal, ethical, social and professional standards | ✅ | 🟢 | M5 PESTLE, GDPR, ethics framework | Pass met; M4 cites EU GDPR not UK GDPR/DPA 2018. Planned: `by-module/module-5/K19-evidence.md` (also S15) |
 | K20 | Social Infrastructure: Legal, Ethical and Sustainability | Sustainable development and green computing | ✅ | 🟠 | M1, M2, M5 (one-liners) | No green computing or sustainable development approach anywhere. Planned: `by-ksb/sustainability-and-accessibility.md` |
 | S15 | Social Infrastructure: Legal, Ethical and Sustainability | Apply legal, ethical, social and professional standards | ✅ | 🟡 | M2, M4 §10, M5, M7 §4 | Applied but audiences (technical vs non-technical) thin. Planned: `by-module/module-5/S15-evidence.md` |
@@ -175,6 +175,7 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 | `06_evidence/by-module/module-6/S9-evidence.md` | S9 | Draft: controls applied per requirement, failure scenarios, risk table to score, four gaps incl. no user authentication | Score the risks; state which gaps were fixed |
 | `06_evidence/by-module/module-3/S12-evidence.md` | S12 | Draft: services-led planning, suggested phased migration, design decisions, proposed management | Add real network management experience; defend or drop the migration phases |
 | `06_evidence/by-module/module-3/K11-evidence.md` | K11 | Draft: root causes, scope, coding and network risks combined, critical evaluation; uses Module 3 and Module 6 | Describe the `/ask` sanitisation issue; state your role |
+| `06_evidence/by-module/module-3/B7-evidence.md` | B7 | Draft: trends with business value, portfolio-wide source range, critique of outdated standards | Add community, conference and a real decision a trend changed |
 | `06_evidence/module-fix-list.md` | All AM2 | 37 corrections to module submissions (20 Must) | Work through the Must items first |
 
 ## Evidence files index

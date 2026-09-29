@@ -18,7 +18,7 @@ Source: Multiverse AM2 Portfolio Readiness Tool navigation for this project.
 | S9 | Security and resilience techniques | — | 🟢 Strong | `S9-evidence.md` | 📝 Draft |
 | S12 | Plan, design and manage simple networks | — | 🟡 Present | `S12-evidence.md` | 📝 Draft |
 | B4 | Continuous professional development | — | 🔴 None | `B4-evidence.md` | ⬜ TODO |
-| B7 | Awareness of trends and innovations | — | 🟡 Present | `B7-evidence.md` | ⬜ TODO |
+| B7 | Awareness of trends and innovations | — | 🟡 Present | `B7-evidence.md` | 📝 Draft |
 
 
 ## How to add evidence
