@@ -48,7 +48,7 @@ The QuickQuote pricing service had a known anomaly (25 Pro seats cost £675, 24 
 The refactor preserved every recorded behaviour, made each pricing rule testable on its own, and gave the business a clear decision to make on the 24/25 anomaly. [EVIDENCE NEEDED: what the business decided, if known.]
 
 ## Evaluating my behaviour
-1. **Objectivity is the strongest part; team working is the weakest.** Module 7 was a solo project, so the team evidence comes from elsewhere. The assessor may ask for a team example from your real job.
+1. **Objectivity is the strongest part; team working is the weakest.** Module 7 reads as a solo project (confirm this), so the team evidence comes from elsewhere. The assessor may ask for a team example from your real job.
 2. **Some figures undermine the reliability message.** The report gives four different line counts for v0 and a coverage figure (99%) that its own appendix does not support (96%). Fixing these matters for B2: reliability includes getting your own numbers right.
 
 ## How this meets the criterion
