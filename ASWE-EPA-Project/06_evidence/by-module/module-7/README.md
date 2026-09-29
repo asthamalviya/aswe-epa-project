@@ -15,7 +15,7 @@ Source: [EVIDENCE NEEDED: Project 7 page not saved.] Listed here: KSBs this modu
 | K6 | Solution lifecycle approaches and organisational standards | — | 🟡 Present | `K6-evidence.md` | ⬜ TODO |
 | K19 | Legal, ethical, social and professional standards | ✅ | 🟡 Present | `K19-evidence.md` | ⬜ TODO |
 | K21 | Development lifecycle scenarios [wording to confirm] | — | 🟡 Present | `K21-evidence.md` | ⬜ TODO |
-| K22 | Development techniques per SDLC stage [wording to confirm] | — | 🟢 Strong | `K22-evidence.md` | ⬜ TODO |
+| K22 | Development techniques per SDLC stage [wording to confirm] | — | 🟢 Strong | `K22-evidence.md` | 📝 Draft |
 | K24 | Interpreting and implementing a compliant design; legacy issues | — | 🟡 Present | `K24-evidence.md` | ⬜ TODO |
 | S4 | Initiate, design, code, test and debug a software component | — | 🟡 Present | `S4-evidence.md` | ⬜ TODO |
 | S15 | Apply legal, ethical, social and professional standards | ✅ | 🟡 Present | `S15-evidence.md` | ⬜ TODO |

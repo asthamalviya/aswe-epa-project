@@ -81,7 +81,7 @@ Distinction column: ✅ means the KSB has a Distinction criterion.
 | B2 | Social Infrastructure: Legal, Ethical and Sustainability | Reliable, objective, independent and team working | — | 🟡 | M2 peer feedback; M7 limitations | Objectivity shown; independent and team working not evidenced |
 | B8 | Social Infrastructure: Legal, Ethical and Sustainability | Champions diversity, inclusion and accessibility | — | 🟡 | M1 DEI objectives (generic) | No accessibility of your solutions; no inclusion championed. Planned: `by-ksb/sustainability-and-accessibility.md` |
 | K21 | Underlying Principles (SWE) | Development lifecycle scenarios [wording to confirm] | — | 🟡 | M2, M4, M6, M7 | Stages implicit; techniques per stage not named |
-| K22 | Underlying Principles (SWE) | Development techniques per SDLC stage [wording to confirm] | — | 🟢 | M7 §2 ADRs, §3 test techniques | Strong |
+| K22 | Underlying Principles (SWE) | Development techniques per SDLC stage [wording to confirm] | — | 🟢 | M7 §2 ADRs, §3 test techniques | Strong. Planned: `by-module/module-7/K22-evidence.md` |
 | K23 | Underlying Principles (SWE) | Development methods and approaches [wording to confirm] | — | 🟢 | M5 §2.5 Waterfall/Scrum/Hybrid | Strong in M5 only |
 | K24 | Technical Solutions (SWE) | Interpreting and implementing a compliant design; legacy issues | — | 🟢 | M6 §2.1 requirements traced to design, §2.2 legacy | Strong; OS and hardware legacy omitted. Planned: `by-module/module-6/K24-evidence.md` |
 | K28 | Technical Solutions (SWE) | Tools that support teamwork [wording to confirm] | — | 🟡 | M5 §2.4; M6 §3.2 | Tools listed; how they made teamwork effective not described. Planned: `by-module/module-6/K28-evidence.md` |
@@ -182,6 +182,7 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 | `06_evidence/by-module/module-4/S11-evidence.md` | S11, K13 | Draft: text, statistical, diagnostic (Module 4) and predictive (Module 2) analysis with reasons | Measure match precision; add one decision analysis changed |
 | `06_evidence/by-module/module-2/K13-evidence.md` | K13 | Draft: eight data analysis principles applied to the risk model; leakage check | Confirm no target leakage; resolve predictor contradiction; paste K13 wording |
 | `06_evidence/by-module/module-6/S4-evidence.md` | S4 | Draft: all five stages for the backend service, 12-test suite, CI, debugging, four self-found weaknesses | State your contribution; describe the `/ask` fix |
+| `06_evidence/by-module/module-7/K22-evidence.md` | K22 | Draft: techniques by lifecycle stage with principle, artefact and context; deployment from Module 6 | State your role; paste K22 wording; explain rejected patterns |
 | `06_evidence/module-fix-list.md` | All AM2 | 37 corrections to module submissions (20 Must) | Work through the Must items first |
 
 ## Evidence files index
