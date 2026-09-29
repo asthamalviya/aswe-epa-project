@@ -131,7 +131,9 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 
 | Priority | Location | Issue | Fix |
 |---|---|---|---|
-| Must | Executive summary vs section 2.2 | v0 is a "90-line" handler in the summary and figures, "106 lines" in the trade-off statement and an "88-line handler" in section 4. | Use one line count. |
+| Must | Executive summary vs Appendix A | Claims 99% line coverage, but Appendix A gives v1 as 242 of 252 lines covered (96%). | Correct the figure throughout, or explain how 99% was calculated. |
+| Should | Section 3.2 | Says the boundary tests "detect off-by-one mutations" and cites mutation testing research, but no mutation testing was run. | Run a mutation testing tool (e.g. `mutmut`) and report the score, or soften the claim. |
+| Must | Executive summary vs section 2.2 | v0 is a "90-line" handler in the summary and figures, "106 lines" in the trade-off statement, an "88-line handler" in section 4 and "85/85 lines" in Appendix A. | Use one line count. |
 | Should | Executive summary vs gap table | "0 critical gaps remaining" while Gap 5 (rounding) is "Not addressed". Gap 5 is rated Medium, so this is not strictly a contradiction, but an assessor may read it as one. | Add "(one medium gap deferred: rounding)". |
 | Should | Section 4 | Says code structure "eliminates need for separate diagrams", yet diagrams are embedded throughout. | Reword to explain what the diagrams add beyond code structure. |
 | Should | Lessons learned | "Rejecting Abstract Factory, Observer and Builder" appears only in lessons learned. | Add a short trade-off in section 2 explaining why each pattern was rejected. |
@@ -150,5 +152,5 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | M4 | 2 | 4 | 2 | [ ] |
 | M5 | 6 | 2 | 0 | [ ] |
 | M6 | 6 | 12 | 0 | [ ] |
-| M7 | 1 | 3 | 0 | [ ] |
-| **Total** | **29** | **32** | **3** | |
+| M7 | 2 | 4 | 0 | [ ] |
+| **Total** | **30** | **33** | **3** | |

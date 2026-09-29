@@ -86,7 +86,7 @@ Distinction column: ✅ means the KSB has a Distinction criterion.
 | K24 | Technical Solutions (SWE) | Interpreting and implementing a compliant design; legacy issues | — | 🟢 | M6 §2.1 requirements traced to design, §2.2 legacy | Strong; OS and hardware legacy omitted. Planned: `by-module/module-6/K24-evidence.md` |
 | K28 | Technical Solutions (SWE) | Tools that support teamwork [wording to confirm] | — | 🟡 | M5 §2.4; M6 §3.2 | Tools listed; how they made teamwork effective not described. Planned: `by-module/module-6/K28-evidence.md` |
 | S20 | Innovation and Response (SWE) | Respond to changing priorities and adapt plans | ✅ | 🟡 | M6 §4.1-4.4 | Examples are bug fixes, not changing priorities. Planned: `by-ksb/changing-priorities.md`, `by-module/module-6/S20-evidence.md` |
-| S21 | Innovation and Response (SWE) | Determine and adapt SE methods to evaluate outcomes | — | 🟡 | M2, M4, M5, M6, M7 | Evaluates outcomes; never shows refining or adapting methods. Planned: `by-module/module-6/S21-evidence.md`, `by-ksb/changing-priorities.md` |
+| S21 | Innovation and Response (SWE) | Determine and adapt SE methods to evaluate outcomes | — | 🟡 | M2, M4, M5, M6, M7 | Evaluates outcomes; never shows refining or adapting methods. Planned: `by-module/module-6/S21-evidence.md`, `by-module/module-7/S21-evidence.md`, `by-ksb/changing-priorities.md` |
 | S23 | Legal, Ethics and Landscape (SWE) | Research to update knowledge and lead improvements | — | 🟡 | M5 §6.2-6.3; M7 references | Research informs design; no improvement led in organisation |
 
 ## Coverage matrix by module
@@ -185,6 +185,7 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 | `06_evidence/by-module/module-7/K22-evidence.md` | K22 | Draft: techniques by lifecycle stage with principle, artefact and context; deployment from Module 6 | State your role; paste K22 wording; explain rejected patterns |
 | `06_evidence/by-module/module-7/K21-evidence.md` | K21 | Draft: five lifecycle scenarios (Modules 2, 4, 5, 6, 7) with techniques per stage and comparison | Add real deployment and operation experience; paste K21 wording |
 | `06_evidence/by-module/module-7/K23-evidence.md` | K23 | Draft: five delivery methods and six approaches with contexts; Module 5 selection and critique | Add day-to-day method experience; paste K23 wording |
+| `06_evidence/by-module/module-7/S21-evidence.md` | S21 | Draft: one evaluation method per question, three refinements, mutation testing as the adaptation | Fix coverage arithmetic; run mutation testing |
 | `06_evidence/module-fix-list.md` | All AM2 | 37 corrections to module submissions (20 Must) | Work through the Must items first |
 
 ## Evidence files index
