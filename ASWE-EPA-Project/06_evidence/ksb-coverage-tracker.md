@@ -71,7 +71,7 @@ Distinction column: ✅ means the KSB has a Distinction criterion.
 | K10 | Leading and Working Together | Management techniques and theories | — | 🟡 | M5 (Kepner-Tregoe, MoSCoW, WBS); M1 Kotter | Techniques used on projects, not linked to your own management practice. Planned: `by-ksb/leading-and-working-together.md`, `by-ksb/changing-priorities.md` |
 | S7 | Leading and Working Together | Work in and lead teams | — | 🟠 | M6 "unblocking two team members" (thin) | No evidence of working in or leading a team. Planned: `by-ksb/leading-and-working-together.md` |
 | S8 | Leading and Working Together | Apply organisational theories (change, ITSM) | — | 🟡 | M1 Kotter; M5 Mendelow, ELM; M6 ADKAR | Theories planned, not applied; no ITSM. Planned: `by-ksb/leading-and-working-together.md` |
-| B4 | Leading and Working Together | Continuous professional development | — | 🟠 | M2, M7 reflections (thin) | No CPD activity evidenced. Planned: `by-ksb/leading-and-working-together.md` |
+| B4 | Leading and Working Together | Continuous professional development | — | 🟠 | M2, M7 reflections (thin) | No CPD activity evidenced. Planned: `by-ksb/leading-and-working-together.md`, `by-module/module-3/B4-evidence.md` |
 | B6 | Leading and Working Together | Shares best practice in organisation and community | — | 🟡 | M2 brown-bag session, checklist | Written as "we"; no outcome or feedback. Planned: `by-ksb/leading-and-working-together.md` |
 | B7 | Leading and Working Together | Awareness of trends and innovations | — | 🟡 | M1, M3, M5 trends and sources | Trends not linked to team delivery or business value. Planned: `by-ksb/leading-and-working-together.md`, `by-module/module-3/B7-evidence.md` |
 | K19 | Social Infrastructure: Legal, Ethical and Sustainability | Legal, ethical, social and professional standards | ✅ | 🟢 | M5 PESTLE, GDPR, ethics framework | Pass met; M4 cites EU GDPR not UK GDPR/DPA 2018. Planned: `by-module/module-5/K19-evidence.md` (also S15) |
@@ -186,6 +186,7 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 | `06_evidence/by-module/module-7/K21-evidence.md` | K21 | Draft: five lifecycle scenarios (Modules 2, 4, 5, 6, 7) with techniques per stage and comparison | Add real deployment and operation experience; paste K21 wording |
 | `06_evidence/by-module/module-7/K23-evidence.md` | K23 | Draft: five delivery methods and six approaches with contexts; Module 5 selection and critique | Add day-to-day method experience; paste K23 wording |
 | `06_evidence/by-module/module-7/S21-evidence.md` | S21 | Draft: one evaluation method per question, three refinements, mutation testing as the adaptation | Fix coverage arithmetic; run mutation testing |
+| `06_evidence/by-module/module-3/B4-evidence.md` | B4 | Scaffold: learning cycle across modules drafted; CPD log, habits and changed practice are placeholders | Fill the CPD log with dated activities beyond the apprenticeship |
 | `06_evidence/module-fix-list.md` | All AM2 | 37 corrections to module submissions (20 Must) | Work through the Must items first |
 
 ## Evidence files index
