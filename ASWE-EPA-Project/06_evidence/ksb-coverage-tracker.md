@@ -77,7 +77,7 @@ Distinction column: ✅ means the KSB has a Distinction criterion.
 | K19 | Social Infrastructure: Legal, Ethical and Sustainability | Legal, ethical, social and professional standards | ✅ | 🟢 | M5 PESTLE, GDPR, ethics framework | Pass met; M4 cites EU GDPR not UK GDPR/DPA 2018. Planned: `by-module/module-5/K19-evidence.md` (also S15) |
 | K20 | Social Infrastructure: Legal, Ethical and Sustainability | Sustainable development and green computing | ✅ | 🟠 | M1, M2, M5 (one-liners) | No green computing or sustainable development approach anywhere. Planned: `by-ksb/sustainability-and-accessibility.md` |
 | S15 | Social Infrastructure: Legal, Ethical and Sustainability | Apply legal, ethical, social and professional standards | ✅ | 🟡 | M2, M4 §10, M5, M7 §4 | Applied but audiences (technical vs non-technical) thin. Planned: `by-module/module-5/S15-evidence.md` |
-| B1 | Social Infrastructure: Legal, Ethical and Sustainability | [wording to confirm] | — | 🟡 | M2 "Developer's Ethical Commitment" | Wording unconfirmed (no saved page) |
+| B1 | Social Infrastructure: Legal, Ethical and Sustainability | [wording to confirm] | — | 🟡 | M2 "Developer's Ethical Commitment" | Wording unconfirmed (no saved page). Planned: `by-module/module-2/B1-evidence.md` |
 | B2 | Social Infrastructure: Legal, Ethical and Sustainability | Reliable, objective, independent and team working | — | 🟡 | M2 peer feedback; M7 limitations | Objectivity shown; independent and team working not evidenced. Planned: `by-module/module-7/B2-evidence.md` |
 | B8 | Social Infrastructure: Legal, Ethical and Sustainability | Champions diversity, inclusion and accessibility | — | 🟡 | M1 DEI objectives (generic) | No accessibility of your solutions; no inclusion championed. Planned: `by-ksb/sustainability-and-accessibility.md` |
 | K21 | Underlying Principles (SWE) | Development lifecycle scenarios [wording to confirm] | — | 🟡 | M2, M4, M6, M7 | Stages implicit; techniques per stage not named. Planned: `by-module/module-7/K21-evidence.md` |
@@ -193,6 +193,7 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 | `06_evidence/by-module/module-5/B7-evidence.md` | B7 | Draft: five AI and delivery trends turned into decisions; fortnightly regulatory watch | Add community and conference input; personal habits |
 | `06_evidence/by-module/module-5/K6-evidence.md` | K6 | Draft: each lifecycle stage tied to a registry standard or existing tool; build and run from Modules 4 and 6 | State your role and the proposal outcome |
 | `06_evidence/by-module/module-2/K7-evidence.md` | K7 | Draft: delivery, business and governance roles reviewed; bespoke vs off-the-shelf; reuse | State your role in each team; check RACI assignments |
+| `06_evidence/by-module/module-2/B1-evidence.md` | B1 | Draft (provisional): professional conduct across four projects | Confirm B1 wording; add a workplace example |
 | `06_evidence/module-fix-list.md` | All AM2 | 37 corrections to module submissions (20 Must) | Work through the Must items first |
 
 ## Evidence files index

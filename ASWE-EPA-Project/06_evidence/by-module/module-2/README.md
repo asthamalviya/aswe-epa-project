@@ -40,7 +40,7 @@ Not in the target list, but this module already has Strong or Present evidence f
 | S10 | Initiate, design, implement and debug a data product | 🟡 Present |
 | S11 | Data analysis techniques | 🟡 Present |
 | S21 | Determine and adapt SE methods to evaluate outcomes | 🟡 Present |
-| B1 | [wording to confirm] | 🟡 Present |
+| B1 | [wording to confirm] | 🟡 Present (📝 draft: `B1-evidence.md`) |
 
 ## How to add evidence
 
