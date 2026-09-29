@@ -77,6 +77,7 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | Must | Table 2 vs KPI table in section 5.7 | Ingestion baseline is "6 hours" in Table 2 (80% faster, to 1.2 hours) but "3–5 days" in the KPI table (target under 2 hours). | Use one measured baseline in both places, and state how it was measured. |
 | Must | Sections 2.3 and 10, references | Cites EU GDPR (Regulation (EU) 2016/679, "European Union, 2018"). A UK public body is subject to UK GDPR and the Data Protection Act 2018. | Change the citations to UK GDPR and DPA 2018. This also strengthens the K19 and S15 Distinction. |
 | Should | Section 6.2.1 "Source Data Quality Validation (PostgreSQL)" | The rest of the report describes Oracle source systems. | Add one sentence explaining that PostgreSQL stands in for Oracle in the PoC, and why. |
+| Should | Section 3.2 | States what stakeholders "consistently highlighted" without saying how requirements were gathered or from how many people. | Name the method (interviews, workshops or survey) and the number of participants. |
 | Should | Sections 4.4 vs 6.2.3 | Section 4.4 shows officer records automatically merged into a master record, while 6.2.3 only flags likely duplicates for audit. A 0.583 trigram score is called "high-probability" without justification. | State which the proof of concept did; justify the threshold; recommend human review before merging. |
 | Could | Figure numbering | Figures jump from 2 to 4. | Renumber. |
 
@@ -140,8 +141,8 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | M1 | 2 | 1 | 0 | [ ] |
 | M2 | 4 | 2 | 1 | [ ] |
 | M3 | 3 | 6 | 0 | [ ] |
-| M4 | 2 | 2 | 1 | [ ] |
+| M4 | 2 | 3 | 1 | [ ] |
 | M5 | 6 | 2 | 0 | [ ] |
 | M6 | 6 | 10 | 0 | [ ] |
 | M7 | 1 | 3 | 0 | [ ] |
-| **Total** | **28** | **27** | **2** | |
+| **Total** | **28** | **28** | **2** | |
