@@ -24,7 +24,7 @@ Source: Multiverse AM2 Portfolio Readiness Tool navigation for this project.
 | S8 | Apply organisational theories (change, ITSM) | — | 🟠 Weak | `S8-evidence.md` | ⬜ TODO |
 | S15 | Apply legal, ethical, social and professional standards | ✅ | 🟡 Present | `S15-evidence.md` | ⬜ TODO |
 | B2 | Reliable, objective, independent and team working | — | 🟡 Present | `B2-evidence.md` | ⬜ TODO |
-| B6 | Shares best practice in organisation and community | — | 🟡 Present | `B6-evidence.md` | ⬜ TODO |
+| B6 | Shares best practice in organisation and community | — | 🟡 Present | `B6-evidence.md` | 📝 Draft |
 | B8 | Champions diversity, inclusion and accessibility | — | 🟠 Weak | `B8-evidence.md` | ⬜ TODO |
 
 ## Also evidenced in this module
