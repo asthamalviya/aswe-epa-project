@@ -21,7 +21,7 @@ Source: [EVIDENCE NEEDED: Project 7 page not saved.] Listed here: KSBs this modu
 | S15 | Apply legal, ethical, social and professional standards | ✅ | 🟡 Present | `S15-evidence.md` | ⬜ TODO |
 | S21 | Determine and adapt SE methods to evaluate outcomes | — | 🟡 Present | `S21-evidence.md` | 📝 Draft |
 | S23 | Research to update knowledge and lead improvements | — | 🟡 Present | `S23-evidence.md` | ⬜ TODO |
-| B2 | Reliable, objective, independent and team working | — | 🟡 Present | `B2-evidence.md` | ⬜ TODO |
+| B2 | Reliable, objective, independent and team working | — | 🟡 Present | `B2-evidence.md` | 📝 Draft |
 
 ## Drafts outside the target list
 

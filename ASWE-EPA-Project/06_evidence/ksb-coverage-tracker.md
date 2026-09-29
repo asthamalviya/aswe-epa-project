@@ -78,7 +78,7 @@ Distinction column: ✅ means the KSB has a Distinction criterion.
 | K20 | Social Infrastructure: Legal, Ethical and Sustainability | Sustainable development and green computing | ✅ | 🟠 | M1, M2, M5 (one-liners) | No green computing or sustainable development approach anywhere. Planned: `by-ksb/sustainability-and-accessibility.md` |
 | S15 | Social Infrastructure: Legal, Ethical and Sustainability | Apply legal, ethical, social and professional standards | ✅ | 🟡 | M2, M4 §10, M5, M7 §4 | Applied but audiences (technical vs non-technical) thin. Planned: `by-module/module-5/S15-evidence.md` |
 | B1 | Social Infrastructure: Legal, Ethical and Sustainability | [wording to confirm] | — | 🟡 | M2 "Developer's Ethical Commitment" | Wording unconfirmed (no saved page) |
-| B2 | Social Infrastructure: Legal, Ethical and Sustainability | Reliable, objective, independent and team working | — | 🟡 | M2 peer feedback; M7 limitations | Objectivity shown; independent and team working not evidenced |
+| B2 | Social Infrastructure: Legal, Ethical and Sustainability | Reliable, objective, independent and team working | — | 🟡 | M2 peer feedback; M7 limitations | Objectivity shown; independent and team working not evidenced. Planned: `by-module/module-7/B2-evidence.md` |
 | B8 | Social Infrastructure: Legal, Ethical and Sustainability | Champions diversity, inclusion and accessibility | — | 🟡 | M1 DEI objectives (generic) | No accessibility of your solutions; no inclusion championed. Planned: `by-ksb/sustainability-and-accessibility.md` |
 | K21 | Underlying Principles (SWE) | Development lifecycle scenarios [wording to confirm] | — | 🟡 | M2, M4, M6, M7 | Stages implicit; techniques per stage not named. Planned: `by-module/module-7/K21-evidence.md` |
 | K22 | Underlying Principles (SWE) | Development techniques per SDLC stage [wording to confirm] | — | 🟢 | M7 §2 ADRs, §3 test techniques | Strong. Planned: `by-module/module-7/K22-evidence.md` |
@@ -187,6 +187,7 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 | `06_evidence/by-module/module-7/K23-evidence.md` | K23 | Draft: five delivery methods and six approaches with contexts; Module 5 selection and critique | Add day-to-day method experience; paste K23 wording |
 | `06_evidence/by-module/module-7/S21-evidence.md` | S21 | Draft: one evaluation method per question, three refinements, mutation testing as the adaptation | Fix coverage arithmetic; run mutation testing |
 | `06_evidence/by-module/module-3/B4-evidence.md` | B4 | Scaffold: learning cycle across modules drafted; CPD log, habits and changed practice are placeholders | Fill the CPD log with dated activities beyond the apprenticeship |
+| `06_evidence/by-module/module-7/B2-evidence.md` | B2 (and K19, S15 audiences) | Draft: objectivity and reliability from Module 7; team working from Modules 2 and 6 | Describe independent working; add a real team example |
 | `06_evidence/module-fix-list.md` | All AM2 | 37 corrections to module submissions (20 Must) | Work through the Must items first |
 
 ## Evidence files index
