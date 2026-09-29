@@ -79,6 +79,8 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | Should | Section 6.2.1 "Source Data Quality Validation (PostgreSQL)" | The rest of the report describes Oracle source systems. | Add one sentence explaining that PostgreSQL stands in for Oracle in the PoC, and why. |
 | Should | Section 3.2 | States what stakeholders "consistently highlighted" without saying how requirements were gathered or from how many people. | Name the method (interviews, workshops or survey) and the number of participants. |
 | Should | Sections 4.4 vs 6.2.3 | Section 4.4 shows officer records automatically merged into a master record, while 6.2.3 only flags likely duplicates for audit. A 0.583 trigram score is called "high-probability" without justification. | State which the proof of concept did; justify the threshold; recommend human review before merging. |
+| Should | Sections 6.1 and 6.3 | Calls the pipeline "suitable for production-scale public-sector deployment", while section 8 says it ran in a controlled environment with indicative results. | Describe it as a proof of concept with production patterns, and list what production would add. |
+| Could | Section 6.1 | The same paragraph appears twice. | Delete the repeat. |
 | Could | Figure numbering | Figures jump from 2 to 4. | Renumber. |
 
 ---
@@ -141,8 +143,8 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 | M1 | 2 | 1 | 0 | [ ] |
 | M2 | 4 | 2 | 1 | [ ] |
 | M3 | 3 | 6 | 0 | [ ] |
-| M4 | 2 | 3 | 1 | [ ] |
+| M4 | 2 | 4 | 2 | [ ] |
 | M5 | 6 | 2 | 0 | [ ] |
 | M6 | 6 | 10 | 0 | [ ] |
 | M7 | 1 | 3 | 0 | [ ] |
-| **Total** | **28** | **28** | **2** | |
+| **Total** | **28** | **29** | **3** | |
