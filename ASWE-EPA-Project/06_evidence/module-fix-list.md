@@ -4,6 +4,8 @@ Corrections to make in the portfolio submissions before the AM2 professional dis
 
 **Every item was checked against the extracted text of the PDF.** Section names refer to the headings in each module. Findings from the gap analysis that could not be confirmed in the text are left out.
 
+**Replacement text** for every Must item is in `corrections-pack.md`, which also lists five further problems found while checking the text (Part C).
+
 **Priority key**
 - **Must:** a factual contradiction or error an assessor could spot and question
 - **Should:** weakens the evidence for a KSB
