@@ -16,3 +16,4 @@ ASWE-EPA-Project/_assets/
 
 # Sensitive / personal files
 *.env
+.idea/
