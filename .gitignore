@@ -6,8 +6,18 @@
 # HTML companion asset folders (browser-saved JS/CSS — not needed in git)
 ASWE-EPA-Project/_assets/
 
-# Loose HTML asset folders still in root (if any remain)
+# Loose HTML asset folders still in root (original unorganised files)
 *_files/
+
+# Original loose files in root (already organised into ASWE-EPA-Project/)
+*.html
+*.pdf
+*.docx
+*.png
+*.jpg
+*.jpeg
+capstone/
+module*/
 
 # Editor
 .vscode/
