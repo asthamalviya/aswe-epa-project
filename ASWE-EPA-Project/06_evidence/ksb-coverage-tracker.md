@@ -4,6 +4,8 @@
 > Last updated: 2026-09-28. AM2 rated from module assessments 1 to 7 (`04_module-assessments/`). AM1 not assessed: capstone not yet written.
 >
 > Ratings are a judgement against the official Pass criteria, not a Multiverse assessment. Status shows the best rating across all modules.
+>
+> Scaffolds and drafts in `06_evidence/by-ksb/` and `06_evidence/by-module/` are listed as "Planned" and do not change any status until they contain your real evidence.
 
 ## Quick status
 
@@ -52,40 +54,40 @@ Distinction column: ✅ means the KSB has a Distinction criterion.
 
 | KSB | Theme | Topic | Distinction | Status | Evidence file(s) | Notes |
 |---|---|---|---|---|---|---|
-| K7 | Organisational Context | Roles, functions and activities in technology | — | 🟡 | M5 §1.5, §5.3; M4 §3.1 | Roles and functions implied (RACI) but never reviewed; reuse across scenarios missing |
-| K6 | Core Technical Concepts | Solution lifecycle approaches and organisational standards | — | 🟡 | M1, M2, M5, M6 | Lifecycle techniques never tied to Companies House standards and existing tools |
-| K11 | Core Technical Concepts | Common vulnerabilities (insecure code, networks) | — | 🟡 | M3 §4 risk matrix, CVEs; M6 IAM, CORS | Network risks covered; insecure-coding risks not critically evaluated |
-| K12 | Core Technical Concepts | Role of data management systems | — | 🟢 | M4 §4.3 five-layer architecture | Solid; choice of data management system could be justified further |
-| K14 | Core Technical Concepts | Quantitative and qualitative data gathering methods | — | 🟡 | M5 interviews, surveys, benchmark | Methods listed, never appraised quantitative vs qualitative |
-| K16 | Core Technical Concepts | Computer networking concepts | — | 🟢 | M6 §1.1, Fig 2; M3 §2, §5 | Strong; quality of service only implied in M3 |
-| K13 | Applied Technical Solutions | Principles of data analysis [wording to confirm] | — | 🟢 | M2 data analysis techniques | Strong, but KPI values labelled "Example" |
-| S4 | Applied Technical Solutions | Initiate, design, code, test and debug a software component | — | 🟢 | M6 §3.1, §4, appendices; M7 90 tests | Strong; voice impersonal so ownership unclear |
-| S9 | Applied Technical Solutions | Security and resilience techniques | — | 🟢 | M3 risk matrix, mitigations; M6 SR1-SR6, failure scenarios | Strong; M6 lacks scored risk assessment |
-| S10 | Applied Technical Solutions | Initiate, design, implement and debug a data product | — | 🟢 | M4 §4, §6 ETL pipeline | Strong; debugging evidence minimal |
-| S11 | Applied Technical Solutions | Data analysis techniques | — | 🟡 | M2 model evaluation; M4 §5 | Technique choice never justified; no measured improvement |
-| S12 | Applied Technical Solutions | Plan, design and manage simple networks | — | 🟡 | M3 §3 VLAN plan, allowlist; M6 Fig 2 | Planned and designed only; "manages" not evidenced |
-| K8 | Leading and Working Together | Teams and organisational theory [wording to confirm] | — | 🟠 | M2 roles table (thin) | No team-effectiveness theory anywhere |
-| K9 | Leading and Working Together | Leadership concepts and principles | — | 🟠 | M1 "my role as Lead" slide (thin) | No leadership concepts or how you apply them |
-| K10 | Leading and Working Together | Management techniques and theories | — | 🟡 | M5 (Kepner-Tregoe, MoSCoW, WBS); M1 Kotter | Techniques used on projects, not linked to your own management practice |
-| S7 | Leading and Working Together | Work in and lead teams | — | 🟠 | M6 "unblocking two team members" (thin) | No evidence of working in or leading a team |
-| S8 | Leading and Working Together | Apply organisational theories (change, ITSM) | — | 🟡 | M1 Kotter; M5 Mendelow, ELM; M6 ADKAR | Theories planned, not applied; no ITSM |
-| B4 | Leading and Working Together | Continuous professional development | — | 🟠 | M2, M7 reflections (thin) | No CPD activity evidenced |
-| B6 | Leading and Working Together | Shares best practice in organisation and community | — | 🟡 | M2 brown-bag session, checklist | Written as "we"; no outcome or feedback |
-| B7 | Leading and Working Together | Awareness of trends and innovations | — | 🟡 | M1, M3, M5 trends and sources | Trends not linked to team delivery or business value |
-| K19 | Social Infrastructure: Legal, Ethical and Sustainability | Legal, ethical, social and professional standards | ✅ | 🟢 | M5 PESTLE, GDPR, ethics framework | Pass met; M4 cites EU GDPR not UK GDPR/DPA 2018 |
-| K20 | Social Infrastructure: Legal, Ethical and Sustainability | Sustainable development and green computing | ✅ | 🟠 | M1, M2, M5 (one-liners) | No green computing or sustainable development approach anywhere |
-| S15 | Social Infrastructure: Legal, Ethical and Sustainability | Apply legal, ethical, social and professional standards | ✅ | 🟡 | M2, M4 §10, M5, M7 §4 | Applied but audiences (technical vs non-technical) thin |
-| B1 | Social Infrastructure: Legal, Ethical and Sustainability | [wording to confirm] | — | 🟡 | M2 "Developer's Ethical Commitment" | Wording unconfirmed (no saved page) |
-| B2 | Social Infrastructure: Legal, Ethical and Sustainability | Reliable, objective, independent and team working | — | 🟡 | M2 peer feedback; M7 limitations | Objectivity shown; independent and team working not evidenced |
-| B8 | Social Infrastructure: Legal, Ethical and Sustainability | Champions diversity, inclusion and accessibility | — | 🟡 | M1 DEI objectives (generic) | No accessibility of your solutions; no inclusion championed |
-| K21 | Underlying Principles (SWE) | Development lifecycle scenarios [wording to confirm] | — | 🟡 | M2, M4, M6, M7 | Stages implicit; techniques per stage not named |
-| K22 | Underlying Principles (SWE) | Development techniques per SDLC stage [wording to confirm] | — | 🟢 | M7 §2 ADRs, §3 test techniques | Strong |
-| K23 | Underlying Principles (SWE) | Development methods and approaches [wording to confirm] | — | 🟢 | M5 §2.5 Waterfall/Scrum/Hybrid | Strong in M5 only |
-| K24 | Technical Solutions (SWE) | Interpreting and implementing a compliant design; legacy issues | — | 🟢 | M6 §2.1 requirements traced to design, §2.2 legacy | Strong; OS and hardware legacy omitted |
-| K28 | Technical Solutions (SWE) | Tools that support teamwork [wording to confirm] | — | 🟡 | M5 §2.4; M6 §3.2 | Tools listed; how they made teamwork effective not described |
-| S20 | Innovation and Response (SWE) | Respond to changing priorities and adapt plans | ✅ | 🟡 | M6 §4.1-4.4 | Examples are bug fixes, not changing priorities |
-| S21 | Innovation and Response (SWE) | Determine and adapt SE methods to evaluate outcomes | — | 🟡 | M2, M4, M5, M6, M7 | Evaluates outcomes; never shows refining or adapting methods |
-| S23 | Legal, Ethics and Landscape (SWE) | Research to update knowledge and lead improvements | — | 🟡 | M5 §6.2-6.3; M7 references | Research informs design; no improvement led in organisation |
+| K7 | Organisational Context | Roles, functions and activities in technology | — | 🟡 | M5 §1.5, §5.3; M4 §3.1 | Roles and functions implied (RACI) but never reviewed; reuse across scenarios missing. Planned: `by-module/module-2/K7-evidence.md` |
+| K6 | Core Technical Concepts | Solution lifecycle approaches and organisational standards | — | 🟡 | M1, M2, M5, M6 | Lifecycle techniques never tied to Companies House standards and existing tools. Planned: `by-module/module-5/K6-evidence.md` |
+| K11 | Core Technical Concepts | Common vulnerabilities (insecure code, networks) | — | 🟡 | M3 §4 risk matrix, CVEs; M6 IAM, CORS | Network risks covered; insecure-coding risks not critically evaluated. Planned: `by-module/module-3/K11-evidence.md` (uses Module 6 code flaws for insecure coding) |
+| K12 | Core Technical Concepts | Role of data management systems | — | 🟢 | M4 §4.3 five-layer architecture | Solid; choice of data management system could be justified further. Planned: `by-module/module-4/K12-evidence.md` |
+| K14 | Core Technical Concepts | Quantitative and qualitative data gathering methods | — | 🟡 | M5 interviews, surveys, benchmark | Methods listed, never appraised quantitative vs qualitative. Planned: `by-module/module-4/K14-evidence.md` |
+| K16 | Core Technical Concepts | Computer networking concepts | — | 🟢 | M6 §1.1, Fig 2; M3 §2, §5 | Strong; quality of service only implied in M3. Planned: `by-module/module-6/K16-evidence.md`, `by-module/module-3/K16-evidence.md` |
+| K13 | Applied Technical Solutions | Principles of data analysis [wording to confirm] | — | 🟢 | M2 data analysis techniques | Strong, but KPI values labelled "Example". Planned: `by-module/module-2/K13-evidence.md` |
+| S4 | Applied Technical Solutions | Initiate, design, code, test and debug a software component | — | 🟢 | M6 §3.1, §4, appendices; M7 90 tests | Strong; voice impersonal so ownership unclear. Planned: `by-module/module-6/S4-evidence.md` |
+| S9 | Applied Technical Solutions | Security and resilience techniques | — | 🟢 | M3 risk matrix, mitigations; M6 SR1-SR6, failure scenarios | Strong; M6 lacks scored risk assessment. Planned: `by-module/module-3/S9-evidence.md`, `by-module/module-6/S9-evidence.md` |
+| S10 | Applied Technical Solutions | Initiate, design, implement and debug a data product | — | 🟢 | M4 §4, §6 ETL pipeline | Strong; debugging evidence minimal. Planned: `by-module/module-4/S10-evidence.md` |
+| S11 | Applied Technical Solutions | Data analysis techniques | — | 🟡 | M2 model evaluation; M4 §5 | Technique choice never justified; no measured improvement. Planned: `by-module/module-4/S11-evidence.md` (also supports K13) |
+| S12 | Applied Technical Solutions | Plan, design and manage simple networks | — | 🟡 | M3 §3 VLAN plan, allowlist; M6 Fig 2 | Planned and designed only; "manages" not evidenced. Planned: `by-module/module-3/S12-evidence.md` |
+| K8 | Leading and Working Together | Teams and organisational theory [wording to confirm] | — | 🟠 | M2 roles table (thin) | No team-effectiveness theory anywhere. Planned: `by-ksb/leading-and-working-together.md` |
+| K9 | Leading and Working Together | Leadership concepts and principles | — | 🟠 | M1 "my role as Lead" slide (thin) | No leadership concepts or how you apply them. Planned: `by-ksb/leading-and-working-together.md` |
+| K10 | Leading and Working Together | Management techniques and theories | — | 🟡 | M5 (Kepner-Tregoe, MoSCoW, WBS); M1 Kotter | Techniques used on projects, not linked to your own management practice. Planned: `by-ksb/leading-and-working-together.md`, `by-ksb/changing-priorities.md` |
+| S7 | Leading and Working Together | Work in and lead teams | — | 🟠 | M6 "unblocking two team members" (thin) | No evidence of working in or leading a team. Planned: `by-ksb/leading-and-working-together.md` |
+| S8 | Leading and Working Together | Apply organisational theories (change, ITSM) | — | 🟡 | M1 Kotter; M5 Mendelow, ELM; M6 ADKAR | Theories planned, not applied; no ITSM. Planned: `by-ksb/leading-and-working-together.md` |
+| B4 | Leading and Working Together | Continuous professional development | — | 🟠 | M2, M7 reflections (thin) | No CPD activity evidenced. Planned: `by-ksb/leading-and-working-together.md`, `by-module/module-3/B4-evidence.md` |
+| B6 | Leading and Working Together | Shares best practice in organisation and community | — | 🟡 | M2 brown-bag session, checklist | Written as "we"; no outcome or feedback. Planned: `by-ksb/leading-and-working-together.md`, `by-module/module-2/B6-evidence.md` |
+| B7 | Leading and Working Together | Awareness of trends and innovations | — | 🟡 | M1, M3, M5 trends and sources | Trends not linked to team delivery or business value. Planned: `by-ksb/leading-and-working-together.md`, `by-module/module-3/B7-evidence.md`, `by-module/module-5/B7-evidence.md` |
+| K19 | Social Infrastructure: Legal, Ethical and Sustainability | Legal, ethical, social and professional standards | ✅ | 🟢 | M5 PESTLE, GDPR, ethics framework | Pass met; M4 cites EU GDPR not UK GDPR/DPA 2018. Planned: `by-module/module-5/K19-evidence.md` (also S15) |
+| K20 | Social Infrastructure: Legal, Ethical and Sustainability | Sustainable development and green computing | ✅ | 🟠 | M1, M2, M5 (one-liners) | No green computing or sustainable development approach anywhere. Planned: `by-ksb/sustainability-and-accessibility.md` |
+| S15 | Social Infrastructure: Legal, Ethical and Sustainability | Apply legal, ethical, social and professional standards | ✅ | 🟡 | M2, M4 §10, M5, M7 §4 | Applied but audiences (technical vs non-technical) thin. Planned: `by-module/module-5/S15-evidence.md` |
+| B1 | Social Infrastructure: Legal, Ethical and Sustainability | [wording to confirm] | — | 🟡 | M2 "Developer's Ethical Commitment" | Wording unconfirmed (no saved page). Planned: `by-module/module-2/B1-evidence.md` |
+| B2 | Social Infrastructure: Legal, Ethical and Sustainability | Reliable, objective, independent and team working | — | 🟡 | M2 peer feedback; M7 limitations | Objectivity shown; independent and team working not evidenced. Planned: `by-module/module-7/B2-evidence.md` |
+| B8 | Social Infrastructure: Legal, Ethical and Sustainability | Champions diversity, inclusion and accessibility | — | 🟡 | M1 DEI objectives (generic) | No accessibility of your solutions; no inclusion championed. Planned: `by-ksb/sustainability-and-accessibility.md` |
+| K21 | Underlying Principles (SWE) | Development lifecycle scenarios [wording to confirm] | — | 🟡 | M2, M4, M6, M7 | Stages implicit; techniques per stage not named. Planned: `by-module/module-7/K21-evidence.md` |
+| K22 | Underlying Principles (SWE) | Development techniques per SDLC stage [wording to confirm] | — | 🟢 | M7 §2 ADRs, §3 test techniques | Strong. Planned: `by-module/module-7/K22-evidence.md` |
+| K23 | Underlying Principles (SWE) | Development methods and approaches [wording to confirm] | — | 🟢 | M5 §2.5 Waterfall/Scrum/Hybrid | Strong in M5 only. Planned: `by-module/module-7/K23-evidence.md` (uses Module 5 comparison) |
+| K24 | Technical Solutions (SWE) | Interpreting and implementing a compliant design; legacy issues | — | 🟢 | M6 §2.1 requirements traced to design, §2.2 legacy | Strong; OS and hardware legacy omitted. Planned: `by-module/module-6/K24-evidence.md`, `by-module/module-5/K24-evidence.md` |
+| K28 | Technical Solutions (SWE) | Tools that support teamwork [wording to confirm] | — | 🟡 | M5 §2.4; M6 §3.2 | Tools listed; how they made teamwork effective not described. Planned: `by-module/module-6/K28-evidence.md` |
+| S20 | Innovation and Response (SWE) | Respond to changing priorities and adapt plans | ✅ | 🟡 | M6 §4.1-4.4 | Examples are bug fixes, not changing priorities. Planned: `by-ksb/changing-priorities.md`, `by-module/module-6/S20-evidence.md` |
+| S21 | Innovation and Response (SWE) | Determine and adapt SE methods to evaluate outcomes | — | 🟡 | M2, M4, M5, M6, M7 | Evaluates outcomes; never shows refining or adapting methods. Planned: `by-module/module-6/S21-evidence.md`, `by-module/module-7/S21-evidence.md`, `by-ksb/changing-priorities.md` |
+| S23 | Legal, Ethics and Landscape (SWE) | Research to update knowledge and lead improvements | — | 🟡 | M5 §6.2-6.3; M7 references | Research informs design; no improvement led in organisation. Planned: `by-module/module-5/S23-evidence.md` |
 
 ## Coverage matrix by module
 
@@ -134,8 +136,8 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
 |---|---|---|---|
 | K19 | Partly | M5 (GDPR case for rejecting COTS), M4 §10 | Justify why each standard applies; weigh alternatives; fix EU GDPR → UK GDPR/DPA 2018 in M4 |
 | S15 | Partly | Same as K19 | Same as K19 |
-| K20 | Not met | None | Evaluate the impact of your organisation's sustainable technology practices |
-| S20 | Partly | M6 §4.4 compares three adaptations | Needs a real change in priorities (not bug fixes) and your influence on team plans |
+| K20 | Not met | None | Evaluate the impact of your organisation's sustainable technology practices. Planned: `by-ksb/sustainability-and-accessibility.md` |
+| S20 | Partly | M6 §4.4 compares three adaptations | Needs a real change in priorities (not bug fixes) and your influence on team plans. Planned: `by-ksb/changing-priorities.md` |
 
 ## Gap analysis: prioritised actions
 
@@ -152,6 +154,47 @@ S = Strong, P = Present, W = Weak, – = none. Module numbers differ from Multiv
    - M7: "0 critical gaps" vs Gap 5 not addressed; v0 size 90 vs 106 lines.
    - M1: "How the proposal aligns" slide pairs goals with the wrong justifications; DEI deadlines already passed.
 7. **Save the missing Multiverse pages** for K8, K13, B1, K21, K22, K23, K28, S20 and S21, so the standard wording can be checked (B1 ratings are provisional).
+
+## Work in progress (not yet evidence)
+
+| File | KSBs targeted | State | Next step |
+|---|---|---|---|
+| `06_evidence/by-ksb/leading-and-working-together.md` | K8, K9, K10, S7, S8, B4, B6, B7 | Scaffold with module material mapped; K10 and S8 drafted from Modules 1, 5 and 6; personal examples still `[EVIDENCE NEEDED]` | Fill in from your real team and leadership examples |
+| `06_evidence/by-ksb/sustainability-and-accessibility.md` | K20 (Pass and Distinction), B8 | Scaffold; Part A2 drafted from Module 5 (retrieval vs fine-tuning, small model, infrastructure reuse) and Module 6 (no dedicated GPU, log retention, always-on EC2 trade-off); A1, A3, Part B (B8) and Part C drafted from all modules; B1 needs a real accessibility test | Fill in; Part C targets the K20 Distinction |
+| `06_evidence/by-ksb/changing-priorities.md` | S20 (Pass and Distinction), S21, K10 | Scaffold | Fill in with a real change that altered the plan |
+| `06_evidence/by-module/module-{1..7}/README.md` | Target KSBs per module | Folder indexes: official labels, current ratings, file status | Use with the Evidence Builder skill |
+| `06_evidence/by-module/module-5/K19-evidence.md` | K19 (Pass and Distinction), S15 | Draft from Module 5 text; role, result and three facts marked `[EVIDENCE NEEDED]` | Confirm your role and what was approved or delivered |
+| `06_evidence/by-module/module-5/S15-evidence.md` | S15 (Pass and Distinction) | Draft: application by lifecycle stage; flags personal data in Slack | Confirm which steps happened; answer the DPIA question |
+| `06_evidence/by-module/module-6/S20-evidence.md` | S20 (Pass and Distinction) | Draft: three problems arising with options, decisions and comparison; no priority change yet | Add a real priority change; confirm your role |
+| `06_evidence/by-module/module-6/S21-evidence.md` | S21 | Draft: methods matched to NFRs, results, refinements; health-check benchmark as the adapt example | Add your real response to the flawed benchmark |
+| `06_evidence/by-module/module-6/K28-evidence.md` | K28 | Draft: each tool reframed around teamwork; planning tools from Modules 2 and 5 | Add Module 6 planning and communication tools; confirm pull request use |
+| `06_evidence/by-module/module-6/K16-evidence.md` | K16 | Draft: concepts tied to build decisions (structure, architecture, components, QoS) | Describe the VPC layout from Figure 2; resolve ALB vs API Gateway |
+| `06_evidence/by-module/module-6/K24-evidence.md` | K24 | Draft: requirement traceability table, four compliance gaps in own code, legacy and ADKAR | Add OS, hardware and language legacy detail; answer the OpenAI data question |
+| `06_evidence/by-module/module-3/K16-evidence.md` | K16 | Draft: VLAN plan, allowlist, components, hybrid cloud, QoS; companion to Module 6 | State which parts reflect the real network; tighten three firewall rules |
+| `06_evidence/by-module/module-3/S9-evidence.md` | S9 | Draft: risk matrix, CVE mapping, prioritised mitigations, resilience, KPIs, self-critique of scores | Add score rationales and what was implemented; Module 6 S9 still needed for applied controls |
+| `06_evidence/by-module/module-6/S9-evidence.md` | S9 | Draft: controls applied per requirement, failure scenarios, risk table to score, four gaps incl. no user authentication | Score the risks; state which gaps were fixed |
+| `06_evidence/by-module/module-3/S12-evidence.md` | S12 | Draft: services-led planning, suggested phased migration, design decisions, proposed management | Add real network management experience; defend or drop the migration phases |
+| `06_evidence/by-module/module-3/K11-evidence.md` | K11 | Draft: root causes, scope, coding and network risks combined, critical evaluation; uses Module 3 and Module 6 | Describe the `/ask` sanitisation issue; state your role |
+| `06_evidence/by-module/module-3/B7-evidence.md` | B7 | Draft: trends with business value, portfolio-wide source range, critique of outdated standards | Add community, conference and a real decision a trend changed |
+| `06_evidence/by-module/module-4/K12-evidence.md` | K12 (and data management part of K14) | Draft: six roles of a data management system, design decisions, Module 3 protection, critical evaluation | State your role; resolve merge vs flag; K14 still needs its own piece |
+| `06_evidence/by-module/module-4/K14-evidence.md` | K14 | Draft: range of methods across Modules 2, 4 and 5, selection factors, triangulation, limits | Name the Module 4 requirements method; state your role |
+| `06_evidence/by-module/module-4/S10-evidence.md` | S10 | Draft: initiate, design, implement with code figures; debugging structure | Add real code and data debugging examples |
+| `06_evidence/by-module/module-4/S11-evidence.md` | S11, K13 | Draft: text, statistical, diagnostic (Module 4) and predictive (Module 2) analysis with reasons | Measure match precision; add one decision analysis changed |
+| `06_evidence/by-module/module-2/K13-evidence.md` | K13 | Draft: eight data analysis principles applied to the risk model; leakage check | Confirm no target leakage; resolve predictor contradiction; paste K13 wording |
+| `06_evidence/by-module/module-6/S4-evidence.md` | S4 | Draft: all five stages for the backend service, 12-test suite, CI, debugging, four self-found weaknesses | State your contribution; describe the `/ask` fix |
+| `06_evidence/by-module/module-7/K22-evidence.md` | K22 | Draft: techniques by lifecycle stage with principle, artefact and context; deployment from Module 6 | State your role; paste K22 wording; explain rejected patterns |
+| `06_evidence/by-module/module-7/K21-evidence.md` | K21 | Draft: five lifecycle scenarios (Modules 2, 4, 5, 6, 7) with techniques per stage and comparison | Add real deployment and operation experience; paste K21 wording |
+| `06_evidence/by-module/module-7/K23-evidence.md` | K23 | Draft: five delivery methods and six approaches with contexts; Module 5 selection and critique | Add day-to-day method experience; paste K23 wording |
+| `06_evidence/by-module/module-7/S21-evidence.md` | S21 | Draft: one evaluation method per question, three refinements, mutation testing as the adaptation | Fix coverage arithmetic; run mutation testing |
+| `06_evidence/by-module/module-3/B4-evidence.md` | B4 | Scaffold: learning cycle across modules drafted; CPD log, habits and changed practice are placeholders | Fill the CPD log with dated activities beyond the apprenticeship |
+| `06_evidence/by-module/module-7/B2-evidence.md` | B2 (and K19, S15 audiences) | Draft: objectivity and reliability from Module 7; team working from Modules 2 and 6 | Describe independent working; add a real team example |
+| `06_evidence/by-module/module-2/B6-evidence.md` | B6 | Draft: internal and community sharing from Module 2; practice shared through Modules 6 and 7 | Add audience sizes, dates and effect; publish the planned blog post |
+| `06_evidence/by-module/module-5/S23-evidence.md` | S23 | Draft: evidence types, research-led decisions, improvement led; two citations to verify | Describe research process; state outcome; recheck Xia and Peng |
+| `06_evidence/by-module/module-5/B7-evidence.md` | B7 | Draft: five AI and delivery trends turned into decisions; fortnightly regulatory watch | Add community and conference input; personal habits |
+| `06_evidence/by-module/module-5/K6-evidence.md` | K6 | Draft: each lifecycle stage tied to a registry standard or existing tool; build and run from Modules 4 and 6 | State your role and the proposal outcome |
+| `06_evidence/by-module/module-2/K7-evidence.md` | K7 | Draft: delivery, business and governance roles reviewed; bespoke vs off-the-shelf; reuse | State your role in each team; check RACI assignments |
+| `06_evidence/by-module/module-2/B1-evidence.md` | B1 | Draft (provisional): professional conduct across four projects | Confirm B1 wording; add a workplace example |
+| `06_evidence/module-fix-list.md` | All AM2 | 37 corrections to module submissions (20 Must) | Work through the Must items first |
 
 ## Evidence files index
 
