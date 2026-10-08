@@ -18,7 +18,7 @@ Portfolio evidence must be the apprentice's own work. The assessor probes every 
 ## How to use this skill
 
 Tell me:
-1. **Which assessment module** (1 to 7, matching `04_module-assessments/9419910600_Module{N}_Assessment1.pdf`)
+1. **Which assessment module** (1 to 7, matching `09_portfolio-AM2/module-assessments/9419910600_Module{N}_Assessment1.pdf`)
 2. **Which KSB**, or "all" for the module's target KSBs (listed in the module folder README)
 3. **Your real context:** what you did, why, and what happened, with any numbers you have
 
@@ -27,19 +27,19 @@ I will:
 2. Read the relevant sections of your module assessment.
 3. Ask you up to five questions for anything the criterion needs that neither source provides.
 4. Draft the entry using only your answers and the module text, with `[EVIDENCE NEEDED]` for any remaining gaps.
-5. Save it and update `06_evidence/ksb-coverage-tracker.md` (status changes only once no `[EVIDENCE NEEDED]` remains).
+5. Save it and update `09_portfolio-AM2/evidence/ksb-coverage-tracker.md` (status changes only once no `[EVIDENCE NEEDED]` remains).
 
 ---
 
 ## Output location
 
 ```
-ASWE-EPA-Project/06_evidence/by-module/module-{N}/{KSB-ID}-evidence.md
+ASWE-EPA-Project/09_portfolio-AM2/evidence/by-module/module-{N}/{KSB-ID}-evidence.md
 ```
 
 `{N}` is the **assessment module number** (the PDF), not the Multiverse project number. The mapping is in each folder's README.
 
-Cross-module pieces that cover several KSBs at once (e.g. leadership, sustainability, changing priorities) go in `06_evidence/by-ksb/`.
+Cross-module pieces that cover several KSBs at once (e.g. leadership, sustainability, changing priorities) go in `09_portfolio-AM2/evidence/by-ksb/`.
 
 ## Template
 

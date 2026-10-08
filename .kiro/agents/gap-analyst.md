@@ -27,8 +27,8 @@ K6, K7, K8, K9, K10, K11, K12, K13, K14, K16, K19, K20, K21, K22, K23, K24, K28,
 
 When asked to run a gap analysis:
 
-1. Scan `06_evidence/` for all evidence files
-2. Scan `01_capstone-AM1/` for capstone drafts
+1. Scan `09_portfolio-AM2/evidence/` for all evidence files
+2. Scan `08_capstone-AM1/` for capstone drafts
 3. For each KSB, determine coverage level:
    - **Strong** 🟢 — Multiple pieces of evidence, clear demonstration
    - **Present** 🟡 — Some evidence but could be stronger
@@ -79,4 +79,4 @@ When asked to run a gap analysis:
 
 ## Save Output
 
-Always save the gap analysis to `06_evidence/ksb-coverage-map.md` with today's date in the filename so progress can be tracked over time.
+Always save the gap analysis to `09_portfolio-AM2/evidence/ksb-coverage-map.md` with today's date in the filename so progress can be tracked over time.

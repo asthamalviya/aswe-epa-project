@@ -7,17 +7,18 @@
 ASWE-EPA-Project/_assets/
 
 # Loose HTML asset folders still in root (original unorganised files)
-*_files/
+/*_files/
 
 # Original loose files in root (already organised into ASWE-EPA-Project/)
-*.html
-*.pdf
-*.docx
-*.png
-*.jpg
-*.jpeg
-capstone/
-module*/
+# Leading slash = repo root only, so files inside ASWE-EPA-Project/ are still tracked
+/*.html
+/*.pdf
+/*.docx
+/*.png
+/*.jpg
+/*.jpeg
+/capstone/
+/module*/
 
 # Editor
 .vscode/

@@ -85,6 +85,6 @@ Common question types to prepare for:
 
 ## Files
 
-- Save presentation outline to `07_presentation/outline.md`
-- Save Q&A prep to `07_presentation/qa-prep.md`
-- Save mock interview notes to `07_presentation/mock-interview-notes.md`
+- Save presentation outline to `08_capstone-AM1/presentation/outline.md`
+- Save Q&A prep to `08_capstone-AM1/presentation/qa-prep.md`
+- Save mock interview notes to `08_capstone-AM1/presentation/mock-interview-notes.md`

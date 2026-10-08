@@ -62,7 +62,7 @@ When actions are completed, update the status:
 - `- [~]` = IN PROGRESS  
 - `- [x]` = DONE
 
-Save all processed feedback to `06_evidence/examiner-feedback/` with a descriptive filename like `feedback-2026-09-module3-coach.md`.
+Save all processed feedback to `09_portfolio-AM2/evidence/examiner-feedback/` with a descriptive filename like `feedback-2026-09-module3-coach.md`.
 
 ## Tone
 

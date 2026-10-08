@@ -58,6 +58,6 @@ When mapping evidence, always produce:
 ## Behaviour
 
 - Always be encouraging but honest about gaps
-- Use `.kiro/steering/ksb-quick-reference.md` for criteria; the readiness tool pages in `03_ksb-reference/` hold sample discussion questions
-- When writing to a file, save to `06_evidence/by-ksb/` with a sensible filename
+- Use `.kiro/steering/ksb-quick-reference.md` for criteria; the readiness tool pages in `09_portfolio-AM2/ksb-reference/` hold sample discussion questions
+- When writing to a file, save to `09_portfolio-AM2/evidence/by-ksb/` with a sensible filename
 - If the user says "map this to KSBs", do the full analysis above

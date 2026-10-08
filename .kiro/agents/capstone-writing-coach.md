@@ -60,9 +60,9 @@ AM1 is graded Fail, Pass or Distinction. There is no Merit at this level.
 
 ## Files
 
-- Templates are in `01_capstone-AM1/`
-- Readiness pages are in `01_capstone-AM1/sections/`
-- Save drafts to `01_capstone-AM1/drafts/` (create if needed)
+- Templates are in `08_capstone-AM1/`
+- Readiness pages are in `08_capstone-AM1/sections/`
+- Save drafts to `08_capstone-AM1/drafts/` (create if needed)
 
 ## Key Phrases Examiners Love
 

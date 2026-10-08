@@ -2,18 +2,22 @@
 
 Advanced Software Engineering apprenticeship — End Point Assessment preparation hub.
 
-## Structure
+## Three separate pieces of work
+
+| Work | Folder | What it is | Graded on |
+|---|---|---|---|
+| **Module 7** | `07_module-7/` | Module portfolio project: Software Testing and Design Patterns (April brief) | Module rubric: K8, K21, K22, K23, S21, B1 |
+| **Capstone** (AM1) | `08_capstone-AM1/` | 6,000-word report on a real work project, plus `presentation/` (30 min + 30 min questions) | 25 AM1 KSBs |
+| **Portfolio** (AM2) | `09_portfolio-AM2/` | Your seven module submissions, evidence drafts and discussion preparation | 34 AM2 KSBs, 60-minute discussion |
+
+Each folder has its own guide: `07_module-7/ABOUT-MODULE-7.md`, `08_capstone-AM1/ABOUT-CAPSTONE.md`, `08_capstone-AM1/presentation/ABOUT-PRESENTATION.md`, `09_portfolio-AM2/README.md`.
+
+## Shared folders
 
 | Folder | Contents |
 |--------|----------|
 | `00_overview/` | Core reference PDFs: EPA guidance, capstone brief, M8 workshop |
-| `01_capstone-AM1/` | AM1 Capstone project — readiness pages, proposal & report templates |
-| `02_portfolio-AM2/` | AM2 Portfolio evidence pages, organised by module (3–5 saved so far) |
-| `03_ksb-reference/` | Standalone KSB readiness pages — Knowledge, Skills, Behaviours |
-| `04_module-assessments/` | Your submitted assessment PDFs (Modules 1–7) |
 | `05_grading-tools/` | Multiverse grading tool HTML pages |
-| `06_evidence/` | **Your workspace** — add evidence here, organised by module or KSB |
-| `07_presentation/` | Presentation prep — slides, scripts, talking points |
 | `_assets/` | Archived HTML companion files (JS/CSS for saved pages) |
 | `.kiro/agents/` | AI agents for this project |
 | `.kiro/steering/` | Steering notes that guide Kiro across all sessions |
@@ -34,7 +38,7 @@ K = Knowledge, S = Skills, B = Behaviours. Each KSB is assessed in one method on
 
 ## Quick Actions
 
-- Add new evidence → `06_evidence/`
-- Check KSB requirements → `.kiro/steering/ksb-quick-reference.md` (source pages in `03_ksb-reference/`)
-- Work on capstone → `01_capstone-AM1/`
-- Prep presentation → `07_presentation/`
+- Module 7 → `07_module-7/`
+- Capstone report → `08_capstone-AM1/`; presentation → `08_capstone-AM1/presentation/`
+- Portfolio evidence and discussion prep → `09_portfolio-AM2/`
+- KSB wording and criteria → `.kiro/steering/ksb-quick-reference.md`

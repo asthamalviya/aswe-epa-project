@@ -17,11 +17,12 @@ This workspace belongs to an Advanced Software Engineering (ASWE) apprentice pre
 
 - `ASWE-EPA-Project/README.md` — full project overview
 - `ASWE-EPA-Project/00_overview/` — EPA guidance and capstone brief PDFs
-- `ASWE-EPA-Project/01_capstone-AM1/` — Capstone project templates and sections
-- `ASWE-EPA-Project/02_portfolio-AM2/` — Module-specific KSB readiness pages
-- `ASWE-EPA-Project/03_ksb-reference/` — Knowledge, Skills, Behaviours reference
-- `ASWE-EPA-Project/06_evidence/` — User's own evidence files
-- `ASWE-EPA-Project/07_presentation/` — Presentation prep materials
+- `ASWE-EPA-Project/07_module-7/` — Module 7 brief (April update) and guide
+- `ASWE-EPA-Project/08_capstone-AM1/` — Capstone (AM1): proposal, report drafts, templates, guidance
+- `ASWE-EPA-Project/09_portfolio-AM2/` — Portfolio (AM2): module submissions, evidence, discussion prep
+- `ASWE-EPA-Project/09_portfolio-AM2/ksb-reference/` — Knowledge, Skills, Behaviours reference
+- `ASWE-EPA-Project/09_portfolio-AM2/evidence/` — User's own evidence files
+- `ASWE-EPA-Project/08_capstone-AM1/presentation/` — Presentation prep materials
 
 ## KSB Framework
 
@@ -38,7 +39,7 @@ Grades per method are Fail, Pass or Distinction only. Only K19, K20, S15 and S20
 
 ## How to Help
 
-- When the user asks about KSBs, use `.kiro/steering/ksb-quick-reference.md` first, then the readiness pages in `03_ksb-reference/`
+- When the user asks about KSBs, use `.kiro/steering/ksb-quick-reference.md` first, then the readiness pages in `09_portfolio-AM2/ksb-reference/`
 - When helping with writing, aim for Distinction-level language (evaluate, justify, reflect)
 - When reviewing evidence, check it against the grading descriptors
 - Always suggest saving new work to appropriate folders in `ASWE-EPA-Project/`

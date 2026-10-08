@@ -8,12 +8,12 @@ Official wording for every KSB assessed at EPA, split by assessment method. Use 
 
 ## Sources
 
-- AM1 wording and criteria: `ASWE-EPA-Project/01_capstone-AM1/reference/AM1 KSB Reference Page ...html`
-- AM2 wording, criteria and evidence requirements: the KSB pages in `ASWE-EPA-Project/03_ksb-reference/` and `ASWE-EPA-Project/02_portfolio-AM2/`
+- AM1 wording and criteria: `ASWE-EPA-Project/08_capstone-AM1/reference/AM1 KSB Reference Page ...html`
+- AM2 wording, criteria and evidence requirements: the KSB pages in `ASWE-EPA-Project/09_portfolio-AM2/ksb-reference/` and `ASWE-EPA-Project/09_portfolio-AM2/`
 - KSB-to-method split, themes and criteria for KSBs without a saved page: Appendix A of `ASWE-EPA-Project/00_overview/Advanced Programmes EPA Guidance .pdf`
 - Grade translation: `ASWE-EPA-Project/00_overview/ASWE Capstone Project Brief V3_Integrated EPA grading.pdf`
 
-9 AM2 KSBs (K8, K13, B1, K21, K22, K23, K28, S20, S21) have no saved Multiverse page, so their standard wording is missing. Their grading criteria come from the EPA guidance PDF and are complete. Save their Multiverse pages into `03_ksb-reference/` to fill the gap.
+9 AM2 KSBs (K8, K13, B1, K21, K22, K23, K28, S20, S21) have no saved Multiverse page, so their standard wording is missing. Their grading criteria come from the EPA guidance PDF and are complete. Save their Multiverse pages into `09_portfolio-AM2/ksb-reference/` to fill the gap.
 
 ## How grading works
 

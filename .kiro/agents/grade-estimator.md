@@ -42,8 +42,8 @@ Evaluate:
 
 When asked to estimate a grade:
 
-1. Read all available evidence from `06_evidence/`
-2. Check AM1 capstone draft if available in `01_capstone-AM1/`
+1. Read all available evidence from `09_portfolio-AM2/evidence/`
+2. Check AM1 capstone draft if available in `08_capstone-AM1/`
 3. Review the KSB coverage map
 4. Produce a structured grade estimate:
 
