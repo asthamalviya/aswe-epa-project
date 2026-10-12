@@ -15,5 +15,5 @@
 | File | Purpose |
 |---|---|
 | `presentation-outline.md` | 11 slides timed to 27 minutes, KSB per slide, 15 likely questions, rehearsal checklist |
-| `capstone-presentation-draft.pptx` | Draft deck: 11 main slides and 6 backup slides; yellow boxes to complete; talking points in speaker notes |
+| `presentation-planning-notes.pptx` | Pre-Gateway planning deck (structure and timings only). Build the real deck after the report is final |
 | `src/build-deck.js` | Script that generated the draft deck |

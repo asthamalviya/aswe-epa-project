@@ -87,6 +87,23 @@
 
 ---
 
+## Blockers and dependencies
+| Dependency | Needed from | Needed by | Status |
+|---|---|---|---|
+| Customer consent to use this project for the EPA (Version 1 AI Policy) | Line manager | Before Gateway | [EVIDENCE NEEDED] |
+| Read access to Confluence and GitHub APIs (service account), excluding security-cleared repositories | Platform administrators | Week 3 | [EVIDENCE NEEDED] |
+| Approval to use a hosted model, with confirmed UK region and data processing terms | Security and procurement | Week 3 | [EVIDENCE NEEDED] |
+| Security review of data flow diagrams | Security team | Week 2 | [EVIDENCE NEEDED] |
+| Data protection screening | Data protection officer | Week 1 | [EVIDENCE NEEDED] |
+| Hosting environment inside the registry's infrastructure | DevOps | Week 3 | [EVIDENCE NEEDED] |
+| Jira access for the spike baseline | Delivery manager | Week 1 | [EVIDENCE NEEDED] |
+| Ten pilot developers with time agreed | Delivery manager | Week 8 | [EVIDENCE NEEDED] |
+| Ethics and release sign-off | Technical Architects panel | Week 8 | [EVIDENCE NEEDED] |
+
+**If a blocker is not cleared in time:** API access delayed, start with exported Confluence pages; hosted model not approved, run the open-source model only and accept lower accuracy; fewer than ten pilot volunteers, extend the pilot by one sprint.
+
+---
+
 ## Notes for you (delete before submitting)
 - **Changes from Module 5.** The six-month plan is cut to a 12-week MVP because the capstone runs in the final three months. Scope is reduced to two platforms first; the other four move to Phase 2.
 - **Figures not reused.** The Module 5 waste and ROI totals (£592,000, £296,000) do not reconcile (see the fix list). Recalculate from the Jira baseline before quoting any savings.

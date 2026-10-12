@@ -192,4 +192,4 @@ backups.forEach(([t, p, q]) => {
   b.addText("Likely question: " + q, { isTextBox: true, x: 0.6, y: 6.0, w: 12.1, h: 0.5, fontFace: F, fontSize: 18, italic: true, color: MUTED, margin: 0 });
 });
 
-pres.writeFile({ fileName: "capstone-presentation-draft.pptx" }).then(f => console.log("wrote", f));
+pres.writeFile({ fileName: "presentation-planning-notes.pptx" }).then(f => console.log("wrote", f));

@@ -25,6 +25,22 @@
 **Word count excludes:** appendices, references and diagrams.
 **Your responsibility:** the report must be your own work and reflect your own role, even if the project was a team effort. Cite any AI use in the references (Multiverse gives a format for this).
 
+## Rules from the Capstone Session 1A briefing (6 October 2026)
+Points from the coach's session recording. Confirm anything unclear with your coach.
+
+| Rule | What it means for you |
+|---|---|
+| **No formal writing before sign-off** | You may build, research, talk to stakeholders and gather evidence now. Do not write the formal report or presentation deck until the project is signed off and the EPA period starts |
+| **Under 5,400 words risks a technical fail** | Aim for about 6,000; text over 6,600 may not be marked |
+| **Tag KSBs inline**, like references | e.g. "I compared three options using a weighted matrix (K2, K4)". Every AM1 KSB at least once; a KSB can appear more than once |
+| **All KSB evidence goes in the report** | The presentation distils the report; evidence that appears only in the slides may be missed |
+| **The project must be additive** | Building on Module 5 is allowed if the capstone adds something new (Module 5 proposed; the capstone builds and pilots). Reference your own earlier work; do not reuse its text. Re-run analyses such as PESTLE for today's context |
+| **Use feedback from earlier modules** | Show that lessons from module feedback shaped the capstone |
+| **Identify blockers in the proposal** | Data access, permissions and approvals, so nothing stops the project halfway |
+| **12 weeks after sign-off** | The project must be achievable in that time |
+| **Repeated questions in the Q&A are an opportunity** | The assessor may be probing for higher-grade evidence, not marking you down |
+| **AM1 and AM2 happen on the same day**, with a break | Plan rehearsal for both |
+
 ## Files in this folder
 
 | File or folder | Purpose |
@@ -32,7 +48,7 @@
 | `capstone-proposal-draft.md` | Proposal in markdown |
 | `Capstone Project proposal - draft.docx` | Proposal in the Word template (yellow fields to complete) |
 | `capstone-report-outline.md` | Section-by-section outline with word budgets and KSBs |
-| `capstone-report-draft.md` | Sections 1 to 5 drafted; 6 and 7 are frames to fill after delivery |
+| `report-planning-notes.md` | Pre-Gateway planning notes (analysis, options, risks, evidence to collect). Not report text: write the report fresh after sign-off |
 | `Capstone Project proposal template.docx`, `Capstone Project report template.docx` | Multiverse templates |
 | `sections/` | Multiverse Readiness Tool pages per report section (older save) |
 | `reference/capstone_ref/` | Multiverse Readiness Tool pages saved 8 October 2026, the capstone brief and the M8 workshop slides |

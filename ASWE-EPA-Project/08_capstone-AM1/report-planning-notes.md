@@ -1,4 +1,9 @@
-# Capstone Report: Draft
+# Capstone Report: Planning Notes
+
+> **PRE-GATEWAY PLANNING NOTES ONLY. NOT THE REPORT.**
+> In the Capstone Session 1A briefing (6 October 2026), the coach said the formal report and presentation must not be written until the project is signed off and the EPA period starts. These notes record planning thinking: analysis, options, risks and the evidence to collect. After sign-off, write the report fresh in your own words, using these notes and `capstone-report-outline.md` as a checklist. Do not paste text from this file into the submitted report: the employer declaration certifies the report as your own work, and Multiverse requires any AI use to be cited.
+
+
 
 **Project:** AI knowledge search for software delivery teams: design, build and pilot of a retrieval-augmented assistant at a UK government registry
 **Follows:** `capstone-report-outline.md` (word budgets, KSBs, checklists) and the headings in `Capstone Project report template.docx`
