@@ -45,6 +45,7 @@ Points from the coach's session recording. Confirm anything unclear with your co
 
 | File or folder | Purpose |
 |---|---|
+| `Capstone case study for manager.docx` | Three-page planning case study to agree the project with your line manager (no costs; Companies House named) |
 | `capstone-proposal-draft.md` | Proposal in markdown |
 | `Capstone Project proposal - draft.docx` | Proposal in the Word template (yellow fields to complete) |
 | `capstone-report-outline.md` | Section-by-section outline with word budgets and KSBs |
