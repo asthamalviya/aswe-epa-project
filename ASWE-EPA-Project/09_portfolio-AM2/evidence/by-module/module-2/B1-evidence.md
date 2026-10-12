@@ -1,11 +1,13 @@
-# B1: Professional behaviour (wording to confirm)
+# B1: Work ethic and commitment to standards (NEEDS REWORK)
+
+> **Rework needed.** The official B1 standard (Module 7 brief) is: *"Has a strong work ethic and commitment in order to meet the standards required."* This draft was written assuming B1 was about ethical conduct, so most of it belongs under K19, S15 and B2 instead. Multiverse maps B1 to Project 7 (Module 7). Rebuild it around real examples of meeting standards: persisting with a quality fix under time pressure, going beyond the minimum, correcting your own errors. Some rows below still fit (honesty about limits, the 30-minute secure CORS fix).
 **Assessment method**: AM2
 **Module**: 2 (Multiverse Project 4: Integrating Machine Learning and AI to Drive Business Value), with examples from Modules 5, 6 and 7
 **Date of the work**: [EVIDENCE NEEDED: month and year]
 **Status**: Draft (provisional until the B1 wording is confirmed)
 
 ## Criterion
-**KSB:** [EVIDENCE NEEDED: the B1 standard wording is **not saved** in the repo. Save the Multiverse B1 page and paste it here before relying on this draft. The sections below assume B1 concerns professional, ethical and responsible conduct, which is what the shared criterion covers.]
+**KSB:** Has a strong work ethic and commitment in order to meet the standards required.
 **Pass:** Applies relevant legal, ethical, social and professional standards to digital and technology solutions considering both technical and non-technical audiences and in line with organisational guidelines. (K19, S15, B1, B2, B5)
 **Distinction:** None for this KSB.
 

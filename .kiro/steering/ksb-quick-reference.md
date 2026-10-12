@@ -13,7 +13,7 @@ Official wording for every KSB assessed at EPA, split by assessment method. Use 
 - KSB-to-method split, themes and criteria for KSBs without a saved page: Appendix A of `ASWE-EPA-Project/00_overview/Advanced Programmes EPA Guidance .pdf`
 - Grade translation: `ASWE-EPA-Project/00_overview/ASWE Capstone Project Brief V3_Integrated EPA grading.pdf`
 
-9 AM2 KSBs (K8, K13, B1, K21, K22, K23, K28, S20, S21) have no saved Multiverse page, so their standard wording is missing. Their grading criteria come from the EPA guidance PDF and are complete. Save their Multiverse pages into `09_portfolio-AM2/ksb-reference/` to fill the gap.
+Standard wording for K8, K21, K22, K23, S21 and B1 comes from the Module 7 brief (April update, `07_module-7/`). K13, K28 and S20 still have no saved Multiverse page; their grading criteria come from the EPA guidance PDF and are complete.
 
 ## How grading works
 
@@ -42,19 +42,21 @@ The degree letter grade depends on AM1 Distinction criteria met, with every AM1 
 
 ## Portfolio projects mapped to AM2 KSBs
 
-Taken from the Multiverse AM2 Portfolio Readiness Tool navigation.
+Projects 1 to 5: Multiverse AM2 Portfolio Readiness Tool navigation. Projects 6 and 7: KSB Assessment Criteria summary (shared 12 October 2026), which also matches projects 1 to 5 and the Module 7 brief.
 
 | Project | KSBs |
 |---|---|
 | 1: Cybersecurity & Software Development | K11 K12 K16 S9 S12 B4 B7 |
 | 2: Driving Business Value with Data Engineering | K13 K14 S10 S11 |
 | 3: Advancing your Data Strategy and Governance | K7 K9 K10 K20 S8 B8 |
-| 4: Integrating Machine Learning and AI to Drive Business Value | K6 K7 K9 K10 K19 K20 K24 S4 S7 S8 S15 B2 B6 B8 |
-| 5: Managing Software Transformation Projects | K6 K19 K24 S4 S7 S15 S23 B2 B6 B7 |
-| 6: Cloud Computing and Scalable Architectures | [EVIDENCE NEEDED: page not saved] |
-| 7: Software Testing and Design Patterns | [EVIDENCE NEEDED: page not saved] |
+| 4: Integrating Machine Learning and AI to Drive Business Value | K6 K19 K24 S4 S7 S15 B2 B6 |
+| 5: Managing Software Transformation Projects | S23 B7 |
+| 6: Cloud Computing and Scalable Architectures | K16 K24 K28 S20 |
+| 7: Software Testing and Design Patterns | K8 K21 K22 K23 S21 B1 |
 
-Eight AM2 KSBs do not appear in projects 1 to 5: K8, K21, K22, K23, K28, S20, S21 and B1 [EVIDENCE NEEDED: check projects 6 and 7 pages].
+All 34 AM2 KSBs are now mapped. K16, K24 and B7 appear in two projects each.
+
+**Caution:** the KSB Assessment Criteria summary gives wrong "Standard" descriptions for some behaviours (B1, B2, B7). Use the wording in this file, not that summary.
 
 ## AM1: Capstone Project KSBs
 
@@ -352,9 +354,9 @@ Eight AM2 KSBs do not appear in projects 1 to 5: K8, K21, K22, K23, K28, S20, S2
 
 ### Leading and Working Together (Core)
 
-#### K8: Teams and organisational theory [wording to confirm]
+#### K8: How teams work effectively
 
-- **Standard:** [EVIDENCE NEEDED: standard wording not in saved Multiverse pages; confirm from ST0482]
+- **Standard:** How teams work effectively to produce digital and technology solutions. (Module 7 brief)
 - **Pass:** Explains how teams work effectively to produce a digital and technology solution applying relevant organisational theories using up to date awareness of trends and innovations. (K8, S7, B4, B6, B7)
 - **Distinction:** N/A
 
@@ -457,9 +459,9 @@ Eight AM2 KSBs do not appear in projects 1 to 5: K8, K21, K22, K23, K28, S20, S2
   - Provide evidence that shows you have applied relevant legal, ethical, social, and professional standards to digital and technology solutions.
   - Consider both technical and non-technical audiences in your application of these standards, aligning with organisational guidelines.
 
-#### B1: [wording to confirm]
+#### B1: Work ethic and commitment to standards
 
-- **Standard:** [EVIDENCE NEEDED: standard wording not in saved Multiverse pages; confirm from ST0482]
+- **Standard:** Has a strong work ethic and commitment in order to meet the standards required. (Module 7 brief)
 - **Pass:** Applies relevant legal, ethical, social and professional standards to digital and technology solutions considering both technical and non-technical audiences and in line with organisational guidelines. (K19, S15, B1, B2, B5)
 - **Distinction:** N/A
 
@@ -484,21 +486,21 @@ Eight AM2 KSBs do not appear in projects 1 to 5: K8, K21, K22, K23, K28, S20, S2
 
 ### Underlying Principles (Software Engineer)
 
-#### K21: Development lifecycle scenarios [wording to confirm]
+#### K21: Operating at all stages of the SDLC
 
-- **Standard:** [EVIDENCE NEEDED: standard wording not in saved Multiverse pages; confirm from ST0482]
+- **Standard:** How to operate at all stages of the software development life cycle and how each stage is applied in a range of contexts. For example, requirements analysis, design, development, testing, implementation. (Module 7 brief)
 - **Pass:** Describes scenarios covering all stages of a development lifecycle, identifying techniques and methods are applied in each case. (K21/SEK1)
 - **Distinction:** N/A
 
-#### K22: Development techniques per SDLC stage [wording to confirm]
+#### K22: Development techniques per SDLC stage
 
-- **Standard:** [EVIDENCE NEEDED: standard wording not in saved Multiverse pages; confirm from ST0482]
+- **Standard:** Principles of a range of development techniques, for each stage of the software development cycle that produce artefacts and the contexts in which they can be applied. For example UML, unit testing, programming, debugging, frameworks, architectures. (Module 7 brief)
 - **Pass:** Explains the principles of a range of development techniques, for each stage of the software development cycle that produce artefacts and the contexts in which they can be applied. (K22/SEK2)
 - **Distinction:** N/A
 
-#### K23: Development methods and approaches [wording to confirm]
+#### K23: Development methods and approaches
 
-- **Standard:** [EVIDENCE NEEDED: standard wording not in saved Multiverse pages; confirm from ST0482]
+- **Standard:** Principles of a range of development methods and approaches and the contexts in which they can be applied. For example Scrum, Extreme Programming, Waterfall, Prince2, TDD. (Module 7 brief)
 - **Pass:** Explains the principles of a range of development methods and approaches and the contexts in which they can be applied. (K23/SEK3)
 - **Distinction:** N/A
 
@@ -526,11 +528,11 @@ Eight AM2 KSBs do not appear in projects 1 to 5: K8, K21, K22, K23, K28, S20, S2
 
 - **Standard:** [EVIDENCE NEEDED: standard wording not in saved Multiverse pages; confirm from ST0482]
 - **Pass:** Describes how they respond to changing priorities and problems arising within software engineering projects by making revised recommendations, and adapting plans as necessary, to fit the scenario being investigated. (S20/SES5)
-- **Distinction:** Demonstrates how their actions have influenced the creation of appropriate plans within teams and contributed to project outcomes. (S20/SES5) AND Compares and contrasts how they respond to changing priorities and problems arising within software engineering projects by making revised recommendations, and adapting plans as necessary, to fit the scenario being investigated. (S20/SES5) [Column placement inferred from PDF layout; confirm with coach]
+- **Distinction:** Demonstrates how their actions have influenced the creation of appropriate plans within teams and contributed to project outcomes. (S20/SES5) AND Compares and contrasts how they respond to changing priorities and problems arising within software engineering projects by making revised recommendations, and adapting plans as necessary, to fit the scenario being investigated. (S20/SES5) [Placement confirmed by the KSB Assessment Criteria summary]
 
 #### S21: Determine and adapt SE methods to evaluate outcomes
 
-- **Standard:** [EVIDENCE NEEDED: standard wording not in saved Multiverse pages; confirm from ST0482]
+- **Standard:** Determine, refine, adapt and use appropriate software engineering methods, approaches and techniques to evaluate software engineering project outcomes. (Module 7 brief)
 - **Pass:** Explains how they determine, refine, adapt and use appropriate software engineering methods, approaches and techniques to evaluate software engineering project outcomes. (S21/SES6)
 - **Distinction:** N/A
 

@@ -20,7 +20,7 @@ Your module numbers differ from Multiverse project numbers. The assessor will us
 | M7 | Project 7: Testing and Design Patterns | Pricing service refactor (90 tests) |
 
 ## Where Multiverse expects each KSB
-Taken from the Readiness Tool navigation you saved. Projects 6 and 7 were not saved, so the KSBs below marked "not saved" probably sit there.
+Projects 1 to 5 from the Readiness Tool navigation you saved; Projects 6 and 7 from the KSB Assessment Criteria summary (12 October 2026), which agrees with the rest and with the Module 7 brief.
 
 | Multiverse project (your module) | KSBs Multiverse maps to it |
 |---|---|
@@ -29,9 +29,10 @@ Taken from the Readiness Tool navigation you saved. Projects 6 and 7 were not sa
 | Project 3 (M1) | K7, K9, K10, K20, S8, B8 |
 | Project 4 (M2) | K6, K19, K24, S4, S7, S15, B2, B6 |
 | Project 5 (M5) | S23, B7 |
-| Projects 6 and 7 (M6, M7): not saved | Likely K8, K21, K22, K23, K28, S20, S21, B1 |
+| Project 6 (M6) | K16, K24, K28, S20 |
+| Project 7 (M7) | K8, K21, K22, K23, S21, B1 |
 
-**Why this matters:** for 11 KSBs your strongest evidence sits in a different project from the one Multiverse maps it to (marked ⇄ below). That is allowed, since the assessor looks at the whole portfolio, but be ready to say "my best example of K12 is in Project 2, not Project 1" and point to it.
+**Why this matters:** for 15 KSBs your strongest evidence sits in a different project from the one Multiverse maps it to (marked ⇄ below). That is allowed, since the assessor looks at the whole portfolio, but be ready to say "my best example of K12 is in Project 2, not Project 1" and point to it.
 
 ---
 
@@ -45,21 +46,21 @@ Status: 🟢 strong, 🟡 present, 🟠 weak. Readiness: **Ready** (fixes only),
 |---|---|---|---|---|---|---|---|
 | K6 | Lifecycle approaches and organisational standards | P4 (M2) ⇄ | M5 (P5): lifecycle tied to registry tools | M2, M6 | `09_portfolio-AM2/evidence/by-module/module-5/K6-evidence.md` | 🟡 | **Needs you:** your role; proposal outcome |
 | K7 | Roles, functions and activities | P3 (M1) ⇄ | M5 (P5) §1.5, §5.3 RACI | M4 (P2) §3.1 | `by-module/module-2/K7-evidence.md` | 🟡 | **Needs you:** your role in each team; check RACI |
-| K8 | Teams and organisational theory [wording to confirm] | not saved | M2 (P4) roles table (thin) | M1, M5, M6 (thin) | `by-ksb/leading-and-working-together.md` | 🟠 | **Needs you:** real team example and a named theory |
+| K8 | How teams work effectively | P7 (M7) ⇄ | M2 (P4) roles table (thin) | M1, M5, M6 (thin) | `by-ksb/leading-and-working-together.md` | 🟠 | **Needs you:** real team example and a named theory |
 | K9 | Leadership concepts and principles | P3 (M1) | M1 (P3) "my role as Lead" slide (thin) | M2, M5 (thin) | `by-ksb/leading-and-working-together.md` | 🟠 | **Needs you:** real leadership example and concept |
 | K10 | Management techniques and theories | P3 (M1) ⇄ | M5 (P5): Kepner-Tregoe, MoSCoW, WBS | M1 (P3) Kotter | `by-ksb/leading-and-working-together.md`; `by-ksb/changing-priorities.md` | 🟡 | **Needs you:** link techniques to how you manage your own work |
 | K11 | Common vulnerabilities | P1 (M3) | M3 (P1) §4 risk matrix, CVEs | M6 (P6) IAM, CORS | `by-module/module-3/K11-evidence.md` | 🟡 | **Needs you:** describe the `/ask` sanitisation fix; your role |
 | K12 | Role of data management systems | P1 (M3) ⇄ | M4 (P2) §4.3 five-layer architecture | M1, M2, M5, M6 | `by-module/module-4/K12-evidence.md` | 🟢 | **Fix first:** M4 Oracle in text vs PostgreSQL build; merge vs flag deduplication |
 | K13 | Principles of data analysis [wording to confirm] | P2 (M4) ⇄ | M2 (P4) data analysis techniques | M4 (P2) | `by-module/module-2/K13-evidence.md` | 🟢 | **Fix first:** M2 KPI values headed "Example"; predictor contradiction; check target leakage |
 | K14 | Quantitative and qualitative data gathering | P2 (M4) ⇄ | M5 (P5) interviews, surveys, benchmark | M4 (P2) (weak) | `by-module/module-4/K14-evidence.md` | 🟡 | **Needs you:** how Module 4 requirements were gathered, from how many people |
-| K16 | Networking concepts | P1 (M3) | M3 (P1) §2, §5 | M6 (P6) §1.1, Figure 2 | `by-module/module-3/K16-evidence.md`; `by-module/module-6/K16-evidence.md` | 🟢 | **Fix first:** M6 ALB vs API Gateway |
+| K16 | Networking concepts | P1 (M3), P6 (M6) | M3 (P1) §2, §5 | M6 (P6) §1.1, Figure 2 | `by-module/module-3/K16-evidence.md`; `by-module/module-6/K16-evidence.md` | 🟢 | **Fix first:** M6 ALB vs API Gateway |
 | K19 ✅ | Legal, ethical, social and professional standards | P4 (M2) ⇄ | M5 (P5) PESTLE, GDPR, ethics framework | M2 (P4), M4 (P2) §10, M7 | `by-module/module-5/K19-evidence.md` | 🟢 Pass; Distinction partly | **Fix first:** M5 GDPR Articles 44 to 49 wording; M4 EU GDPR to UK GDPR and DPA 2018. Distinction: justify why each standard applies |
 | K20 ✅ | Sustainable development and green computing | P3 (M1) | None strong; one-liners in M1, M2, M5 | M6 right-sizing choices | `by-ksb/sustainability-and-accessibility.md` | 🟠 | **Needs you:** registry sustainability policy; your team's green choices. Only Distinction KSB with no evidence |
-| K21 | Development lifecycle scenarios [wording to confirm] | not saved | M7 (P7) | M2, M4, M6 | `by-module/module-7/K21-evidence.md` | 🟡 | **Needs you:** real deployment and operation experience |
-| K22 | Techniques per lifecycle stage [wording to confirm] | not saved | M7 (P7) §2 ADRs, §3 test techniques | M6 (P6) | `by-module/module-7/K22-evidence.md` | 🟢 | **Fix first:** M7 "0 critical gaps" vs Gap 5; v0 90 vs 106 lines |
-| K23 | Development methods and approaches [wording to confirm] | not saved | M5 (P5) §2.5 Waterfall, Scrum, Hybrid | M7 | `by-module/module-7/K23-evidence.md` | 🟢 | **Needs you:** day-to-day method experience at work |
-| K24 | Compliant design; legacy issues | P4 (M2) ⇄ | M6 (P6) §2.1 traceability, §2.2 legacy | M2 (P4), M5 | `by-module/module-6/K24-evidence.md`; `by-module/module-5/K24-evidence.md` | 🟢 | **Needs you:** OS, hardware and language legacy detail |
-| K28 | Tools that support teamwork [wording to confirm] | not saved | M5 (P5) §2.4 | M6 (P6) §3.2 | `by-module/module-6/K28-evidence.md` | 🟡 | **Needs you:** whether pull requests were used; how tools helped the team |
+| K21 | Operating at all stages of the SDLC | P7 (M7) | M7 (P7) | M2, M4, M6 | `by-module/module-7/K21-evidence.md` | 🟡 | **Needs you:** real deployment and operation experience |
+| K22 | Techniques per lifecycle stage | P7 (M7) | M7 (P7) §2 ADRs, §3 test techniques | M6 (P6) | `by-module/module-7/K22-evidence.md` | 🟢 | **Fix first:** M7 "0 critical gaps" vs Gap 5; v0 90 vs 106 lines |
+| K23 | Development methods and approaches | P7 (M7) ⇄ | M5 (P5) §2.5 Waterfall, Scrum, Hybrid | M7 | `by-module/module-7/K23-evidence.md` | 🟢 | **Needs you:** day-to-day method experience at work |
+| K24 | Compliant design; legacy issues | P4 (M2), P6 (M6) | M6 (P6) §2.1 traceability, §2.2 legacy | M2 (P4), M5 | `by-module/module-6/K24-evidence.md`; `by-module/module-5/K24-evidence.md` | 🟢 | **Needs you:** OS, hardware and language legacy detail |
+| K28 | Tools that support teamwork | P6 (M6) ⇄ | M5 (P5) §2.4 | M6 (P6) §3.2 | `by-module/module-6/K28-evidence.md` | 🟡 | **Needs you:** whether pull requests were used; how tools helped the team |
 
 ### Skills (11)
 
@@ -73,15 +74,15 @@ Status: 🟢 strong, 🟡 present, 🟠 weak. Readiness: **Ready** (fixes only),
 | S11 | Data analysis techniques | P2 (M4) | M4 (P2) §5 | M2 (P4) model evaluation | `by-module/module-4/S11-evidence.md` | 🟡 | **Needs you:** one decision the analysis changed |
 | S12 | Plan, design and manage networks | P1 (M3) | M3 (P1) §3 VLAN plan, allowlist | M6 (P6) Figure 2 | `by-module/module-3/S12-evidence.md` | 🟡 | **Needs you:** which parts are the real network; any network management |
 | S15 ✅ | Apply legal, ethical, social and professional standards | P4 (M2) ⇄ | M5 (P5) | M2 (P4), M4 §10, M7 §4 | `by-module/module-5/S15-evidence.md` | 🟡 | **Needs you:** which steps happened; technical vs non-technical audiences. Distinction: justify |
-| S20 ✅ | Respond to changing priorities | not saved | M6 (P6) §4.1 to §4.4 | none | `by-ksb/changing-priorities.md`; `by-module/module-6/S20-evidence.md` | 🟡 | **Needs you:** a real change of priorities (current examples are bug fixes). **Fix first:** M6 two vs three adaptation events |
-| S21 | Adapt methods to evaluate outcomes | not saved | M6 (P6) | M7, M2, M4, M5 | `by-module/module-6/S21-evidence.md`; `by-module/module-7/S21-evidence.md` | 🟡 | **Fix first:** M7 coverage 99% vs 242/252 (96%) |
+| S20 ✅ | Respond to changing priorities | P6 (M6) | M6 (P6) §4.1 to §4.4 | none | `by-ksb/changing-priorities.md`; `by-module/module-6/S20-evidence.md` | 🟡 | **Needs you:** a real change of priorities (current examples are bug fixes). **Fix first:** M6 two vs three adaptation events |
+| S21 | Adapt methods to evaluate outcomes | P7 (M7) ⇄ | M6 (P6) | M7, M2, M4, M5 | `by-module/module-6/S21-evidence.md`; `by-module/module-7/S21-evidence.md` | 🟡 | **Fix first:** M7 coverage 99% vs 242/252 (96%) |
 | S23 | Research to update knowledge and lead improvement | P5 (M5) | M5 (P5) §6.2, §6.3 | M7 references | `by-module/module-5/S23-evidence.md` | 🟡 | **Fix first:** recheck Xia et al. and Peng et al. citations |
 
 ### Behaviours (6)
 
 | KSB | Topic | MV project | Lead evidence | Backup | Discussion draft | Status | Readiness and action |
 |---|---|---|---|---|---|---|---|
-| B1 | [wording to confirm] | not saved | M2 (P4) "Developer's Ethical Commitment" | M5, M6, M7 conduct | `by-module/module-2/B1-evidence.md` | 🟡 provisional | **Needs you:** save the B1 page; one workplace example |
+| B1 | Work ethic and commitment to standards | P7 (M7) ⇄ | [EVIDENCE NEEDED: rework; current draft covers ethics, not work ethic] | M2, M7 | `by-module/module-2/B1-evidence.md` (needs rework) | 🟠 | **Needs you:** examples of meeting standards under pressure, persistence, quality commitment |
 | B2 | Reliable, objective, independent, team working | P4 (M2) | M2 (P4) peer feedback | M7 (P7) stated limitations | `by-module/module-7/B2-evidence.md` | 🟡 | **Needs you:** independent working; a team example |
 | B4 | Continuous professional development | P1 (M3) ⇄ | M2, M7 reflections (thin) | none | `by-module/module-3/B4-evidence.md` | 🟠 | **Needs you:** dated CPD log, two items beyond the apprenticeship |
 | B6 | Shares best practice | P4 (M2) | M2 (P4) brown-bag session, checklist | M6, M7 | `by-module/module-2/B6-evidence.md` | 🟡 | **Needs you:** date, audience size, feedback |
@@ -105,4 +106,4 @@ Status: 🟢 strong, 🟡 present, 🟠 weak. Readiness: **Ready** (fixes only),
 2. **Correct the Must items in `09_portfolio-AM2/evidence/module-fix-list.md`** for M4, M5, M6 and M7. The portfolio can be refined until Gateway, and an assessor who spots a contradiction will ask about it.
 3. **Write the K20 and B8 evidence** from a real sustainability policy and one accessibility test you run now. K20 is the only Distinction criterion with nothing behind it.
 4. **Find one real change of priorities** for S20 (Pass and Distinction).
-5. **Save the missing Multiverse pages** (Projects 6 and 7, and K8, K13, K21, K22, K23, K28, S20, S21, B1 wording), so the mapping above and the KSB wording can be confirmed.
+5. **Save the remaining Multiverse KSB pages** (K13, K28, S20) for their sample questions.
