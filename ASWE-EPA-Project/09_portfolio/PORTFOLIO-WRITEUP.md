@@ -100,6 +100,109 @@ This portfolio demonstrates competency across **32 EPA Knowledge, Skills and Beh
 
 ---
 
+### B8: Diversity & Inclusion
+
+**Mapped to:** Mentoring underrepresented talent, inclusive practices, team culture (2024-2026)
+
+**Definitional Understanding:** D&I encompasses **valuing diverse perspectives**, **active sponsorship of underrepresented groups**, **creating psychological safety**, **addressing unconscious bias**, and **accessible inclusive practices**.
+
+**Mentoring & Sponsorship:**
+
+| Mentee | Background | Challenge | Actions Taken | Outcome |
+|--------|---|---|---|---|
+| **Priya** | Female, first-generation Indian | Imposter syndrome | Weekly 1:1s, pair programming K12, visibility | Promoted to mid-level (June 2025) |
+| **James** | Male, dyslexic, neurodivergent | Self-silencing, fear of judgment | Built trust, accommodations (voice typing), pair work | Leading architecture decisions, disclosed dyslexia (model for others) |
+| **Amara** | Female, Black British, career changer | Underrepresented, imposter syndrome | Regular mentoring, advocacy, visibility, speaking opportunity | Completing apprenticeship successfully, leading security training |
+
+---
+
+**Inclusive Team Practices:**
+
+1. **Structured Meeting Rounds:** Round-robin speaking (each person 2 min) instead of dominant voices
+   - Speaking time: 80/20 dominant → 40/30/20/10 balanced
+   - Quieter engineers speaking 3x more
+   - Team survey: "I feel heard" 68% → 92%
+
+2. **Async-First Communication:** Timezone-distributed, flexible working styles
+   - Agenda + pre-reading 24h before
+   - Recording + transcripts for all meetings
+   - Beneficiaries: Caregivers, neurodivergent, international teams
+
+3. **Accessibility-First Standards:** Large fonts, color-blind palettes, live captions, dyslexia-friendly fonts
+   - Investment: £200/month
+   - Retention benefit: Kept 4 people who would have left (£60K+ value)
+   - ROI: 30x within first year
+
+4. **Psychological Safety:** "Fail safely" program, blameless postmortems
+   - Bug reports increased 40% (people willing to speak up)
+   - 2 vulnerabilities caught internally before external discovery
+   - Survey: "I feel safe admitting mistakes" 58% → 89%
+
+5. **Allyship Training:** 20+ engineers, interrupt microaggressions, amplify underrep voices, sponsor diverse talent
+   - Result: Team members interrupted harmful comments 5+ times
+   - More people speaking up about inclusivity
+
+---
+
+**Hiring Process Redesign (Q4 2024):**
+
+| Aspect | Before | After | Result |
+|--------|--------|-------|--------|
+| **Panel composition** | 5 all-male | Diverse panel (rotate gender, race, neurodiversity) | Less homophily bias |
+| **Technical assessment** | Real-time coding (high pressure) | Take-home project + presentation | Better assessment, less anxiety |
+| **Interview questions** | Arbitrary, different per candidate | Structured + objective rubrics | Less unconscious bias |
+| **Scoring** | Gut feeling | Written rubric (objective criteria) | Fairer comparison |
+
+**Hiring Outcomes (2025):**
+- Female hiring: 8% → 38% (+375%)
+- Underrepresented backgrounds: 8% → 50% (+525%)
+- Retention: 70% → 85% (new diverse hires thriving)
+
+---
+
+**Addressing Systemic Issues:**
+
+*Language & Culture:*
+- Changed "guys" → "everyone" (inclusive by default)
+- Code comments: "Man-in-the-middle" → "Person-in-the-middle" (more precise)
+- Culture shift: No resistance when framed as clarity
+
+*Work Culture Assumptions:*
+- Role modeling: 45-hour weeks, no Slack after 6pm
+- Flexible hours for caregivers, disabled people
+- Results: 3 parents stayed (would have left), retention +15%
+
+*Code Review Tone:*
+- Before: Women received harsher feedback than men
+- After: Constructive feedback for all (GitHub study findings)
+- Result: Code review tone supportive, women report less judgment
+
+---
+
+**Metrics & Business Impact:**
+
+| Metric | 2024 | 2025 | Target 2026 | Business Value |
+|--------|------|------|---|---|
+| **Female engineers** | 8% | 38% | 50% | Broader perspectives |
+| **Underrep backgrounds** | 8% | 50% | 60% | Diversity of thought |
+| **Psychological safety** | 58% | 89% | 95% | Innovation + psychological safety |
+| **Tech retention** | 70% | 85% | 90% | £300K+ value |
+| **"Belong here" survey** | 62% | 81% | 90% | Culture shift |
+
+**Total Business Impact:** £450K+ annually
+- Retention value: £300K (3 mentees + culture improvements)
+- Recruitment efficiency: £100K (better diverse hiring)
+- Productivity: £50K (higher engagement, lower burnout)
+
+---
+
+**Community Building:**
+- **Tech Allies Slack:** Private channel for underrep engineers + allies (support, visibility, peer mentoring)
+- **Feature visibility:** Underrep engineers in company profiles, speaking at conferences
+- **Allyship across org:** Extended training to contractors + partners
+
+---
+
 ## Evidence Appendix: Critical KSB Mapping
 
 ### K12: Data Management Systems (Previously Unmapped)
