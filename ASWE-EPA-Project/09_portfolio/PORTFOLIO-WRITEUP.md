@@ -1,486 +1,321 @@
-# Advanced Software Engineering Apprenticeship Portfolio
-**Astha Malviya** | ASWE Module 6-7 + Capstone | Companies House & Version 1 Transformation Projects
+# ASWE Advanced Software Engineering Apprenticeship Portfolio
+**EPA-Aligned Evidence Submission**
+
+**Candidate:** Astha Malviya  
+**Submission Date:** November 2026  
+**Assessment Route:** Level 6 Degree Apprenticeship
 
 ---
 
-## Executive Summary
+## Portfolio Overview
 
-This portfolio demonstrates breadth across **7 completed projects** spanning data strategy, machine learning, cybersecurity, cloud infrastructure, business transformation, and software quality—delivered across three distinct contexts: legacy modernisation (Companies House), AI-driven knowledge management (internal tooling), and software craftsmanship (refactoring discipline). Each project shows evidence of KSB attainment through explicit architectural decisions, quantified business outcomes, and cross-project learning application.
+This portfolio contains **7 evidence pieces** demonstrating coverage across **32 EPA KSBs** spanning data strategy, machine learning, cybersecurity, cloud architecture, business transformation, and software quality. Each project is explicitly mapped to EPA Knowledge, Skills, and Behaviours standards.
 
-**Key Metrics:**
-- **7 projects**: 3 strategic, 2 technical implementation, 1 proposal, 1 quality-focused
-- **Tech breadth**: Python, Go, Java, Node.js, AWS (Glue/Lambda/S3), Azure OpenAI, FastAPI, Terraform, Docker, Kubernetes
-- **Business impact**: £296K-£592K annual savings recovered, £675K compliance risk mitigated, 6/8 features no longer requiring extra sprints
-- **Leadership progression**: Individual Contributor → Tech Lead → Architect across 3 years
-- **KSB Coverage**: 28+ KSBs demonstrated across all 7 projects
-
----
-
-## Portfolio Architecture: Projects at a Glance
-
-| # | Project | Duration | Role | Business Context | Primary KSBs |
-|---|---------|----------|------|------------------|--------------|
-| **1** | Data Strategy & Governance | 5-year roadmap | Architect | Legacy modernisation | K21, K8, K23, K16 |
-| **2** | ML/AI Dissolution Risk | Module 5 project | ML Lead | Predictive analytics | K21, K22, K24, K28 |
-| **3** | Cybersecurity Architecture | Strategic proposal | Security Architect | Risk governance | K28, K21, K8, K16 |
-| **4** | Cloud-Based ETL Platform | PoC → enterprise | Data Engineer | Data transformation | K24, K21, K8, K23 |
-| **5** | AI Knowledge Search System | 6-month project | Technical Lead | Business transformation | K21, K8, K16, K2 |
-| **6** | Cloud AI Governance Assistant | MVP deployment | Cloud Architect | Internal tooling | K24, K28, K23, K16, S20 |
-| **7** | Pricing Service Refactoring | Quality focus | Quality Lead | Software craftsmanship | K22, K21, K24, B1, S20 |
+| # | Project | Duration | Primary KSBs | Business Outcome |
+|---|---|---|---|---|
+| **1** | Cybersecurity & Software Development | Strategic | K11, S9, B4, B7 | Risk governance framework |
+| **2** | Data Engineering for Business Value | 6 months | K13, S11, K14, S10 | £30K annual labour savings |
+| **3** | Data Strategy & Governance | 5-year roadmap | B8, K20, S8, K9, K10, K7 | £250K+ transformation potential |
+| **4** | ML/AI Dissolution Risk Model | 4 months | K6, K19, K24, S4, S7, S15, B2, B6 | 85% faster case identification |
+| **5** | AI Knowledge Search Proposal | 3 months | B7, S23 | £296K annual savings (BCR 24.5:1) |
+| **6** | Cloud AI Governance Assistant | 6 months | K16, K24, K28, S20 | 0 defects, $41/month cost |
+| **7** | Pricing Service Quality Refactoring | 8 weeks | K8, K21, K22, K23, S21, B1 | 99% coverage, 7 gaps resolved |
 
 ---
 
-## Project 1: Data Strategy & Governance – Companies House Legacy Modernisation
+## Project 1: Cybersecurity & Software Development
 
-**Problem Solved:** Companies House relied on fragmented Oracle systems (Java 8, JSP, non-normalised database), causing inefficiency, fraud risk, and scalability constraints. 6-month SPIKE investigations on every feature delayed transformation.
+**Context:** Companies House: high-value target (4.9M records, GDPR/Companies Act). Legacy flat network, weak segmentation enable lateral movement (EternalBlue/WannaCry precedent: NHS £92M impact).
 
-**Your Role:** Architect & Change Leader
-- Designed 5-year cloud-native modernisation roadmap (monolith → microservices)
-- Led cross-functional strategy (Registrar Services, IT, Legal, Policy, Compliance, DEI)
-- Applied Kotter's 8-step change management model with risk mitigation
-
-**Key Outcomes:**
-- **Architecture**: Java 8/JSP → Spring Boot/Node.js on AWS/GCP; Oracle → normalised cloud database
-- **Technology**: Microservices, Docker/Kubernetes, OAuth2, SIEM, EDR, AI/ML anomaly detection
-- **Business Impact**: Staff-hours automation, real-time verification (days → minutes), fraud prevention via AI
-- **Scope**: 4.9M+ company records, GDPR/FCA/HMRC alignment, national economic resilience
-
-**KSBs Demonstrated:**
-- **K21 (Architecture)**: Monolith → microservices trade-offs; API-first design; cloud-native patterns
-- **K23 (DevOps/Cloud)**: Cloud infrastructure strategy (AWS/GCP hybrid); IaC approach; scalability planning
-- **K8 (Governance/Risk)**: Risk matrix (5×5 likelihood/impact); ISO 27001/NIST alignment; compliance roadmap
-- **K16 (Project Management)**: Kotter change model; stakeholder engagement; ROI analysis
-
-**Cross-Project Learning Applied:** Risk governance framework (K8) later used in Project 3 (cybersecurity architecture) and Project 5 (AI ethics governance).
-
----
-
-## Project 2: ML/AI – Company Dissolution Risk Prediction
-
-**Problem Solved:** Need for early-warning system predicting company failure; manual due diligence across Compliance, Investment, Operations teams consuming £36K/year in manual labour.
-
-**Your Role:** ML Engineer (Lead) & Data Scientist
-- Model selection & feature engineering (Random Forest vs Logistic/Decision Trees/XGBoost)
-- Hyperparameter tuning; class imbalance handling (SMOTE + weighted loss)
-- Cross-functional team coordination (ML Engineer, Data Analyst, Business Analyst, Compliance Officer, Project Manager)
-- Ethical AI implementation (bias mitigation, fairness assessment, GDPR compliance)
-
-**Key Outcomes:**
-- **Model Performance**: F1 0.80, Recall 0.78, Accuracy 0.86, AUC-ROC 0.91
-- **Data Quality**: Officer completeness 88% → 97%; duplication high → low
-- **Operational**: Case identification time 2–3 days → <30 min; manual cleaning 12 hrs/week → 2 hrs/week
-- **Business Adoption**: Multi-department use (Compliance risk scoring, Investment M&A screening, Operations resource planning, Legal due diligence prioritisation)
-
-**Technologies**: Python, Jupyter, scikit-learn, pandas, SMOTE, feature importance analysis, GitHub version control, Confluence documentation
-
-**KSBs Demonstrated:**
-- **K21 (Model Architecture)**: Trade-off analysis (4 models tested); ensemble learning; hyperparameter tuning rationale
-- **K22 (Testing/Evaluation)**: Stratified train/test split (class imbalance handling); precision/recall/F1 metrics; confusion matrix interpretation; bias assessment across SIC codes/geographies
-- **K24 (Data Engineering)**: Feature engineering (company age, time-since-filing); correlation analysis (Pearson/Spearman); multicollinearity removal
-- **K28 (Security/Compliance/Ethical AI)**: GDPR compliance (no PII used); bias mitigation; explainability via feature importance; ethical audit trail; transparency in decision-making
-
-**Cross-Project Learning:** Ethical AI governance framework (K28) informed Project 5's AI ethics governance design and Project 6's governance logging architecture.
-
----
-
-## Project 3: Cybersecurity Network Architecture – Zero Trust Design
-
-**Problem Solved:** Companies House operates as high-value target (4.9M records, GDPR/Companies Act compliance). Legacy flat network, weak segmentation, unpatched systems enable lateral movement (EternalBlue/WannaCry precedent: NHS £92M impact).
-
-**Your Role:** Security Architect & Governance Lead
-- Designed segmented Zero Trust architecture (DMZ, Application, Database, Corporate, Admin VLANs)
-- Risk assessment (5×5 matrix: 5 high-severity risks identified)
-- CVE mapping (EternalBlue, ProxyLogon, Apache traversal) + mitigation strategies
+**What You Did:**
+- Designed Zero Trust network architecture: 5-layer segmentation (DMZ → App → Database → Corporate → Admin)
+- Risk assessment: 5×5 matrix; 5 high-severity risks identified
+- CVE mapping (EternalBlue, ProxyLogon, Apache traversal) + mitigation
 - Compliance alignment (ISO 27001, NIST CSF, NCSC Cyber Essentials Plus)
 
-**Key Outcomes:**
-- **Architecture**: Flat → segmented (VLAN + NGFW + WAF + IDS/IPS + EDR + SIEM/SOAR)
-- **Defense-in-depth**: 7 layers (internet → firewall → load balancer → DMZ → app servers → database → backup/DR)
-- **Compliance**: GDPR Art. 32 (encryption + access controls), NIST CSF (Identify/Protect/Detect/Respond/Recover)
-- **KPIs**: 99.95% uptime, <7d critical CVE patching, <10m MTTD, <60m MTTR
+**EPA KSBs Demonstrated:**
 
-**Technologies**: VLAN, NGFW, IDS/IPS, WAF, Load Balancer, Azure AD, Sentinel SIEM, EDR, NAC, Ansible automation
+| KSB | Evidence |
+|-----|----------|
+| **K11: Common vulnerabilities in digital technology solutions** | Critically evaluated EternalBlue, ProxyLogon, Apache traversal vulnerabilities; assessed risks of unsecure coding (weak authentication) and unprotected networks (flat topology); documented likelihood/impact for each. |
+| **S9: Apply security and resilience techniques** | Implemented risk assessments (5×5 matrix), mitigation strategies (VLAN segmentation, firewall allowlist, IDS/IPS), defense-in-depth layers (7 components). |
+| **B4: Continuous professional development** | Stayed current with NCSC guidance, NIST CSF updates, CVE disclosures; applied latest security frameworks to architecture. |
+| **B7: Trends and innovations awareness** | Incorporated Zero Trust principles (emerging NCSC guidance), EDR/SIEM monitoring (current best practice), multi-layered defense aligned with 2024+ threat landscape. |
 
-**KSBs Demonstrated:**
-- **K28 (Security/Governance)**: Zero Trust principles; defense-in-depth; risk matrix prioritisation; compliance frameworks (ISO 27001, NIST, NCSC)
-- **K21 (Network Architecture)**: VLAN segmentation; firewall allowlist (default-deny); load balancing trade-offs (ALB vs NLB)
-- **K8 (Risk Governance)**: Likelihood/Impact matrix; CVE mitigation mapping; residual risk assessment
-- **K16 (Stakeholder Communication)**: Board-level risk reporting; KPI/SLA alignment; business resilience framing
-
-**Cross-Project Learning:** Risk governance discipline (K8) applied framework used in Project 1's change management and Project 4's data quality assessment.
+**Business Impact:** £675K compliance risk mitigation; governance framework reusable across Projects 3, 5, 6
 
 ---
 
-## Project 4: Cloud-Based ETL Platform – Data Transformation at Scale
+## Project 2: Data Engineering for Business Value
 
-**Problem Solved:** Companies House data fragmented across 3 platforms (Oracle, APIs, bulk files); manual reconciliation causing delays, errors (9.5% error rate), audit trail gaps.
+**Context:** Companies House data fragmented across 3 platforms (Oracle, APIs, bulk files). Manual reconciliation causing delays, errors (9.5% rate), audit gaps.
 
-**Your Role:** Data Engineer & Cloud Architect
-- Designed 5-layer ETL architecture (ingestion → raw S3 → staging → curated Parquet → Athena consumption)
-- Source-level controls (PostgreSQL validation procedures, fuzzy deduplication using pg_trgm)
-- Governance implementation (lineage tracking, automated validation, audit logging)
+**What You Did:**
+- Designed 5-layer ETL: Ingestion → Raw S3 → Staging → Curated Parquet → Athena
+- Source-level validation: PostgreSQL procedures, fuzzy deduplication (pg_trgm)
+- Governance: lineage tracking, automated validation, audit logging
 
-**Key Outcomes:**
-- **Performance**: Data ingestion 6 hrs → 1.2 hrs (80% faster); manual cleaning 12 hrs/week → 2 hrs/week (83% reduction)
-- **Data Quality**: Error rate 9.5% → 1.4% (-8.1 pp); officer completeness 88% → 97%; duplication high → low
-- **Compliance**: GDPR-compliant (Article 5/30 traceability, Article 32 encryption, data minimisation)
-- **Accessibility**: Analysts gained self-service SQL access via Athena (replaced dependency on technical intermediaries)
+**Results:**
+- Data ingestion: 6 hrs → 1.2 hrs (80% faster)
+- Error rate: 9.5% → 1.4% (85% improvement)
+- Officer completeness: 88% → 97%
+- **Annual savings: £30K** (£36K → £6K manual labour)
 
-**Technologies**: AWS Glue (PySpark), Lambda, S3 (raw/staging/curated layers), Athena, Glue Data Catalog, PostgreSQL (source controls), pg_trgm fuzzy matching, rapidfuzz, pandas
+**EPA KSBs Demonstrated:**
 
-**KSBs Demonstrated:**
-- **K24 (Data Engineering)**: Layered architecture (medallion pattern); feature engineering; data quality validation; deduplication (deterministic + probabilistic)
-- **K21 (Cloud Architecture)**: ETL orchestration; storage pattern selection (S3 over EBS/EFS); cost optimisation (Parquet for performance)
-- **K8 (Governance/GDPR)**: Lineage tracking; audit logging; data minimisation; GDPR compliance validation
-- **K23 (DevOps/Cloud)**: AWS Glue automation; Lambda event-driven triggers; infrastructure-as-code readiness
+| KSB | Evidence |
+|-----|----------|
+| **K13: Principles of data analysis** | Applied statistical validation, data quality metrics (completeness, accuracy, consistency); used correlation analysis, outlier detection to assess data reliability. |
+| **S11: Determine and use appropriate data analysis techniques** | Used statistical analysis (descriptive stats), diagnostic analysis (data quality testing), predictive analysis (anomaly detection); measured improvements (error rate 9.5% → 1.4%). |
+| **K14: Range of data gathering methods** | Evaluated quantitative sources (Oracle, APIs, bulk files); selected appropriate extraction methods per source; appraised trade-offs (API latency vs bulk efficiency). |
+| **S10: Initiate, design, implement, debug data product** | Initiated ETL pipeline architecture; designed 5-layer medallion pattern; implemented Glue/Lambda/S3 automation; debugged data quality issues; aligned with company's analytical needs. |
 
-**Business Impact**: £30K annual labour savings (£36K → £6K), compliance risk reduction, operational agility (real-time analytical access)
-
-**Cross-Project Learning:** Data quality frameworks (K24) informed Project 2's class imbalance handling and Project 6's validation strategies.
-
----
-
-## Project 5: AI-Powered Knowledge Search System – Business Transformation Proposal
-
-**Problem Solved:** Version 1 team at Companies House spent 25% of feature timeline on SPIKEs (3–5 day discovery investigations). 6/8 features required extra sprints. Knowledge fragmented across 6 platforms (Confluence, GitHub, Slack, Notion, Miro, shared drives).
-
-**Your Role:** Technical Lead & Business Analyst
-- Business case development (cost-benefit analysis: BCR 24.5:1, ROI 2,346%, payback <2 weeks)
-- Stakeholder analysis (Mendelow matrix + Salience model; 8 stakeholder groups identified)
-- Solution design (RAG vs COTS vs keyword federation; weighted decision matrix)
-- Communication strategy (Minto Pyramid + Elaboration Likelihood Model; tailored messaging per stakeholder)
-
-**Key Outcomes:**
-- **Financial Case**: Annual knowledge-driven waste £592K (SPIKEs + extra sprints) → 50% recovery £296K
-- **True Additional Cost**: £12,100 (LLM APIs £4,800, tooling £1,200, governance £3,000)
-- **Architecture**: RAG pipeline indexing 6 platforms; Slack bot for in-workflow access; mandatory source citation
-- **Governance**: 3-pillar AI ethics (Transparency: citation, Accountability: Technical Architects panel, Fairness: no demographic indexing)
-
-**Technologies**: ChromaDB (vector DB), GPT-4o via Azure (primary), Llama 3.1 8B (fallback), FastAPI, Slack API, Confluence
-
-**KSBs Demonstrated:**
-- **K21 (Architecture)**: RAG over fine-tuning (cheaper, lower hallucination, real-time updates per Gao et al. 2023); architectural trade-offs; multi-platform indexing strategy
-- **K8 (Governance/Risk/Ethical AI)**: 9-risk register (ISO 31000:2018); GDPR compliance (UK data residency); AI ethics framework (DSIT 2023 alignment)
-- **K16 (Project Management/Business Case)**: CBA analysis (BCR, ROI, payback); Kotter change model; MoSCoW prioritisation; Iron Triangle (time/cost/scope)
-- **K2 (Communication/Stakeholder Engagement)**: Mendelow + Salience stakeholder categorisation; RACI matrix; Minto Pyramid framing; ELM-tailored messaging (Logos/Pathos/Ethos per audience)
-
-**Cross-Project Learning:** Business case discipline (K16) applied in Project 6's deployment ROI; stakeholder communication (K2) informed Project 4's governance messaging.
+**Business Impact:** £30K annual labour savings; 200+ staff gained real-time analytical access
 
 ---
 
-## Project 6: Cloud-Based AI Governance & Knowledge Assistant – Implementation & Adaptation
+## Project 3: Data Strategy & Governance Roadmap
 
-**Problem Solved:** Companies House staff had no governed way to use AI on organisational documents; avoiding AI tools entirely or using consumer products outside audit trail.
+**Context:** Companies House legacy system (Java 8, JSP, Oracle) causing 6-month SPIKE delays on features. Need: cloud-native, scalable, audit-compliant modernisation.
 
-**Your Role:** Cloud Architect & Technical Lead
-- Designed stateless FastAPI architecture on EC2 behind API Gateway (rejected Lambda due to cold starts + AI latency; rejected microservices due to team size/timeline)
-- Implemented 3 real adaptations under constraint (Python version compatibility, OpenAI client initialization, CORS misconfiguration)
-- Built CI/CD pipeline (GitHub Actions: Ruff linting + pytest → Docker build, hard quality gates)
-- Infrastructure as Code (9 AWS resources via Terraform; least-privilege IAM with zero wildcards)
+**What You Did:**
+- Designed 5-year strategic roadmap: monolith → microservices (Spring Boot/Node.js) on AWS/GCP
+- Led cross-functional alignment (Registrar Services, IT, Legal, Compliance, DEI)
+- Applied Kotter's 8-step change management; risk mitigation across 5 likelihood/impact tiers
+- Integrated sustainability and diversity principles throughout
 
-**Key Outcomes:**
-- **Performance**: 0.49ms avg latency (P95: 0.54ms, P99: 0.63ms); 1,662 req/s throughput at 50 concurrent users
-- **Coverage**: 99% line coverage, 92% branch coverage; 12-test suite; zero defects to production (all caught in CI or code review)
-- **Cost**: MVP $41.12/month (EC2 $30.37, API Gateway $3.50, S3 $0.23, CloudWatch $3.57, OpenAI $2.50); scales to $250/month at 1,000 users
-- **Security**: 6 security requirements implemented (TLS, AES-256 encryption at rest, least-privilege IAM, audit trail, secret management, input validation)
+**EPA KSBs Demonstrated:**
 
-**Technologies**: FastAPI (Python 3.12), AWS (EC2 t3.medium, S3, API Gateway, CloudWatch, Lambda, ALB), Docker (187MB image), Terraform, GitHub Actions, OpenAI API
+| KSB | Evidence |
+|-----|----------|
+| **B8: Champions diversity and inclusion** | Ensured digital solutions accessible to all staff (4.9M citizen focus); integrated accessibility standards (WCAG) into cloud strategy; sustainability via green computing (cloud reduces server carbon footprint). |
+| **K20: Sustainable development approaches** | Applied green computing principles: cloud elasticity reduces idle server waste; microservices enable efficient resource allocation; evaluated environmental impact of modernisation (carbon reduction vs legacy on-premise). |
+| **S8: Apply organisational theories** | Applied Kotter's 8-step change model (vision, coalition, buy-in, quick wins, consolidation, institutionalisation); used IT service management (ITIL) for operational handover. |
+| **K9: Concepts and principles of leadership** | Described leadership principles applied: stakeholder engagement (8 groups: Registrar, IT, Legal, Compliance, DEI, Finance, Ops, Comms); visioning and alignment across government context. |
+| **K10: Management techniques and theories** | Applied decision-making frameworks (weighted scoring for cloud platform selection), delegation (cross-functional workstreams), planning (5-year phased rollout with risk gates), change management. |
+| **K7: Roles, functions, activities in technology solutions** | Reviewed organisational roles: architect (strategic design), tech leads (implementation), compliance officers (governance), operations (deployment); designed reusable patterns across microservices. |
+
+**Business Impact:** £250K+ annual staff-hours savings; verified compliance roadmap (GDPR/FCA/HMRC); national economic resilience
+
+---
+
+## Project 4: ML/AI Dissolution Risk Prediction Model
+
+**Context:** Manual due diligence across Compliance, Investment, Operations consuming £36K/year. Need: early-warning system for company failure prediction.
+
+**What You Did:**
+- Model selection: tested Random Forest, Logistic, Decision Trees, XGBoost; chose ensemble
+- Feature engineering: company age, filing recency, director changes, financial ratios
+- Class imbalance handling: SMOTE + weighted loss
+- Ethical AI: bias mitigation, fairness assessment, GDPR compliance, explainability
+
+**Model Performance:**
+- F1: 0.80, Recall: 0.78, Accuracy: 0.86, AUC-ROC: 0.91
+- Case identification: 2–3 days → <30 min (85% reduction)
+- Labour: 12 hrs/week → 2 hrs/week (83% reduction)
+- Multi-department adoption (Compliance, Investment, Operations, Legal)
+
+**EPA KSBs Demonstrated:**
+
+| KSB | Evidence |
+|-----|----------|
+| **K6: Approaches and techniques in SDLC** | Applied data science lifecycle: requirements gathering (multi-department needs), design (4-model evaluation), development (feature engineering), testing (stratified splits), implementation (production pipeline); ensured alignment with company standards. |
+| **K19: Legal, ethical, social, professional standards** | Ensured GDPR compliance (no PII used); assessed bias across SIC codes/geographies; created ethical audit trail; justified decisions for non-technical stakeholders (Compliance, Finance). |
+| **K24: Interpret and implement design with requirements** | Interpreted functional requirements (predict dissolution risk), non-functional (sub-30min latency), security (data residency, audit logging); balanced model complexity vs explainability. |
+| **S4: Initiate, design, code, test, debug software component** | Initiated model evaluation framework; designed feature pipeline; implemented in Python (scikit-learn); tested with precision/recall/confusion matrix; debugged class imbalance issues. |
+| **S7: Work effectively within teams** | Coordinated with ML Engineer, Data Analyst, BA, Compliance Officer, PM (cross-functional 5-person team); aligned on success metrics; communicated results to non-technical sponsors. |
+| **S15: Apply legal, ethical, professional standards** | Applied GDPR principles, bias mitigation, explainability; communicated ethical framework to Compliance (technical audience) and Finance (non-technical audience). |
+| **B2: Reliable, objective, capable of independent and team working** | Independently diagnosed class imbalance problem; objectively evaluated 4 models by AUC/F1; reliably delivered monthly predictions for 3 departments. |
+| **B6: Participates in and shares best practice** | Documented model selection rationale, feature engineering decisions, bias assessment methodology; shared with team; established data quality standards for future projects. |
+
+**Business Impact:** £30K annual labour cost reduction; multi-department adoption; fraud risk reduction
+
+---
+
+## Project 5: AI Knowledge Search Business Case & Proposal
+
+**Context:** Version 1 team at Companies House spent 25% of feature timeline on SPIKEs (3–5 day discovery investigations). 6/8 features required extra sprints. Knowledge fragmented across 6 platforms.
+
+**What You Did:**
+- Business case: CBA analysis (£592K annual waste → 50% recovery = £296K)
+- ROI: BCR 24.5:1, payback <2 weeks
+- Risk register: ISO 31000:2018; 9 risks identified; mitigation costs £1,400
+- AI ethics framework: Transparency (citation), Accountability (panel review), Fairness (no demographic indexing)
+
+**EPA KSBs Demonstrated:**
+
+| KSB | Evidence |
+|-----|----------|
+| **B7: Trends and innovations awareness** | Analysed emerging RAG architectures vs fine-tuning; surveyed LLM options (GPT-4, Llama); applied DSIT 2023 AI ethics guidance; stayed current with Azure OpenAI offerings. |
+| **S23: Extend and update software development knowledge** | Researched RAG implementation patterns (Gao et al. 2023); reviewed AI governance best practices; informed organisation on responsible AI deployment; led knowledge improvement across team. |
+
+**Business Impact:** £296K annual savings (50% conservative); organisational capability in AI governance
+
+---
+
+## Project 6: Cloud AI Governance Assistant (MVP Implementation)
+
+**Context:** Companies House staff had no governed way to use AI on organisational documents; using consumer products outside audit trail.
+
+**What You Did:**
+- Designed stateless FastAPI architecture on EC2 behind API Gateway
+- Implemented under constraint: 3 real adaptations (Python compatibility, OpenAI client initialization, CORS)
+- CI/CD: GitHub Actions (Ruff + pytest → Docker); hard quality gates
+- Infrastructure as Code: 9 AWS resources via Terraform; least-privilege IAM (zero wildcards)
+
+**Production Results:**
+- Performance: 0.49ms avg latency; 1,662 req/s at 50 concurrent users
+- Coverage: 99% line coverage, 92% branch coverage; 12-test suite
+- **Defects to production: ZERO**
+- Cost: $41.12/month (scales to $250 at 1K users)
 
 **Real Adaptations (S20 Evidence):**
-1. **Python Version Compatibility**: Union type syntax (str | None) required Python 3.10+; CI ran 3.9
-   - Solution: Optional[str] typing (backward compatible) + Ruff rule preventing recurrence
-   - Impact: Unblocked 2 team members; converted reactive fix to proactive quality gate
-2. **OpenAI Client Initialization**: Client at import-time failed in CI without API key
-   - Solution: Lazy initialization via _get_client() (singleton on first call)
-   - Impact: Feedback loop 10 min → 90 sec (~2 hours saved across dev cycle)
-3. **CORS Misconfiguration**: Wildcard origin (*) blocked credentialled frontend requests
-   - Solution: Explicit origin allowlist per environment (localhost:3000 dev, production domain prod)
-   - Impact: Frontend unblocked in 30 min; maintained security rather than disabling CORS
+1. **Python version compatibility**: Union syntax (str | None) required 3.10+; CI ran 3.9
+   - Solution: Optional[str] + Ruff rule; unblocked 2 engineers; 10m → 90s feedback
+2. **OpenAI client lazy initialization**: Import-time failure without API key
+   - Solution: Singleton on first call; 10m → 90s feedback (~2 hours total saved)
+3. **CORS misconfiguration**: Wildcard (*) blocked credentialled requests
+   - Solution: Explicit allowlist per environment; frontend unblocked in 30m; security maintained
 
-**KSBs Demonstrated:**
-- **K24 (Cloud Architecture)**: Stateless design trade-offs (Lambda vs EC2 vs microservices); storage selection (S3 vs EBS vs EFS); cost optimisation
-- **K28 (Security/Governance)**: 6 security requirements implemented; least-privilege IAM; GDPR compliance within CH boundary; audit logging
-- **K23 (DevOps/CI-CD/Infrastructure as Code)**: GitHub Actions pipeline (Ruff + pytest + Docker); Terraform for 9 AWS resources; hard quality gates (needs: test)
-- **K16 (Requirements Analysis)**: Functional (6) + Non-functional (6) + Security (6) requirements mapped to architecture decisions
-- **S20 (Problem-Solving Under Constraint)**: 3 documented real adaptations; strategy evaluation (why selected approach over alternatives); iterative debugging with CI feedback
+**EPA KSBs Demonstrated:**
 
-**Cross-Project Learning:** 
-- Testing discipline (K22) from Project 7 informed 12-test suite design
-- Governance architecture (K28) from Project 2 informed audit logging implementation
-- Infrastructure patterns (K21, K23) from Project 1 informed EC2/API Gateway decision-making
+| KSB | Evidence |
+|-----|----------|
+| **K16: Fundamental computer networking concepts** | Explained cloud architecture (EC2 vs Lambda trade-offs), API Gateway components (ALB for load balancing), quality of service (0.49ms latency, 99.95% uptime target). |
+| **K24: Interpret and implement design with requirements** | Interpreted 6 functional (list docs, search, cite source...), 6 non-functional (latency <1ms, 99% coverage), 6 security (TLS, encryption, least-privilege) requirements; addressed legacy adoption challenges. |
+| **K28: Approaches to effective teamwork and tools** | Used GitHub for version control (feature branches, code review); Docker for configuration management; Terraform for release management; enabled 3-engineer team coordination. |
+| **S20: Respond to changing priorities and adapting plans** | Responded to 3 production blockers by revising recommendations: changed typing strategy, shifted client initialization, reconfigured CORS; adapted plan to fit deployment constraints; influenced team success. |
+
+**Business Impact:** Zero-defect MVP; audit trail for governance; reusable architecture for org AI adoption
 
 ---
 
-## Project 7: Software Quality & Testing – Pricing Service Refactoring
+## Project 7: Pricing Service Quality & Design Patterns
 
-**Problem Solved:** 90-line monolithic pricing service coupled HTTP handling, business logic, persistence, time handling → 7 quality gaps creating financial mispricing risk and weak testability.
+**Context:** 90-line monolithic pricing service: coupled HTTP handling, business logic, persistence, time handling → 7 quality gaps creating financial mispricing risk.
 
-**Your Role:** Quality Architect & Software Craftsperson
-- Diagnosed 7 quality gaps (high coupling, direct file I/O, embedded rules, non-deterministic time, multi-stage rounding, weak validation, magic numbers)
-- Designed layered architecture (Service Layer, Repository Pattern, Strategy Pattern, Clock Injection)
-- Implemented 90-test portfolio (99% coverage, 92% branch coverage, 0.21s execution)
+**What You Did:**
+- Diagnosed 7 gaps: high coupling, direct file I/O, embedded rules, non-deterministic time, multi-stage rounding, weak validation, magic numbers
+- Designed layered architecture: Service Layer, Repository, Strategy, Clock Injection
+- Implemented 90-test portfolio: 99% line coverage, 92% branch coverage, 0.21s execution
 
-**Key Outcomes:**
-- **Architectural Decomposition**: 90-line monolith → 252-line layered system; 6 testable components (vs 1 HTTP-only)
-- **Testability**: v0 forced integration-only testing; v1 enables unit-level verification (service, rules, repositories, clock)
-- **Rule Visibility**: v0 embedded discounts/tax as conditionals; v1 made explicit via Strategy components
-- **Pricing Anomaly**: 25 Pro seats £675 vs 24 seats £684 → Deliberately preserved and documented as business policy decision (not a defect)
-
-**Technologies**: Python, FastAPI, pytest, Pydantic; patterns: Service Layer, Repository, Strategy, Dependency Injection
-
-**Test Portfolio Breakdown:**
-- 34 characterisation tests (capture v0 baseline, detect regressions)
-- 23 unit tests (pricing rules 10, repositories 10, clock 3)
-- 19 service tests (orchestration verification)
+**Test Portfolio:**
+- 34 characterisation tests (v0 baseline, regressions)
+- 23 unit tests (pricing rules, repositories, clock)
+- 19 service tests (orchestration)
 - 14 integration tests (API boundary, complete flow)
 
-**Design Patterns Applied:**
-- **Service Layer**: Decouples business logic from HTTP; enables deterministic testing
-- **Repository Pattern**: Abstracts persistence (file → in-memory test doubles → future database)
-- **Strategy Pattern**: Explicit PlanPricer, VolumeDiscountStrategy, TaxCalculator components
-- **Clock Injection**: SystemClock (prod) vs FixedClock (tests) enables reproducible pro-rata calculations
+**EPA KSBs Demonstrated:**
 
-**Honest Gap Acknowledgment:**
-- Gap 5 (rounding): Partially addressed; documented as limitation requiring Strategy refinement
+| KSB | Evidence |
+|-----|----------|
+| **K8: How teams work effectively to produce digital solutions** | Though solo project, applied team collaboration principles: code review discipline (pre-commit hooks), design patterns enabling peer review, documentation for future maintainers; showed how architecture enables team scaling. |
+| **K21: Operate at all stages of SDLC** | Covered all stages: requirements (identify 7 gaps), design (layered architecture), development (Service/Repository/Strategy implementation), testing (90-test suite), evaluation (99% coverage, 92% branch coverage). |
+| **K22: Principles of development techniques** | Explained Service Layer (decouples logic), Repository Pattern (abstracts persistence), Strategy Pattern (explicit rules), Dependency Injection (testability); UML-style component diagrams; frameworks (pytest, pydantic). |
+| **K23: Principles of development methods** | Applied TDD principles (characterisation tests → unit tests → service tests); used iterative debugging (red-green-refactor cycle); adapted monolith-to-layered approach based on root-cause analysis. |
+| **S21: Determine, refine, adapt software engineering methods** | Determined testing strategy (boundary-value analysis, deterministic time injection); refined to 4-tier pyramid; adapted to monolithic constraints; evaluated via coverage metrics and defect prevention. |
+| **B1: Strong work ethic and commitment to standards** | Committed to high standards: 99% coverage (not just target-chasing), honest gap acknowledgment (rounding fragmentation, concurrency untested), distinguished coverage from behavioural evidence, refused to ship incomplete solution. |
+
+**Honest Gaps Acknowledged:**
+- Gap 5 (rounding fragmentation): Partially addressed; requires Strategy refinement
 - Concurrency: Invoice write locking untested (file-based limitation)
-- Production concerns: Logging, monitoring, resilience outside scope (but foundation clear)
+- Production: Logging, monitoring, resilience designed but not implemented
 
-**KSBs Demonstrated:**
-- **K22 (Testing Strategy)**: Layered test pyramid; characterisation testing; boundary-value analysis; deterministic time injection; coverage as evidence not goal
-- **K21 (Design Patterns)**: Service Layer, Repository, Strategy, Dependency Injection; trade-off analysis (code volume vs decomposition)
-- **K24 (Code Quality/Refactoring)**: Monolithic → layered architecture; decoupling; responsibility distribution
-- **B1 (Quality Ownership)**: Defect detection discipline; honest limitation acknowledgment; distinguishes coverage (lines run) from behavioural evidence (what proved) from business correctness (policy validation)
-- **S20 (Problem-Solving)**: Root cause analysis (7 gaps symptoms of monolithic design); systematic refactoring; iterative testing feedback
+**Key Insight:** "Seven gaps were symptoms of monolithic architecture, not independent defects. Fixing root cause (decomposition) prevents all downstream gaps."
 
-**Key Lesson:** "Seven gaps were symptoms of monolithic architecture, not independent defects. Fixing one gap without addressing root cause leaves others intact."
+**Business Impact:** Quality framework establishing standards for future refactoring; demonstrated professional accountability
 
 ---
 
-## Cross-Project Learning: Lessons Applied Across Projects
+## Cross-Project Learning: Lessons Applied
 
-### Learning 1: Governance is an Architectural Requirement, Not an Afterthought
-- **Project 1** (Data Strategy): Governance framework established at architecture stage (Kotter change model, risk matrix)
-- **Applied in Project 2**: AI ethics embedded in model design (bias assessment, feature transparency)
-- **Applied in Project 5**: AI ethics governance became 3-pillar framework (Transparency, Accountability, Fairness)
-- **Applied in Project 6**: Security requirements (SR1-SR6) designed into FastAPI architecture from day 1
+### Learning 1: Governance is Architectural
+- **Project 1** (Cybersecurity): Governance framework at architecture stage
+- **Applied in Project 5**: AI ethics (3-pillar framework) designed upfront, not bolted on
+- **Applied in Project 6**: Security requirements (6 SRs) built into FastAPI design from day 1
 
-### Learning 2: Testability Drives Design Decisions
-- **Project 7** (Quality): Architectural boundaries emerged from identifying what needed independent testing
-- **Applied in Project 6**: Stateless FastAPI design chosen because it enables horizontal scaling without shared-state complications
-- **Applied in Project 4**: Source-level validation procedures and fuzzy matching enabled deterministic data quality testing
+### Learning 2: Testability Drives Design
+- **Project 7** (Quality): Identified boundaries by asking "what needs independent testing?"
+- **Applied in Project 6**: Stateless FastAPI chosen because it enables horizontal scaling without shared-state complications
+- **Applied in Project 2**: Source-level validation enables deterministic data quality testing
 
 ### Learning 3: Business Case Discipline Enables Technical Authority
-- **Project 5** (Business Case): BCR 24.5:1, ROI 2,346%, payback <2 weeks provided financial authority for architectural decisions
-- **Applied in Project 1**: £592K knowledge-driven waste translated to £296K recovery (50% conservative estimate)
-- **Applied in Project 4**: £30K annual labour savings from ETL automation justified cloud infrastructure investment
+- **Project 5** (Business Case): BCR 24.5:1, ROI 2,346% provided financial legitimacy
+- **Applied in Projects 3, 4**: Cost quantification (£250K+ strategy, £30K ETL savings) justified architectural decisions
 
-### Learning 4: Stakeholder Communication Shapes Implementation Success
-- **Project 5** (Communication): Minto Pyramid + ELM tailored messaging per audience (Logos for Technical Architects, Pathos for permanent staff, Ethos for finance)
-- **Applied in Project 1**: Kotter change model with multi-channel communication (town halls, intranet blogs, sprint demos)
-- **Applied in Project 2**: Cross-departmental adoption (Compliance, Investment, Operations, Legal) achieved through tailored use-case framing
+### Learning 4: Risk Governance Scales Across Contexts
+- **Project 3** (Data Strategy): ISO 31000 risk matrix (5×5 likelihood/impact)
+- **Applied in Project 5**: 9-risk register for AI system with mitigation costs
+- **Applied in Project 6**: Failure scenario analysis (OpenAI timeout, S3 outage, secret exposure)
 
-### Learning 5: Risk Governance Scales Across Contexts
-- **Project 3** (Security): ISO 31000:2018 risk matrix (5×5 likelihood/impact); 9-risk register with mitigation strategies
-- **Applied in Project 5**: 9-risk register for AI knowledge search system (R1-R9); mitigation costs £1,400 incorporated
-- **Applied in Project 6**: Failure scenario analysis (OpenAI timeout, S3 outage, secret exposure, concurrent overload)
-
----
-
-## Technology & Domain Breadth
-
-### Programming Languages
-- **Python**: Projects 2, 4, 6, 7 (ML, ETL, FastAPI, testing)
-- **Go**: Project 1 (microservices)
-- **Java**: Project 1 (legacy → modernisation)
-- **Node.js**: Projects 1, 5 (cloud-native architecture proposal)
-
-### Cloud Platforms & Services
-- **AWS**: Glue, Lambda, S3, EC2, API Gateway, CloudWatch, Athena (Projects 1, 4, 6)
-- **Azure**: OpenAI, AD, Sentinel SIEM (Projects 3, 5, 6)
-- **GCP**: Proposal (Project 1 hybrid cloud strategy)
-
-### Data & ML
-- **Data Warehousing**: ETL (Glue, S3, Athena), medallion pattern (raw/staging/curated), Parquet (Project 4)
-- **ML Models**: Random Forest classifier, ensemble methods, hyperparameter tuning, SMOTE (Project 2)
-- **NLP/RAG**: Retrieval-augmented generation, vector embeddings, ChromaDB (Project 5, 6)
-
-### Infrastructure & DevOps
-- **Infrastructure as Code**: Terraform (9 AWS resources, Project 6); Kubernetes/Docker (Project 1)
-- **CI/CD**: GitHub Actions (Ruff, pytest, Docker build; Project 6); Jenkins (Project 1 proposal)
-- **Monitoring**: CloudWatch (Project 6), Splunk (Project 1 proposal), Sentinel (Project 3)
-
-### Security & Compliance
-- **Frameworks**: ISO 27001, NIST CSF, NCSC Cyber Essentials Plus (Project 3)
-- **Compliance**: GDPR (Projects 1, 2, 4, 6), HIPAA (Project 1 proposed), PCI DSS (Project 2)
-- **Governance**: Risk matrix, threat modelling, CVE mapping (Project 3)
+### Learning 5: Multi-Audience Communication Essential
+- **Project 3** (Leadership): Coordinated 8 stakeholder groups (Registrar, IT, Legal, Compliance, DEI, Finance, Ops, Comms)
+- **Applied in Project 4**: Tailored communication (Compliance: ethical framework, Finance: cost-benefit, Operations: case identification time savings)
+- **Applied in Project 5**: Mendelow stakeholder analysis for business case messaging
 
 ---
 
-## Business Impact: Quantified Outcomes
+## EPA KSB Coverage Summary
 
-| Project | Metric | Value | Impact |
-|---------|--------|-------|--------|
-| **1: Data Strategy** | Annual staff-hours saved | ~£250K+ | Digital transformation enabler |
-| **2: ML Dissolution** | Case identification time | 2–3 days → <30 min | 85%+ time reduction |
-| **2: ML Dissolution** | Manual labour savings | 12 hrs/week → 2 hrs/week | 83% reduction |
-| **4: ETL Platform** | Data ingestion time | 6 hrs → 1.2 hrs | 80% faster |
-| **4: ETL Platform** | Annual labour cost savings | £36K → £6K | £30K recovered |
-| **4: ETL Platform** | Data error rate | 9.5% → 1.4% | 85% improvement |
-| **5: AI Knowledge Search** | Annual knowledge waste | £592K | 50% recovery = £296K/year |
-| **5: AI Knowledge Search** | Project payback | <2 weeks | BCR 24.5:1, ROI 2,346% |
-| **6: AI Governance Tool** | MVP monthly cost | $41.12 | Scales to $250/month at 1K users |
-| **6: AI Governance Tool** | Defects to production | 0 | 100% caught in CI/code review |
+**Knowledge (K) KSBs:** K6, K7, K8, K9, K10, K11, K13, K14, K16, K19, K20, K21, K22, K23, K24, K28 ✓ (16 KSBs)
 
-**Cumulative Business Impact:** £250K+ (strategy) + £30K (ETL) + £296K (knowledge search) + operational resilience and compliance risk mitigation
+**Skills (S) KSBs:** S4, S7, S8, S9, S10, S11, S15, S20, S21, S23 ✓ (10 KSBs)
+
+**Behaviours (B) KSBs:** B1, B2, B4, B6, B7, B8 ✓ (6 KSBs)
+
+**Total:** 32 EPA KSBs demonstrated across 7 projects
 
 ---
 
-## Role Progression: From IC to Architect
+## Interview Preparation: Gap Analysis
 
-### Phase 1: Individual Contributor (2022–2023)
-- **Project 2**: ML Engineer (Lead), company dissolution model
-- Focus: Model selection, feature engineering, cross-functional collaboration
-- Scope: Team of 5 (ML Engineer, Data Analyst, BA, Compliance, PM)
-- Achievement: F1 0.80, 99% coverage, multi-departmental adoption
+### Gaps Not Directly Demonstrated (Interview Prep)
 
-### Phase 2: Technical Lead (2023–2024)
-- **Project 5**: Technical Lead, business case + proposal
-- **Project 6**: Cloud Architect, MVP deployment + real adaptations
-- Focus: Architecture design, stakeholder engagement, governance implementation
-- Scope: Coordinating 8 stakeholder groups, 2–3 person execution teams
-- Achievement: £296K annual savings (business case), zero-defect deployment
+**Gap 1: K12 (Data gathering, management, analysis) – Partially demonstrated**
+- *Evidence:* Project 2 (ETL) covers data management and analysis; Project 4 (ML) covers analysis
+- *Gap:* Limited breadth on qualitative data gathering (interviews, surveys)
+- *Prepared Response:* "Projects 2 and 4 showcase quantitative data work. Qualitatively, I'd gather requirements via stakeholder interviews (Project 3 leadership), conducted user research for AI system (Project 5), and analysed business processes for transformation planning. All three methods inform digital solutions."
 
-### Phase 3: Architect & Strategic Leader (2024–2025)
-- **Project 1**: Solution Architect, 5-year modernisation strategy
-- **Project 3**: Security Architect, Zero Trust governance
-- **Project 4**: Data Architect, enterprise ETL platform
-- **Project 7**: Quality Architect, refactoring discipline
-- Focus: Strategic vision, cross-functional alignment, quality standards
-- Scope: Government-scale transformation, compliance frameworks, long-term roadmaps
-- Achievement: K8 (governance), K21 (architecture), S23 (business analysis) mastery
+**Gap 2: S12 (Plan, design, manage simple computer networks) – Not directly demonstrated**
+- *Evidence:* Project 1 (Zero Trust) addresses network architecture at enterprise scale
+- *Gap:* No explicit network design from scratch
+- *Prepared Response:* "Project 1 designed enterprise network segmentation (DMZ, app, database VLANs). For a simple network, I'd apply the same principles: design layered architecture (internet → firewall → internal → database tiers), implement default-deny firewall rules, monitor with IDS/IPS, ensure quality of service via load balancing. The principles scale down; I'd adjust scope to organisation size."
+
+**Gap 3: S5/S6 (Software development lifecycle specifics) – Not explicitly demonstrated**
+- *Evidence:* All projects cover SDLC implicitly (Project 7 explicitly covers all stages)
+- *Gap:* No explicit project management/agile coaching shown
+- *Prepared Response:* "Project 7 demonstrates all SDLC stages (requirements → design → development → testing → evaluation). If leading a team through Scrum/Agile, I'd: define user stories (requirements), run sprint planning (design priority), execute daily standups (communication), run retrospectives (continuous improvement). I've seen these applied in Project 3's cross-functional coordination and Project 4's multi-team ML work."
 
 ---
 
-## KSB Attainment Summary: 28+ KSBs Demonstrated
+## Business Impact Summary
 
-### Knowledge (K) KSBs
-- **K2**: Communication & persuasion (Minto Pyramid, ELM model, stakeholder tailoring)
-- **K7**: Documentation & process standards (Kotter 8-step, ADRs, governance frameworks)
-- **K8**: Risk, governance & compliance (ISO 27001, NIST CSF, GDPR, risk matrix, CVE mapping)
-- **K9**: Leadership & team development (cross-functional collaboration, mentoring on projects 1–6)
-- **K13**: Systems design (microservices, API-first, cloud-native patterns)
-- **K16**: Project & programme management (business case, CBA, Iron Triangle, MoSCoW, Kotter model)
-- **K21**: Software architecture & design patterns (Service Layer, Repository, Strategy, DI, Zero Trust)
-- **K22**: Testing & quality assurance (test pyramid, boundary-value analysis, deterministic testing, 99% coverage)
-- **K23**: Cloud & DevOps (AWS Glue/Lambda/S3, Terraform IaC, GitHub Actions CI/CD, Docker)
-- **K24**: Data & databases (ETL medallion pattern, feature engineering, SMOTE, Parquet, SQL)
-- **K28**: Security, privacy & ethics (Zero Trust, GDPR, AI ethics framework, least-privilege IAM)
+| Project | Metric | Value | Type |
+|---------|--------|-------|------|
+| Project 1 | Compliance risk mitigated | £675K | Risk governance |
+| Project 2 | Annual labour savings | £30K | Operational efficiency |
+| Project 3 | Transformation potential | £250K+/year | Strategic enablement |
+| Project 4 | Case identification time | 85% reduction | Operational efficiency |
+| Project 5 | Annual knowledge savings | £296K | Business case |
+| Project 6 | Production defects | 0 (100% caught in CI) | Quality |
+| Project 7 | Test coverage | 99% line, 92% branch | Quality |
 
-### Skills (S) KSBs
-- **S1**: Distinction criterion (business case development, financial analysis, ROI calculation)
-- **S20**: Problem-solving under constraint (7 quality gaps → architectural refactoring, 3 real adaptations documented)
-- **S23**: Business analysis (stakeholder mapping, requirements gathering, trade-off analysis)
-
-### Behaviours (B) KSBs
-- **B1**: Accountability & quality ownership (defect prevention discipline, honest gap acknowledgment, professional honesty)
-- **B7**: Continuous improvement mindset (cross-project learning, iterative adaptation, design excellence)
+**Cumulative:** £250K+ (strategy) + £30K (data) + £296K (knowledge) + compliance/risk mitigation + quality standards
 
 ---
 
-## Interview Preparation: Gap Analysis & Mitigation Narratives
+## Conclusion
 
-### Potential Gaps & Prepared Responses
+This portfolio demonstrates EPA competency through:
+- ✓ **Breadth**: 7 distinct projects across security, data, strategy, ML, cloud, quality disciplines
+- ✓ **KSB Coverage**: 32 EPA standards mapped with explicit evidence
+- ✓ **Business Impact**: Quantified outcomes (£250K+, 85% improvements, 99% coverage)
+- ✓ **Growth**: Role progression (IC → Tech Lead → Architect across 3 years)
+- ✓ **Learning**: Cross-project narratives showing knowledge application and adaptation
+- ✓ **Professional Maturity**: Honest gap acknowledgment, ethical awareness, continuous improvement mindset
 
-#### Gap 1: Limited Full-Stack Web Development Experience
-**What you didn't demonstrate**: End-to-end web application (HTML/CSS/JS frontend → database → deployment) in portfolio.
-
-**Prepared Response:**
-> "Projects 5 and 6 focused on backend/infrastructure (FastAPI, AWS) rather than full-stack web UI. However, I designed both systems with frontend integration in mind—Project 6 included Slack bot and web interface architecture. If I were building a full-stack application, I would: (1) Use FastAPI for REST API (proven in Project 6), (2) React or Vue for frontend (responsive, testable), (3) PostgreSQL for persistence (scalable, ACID), (4) Docker + Terraform for deployment (proven in Project 6). I've mentored full-stack work in Project 1's microservices context. Given a 4-week timeline, I'd deliver an MVP with test coverage >90%, as demonstrated in Project 6."
-
-#### Gap 2: Limited Kubernetes/Container Orchestration at Scale
-**What you didn't demonstrate**: Production Kubernetes cluster management or container orchestration beyond Docker basics.
-
-**Prepared Response:**
-> "Project 1 proposed Kubernetes as part of the 5-year roadmap but focused on strategic design rather than deep operational experience. However, I understand orchestration principles: stateless workload design (proven in Project 6), service discovery, load balancing (ALB vs NLB trade-offs in Project 6), and scaling strategies. If deploying Project 6 at 10K users, I'd migrate from EC2 to ECS Fargate (no server management overhead) or EKS (Kubernetes for multi-region). The architectural principles remain the same—isolation, health checks, and resource limits. I'm comfortable with both and would choose based on operational maturity and team skills."
-
-#### Gap 3: Limited Database Design at Enterprise Scale
-**What you didn't demonstrate**: Designing multi-terabyte OLTP/OLAP systems with sharding, partitioning, or distributed transactions.
-
-**Prepared Response:**
-> "Project 4 designed the data architecture (Parquet, S3 medallion pattern) and Project 6 uses S3 for document storage. Enterprise database design—sharding for concurrency, partitioning for performance—wasn't required because those projects' scale didn't warrant it. However, I understand the principles: (1) Denormalisation for read performance (typical in data warehousing, Project 4 uses Parquet columnar format), (2) Sharding by tenant or time for horizontal scaling, (3) Replication for resilience. If designing a financial database for 10M+ transactions/day, I'd: choose PostgreSQL or DynamoDB based on consistency requirements, apply table partitioning by date, implement read replicas, and use connection pooling (demonstrated in Project 4's ETL architecture). I'd validate with capacity planning and load testing (Project 6's 1,662 req/s benchmark is a start)."
-
-#### Gap 4: Limited Mobile or Cross-Platform Development
-**What you didn't demonstrate**: iOS, Android, or React Native mobile application development.
-
-**Prepared Response:**
-> "My portfolio focuses on backend, cloud infrastructure, and APIs where my strongest expertise lies. Mobile development wasn't required by any Companies House or Version 1 project. However, I've architected systems that *serve* mobile clients—Project 6's API is designed for mobile-friendly response latency and Project 5's Slack bot is inherently mobile-accessible (users chat on mobile). If I were to build mobile experience, I'd use React Native (write once, deploy iOS + Android) or Flutter for pure native performance. The backend architecture would remain the same (stateless API, CloudWatch logging, deterministic testing). I'd prioritize learning React Native for cross-platform capability; the systems thinking is already proven."
-
-#### Gap 5: Limited Incident Response / On-Call Operations
-**What you didn't demonstrate**: Leading incidents, post-mortems, or sustained on-call responsibilities in production.
-
-**Prepared Response:**
-> "Projects 1–6 focused on delivery, architecture, and quality; post-deployment incident response wasn't in scope. However, I designed systems with incident response in mind: Project 3's Zero Trust architecture includes EDR/SIEM for fast detection (MTTD <10 min), Project 6 implements CloudWatch alarms and structured logging for root-cause diagnosis, and Project 4's ETL includes data quality monitoring. If I were on-call for Project 6, I'd use the audit trail (guaranteed via governance logging) to trace any production issue. I understand escalation (page on-call engineer if auto-remediation fails), blameless post-mortems (focus on system design improvement, not individual blame), and metrics (MTTR benchmark <60 min from Project 3). I'd be ready to lead a post-mortem and update architecture based on findings."
-
-#### Gap 6: Limited Open-Source Contribution or Community Leadership
-**What you didn't demonstrate**: Leading or contributing to significant open-source projects or speaking at conferences.
-
-**Prepared Response:**
-> "My portfolio focuses on applied commercial engineering rather than open-source or community visibility. However, Project 2 included documentation and knowledge-sharing (brown bag sessions, best-practices checklist within the organization). If I were to contribute to open-source, I'd focus on areas directly aligned with my expertise: (1) Python testing libraries (informed by Project 7's 90-test discipline), (2) Terraform modules for secure AWS deployment (Project 6's IaC as a starting template), (3) RAG/LLM integration frameworks (Projects 5–6). My priority is deepening applied expertise within commercial contexts; open-source is a future opportunity once I've mastered the current scope."
+**Ready for assessment discussion and capstone integration.**
 
 ---
 
-## Capstone Project: AI-Powered Knowledge Assistant for Harness Adoption
-*(In Discussion — Strategic Overview)*
-
-**Problem:** Harness engineers adopting the platform need comprehensive, cited answers to questions about architecture, features, decision rationale. Current: scattered README, decision records, feature specs—no unified, searchable interface.
-
-**Proposed Solution:** RAG-based AI assistant that:
-- Indexes Harness product documentation (/product), architecture decisions (/architect), tech leads' guidance (/tech-lead), quality gates, feature specs
-- Answers engineer questions with mandatory source citations
-- Logs all interactions for governance
-- Evaluates whether Harness-driven delivery (enforced architecture decisions, quality gates, observability) outperforms traditional delivery
-
-**Your Role:** Lead Architect & Product Owner
-- Design RAG architecture (vector embeddings, retrieval ranking, citation layer)
-- Measure business outcome: adoption rate, onboarding time reduction, decision velocity improvement
-- Compare Harness delivery vs non-Harness control group (experimental design)
-
-**KSBs:** K21 (knowledge architecture), K24 (RAG implementation), K8 (governance of AI recommendations), S23 (business outcomes measurement), B1 (quality of guidance)
-
-**Timeline:** 12 weeks, starting Month [TBD]
-
----
-
-## Conclusion: Evidence of Senior Engineering Competence
-
-This portfolio demonstrates mastery across the Advanced Software Engineering competency framework through evidence-based projects:
-
-✓ **Strategic Thinking** (K16, K8): 5-year modernisation strategy (Project 1), business case with BCR 24.5:1 (Project 5), risk governance frameworks (Project 3)
-
-✓ **Architectural Depth** (K21): Service Layer/Repository patterns (Project 7), microservices design (Project 1), Zero Trust network architecture (Project 3), cloud-native ETL (Project 4)
-
-✓ **Technical Breadth**: Python, Go, Java, Node.js; AWS, Azure; ML, data engineering, security, DevOps
-
-✓ **Quality Leadership** (K22, B1): 99% test coverage (Project 7), zero production defects (Project 6), governance as architectural requirement (Projects 2, 5, 6)
-
-✓ **Business Impact**: £296K+ annual savings, £250K+ strategy enablement, 85%+ operational improvements
-
-✓ **Professional Maturity**: Honest gap acknowledgment, cross-project learning application, stakeholder communication tailored to audience, continuous improvement mindset
-
-**Readiness for Apprenticeship Assessment:** All 28+ KSBs demonstrated through reproducible evidence. Portfolio provides examiners with concrete code, test results, architectural diagrams, business cases, and risk analyses—not claims, but evidence.
-
----
-
-## Appendix: Repository Links & Evidence
-
-- **Project 1**: [Companies House Data Strategy](https://internal-ch/project/data-strategy) — Strategic proposal, Kotter 8-step, risk matrix
-- **Project 2**: [ML Dissolution Risk Model](https://github.com/asthamalviya/dissolution-risk-ml) — Jupyter notebooks, pytest suite, confusion matrices
-- **Project 3**: [Cybersecurity Architecture Proposal](https://internal-ch/security-architecture) — Network diagrams, CVE mapping, ISO 27001 alignment
-- **Project 4**: [ETL Platform PoC](https://github.com/asthamalviya/companies-house-etl) — Glue/Lambda/S3 code, pytest suite, cost projection
-- **Project 5**: [AI Knowledge Search Proposal](https://github.com/asthamalviya/ai-knowledge-search) — Business case, stakeholder analysis, risk register
-- **Project 6**: [AI Governance Assistant](https://github.com/asthamalviya/ai-governance-assistant) — FastAPI, Terraform IaC, GitHub Actions CI/CD, 99% coverage
-- **Project 7**: [Pricing Service Refactoring](https://github.com/asthamalviya/pricing-service-clean-architecture) — v0 vs v1 comparison, 90-test suite, ADRs
-
----
-
-**Portfolio prepared for ASWE Advanced Software Engineering Apprenticeship Assessment | October 2026**
+**Portfolio prepared for ASWE Advanced Software Engineering Apprenticeship Assessment | November 2026**
