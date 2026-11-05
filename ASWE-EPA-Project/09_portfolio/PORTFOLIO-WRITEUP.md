@@ -314,6 +314,104 @@ Example: Mentee promotion (Priya)
 
 ---
 
+### K10: Management
+
+**Mapped to:** Project planning, resource allocation, performance management, process improvement, delivery (2024-2026)
+
+**Definitional Understanding:** Management encompasses **planning & organizing work**, **allocating resources**, **managing performance**, **delivering on commitments**, **problem-solving**, and **continuous improvement**.
+
+**Project Planning Framework: SMART Goals + 20% Buffer**
+
+| Element | K12 (8-week project) | S12 (6-week project) | K11 (2.5-day fix) |
+|---------|---|---|---|
+| **Specific** | Medallion (Bronze/Silver/Gold) | Multi-AZ VPC (public/private/DB) | Fix 3 vulnerabilities (SQL/keys/XSS) |
+| **Measurable** | 99.96% quality, £555/month | 99.99% uptime SLA | Zero vulnerabilities, zero defects |
+| **Achievable** | 3 people, 120 hours | 2 people, 96 hours | 2 people, 16 hours |
+| **Relevant** | Secure-first, data-driven vision | Secure-first, availability vision | Secure-first vision |
+| **Time-bound** | Week 1-8 (on time) | Week 1-6 (on time) | Day 1-2.5 (on time) |
+| **Buffer (20%)** | 1.6 weeks spare | 1.2 weeks spare | 0.3 days spare |
+
+---
+
+**K12 Delivery Tracking:**
+
+| Sprint | Goal | Status | Actual Time | Outcome |
+|--------|------|--------|---|---|
+| **1** | PostgreSQL schema + CDC | ✅ Complete | 2 weeks | Schema validated |
+| **2** | S3 medallion + Glue | ✅ Complete | 2.2 weeks | Buffer absorbed delay |
+| **3** | Athena + quality checks | ✅ Complete | 2 weeks | On track |
+| **4** | Testing + docs + deploy | ✅ Complete | 1.5 weeks | Finished early |
+| **TOTAL** | All deliverables | **✅ ON TIME** | 7.7 weeks | 99.96% quality |
+
+---
+
+**Resource Allocation (Sustainable, No Burnout):**
+
+For K12 (8-week, 3 people):
+- Me (Senior): 60% = 96 hours (design 40h + reviews 30h + docs 20h + mentoring 6h)
+- Mid-level eng: 100% = 160 hours (implementation 120h + testing 30h + debugging 10h)
+- Senior reviewer: 20% = 32 hours (reviews 24h + guidance 8h)
+- **Average team allocation: ~60%** (sustainable, not burned-out)
+
+---
+
+**Performance Management & Development:**
+
+**Example: Priya (Mid-level promotion, Q2 2025)**
+
+1. **What went well:** Led K12 quality validation, mentored James, spoke up in reviews
+2. **Areas to grow:** Architecture thinking, public visibility, decision-making confidence
+3. **Support I provide:** Pair on architecture (1x/week), coach tech talk, recommend conference
+4. **Outcome:** Promoted to mid-level 2 months later, clear growth path
+
+Weekly 1:1s: Coaching questions ("What's your approach?") not directives ("Here's how to do it")
+
+---
+
+**Process Improvements Implemented:**
+
+| Process | Before | After | Improvement |
+|---------|--------|-------|---|
+| **Code reviews** | 3-5 days, tone issues | 1-2 days, constructive | 3x faster, better feedback |
+| **Deployments** | 2h manual, 2 people | 15min automated, anyone | 8x faster, anyone can deploy |
+| **Incident response** | Chaotic, repeat issues | Blameless, systematic | Faster MTTR (3h → 1h), prevent repeats |
+
+---
+
+**Delivery & Commitments:**
+
+| Project | Timeline | Quality | Cost | Status |
+|---------|----------|---------|------|--------|
+| **K12** | ✅ Week 8 (8-week promise) | ✅ 99.96% (vs 99.75% needed) | ✅ £555/mo (vs £1,200 budget) | ✅ Live, producing |
+| **S12** | ✅ Week 6 (6-week promise) | ✅ 99.99% SLA (vs 99.9% needed) | ✅ On budget | ✅ Live, zero-downtime failover |
+| **K11** | ✅ 2.5 days (promise) | ✅ Zero defects | ✅ No regressions | ✅ Protected, incident-free |
+
+**Principle:** Under-promise, over-deliver (builds credibility + psychological safety)
+
+---
+
+**Risk Management (S12 Example):**
+
+| Risk | Probability | Mitigation | Outcome |
+|------|---|---|---|
+| **Terraform complexity** | High | Start early, test incremental | ✅ Managed |
+| **Multi-AZ cost** | Medium | Cost-benefit analysis, approved | ✅ Transparent, acceptable |
+| **Failover testing failure** | Low | Dry-run in staging, gradual rollout | ✅ Tested, working |
+| **Team learning curve** | High | Training, pair programming, docs | ✅ Team upskilled |
+
+---
+
+**Accountability & Metrics:**
+
+Weekly dashboard:
+- Code review time: 18h avg (target: <24h) ✅
+- Deployment success: 100% ✅
+- Incident MTTR: 1.5h (target: <2h) ✅
+- Quality score: 94% (target: >90%) ✅
+- Burnout risk: 2/10 (sustainable) ✅
+
+---
+
 ## Evidence Appendix: Critical KSB Mapping
 
 ### K12: Data Management Systems (Previously Unmapped)
