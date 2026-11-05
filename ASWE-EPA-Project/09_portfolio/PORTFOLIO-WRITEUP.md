@@ -203,6 +203,117 @@ This portfolio demonstrates competency across **32 EPA Knowledge, Skills and Beh
 
 ---
 
+### K9: Leadership
+
+**Mapped to:** Vision & strategy, decision-making, team development, change management, stakeholder communication (2024-2026)
+
+**Definitional Understanding:** Leadership encompasses **clear vision**, **influence over others**, **high-performing teams**, **decisions under uncertainty**, **organizational change**, and **accountability for outcomes**.
+
+**Leadership Vision: "Cloud-Native, Data-Driven, Secure-First"**
+
+I set strategic direction (Q1 2024):
+```
+"We will build a cloud-native platform that's secure-first,
+data-driven, and cost-efficient. Every decision guided by:
+1. Secure by default (not added later)
+2. Observable end-to-end (what we can't measure, we can't improve)
+3. Cost-conscious (optimize before scaling)
+4. Team-owned (not hero culture, not silos)"
+```
+
+**Communication:** Strategy document + all-hands presentation + one-on-ones → Team aligned on direction
+
+---
+
+**Strategic Architectural Decisions:**
+
+| Decision | Context | Leadership Action | Outcome |
+|----------|---------|---|---|
+| **Medallion Architecture (K12)** | Data ingestion 125K records, no recovery path | Gathered data, involved team, modeled scenarios, owned decision | K12 now serving 200+ users, £120K annual savings, 99.96% quality |
+| **Multi-AZ Deployment (S12)** | Single AZ risk: 6+ hour recovery, £50K/hour impact | Risk assessment, explored options, took accountability for complexity | 99.99% uptime SLA, zero-downtime failover, team upskilled |
+| **Vulnerability Remediation Priority (K11)** | 3 vulnerabilities, limited resources, uncertain prioritization | Used SAFETY framework (Seek/Assess/Forecast/Explore/Test/Yield), transparent reasoning | Fixed both critical in parallel, zero external breaches |
+
+**Leadership Lesson:** Sometimes "simpler is better" isn't the answer. Accountable leadership means taking on justified complexity and explaining why.
+
+---
+
+**Decision-Making Framework I Developed (SAFETY):**
+
+| Step | Action | Example (K11) |
+|------|--------|---|
+| **S**eek data | What do we know? What are we guessing? | SQL injection CVSS 9.1 = 4.9M records exposed |
+| **A**ssess risk | Worst case? Probability? | GDPR fine £4.4M if external discovery |
+| **F**orecast impact | If wrong, what's the cost? Recovery time? | Data breach > reputation damage > regulatory |
+| **E**xplore options | What are 3+ approaches? Pros/cons? | Sequential vs parallel fixing (chose parallel) |
+| **T**est assumptions | Can we validate before committing? | Write PoC for SQL injection exploitability |
+| **Y**ield decision | Make call, own it, communicate clearly | "Fixing both in parallel" (2.5 days, parallel delivery faster) |
+
+**Why This Matters:** Not analysis paralysis (decide with good-enough data), transparent reasoning (team can challenge), accountable (I own outcome), teachable (team learns model)
+
+---
+
+**Building High-Performing Teams:**
+
+**Team Evolution (Q1 2024 → Q3 2025):**
+
+| Metric | Q1 2024 | Q3 2025 | Change |
+|--------|---------|---------|--------|
+| **Turnover** | 30% | 15% | -50% (retention improved) |
+| **Psychological safety** | 58% | 89% | +31% |
+| **Promotions** | 0 | 3 (Priya, James, other) | Engineers advancing |
+| **Certifications** | 0 | 4+ AWS, OWASP | Team upskilled |
+| **"Proud of work" survey** | 42% | 78% | +36% ownership |
+
+**My Leadership Approach:**
+1. Established psychological safety first (modeled vulnerability, rewarded speaking up)
+2. Created clear growth paths (junior → mid → senior, visible criteria)
+3. Built shared ownership (vision setting, team implements details)
+4. Invested in skills (sponsored training, tech talks, mentoring)
+
+---
+
+**Managing Stakeholders & Communicating Upward:**
+
+| Stakeholder | Communication | Example (K11 Vulnerabilities) |
+|---|---|---|
+| **Engineering team** | Weekly, interactive, transparent | "We found 3 vulns, here's plan, you're not in trouble, questions?" |
+| **Manager** | Monthly, business impact focused | "3 vulns found internally, 2.5-day fix, zero customer impact, process improved" |
+| **Business/Compliance** | Quarterly, ROI + compliance focused | "Demonstrates mature security posture, weekly scanning now in place" |
+| **Customers** | Monthly, user-focused, transparent | "Your data more secure, no action needed, our commitment to improvements" |
+
+---
+
+**Driving Organizational Change:**
+
+*Change #1: Security-First Culture*
+- Problem: Reactive security (fix after incident)
+- Vision: Prevention-focused (zero vulnerabilities)
+- Actions: Modeled behavior, trained team, built process, measured progress
+- Result: K11 shows 3 vulnerabilities caught internally (not breaches), all team knows OWASP Top 10
+
+*Change #2: Inclusive Engineering Culture*
+- Problem: Homogeneous team, low diversity hiring
+- Vision: 50% women, 40% underrep backgrounds by 2026
+- Actions: Led mentoring, redesigned hiring, addressed barriers, built community
+- Result: 8% → 38% female hiring, 8% → 50% underrep backgrounds, retention 70% → 85%
+
+---
+
+**Accountability & Ownership:**
+
+Example: VPC complexity trade-off (S12)
+- **My response (not):** "This was team's decision" / "Vendor tools had issues"
+- **My response (yes):** "I made this call, I own outcome. Here's what we learned."
+- **Actions:** Shared learning, optimized code, trained team, no blame deflection
+- **Result:** Cost justified as 89% better than single warehouse
+
+Example: Mentee promotion (Priya)
+- **Accountability:** "This promotion was my judgment, I own it"
+- **Her accountability:** "Now I'm performing at this level"
+- **Shared success:** Team helped her succeed, she thriving at mid-level
+
+---
+
 ## Evidence Appendix: Critical KSB Mapping
 
 ### K12: Data Management Systems (Previously Unmapped)
