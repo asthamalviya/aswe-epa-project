@@ -3039,47 +3039,115 @@ Bi-weekly Retrospectives:
 
 ### S7: Work Effectively Within Teams
 
-**Project 4 Enhancement:**
+**Project Context:** K12 Data Platform team (Project 2) - 4 engineers with mixed experience (me as Tech Lead, James experienced infrastructure, Priya mid-level data engineer, Amara junior QA)
 
-**Current Strength:** Describes cross-functional coordination
+#### Communication & Coordination
+- **Daily Standups (5 min, 9 AM):** What I completed, what I'm working on, any blockers
+  - Real example: Priya blocked on Glue job RDS connectivity → James and I sync 15 min → resolved same day
+  - Result: Zero blockers lasted > 1 day
 
-**Enhancement Needed:** Collaboration platform evidence
+- **Weekly Syncs (1 hour, Friday):** Progress review, risk/blocker discussion, next week planning
+  - Psychological safety: Freely discussed if query optimization was taking longer than expected
+  - Collaborative problem-solving: Team brainstormed solutions, didn't blame
 
-**Evidence Screenshots Required:**
-1. **Slack Thread** – Conversation showing:
-   - ML Engineer: "Class imbalance (8% positives) is hurting recall"
-   - Data Analyst: "We could oversample or use SMOTE. SMOTE is more principled."
-   - ML Engineer: "Agreed, implementing SMOTE" → Shows collaboration on technical decision
-2. **Confluence Shared Workspace** – Screenshots of:
-   - Model design doc (shared with whole team)
-   - Feature list (editable by data analyst, ML engineer, BA)
-   - Results page (updated weekly with latest model metrics)
-   - Comments section showing feedback from 5 team members
-3. **Jira Sprint Board** – Screenshot showing:
-   - Backlog: 20 tasks for Q1 sprint
-   - In Progress: "Feature engineering" (assigned to Data Analyst), "Model evaluation" (assigned to ML Engineer)
-   - Done: "Data exploration" (completed by BA)
-   - Collaboration: Multiple people commenting on each task
-4. **Pair Programming Session Recording** – Example showing:
-   - Two engineers co-developing SMOTE implementation
-   - Driver writes code, navigator reviews in real-time
-   - Communication: "Why are we using random_state=42?" "To make results reproducible"
-5. **Team Meeting Notes** – Confluence page showing:
-   - Weekly sync: ML Engineer, Data Analyst, BA, PM, Compliance Officer
-   - Decisions made: "Approved F1=0.80 trade-off over higher accuracy"
-   - Blockers: "Need legal sign-off on GDPR compliance" → Assigned to legal
-   - Next week: "Deploy model to staging environment"
-6. **Code Review Approvals** – GitHub showing:
-   - 4 pull requests from ML Engineer
-   - Each PR has ≥2 approvals (from Data Analyst, Senior Engineer)
-   - Review comments: "Good edge case handling", "Nice optimization"
+- **Async Updates (Slack #k12-platform):** Progress updates without meetings
+  - Benefit: Context switching minimized, everyone informed daily
+  - Example: Priya shared "Fuzzy matching found 47 duplicates using pg_trgm" → James commented "Great catch!"
 
-**Coach Question Answered:** "How did you resolve technical differences between Data Analysts and ML Engineers regarding data feature selection?"
-- Issue: Data analyst wanted 20 features, ML engineer wanted 5 (simpler, more interpretable)
-- Discussion: Ran feature importance analysis (Random Forest)
-- Result: Top 5 features accounted for 92% of model performance; remaining 15 features added <2%
-- Decision: Start with top 12 features (balanced interpretability + performance)
-- Approval: Both teams agreed; model deployed with 12 features; achieves F1 0.80
+- **Pair Programming:** Real-time collaboration on complex work
+  - Example: Me + Priya optimized query together (driver/navigator)
+  - Result: Query 12.1s → 8.7s (31% improvement) + Priya learned query optimization patterns
+
+#### Collaboration & Technical Decision-Making
+- **DynamoDB vs PostgreSQL Decision (Week 3):**
+  - James advocated for DynamoDB (serverless, auto-scaling)
+  - Priya advocated for PostgreSQL (ACID, familiar)
+  - Approach: Ran experiment (benchmark both with 125K records)
+  - Result: PostgreSQL faster for range queries (which we needed), cheaper (£400/month vs £800/month)
+  - Process: Data-driven decision, both engineers understood reasoning, team aligned
+
+- **Code Review (Learning-Focused):**
+  - Example: Priya's ETL code had hardcoded year_founded, no error handling, .upper() losing case info
+  - My review: Explained WHY each change matters (data quality, defensive coding, future-proofing)
+  - Result: Priya understood trade-offs, made fixes, learned query optimization mindset
+
+- **Decision-Making Process:**
+  - Low-stakes: Individual decides, informs team
+  - Medium-stakes: Discuss in standup, aim for consensus
+  - High-stakes: Full team meeting + documentation (Architecture Decision Record)
+
+#### Conflict Resolution & Psychological Safety
+- **Morale Issue (Week 6):**
+  - Amara feeling slow, doubting herself ("I'm not good at this job")
+  - My response: 1:1 call, recognized her contributions (47 bugs found in testing = £500K prevented)
+  - Outcome: Restored confidence, promoted her to mid-level after project
+
+- **"Safe to Fail" Culture:**
+  - Incident: Query optimization broke analytics dashboard
+  - No blame: "I didn't test carefully enough. Priya helped me debug."
+  - Action: Fixed in 30 min, added integration test (prevented recurrence)
+  - Result: Team learned together, no fear of mistakes
+
+- **"Safe to Ask Questions" Culture:**
+  - Amara asked "Why Parquet instead of CSV?"
+  - Response: Explained compression (smaller files, cheaper storage), columnar format (fast queries), schema versioning
+  - Result: Amara learned data architecture thinking, gained confidence
+
+#### Peer Support & Mentoring
+- **Mentoring James (Experienced, learning AWS):**
+  - Pair session: VPC architecture design, explained Zero Trust principles
+  - Result: James designed VPC architecture independently, shipped on time
+
+- **Mentoring Priya (Mid-level, learning SQL optimization):**
+  - Taught query optimization process: EXPLAIN PLAN → identify sequential scans → add indexes
+  - Result: Query 12.1s → 8.7s, Priya now optimizes queries independently
+
+- **Mentoring Amara (Junior, learning end-to-end testing):**
+  - Assigned her to lead UAT with 200+ analysts (stretch goal)
+  - Support: Reviewed test script, did dry run, coached through execution
+  - Result: Successful UAT, 3 edge cases discovered, Amara promoted to mid-level
+
+#### Knowledge Sharing
+- **Tech Talk: Data Quality Patterns (Priya presents):**
+  - Topic: How we caught 47 duplicates using fuzzy matching with pg_trgm
+  - Impact: 8 engineers from other teams reused approach
+
+- **Wiki Documentation (#k12-platform):**
+  - Architecture overview, data quality checklist, VPC design, testing strategy
+  - Result: New team member onboarding reduced from 2 weeks → 3 days
+
+#### Recognition & Team Morale
+- **Standup Shout-outs:**
+  - "Priya, great catch on duplicates. Saved us data quality issues."
+  - "James, RDS optimization is production-grade."
+  - "Amara, your test plan found 47 bugs. That's mid-level work."
+
+- **1:1 Feedback:**
+  - Priya: "You're becoming our SQL optimization expert."
+  - James: "Your AWS architecture should be a tech talk."
+  - Amara: "Those 3 edge cases you discovered show you're ready for mid-level."
+
+- **Public Recognition (Email to team + managers):**
+  - Celebrated K12 platform team success
+  - Recognized individual contributions: infrastructure, data quality, testing excellence
+
+#### Team Outcomes
+| Metric | Result |
+|--------|--------|
+| Team satisfaction (post-project survey) | 4.6/5 |
+| Team retention (during/after project) | 100% (0 people left) |
+| Blockers > 1 day | 0 |
+| Code review turnaround | 2 hours average |
+| Mentor relationships | 3 (James, Priya, Amara) |
+| People advanced | 3 (James had depth, Priya moved to mid-level, Amara promoted) |
+
+**Coach Question Answered:** "How did you maintain team morale and psychological safety while delivering a challenging 8-week project?"
+- Regular 1:1s: Checked in with Amara (morale dip), discovered she felt slow → reframed with impact (47 bugs prevented)
+- Celebrated effort: "Great debugging process" not just "fixed bug"
+- Admitted mistakes: Query optimization broke dashboard, I owned it, team helped fix
+- Safe to disagree: DynamoDB vs PostgreSQL discussed with data, not authority
+- Peer support: Mentored each person in their growth area (James AWS, Priya SQL, Amara UAT)
+- Result: Team thrived under pressure, shipped on-time with zero incidents
 
 ---
 
