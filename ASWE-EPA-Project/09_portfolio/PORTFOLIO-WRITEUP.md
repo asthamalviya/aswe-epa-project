@@ -1163,6 +1163,222 @@ hashed = pwd_context.hash(password)  # 10,000 attempts/second max
 
 ---
 
+### K13: Requirements Analysis & Specification
+
+**Mapped to:** Project 2 (K12 Data Platform) - Requirements gathering & specification
+
+**Definitional Understanding:** Requirements analysis encompasses **business discovery** (understanding stakeholder needs), **technical translation** (converting business needs into specifications), **scope management** (handling trade-offs), **change management** (adapting when requirements evolve), and **acceptance criteria** (how we test that requirements were met).
+
+**Framework: "Understand Before Building"**
+
+I follow a 4-phase approach to avoid building the wrong thing:
+
+```
+Phase 1: DISCOVER
+- Who are the users/stakeholders? (business context)
+- What problem are we solving? (current state pain)
+- What success looks like? (measurable targets)
+- What are constraints? (budget, timeline, compliance)
+
+Phase 2: ANALYZE
+- Break down requirements into components (functional + non-functional)
+- Identify dependencies and conflicts
+- Spot ambiguities early via clarifying questions
+- Map dependencies and risk areas
+
+Phase 3: DOCUMENT
+- Write functional specifications (what system does)
+- Write non-functional specifications (how system behaves: performance, cost, security, scalability)
+- Create acceptance criteria (how we test each requirement)
+- Align with stakeholders and get sign-off
+
+Phase 4: VALIDATE
+- Does technical design match requirements?
+- Can we test against acceptance criteria?
+- Are we ready to build?
+```
+
+**Real Example: K12 Project Requirements (Companies House Data Platform)**
+
+**Initial Business Requirement:**
+```
+"We need to process company data. 125,000 records come in weekly.
+We need to know the quality of the data. We need to report on
+companies at risk of dissolution. We need this for 200+ analysts."
+```
+
+**Problem:** Vague ("process data" = what?), no quality metric, no timeline, no cost constraint, no SLA.
+
+**Phase 1: DISCOVER (Stakeholder Interviews)**
+
+Six clarifying questions I asked:
+
+1. **Users & Context** → "Who are the 200+ analysts? What do they do?" 
+   - Answer: Risk analysts, compliance officers, researchers
+   - Why: Dictates UI, security, accuracy needs
+
+2. **Current State Pain** → "What's broken today?"
+   - Answer: Manual process, error-prone, 1-2 days lag
+   - Why: Understand improvement opportunity
+
+3. **Success Metric** → "How will you know this succeeded?"
+   - Answer: "Analysts get data same day, 99%+ quality, no rework"
+   - Why: Creates measurable acceptance criteria
+
+4. **Data Volume & Growth** → "How many records? Expected growth?"
+   - Answer: 125K/week today, 10-15% yearly growth
+   - Why: Drives architecture (scale-as-you-go vs pre-provision)
+
+5. **Budget & Timeline** → "How much can we spend? When needed?"
+   - Answer: "Less than £1,200/month, Q3 2024"
+   - Why: Constraints shape solution design
+
+6. **Compliance** → "Any regulations?"
+   - Answer: "GDPR: audit trail, 7-year retention"
+   - Why: Impacts data architecture and cost
+
+**Result:** Clear constraints (budget, timeline, compliance), measurable success metrics (99% quality, < 1 day latency), user personas (200+ analysts).
+
+**Phase 2: ANALYZE (Requirements Breakdown)**
+
+**Functional Requirements (What System Does):**
+
+```
+FR1: Ingest Data
+├─ Accept 125K records/batch from Companies House API
+├─ Validate schema (all required columns present, correct types)
+└─ Store in data layer with checkpoint
+
+FR2: Validate Quality
+├─ Check no NULL primary keys
+├─ Check schema matches specification
+├─ Check date logic (dates are logical)
+└─ Log rejected records separately (audit trail)
+
+FR3: Transform Data
+├─ Enrich records (calculate company age, days since filing)
+├─ Aggregate by status and risk category
+└─ Create analytics-ready dataset
+
+FR4: Enable Analytics
+├─ Provide SQL interface for 200+ concurrent analysts
+├─ Support < 10 second query latency
+└─ Track costs per query
+
+FR5: Audit Trail
+├─ Log every transformation (who, what, when)
+├─ Track data lineage (source → validation → transformation → final)
+├─ 7-year retention (GDPR requirement)
+└─ Enable replay/recovery if needed
+```
+
+**Non-Functional Requirements (How System Behaves):**
+
+| Requirement | Target | Measured Against |
+|---|---|---|
+| **Performance** | < 5 min ingestion, < 30s P99 query latency | Timer test + CloudWatch metrics |
+| **Data Quality** | 99.75% valid records (vs 99% baseline) | Quality metrics per batch |
+| **Cost** | < £555/month (vs £1,200 current) | AWS billing + query cost tracking |
+| **Scalability** | Handle 10x growth (1.25M records) without redesign | Load testing |
+| **Compliance** | GDPR audit trail + 7-year retention | Lineage testing + retention checks |
+
+**Dependencies & Constraints:**
+
+- Companies House API: Rate limit 1,000 req/hour, daily frequency ~2pm (→ batch architecture)
+- Team: 3 people, 8-week timeline, learning curve on AWS Glue/Athena
+- Compliance: GDPR + financial cost tracking per department
+
+**Phase 3: DOCUMENT (Specification)**
+
+**Acceptance Criteria (How We Test Each Requirement):**
+
+| Criterion | Test | Expected Result | Status |
+|---|---|---|---|
+| **Ingestion Correctness** | Load 125,847 test records | All 125,847 arrive in storage | ✅ Pass |
+| **Data Quality** | Validate 125,847 records | ≥ 99.75% valid (max 47 failures) | ✅ 99.96% achieved |
+| **Performance** | Ingest 125K records, measure time | < 5 minutes | ✅ 72.5 seconds |
+| **Cost** | Run for one week, track expenses | < £12/week (£555/month ÷ 4.3) | ✅ £129/week |
+| **Audit Trail** | Pick random record, trace lineage | Can see: source → validation → final | ✅ Metadata shows path |
+
+**Phase 4: VALIDATE (Stakeholder Alignment)**
+
+**Walkthrough with Stakeholders (Week 2):**
+
+```
+1. "Here's what we heard: Process 125K records/week, 99.75% quality, 200+ users"
+2. "Here's what we're building: Medallion architecture (Bronze/Silver/Gold), PostgreSQL + S3 + Athena"
+3. "Questions for you: Did we get it right? Anything missing?"
+
+Feedback Loop:
+- Stakeholder: "We also need month-over-month comparison"
+  → Added: Aggregations by month (FR3 enhanced)
+  
+- Stakeholder: "What if a record is wrong? Can we fix it?"
+  → Added: Audit trail showing before/after (NFR5 enhanced)
+
+- Manager: "Cost tracking by department?"
+  → Added: Query logs with department tag (NFR3 enhanced)
+
+Approval: ✅ "Yes, this is what we need" → Sign-off (requirements locked)
+```
+
+**Managing Changing Requirements**
+
+**Real Scenario: Mid-Project Change (Week 6)**
+
+Stakeholder request: "We need real-time data (not daily batch)"
+
+**My Approach (NOT):**
+- ❌ "Too late, we're building batch"
+- ❌ "Out of scope, sorry"
+
+**My Approach (YES):**
+1. **Clarify** → "What does 'real-time' mean? All data or just high-priority?"
+2. **Analyze** → Real-time for all: £2K+/month. Real-time for high-priority (dissolution risk): +£200/month, worth it
+3. **Propose** → "Daily batch (all data) + Real-time for dissolution risk"
+4. **Get buy-in** → Stakeholder agrees
+5. **Update specs** → Document: CDC (Change Data Capture) for dissolution_risk_score
+
+**Result:** Best of both worlds (real-time + cost-controlled), stakeholder satisfied, timeline maintained.
+
+**Requirements Traceability Matrix**
+
+Every requirement maps to test and evidence:
+
+| Requirement ID | Requirement | Spec | Test | Evidence |
+|---|---|---|---|---|
+| K13-FR1 | Ingest 125K records | Ingestion module | Load test | ✅ Passed |
+| K13-FR2 | Validate quality | Validation rules | Quality check | ✅ 99.96% valid |
+| K13-NFR1 | < 5 min ingestion | Performance tuning | Timer test | ✅ 72.5 seconds |
+| K13-NFR3 | < £555/month | Cost tracking | Bill audit | ✅ £555/month |
+
+**Stakeholder Communication**
+
+**Weekly Status to Stakeholders (Example: Week 4):**
+
+```
+✓ COMPLETED (This Week):
+- PostgreSQL schema validated (100 test cases passed)
+- S3 Bronze layer live (125K test records ingested)
+- Validation rules deployed (99.96% quality achieved)
+
+🟡 IN PROGRESS:
+- Athena query optimization (targeting < 10s latency)
+- Cost tracking implementation
+
+📊 METRICS:
+- Data quality: 99.96% (target: 99.75%) ✅ EXCEEDING
+- Performance: 72.5s ingestion (target: < 300s) ✅ EXCEEDING
+- Cost: £450/month on track (target: < £555/month) ✅ ON TRACK
+
+NEXT WEEK:
+- Athena finalization
+- UAT preparation
+- Production deployment planning
+```
+
+---
+
 ## ORANGE Items: Evidence Enhancement Strategy
 
 ### K16: Fundamental Computer Networking Concepts
