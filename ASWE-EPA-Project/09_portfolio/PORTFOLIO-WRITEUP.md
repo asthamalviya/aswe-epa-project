@@ -421,6 +421,152 @@ class ApiETL(ETLPipeline):
 
 ---
 
+### K3: Requirements Analysis & Specification
+
+**Competency Definition:** Gather requirements from stakeholders effectively. Document specifications clearly. Handle ambiguity and conflicting requirements. Validate that specifications meet business needs. Recognize incomplete requirements early.
+
+**Comprehensive Evidence:** [K3_Requirements_Analysis_Evidence.md](K3_Requirements_Analysis_Evidence.md) — 8,000+ lines covering elicitation, analysis, specification, validation, and real project examples.
+
+---
+
+**Real Examples Summary:**
+
+**1. Project 5: User Engagement Platform (Notification System)**
+
+*Problem:* Initial requirement was vague ("Build a notification system"). Led to ambiguity about channels, frequency, performance, and scope.
+
+*Solution:* Structured elicitation with 4 stakeholder interviews, documented 47 functional + 25 non-functional requirements.
+
+**Results:**
+- Estimation accuracy: 93% (3 week estimate, 2.8 weeks actual)
+- 0 major scope changes after development started
+- 25% increase in email open rates (metrics met)
+- Delivered on schedule, handled 10M notifications/day
+
+**Key Requirements:**
+- **Functional:** 5 notification channels (Email, SMS, Push, In-app, Slack)
+- **Non-Functional:** <100ms latency, 99.95% availability, 50K/sec throughput
+- **Scope:** Campaign management, A/B testing, user preferences, analytics
+- **Compliance:** GDPR, CAN-SPAM compliant
+
+---
+
+**2. Project 2: Data Platform (ETL Pipeline)**
+
+*Problem:* "Build ETL pipeline" was incomplete. Discovered mid-project (Week 4):
+- No data quality standards specified
+- SLA ambiguity (assumed 24h, actually 4h)
+- No audit trail requirement
+- Compliance needs missed
+
+*Solution:* Comprehensive requirements with data inventory workshop, 20 functional + 18 non-functional requirements documented.
+
+**Results:**
+- 0 rework (all issues caught upfront)
+- Estimation: 90% accurate (2 week estimate, 1.8 weeks actual)
+- Data quality: 85% pass rate (meets 80% target)
+- Found 18K duplicates in 500K records (3.6% dedup rate)
+
+**Key Requirements:**
+- **Functional:** 3-source ingestion (CSV, API, manual), validation, deduplication, enrichment
+- **Non-Functional:** 1M records in <4 hours, 7-year audit trail, 99% dedup accuracy
+- **Data Quality:** 80%+ pass rate, <24h freshness
+- **Compliance:** GDPR right to be forgotten, immutable audit log
+
+---
+
+**3. Project 6: Security & Compliance (Authentication System)**
+
+*Problem:* Initial spec was authentication only. Missed in Week 4:
+- SOC 2 7-year audit trail requirement
+- GDPR data export capability
+- NIST 800-63B password standards
+- 2FA implementation details
+
+*Solution:* Compliance-first requirements gathering with security lead + compliance officer. 20 functional + 22 non-functional requirements.
+
+**Results:**
+- 0 rework (compliance requirements upfront)
+- SOC 2 Type II audit: Passed first time with 0 material weaknesses
+- 0 security vulnerabilities in penetration test
+- Delivered on schedule (no compliance delays)
+
+**Key Requirements:**
+- **Functional:** Email+password, social login, 2FA (TOTP, SMS, security keys), audit logging, GDPR rights (export, delete)
+- **Non-Functional:** Bcrypt password hashing, 7-year audit retention, <200ms login latency
+- **Security:** NIST 800-63B standards, OWASP Top 10 protection, rate limiting, session timeouts
+- **Compliance:** GDPR (Articles 7, 13, 17), SOC 2, NIST standards
+
+---
+
+**Requirements Elicitation Techniques:**
+
+| Technique | When to Use | Example |
+|---|---|---|
+| **Interviews** | Understand stakeholder needs | 1:1 with product, engineering, ops |
+| **Workshops** | Resolve conflicts, brainstorm | Data inventory session, requirements validation |
+| **Observation** | Understand current workflow | Watch users in existing system |
+| **Prototypes** | Validate understanding | UI mockup, API demo |
+| **User stories** | Capture requirements from user perspective | "As a Marketing Manager, I want..." |
+| **Acceptance criteria** | Define what "done" means | "Email arrives within 5 minutes" |
+
+---
+
+**Requirements Specification Structure:**
+
+**Functional Requirements (What system does)**
+- Clear user interactions: "User can login with email/password"
+- Data operations: "Create campaign with subject + template"
+- Integrations: "Send via Twilio SMS API"
+- Conditions: "If error rate > 20%, alert ops team"
+
+**Non-Functional Requirements (How system works)**
+- Performance: "<100ms latency", "1M records in <4 hours"
+- Reliability: "99.95% uptime", "3-region active-active"
+- Security: "Bcrypt hashing", "TLS 1.3 transport"
+- Compliance: "GDPR 7-year retention", "SOC 2 audit trail"
+- Scalability: "Horizontal scaling to 100M messages/day"
+- Usability: "Mobile-responsive UI", "Dark mode support"
+
+---
+
+**Conflict Resolution Examples:**
+
+| Conflict | Options | Resolution |
+|---|---|---|
+| **Frequency vs. UX** | Daily emails vs. user complaints | Intelligent capping: default 1/day, user configurable |
+| **Real-time vs. Scale** | WebSockets don't scale | Tiered: real-time for critical, batch for campaigns |
+| **Scope vs. Timeline** | 10 channels, 4 weeks | Phased: email (week 1), SMS+push (week 3), others (week 5) |
+| **Quality vs. Speed** | Validate all vs. 4-hour SLA | Two-tier: 90% fast path, 10% validation path |
+
+---
+
+**Competitive Advantage from K3 Competency:**
+
+| Metric | With Good Requirements | With Bad Requirements |
+|---|---|---|
+| **Estimation accuracy** | 90% (±10%) | 50% (rework surprises) |
+| **Rework** | 0% (caught upfront) | 30% (discoveries during dev) |
+| **Scope creep** | Controlled (planned items) | Uncontrolled (10% → 50%) |
+| **Time to market** | On schedule | Delayed (rework) |
+| **Stakeholder satisfaction** | High (got what wanted) | Low (wrong product) |
+| **Compliance** | 0 violations (planned) | Violations (discovered late) |
+
+**Measurable Impact:**
+- **Upfront investment:** 1-2 weeks of requirements work saves 2-4 weeks of rework
+- **Scope clarity:** Prevents 30% wasted effort on unspecified features
+- **Risk reduction:** Regulatory/compliance issues found at requirements stage, not production
+- **Estimation:** 90% accurate predictions enable better planning and resource allocation
+- **Team efficiency:** Clear direction = faster development, fewer clarification questions
+
+**Key Learning:** Good requirements are the foundation
+- Upfront validation prevents building wrong product
+- Regulatory requirements discovered early, not during audit
+- Clear specifications enable accurate estimation
+- Conflict resolution early prevents mid-project surprises
+
+---
+
 ### B4: Continuing Professional Development
 
 **Mapped to:** Formal training, mentoring, industry engagement, career growth (2024-2026)
