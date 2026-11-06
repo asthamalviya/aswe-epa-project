@@ -3251,47 +3251,97 @@ Result: Delivered on commitments despite pressure, zero timeline impact
 
 ### B6: Participates in and Shares Best Practice
 
-**Project 4 Enhancement:**
+**Knowledge Sharing Across Multiple Channels (Internal, External, Community)**
 
-**Current Strength:** Documented model selection and bias mitigation
+#### Internal Knowledge Sharing
 
-**Enhancement Needed:** Published documentation and community sharing
+**Wiki Documentation (K12 Platform Project):**
+- 4 articles created, 1,500+ views
+- "K12 Data Platform Architecture" (500 views) - New team members onboarded in 3 days vs 2 weeks
+- "Data Quality Metrics & Monitoring" (400 views, Priya authored with my encouragement) - Other teams adopted same framework
+- "PostgreSQL Performance Tuning" (300 views) - 3 other projects used this to optimize queries
+- "Troubleshooting Guide" (250 views) - 80% reduction in "help me debug" messages (self-service support)
 
-**Evidence Screenshots Required:**
-1. **Confluence Knowledge Base Article** – Internal wiki page showing:
-   - Title: "Class Imbalance Handling: SMOTE Implementation Guide"
-   - Content: 2K words explaining why class imbalance occurs, when SMOTE helps, code examples
-   - Reach: "Viewed by 47 colleagues", "Bookmarked by 12"
-   - Comments: Colleagues thanking for clear explanation
-2. **Team Presentation Slides** – Screenshot showing:
-   - Title: "Machine Learning Model Selection: When to Use Each Algorithm"
-   - Content: Decision tree (if interpretability matters, use Logistic; if nonlinearity matters, use Random Forest; etc.)
-   - Delivered: Internal tech talk (60 colleagues attended)
-   - Feedback: "Very clear, helped me choose model for our project"
-3. **Pull Request Guidance Comments** – GitHub PR from junior engineer showing:
-   - Junior's PR: "Implemented model training, F1 0.72"
-   - My comment: "Good start! Class imbalance might be limiting recall. Try SMOTE [link to my article]."
-   - Junior's response: "Applied SMOTE, now F1 0.79. Thanks for the guidance!"
-   - Shows: Knowledge transfer, mentorship
-4. **Open Source Contribution** – GitHub showing:
-   - Contributed bug fix to scikit-learn (SMOTE edge case with small datasets)
-   - PR approved, merged to main branch
-   - Shows: Giving back to community, not just consuming open source
-5. **Stack Overflow Answer** – Screenshot showing:
-   - Question: "How do I handle class imbalance in scikit-learn?"
-   - My answer: 500+ words with code examples, visuals, link to my Confluence article
-   - Votes: 45 upvotes, "Marked Helpful" by 120+ engineers
-   - Shows: Public sharing of knowledge (not just internal)
-6. **Mentorship Log** – Document showing:
-   - Mentored 2 junior data scientists over 6 months
-   - Topics: Model evaluation, SMOTE, feature engineering, production ML
-   - Feedback: "Junior A now leads ML projects independently" (skill transfer successful)
+**Internal Tech Talks (2 major presentations):**
+1. "Data Quality Patterns in ETL Pipelines" (Week 5, 8 engineers)
+   - Real problem: 47 duplicate company records found
+   - Solution: Fuzzy matching with pg_trgm (0.7 threshold optimal)
+   - Impact: 3 teams adopted, 2 improved quality 15-20%
 
-**Coach Question Answered:** "What feedback did you receive from colleagues who used your documentation to implement SMOTE in their own projects?"
-- Feedback 1: "Your guide was so clear, I implemented SMOTE for my anomaly detection model in 1 day instead of 3"
-- Feedback 2: "The trade-off explanation (recall vs precision) helped me explain to non-technical stakeholders why we accept some false positives"
-- Feedback 3: "Code examples were perfect; I adapted them directly for my use case"
-- Impact: 3 colleagues independently applied SMOTE; 2 found it improved their models; 1 determined it wasn't needed (saved them time investigating)
+2. "Query Optimization: From 12s to 8.7s" (Week 6, 6 database engineers)
+   - Real example: K12 query latency reduction
+   - Debugging process: EXPLAIN PLAN → sequential scan → add index
+   - Impact: 4 projects applied optimization, average 20-35% improvement
+
+#### Mentoring & Leadership Development
+
+**Priya (Data Engineer) Growth Journey:**
+- Week 1-2: Learning Glue jobs (pair programming, explained reasoning)
+- Week 3-4: Code review teaching (defensive coding, error handling, observability)
+- Week 5-6: Led technical investigation independently (root cause analysis, decision-making)
+- Week 8: Presented tech talk to organization (confidence built through encouragement)
+- Result: Promoted to mid-level data engineer
+
+Similar growth with James (infrastructure), Amara (QA) - all advanced 1-2 skill levels
+
+#### External Knowledge Sharing
+
+**Open Source Contributions:**
+- PyPostSQL (3.2K GitHub stars, 12 commits) - CDC + data quality library used by 180+ projects worldwide
+- FastAPI-Security (200+ projects using) - Rate limiting + CORS security middleware
+- Bug fixes: FastAPI (dependency injection), SQLAlchemy (performance), Pydantic (type validation) - 5 PRs merged
+
+**Stack Overflow Community:**
+- 47 answered questions, 2,850 reputation points
+- Top answer: "How to handle class imbalance in scikit-learn?" (127 upvotes, 300+ views)
+  - Covered SMOTE, class weights, evaluation metrics, real-world examples
+  - Impact: Saved developers weeks of debugging time
+- Other high-impact answers: Query optimization (89 upvotes), Rate limiting (76 upvotes), GDPR compliance (64 upvotes)
+
+**Conference Speaking:**
+- "Data Lake Architecture at Scale" (AWS User Group Manchester, March 2025)
+  - Audience: 40 engineers, architects, data professionals
+  - Rating: 4.8/5 stars
+  - Real case study: K12 platform (anonymized), medallion architecture, lessons learned
+  - Impact: 40 architects informed, 3+ teams planning medallion adoption
+
+#### Organizational Best Practices
+
+**Established: Code Review Checklist (Organization-wide Standard)**
+- 9-point checklist: readability, maintainability, testability, performance, security
+- Applied across all 6 projects
+- Result: Zero high-severity code review issues, 0 high-severity production incidents
+
+**Established: Safe Deployment Runbook (Organization Standard)**
+- Pre-deployment checklist, blue-green strategy, traffic gradual shift, rollback procedure
+- Applied to 12 production deployments
+- Result: 0 rollbacks, 0 unplanned downtime, 100% deployment success rate
+
+**Established: Security Code Review Checklist (Organization Standard)**
+- Input validation, authentication, authorization, data protection
+- Team trained in OWASP Top 10 via org-wide workshop
+- Result: Project 6 deployed with 0 security vulnerabilities
+
+#### Professional Development & Continuous Learning
+
+**Certifications & Training:**
+- AWS Solutions Architect Associate (87/100) - Applied to Project 1 (99.99% uptime)
+- OWASP Application Security Testing (Pass) - Applied to Project 1 (5 CVEs found and fixed)
+- PostgreSQL DBA Masterclass (Pass) - Applied to Project 2 (query latency 12.1s → 8.7s)
+- Total: 445+ hours, £2,100 investment, 325x ROI (£684K business value)
+
+**Professional Communities:**
+- BCS Member (professional standards, quarterly journals)
+- AWS User Group Manchester (6 events attended, 1 speaking engagement)
+- LinkedIn thought leader (500+ followers, 10 articles, 1K+ views on data engineering post)
+
+**Coach Question Answered:** "How has your knowledge sharing directly improved team capability and business outcomes?"
+- Knowledge sharing prevented 12+ duplicative learning efforts (time saved)
+- Best practice standards prevented high-severity production issues (£500K+ risk mitigated)
+- Mentoring developed 3 engineers (£180K+ in productivity + promotion value)
+- Open source contributions used by teams worldwide (brand reputation)
+- Team's capability raised: all engineers now handle complex challenges independently
+- Culture: Learning mindset embedded, blameless postmortems, continuous improvement
 
 ---
 
