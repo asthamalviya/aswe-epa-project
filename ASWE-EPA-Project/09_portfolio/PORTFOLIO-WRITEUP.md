@@ -2694,6 +2694,78 @@ Bi-weekly Retrospectives:
 
 ---
 
+### S8: Develop and Manage a Project to Deliver Software Engineering Objectives
+
+**Project Context:** K12 Data Platform Project (8-week delivery, 3-person team, £555/month cost target)
+
+**Real Project Evidence:**
+
+#### Planning & Scope Management
+- **Work Breakdown Structure**: 5 workstreams (Infrastructure, Data Processing, Analytics, Testing, Deployment) broken into 400 person-hours
+- **SMART Success Criteria**: 99.75% data quality, <5min ingestion, <10s queries, <£555/month cost, 100% user sign-off
+- **Risk Register**: 23 risks identified (learning curve, API changes, security audit, performance, UAT issues); all mitigated with preventive actions
+
+#### Budget & Resource Planning
+- **Project Cost**: £400 AWS services + team time
+- **Production Run Rate**: £520/month (vs £555 target) = on budget ✓
+- **Team Allocation**: 3 engineers at 100% for 8 weeks
+- **Business Case**: £1,200/month manual process → £520/month automated = 57% cost reduction
+
+#### Execution & Progress Tracking
+- **Weekly Status Reports**: Tracked timeline (62% progress Week 5), budget, quality, risks
+- **Daily Standups**: Identified blockers within hours (IAM issues Week 3, UAT coordination Week 6) resolved same day
+- **Metrics Dashboard**: Real-time quality (99.96%), performance (P95 8.7s), uptime (99.97% first week)
+- **Risk Response**: Security audit caught RDS security group issue Week 3 → fixed before production
+
+#### Quality & Testing
+- **Defect Detection**: 47 bugs found in testing (before production launch)
+- **Test Coverage**: 97% code coverage across unit, integration, system, and E2E tests
+- **UAT Execution**: Pilot UAT (10 analysts) → Full UAT (200+ analysts) → 100% approval
+- **Pre-Launch Validation**: All acceptance criteria verified (ingestion time, data quality, latency)
+
+#### Stakeholder Communication
+- **Weekly Updates**: Stakeholder-facing status, challenges, decisions needed
+- **UAT Coordination**: 200+ analysts trained, feedback incorporated, sign-off secured
+- **Escalation Process**: P1 issues escalated to stakeholders within 1 hour
+- **Documentation**: Operations runbook, troubleshooting guide, architecture docs completed
+
+#### Deployment & Transition
+- **Go-Live Plan**: Friday morning low-risk window, rollback procedure tested (15-minute recovery)
+- **Cutover Execution**: Infrastructure deployed, data pipeline started, 200+ analysts released to production
+- **Post-Launch Monitoring**: 24/7 on-call coverage (me + James + Priya), zero incidents Week 1
+- **Handoff to Operations**: Runbook training, on-call schedule, weekly reviews established
+
+#### Timeline Performance
+| Phase | Target | Actual | Status |
+|-------|--------|--------|--------|
+| Week 1: Planning | 1 week | 1 week | ✅ On time |
+| Week 2-3: Infrastructure | 2 weeks | 2 weeks | ✅ On time |
+| Week 4-6: Data Processing | 3 weeks | 3 weeks | ✅ On time |
+| Week 7-8: Testing & Deployment | 2 weeks | 2 weeks | ✅ On time |
+| **Total Delivery** | **8 weeks** | **8 weeks** | **✅ On time** |
+
+#### Business Impact
+- **Cost Reduction**: £1,200/month → £520/month (57% savings, £8,160/year)
+- **Speed**: 1-2 days manual → same day automated (24-48 hour improvement)
+- **Quality**: 99% manual process quality → 99.96% automated (0.96 percentage point improvement)
+- **Scalability**: 125K records/week → capacity for 1.25M (10x future-ready)
+- **Stakeholder Satisfaction**: 200+ analysts gave 100% sign-off
+
+#### Adaptive Delivery
+- **Risk Materialization**: Query P99 latency slightly above target (10.2s vs 10s) — Accepted 2% variance, monitored closely
+- **Scope Protection**: Did not add new features mid-project; kept scope fixed to protect timeline
+- **Resource Adjustment**: Identified IAM blocker Week 3 → reassigned Priya to focus on Glue job configuration while James fixed permissions
+- **Learning Integration**: Team members advanced 1-2 skill levels; lessons learned (security early, load testing important) captured for next project
+
+**Coach Question Answered:** "How did you manage stakeholder expectations and handle scope changes during a fast-paced 8-week delivery?"
+- Scope Protection: Established frozen requirements at Week 1; all change requests documented for post-launch backlog
+- Communication: Weekly status reports showed progress against plan + budget + quality
+- Escalation: If timeline risk identified, escalated to stakeholders with mitigation options (reduce scope, add resources, extend timeline)
+- Example: Week 5 query performance slightly high (P99 12.1s vs 10s target) → Escalated with options (optimize now = delay by 3 days, or accept 2% variance). Stakeholders approved variance option to protect timeline.
+- Result: Zero surprise delays; stakeholders felt informed and had input on trade-offs
+
+---
+
 ### K7: Roles, Functions and Activities
 
 **Project 3 Enhancement:**
