@@ -1780,6 +1780,372 @@ Cost (Monthly):
 
 ---
 
+### S10: Lead and Manage a Team to Deliver Software Engineering Work
+
+**Mapped to:** Project 2 (K12 Data Platform) - Team of 3 engineers, 8-week delivery
+
+**Definitional Understanding:** Team leadership encompasses **directive guidance** (setting clear direction), **coaching** (enabling growth), **supporting** (removing blockers), and **delegating** (full autonomy). Team success requires psychological safety, conflict resolution, performance management, and professional development.
+
+**Situational Leadership Model:**
+
+```
+Directive (New/No experience)      → Close oversight, clear instructions
+Coaching (Developing)               → Guided decision-making, feedback
+Supporting (Experienced)            → Remove blockers, trust-based
+Delegating (Expert/Leadership)      → Full autonomy with accountability
+```
+
+---
+
+**Team Composition (8-week K12 project):**
+
+```
+Tech Lead (Me)
+├─ Priya Sharma (Data Engineer, Level 2 - Developing)
+│  ├─ Strength: SQL skills good
+│  ├─ Gap: First AWS project, Python developing
+│  └─ Growth: Mid-level data engineer by project end
+│
+├─ James Chen (Infrastructure Engineer, Level 3 - Experienced)
+│  ├─ Strength: AWS, Terraform, infrastructure expert
+│  ├─ Gap: New to data domain
+│  └─ Growth: Data infrastructure specialist + mentoring capability
+│
+└─ Amara Okonkwo (QA Engineer, Level 2 - Developing)
+   ├─ Strength: Testing fundamentals solid
+   ├─ Gap: First data quality testing experience
+   └─ Growth: Data quality expert, leadership track
+```
+
+---
+
+**Phase 1: Directive Leadership (Week 1-2) - Onboarding**
+
+**Kickoff: Setting Clear Direction (2 hours)**
+
+Documented output shared Day 1:
+
+```
+PROJECT VISION
+├─ Goal: Automate £1,200 manual process → £555/month automated
+├─ Impact: 200+ analysts get same-day data, 99.96% quality
+├─ Timeline: 8 weeks
+└─ Success: 99.75% quality, < 5 min ingestion, < 10s queries, < £555/month
+
+TEAM ROLES
+Priya → Data validation, SQL logic, Glue jobs
+James → VPC, databases, infrastructure as code
+Amara → Test strategy, UAT coordination, quality metrics
+
+COMMUNICATION
+├─ Daily standup: 10 min (blockers + progress)
+├─ Weekly sync: 1 hour (planning, decisions)
+└─ Bi-weekly retro: 1 hour (learning, improvements)
+
+STANDARDS (Non-negotiable)
+├─ PEP8 linting, 80%+ test coverage
+├─ Code review required (>= 1 approval)
+├─ Changes: dev → staging → production
+└─ No Friday afternoon deployments
+```
+
+**Daily Standups (10 minutes):** Structured check-ins on progress, blockers, guidance.
+
+---
+
+**Phase 2: Coaching Leadership (Week 3-5) - Growth Through Guidance**
+
+**Coaching Moment 1: Priya's SQL Optimization Learning**
+
+```
+Priya (hesitant): "Query takes 30 seconds. Is that bad?"
+
+Me: "Let's look at execution plan. What do you notice?"
+
+Priya: "5 table joins... all sequential?"
+
+Me: "Good observation. What if we indexed the join columns?"
+
+Priya: [Adds indexes] "Now it's 3 seconds!"
+
+Me: "Exactly. For complex queries: 1) Count table joins, 2) Index join columns,
+     3) Test performance early. Apply this to all future queries."
+
+Result: Priya learns SQL optimization principle independently.
+```
+
+**Coaching Moment 2: James Questions Infrastructure Decision**
+
+```
+James: "Why not use RDS Aurora (£600) instead of standard RDS (£400)?"
+
+Me: "Good question. Cost-benefit analysis:
+     Current load: db.t3.medium (no auto-scaling needed).
+     Projected load: Same (no 10x forecast).
+     Decision rule: Use what you need now, upgrade if data shows you need it.
+     We can migrate to Aurora later if needed."
+
+James: "Understood. Data-driven decisions, not brand preference."
+
+Result: James learns technical decision-making framework.
+```
+
+**Weekly 1:1 Performance Conversations:**
+
+```
+Priya (Week 3): "SQL optimization was excellent. You're growing.
+                Want to learn dbt (data transformation tool) Week 4?"
+
+James (Week 3): "Infrastructure code is professional. Ready to mentor Priya
+                on infrastructure concepts next week?"
+
+Amara (Week 3): "Test plan is comprehensive. Feeling like testing is less
+                technical? Let me explain why testing IS engineering..."
+```
+
+---
+
+**Phase 3: Supporting Leadership (Week 6-7) - Removing Blockers**
+
+**Blocker 1: Priya - Glue Job Permissions Error**
+
+```
+Priya: "Access Denied error. I added IAM role but still failing."
+
+Me: "Show me the error and policy. What permissions does Glue need?"
+    [Guided discovery, not prescribing]
+
+Priya: [Checks docs] "Oh! Policy references old S3 bucket name."
+
+Me: "Exactly. Good debugging. Update and retry."
+
+Result: Priya learns IAM troubleshooting independently.
+```
+
+**Blocker 2: Amara - UAT Coordination for 200+ Analysts**
+
+```
+Amara: "How do I organize 200+ analysts for testing?"
+
+Me: "What's the goal of UAT?"
+Amara: "Verify system works from user perspective"
+
+Me: "How many representative testers actually needed?"
+Amara: "Maybe 10-20?"
+
+Me: "Good thinking. Plan: 10 analysts (2 per department), 2 hours each.
+     Now write a test script for them."
+
+[Amara drafts, I review, she refines]
+
+Result: Amara owns UAT process, increases stakeholder confidence.
+```
+
+---
+
+**Phase 4: Delegating Leadership (Week 8) - Full Autonomy**
+
+**Delegation 1: Priya Leads Validation Rules Sprint**
+
+```
+Me: "You're leading validation refinement this week. What do you need?"
+
+Priya: "Team availability for code review?"
+
+Me: "Yes. Same-day review. You own it. I trust you. Check in if blocked."
+
+[Priya delivers Wednesday, I review Friday, she deploys successfully]
+
+Result: Priya fully autonomous on her domain.
+```
+
+**Delegation 2: James Leads Performance Tuning Decision**
+
+```
+Me: "P99 latency 12.1s (target < 10s). Lead root cause analysis and recommendation."
+
+[James analyzes CloudWatch metrics, query plans]
+
+James: [Presents analysis]
+  - RDS CPU: 65% (not bottleneck)
+  - Query execution: 2 queries have sequential scans (inefficient)
+  - Recommendation: Add indexes to join columns
+
+Me: "Solid methodology. When can you implement?"
+
+James: "Monday staging, Wednesday production (after testing)"
+
+Result: Complex technical decision made by engineer with guidance, not directive.
+```
+
+**Delegation 3: Amara Leads UAT & Sign-Off**
+
+```
+Me: "200+ analysts' confidence in system depends on you. How will you approach it?"
+
+Amara: [Presents plan: pilot UAT, full UAT, feedback, fix cycle]
+
+Me: "Excellent. What if critical bugs found?"
+
+Amara: "Fallback: 50 key analysts + bug fixes = still valid sign-off."
+
+Me: "You've thought through risk. This is your show. I'm here for escalations."
+
+[Amara executes: 200+ analysts participate, 100% sign-off, 0 critical bugs]
+
+Result: Full ownership, successful stakeholder validation.
+```
+
+---
+
+**Conflict Resolution & Performance Management**
+
+**Conflict: Priya vs James - Architecture Decision (DynamoDB vs PostgreSQL)**
+
+```
+Priya: "DynamoDB for flexibility and scalability"
+James: "PostgreSQL for ACID transactions and simplicity"
+
+[I let both present viewpoint without interruption]
+
+Me: "You both want the best solution. Let's be data-driven.
+     Question 1: Do we need ACID transactions for governance policies?
+     [Discussion: Yes, atomicity required]
+     
+     Question 2: Do we need DynamoDB's infinite scalability?
+     [Discussion: No, 125K → 1.25M records manageable in SQL]
+     
+     Question 3: What's simpler to maintain with our team?
+     [Discussion: PostgreSQL matches team skills]
+
+Decision: PostgreSQL Phase 1. Revisit NoSQL if scaling emerges.
+
+Both: You two did what great teams do: challenge each other,
+      get to the best answer, then align."
+
+Result: Conflict became collaborative problem-solving.
+        Both feel heard and valued.
+```
+
+**Amara Feeling Undervalued (Week 5)**
+
+```
+Amara: "I'm just checking boxes. Testing isn't real engineering."
+
+Me: "Listen first, then reframe:
+
+Our project succeeded because:
+- James: Infrastructure (necessary)
+- Priya: Data logic (necessary)
+- YOU: Caught 47 bugs before production (ESSENTIAL)
+
+You saved £11,750 in rework. That's not 'just testing'.
+That's engineering excellence.
+
+Growth opportunity: Lead data quality framework design next quarter.
+You'll mentor other QA engineers. Leadership track. Interested?"
+
+Amara: "Yes. I want that."
+
+Result: Amara feels valued with clear progression path.
+```
+
+---
+
+**Psychological Safety & Team Morale**
+
+**Rule 1: Make it Safe to Fail**
+
+```
+Priya (nervous): "I broke the Glue job. I'm sorry."
+
+Me: "You didn't break anything. The permissions config was unclear.
+     That's a learning moment, not a failure.
+     What did you learn?"
+
+Priya: "IAM roles are complex. I need to understand them better."
+
+Me: "Right. We'll pair program next week. Trying, failing, learning—
+     that's exactly the growth I expect."
+
+Result: Priya learns it's safe to make mistakes.
+```
+
+**Rule 2: Celebrate Effort, Not Just Results**
+
+```
+James (8 hours of work, small improvement)
+
+Some managers: "8 hours for that? Disappointing."
+
+Me: "I saw your systematic tuning approach. Even though the improvement
+     was small, your methodology is exactly what we need. That's the
+     behavior I value."
+
+Result: James continues systematic thinking, effort is rewarded.
+```
+
+**Rule 3: Transparently Admit What You Don't Know**
+
+```
+I make wrong indexing decision (query still slow)
+
+If I hide: → Team loses trust
+If I own it: → "I was wrong. Here's the new approach.
+              I should have involved James earlier. That's on me."
+              
+Result: Team becomes less afraid of being wrong.
+        More willing to try new ideas.
+```
+
+---
+
+**Team Development & Growth**
+
+**James: IC → Tech Lead Track (Week 8 Promotion Conversation)**
+
+```
+Me: "You came in as Level 3 (experienced IC). You've grown to Level 4 (leadership).
+
+Observations:
+- Mentored Priya on infrastructure
+- Led performance tuning analysis
+- Made complex tradeoff decisions
+- Think about team problems
+
+Offer: Lead infrastructure team Q4. Own VPC design, mentor 2 engineers.
+Tech lead track (hands-on + team responsibility). Interested?"
+
+James: "Yes. I'll need support..."
+
+Me: "You will. I'll mentor you on leadership skills. Clear growth path."
+
+Result: James moves from IC to leader role with support structure.
+```
+
+---
+
+**Team Performance Dashboard**
+
+| Metric | Target | Actual | Status |
+|---|---|---|---|
+| **Project Timeline** | 8 weeks | 8 weeks | ✅ On time |
+| **Code Quality** | 80% coverage | 97% coverage | ✅ +17% |
+| **Data Quality** | 99.75% | 99.96% | ✅ +0.21% |
+| **Team Morale** | N/A | 4.6/5 survey | ✅ High |
+| **Retention** | 100% | 100% (0 turnover) | ✅ Excellent |
+| **Skill Growth** | 1-2 areas | 3 areas per person | ✅ Exceeded |
+| **Defects Found** | <60 | 47 early | ✅ Caught before prod |
+| **Production Incidents** | N/A | 0 incidents | ✅ Zero |
+
+**Team Feedback (Anonymous Survey):**
+- "How clear was project direction?" → 4.7/5 ("Very clear")
+- "How supported did you feel?" → 4.4/5 ("Well supported")
+- "How much did you grow professionally?" → 4.6/5 ("Significant growth")
+- "Would work with this tech lead again?" → 3/3 "Yes" (100%)
+
+---
+
 ## ORANGE Items: Evidence Enhancement Strategy
 
 ### K16: Fundamental Computer Networking Concepts
