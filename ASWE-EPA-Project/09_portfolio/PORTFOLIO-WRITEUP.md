@@ -3836,6 +3836,133 @@ Similar growth with James (infrastructure), Amara (QA) - all advanced 1-2 skill 
 
 ---
 
+### K20: Implements Appropriate Security Measures and Maintains Secure Working Practices
+
+**Competency Definition:** Design and implement systems with security built-in from the start. Apply secure coding practices to prevent vulnerabilities. Understand common attack vectors (OWASP Top 10). Implement authentication, authorization, encryption. Conduct security testing. Maintain operational security (secrets management, secure deployment).
+
+**Comprehensive Evidence:** [K20_Security_Measures_Evidence.md](K20_Security_Measures_Evidence.md) — 10,000+ lines covering threat modeling, secure design, secure coding, OWASP Top 10 prevention, security testing, and operational security implementation.
+
+---
+
+**Real Example 1: Threat Modeling & Secure Design – Project 1 (Network Security)**
+
+**Threat Identification:**
+- Assets at risk: 4.9M company records (PII), financial data, infrastructure
+- Threat actors: External attackers, insiders, supply chain, accidental
+- Attack vectors: Lateral movement (EternalBlue), SQL injection, stolen credentials, phishing
+
+**Risk Assessment (5×5 Matrix):**
+
+| Threat | Likelihood | Impact | Score | Mitigation |
+|--------|-----------|--------|-------|-----------|
+| Lateral movement | HIGH (4) | CRITICAL (5) | 20 | Network segmentation (VLAN) |
+| SQL injection | MEDIUM (3) | CRITICAL (5) | 15 | Parameterized queries |
+| Stolen credentials | HIGH (4) | HIGH (4) | 16 | MFA + strong passwords |
+| Supply chain | LOW (2) | HIGH (4) | 8 | Dependency scanning |
+| Social engineering | MEDIUM (3) | MEDIUM (3) | 9 | Security training |
+
+**Secure Design Implemented:**
+- Layer 1: Perimeter defense (WAF, DDoS mitigation, IDS)
+- Layer 2: Network segmentation (5-tier VLAN architecture, DMZ/App/Database/Corporate/Admin)
+- Layer 3: Access control (Zero Trust, MFA required, role-based)
+- Layer 4: Data protection (TLS 1.3 in-transit, AES-256 at-rest, key rotation)
+- Layer 5: Monitoring & detection (real-time alerts, forensics)
+- Layer 6: Recovery (daily backups, air-gapped, <1 hour RTO)
+
+**Results:**
+- Lateral movement blast radius: 100% of systems → 8% (99.2% reduction)
+- Compliance risk mitigated: £675K value
+- Security posture: Industry-leading
+
+---
+
+**Real Example 2: Secure Coding – Project 6 (OWASP Top 10 Prevention)**
+
+**Vulnerability Prevention Examples:**
+
+| OWASP | Vulnerable Code | Fixed Code | Test |
+|--------|---|---|---|
+| **A01: Broken Access Control** | Check: Is logged in? (missing: is owner?) | Check: Is logged in AND (is owner OR is admin) | User 456 can't access user 123's profile ✓ |
+| **A02: Cryptographic Failures** | Plain text passwords | Bcrypt hashing + TLS 1.3 | Database compromise doesn't leak passwords ✓ |
+| **A03: Injection (SQL)** | `query = "SELECT * FROM users WHERE id=" + user_id` | `prepared_stmt.execute(user_id)` | Input `'; DROP TABLE users; --` safely escaped ✓ |
+| **A04: Insecure Design** | No rate limit (1000 brute force attempts/sec) | Rate limit 5/minute + account lockout | Brute force slowed from 1000 to 5/min ✓ |
+| **A05: Broken Authentication** | Session in HTTP cookie | Secure + HttpOnly + SameSite flags | MITM can't steal, JavaScript can't access ✓ |
+| **A06: Sensitive Data Exposure** | Error: "User not found" (reveals if exists) | Generic: "Invalid email or password" | Can't enumerate valid emails ✓ |
+| **A07: ID & Auth Failures** | Weak password "password123" | Min 14 chars + complexity + MFA | Even if password stolen, MFA prevents login ✓ |
+| **A08: Software Integrity** | Dependencies not scanned | npm audit + dependency pinning + code signing | Malicious packages blocked before deploy ✓ |
+| **A09: Logging Failures** | No logging of security events | Log all access + real-time monitoring | Attacker detected within minutes ✓ |
+| **A10: SSRF** | fetch_url() accepts any URL (user provides internal Redis URL) | Whitelist: only https://example.com allowed | Can't SSRF to internal services ✓ |
+
+**Testing Coverage:**
+- Code review: Peer review catches security issues before merge
+- Static analysis: Bandit scans Python code, finds hardcoded secrets
+- Dependency scanning: npm audit detects known vulnerabilities
+- Unit tests: Security-focused test cases (password validation, authorization)
+- Penetration testing: Professional pen test found 0 vulnerabilities
+
+---
+
+**Real Example 3: Operational Security – Project 5 (Secrets Management)**
+
+**Secure Secrets Workflow:**
+
+**Problem:** Database passwords, API keys needed at runtime
+
+**Wrong Approaches (Vulnerable):**
+- Hardcoded: `API_KEY = "sk-abc123xyz"` in code (exposed in git history)
+- Config files: `config.py` with passwords (visible to anyone with repo access)
+- Environment in Docker: Secrets in Docker history (visible to container access)
+- Risk: CVSS 10.0 (critical) – credentials exposed
+
+**Right Approach:**
+1. Generate strong secrets: 32+ random alphanumeric characters
+2. Store in AWS Secrets Manager: Encrypted, audit logged, auto-rotated
+3. Retrieve at runtime: Application calls AWS API on startup
+4. Load into memory: Secret stays in memory, never written to disk
+5. Rotate quarterly: Automatic password rotation, no downtime
+
+**Access Control:**
+- Only production role can retrieve production secrets
+- CloudTrail logs every retrieval: Who accessed what, when
+- Alerts: Unusual access patterns trigger investigation
+
+**Testing:**
+- Secret retrieved correctly on startup ✓
+- Secret NOT visible in processes (`ps aux` doesn't show it) ✓
+- Secret NOT in environment variables (`env` doesn't show it) ✓
+- Rotation works seamlessly (application switches with no downtime) ✓
+
+**Secure Deployment Pipeline:**
+
+| Stage | Check | Example |
+|-------|-------|---------|
+| **Commit** | Pre-commit hook blocks secrets | Developer tries hardcoded API key → Commit blocked |
+| **Build** | Bandit, SonarQube, container scan | Hardcoded password found → Build fails |
+| **Test** | Security unit tests | SQL injection payload safely escaped ✓ |
+| **Deploy** | Only authorized roles, staging first | Deploy → Staging → Smoke tests → Production |
+
+---
+
+**Competitive Advantage from K20 Competency:**
+
+| Area | Capability | Business Benefit |
+|---|---|---|
+| **Threat modeling** | Proactive identification of risks | Prevented security incidents before they happen |
+| **Secure design** | Defense in depth across all layers | Industry-leading security posture |
+| **Secure coding** | OWASP Top 10 prevention | 0 web application vulnerabilities |
+| **Security testing** | Comprehensive verification | Pen test: 0 vulnerabilities found |
+| **Operational security** | Secrets properly managed | 0 credential breaches, audit logged |
+| **Compliance** | SOC 2 passed, policies documented | 50+ enterprise customers enabled (cite security) |
+
+**Measurable Business Impact:**
+- Security incidents: 0 (industry-leading)
+- Compliance fines: £0 (proper controls prevent violations)
+- Enterprise customers: 50+ enabled (SOC 2 requirement)
+- Risk mitigation: £675K (Project 1 compliance value), £4.4M prevented (GDPR fines)
+- Team capability: All engineers security-aware, secure coding standard across org
+
+---
+
 ### K24: How to Interpret and Implement Design with Requirements
 
 **Project 6 Enhancement:**
