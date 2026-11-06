@@ -3711,6 +3711,131 @@ Similar growth with James (infrastructure), Amara (QA) - all advanced 1-2 skill 
 
 ---
 
+### K14: Analyses and Responds to Appropriate Feedback and Monitoring Data
+
+**Competency Definition:** Actively seek feedback from stakeholders, users, and monitoring systems. Objectively analyze feedback without defensiveness. Respond appropriately by implementing changes or explaining decisions. Close the feedback loop by communicating results. Use monitoring data to identify issues and drive continuous improvement.
+
+**Comprehensive Evidence:** [K14_Feedback_Monitoring_Evidence.md](K14_Feedback_Monitoring_Evidence.md) — 9,000+ lines covering user feedback loops, code review responses, and monitoring-driven incident response.
+
+---
+
+**Real Example 1: User Feedback Loop – Project 5 (AI Knowledge Search)**
+
+**Feedback Collection:**
+- 20 beta users surveyed: 3.8/5 satisfaction
+- Direct interviews (5 users): Identified accuracy (15% failure), speed (450ms vs 300ms target), multi-topic, explainability, onboarding issues
+- Monitoring metrics: 40% adoption, 85% search success, P95 latency 450ms
+- Pattern: Multiple users mentioned accuracy, speed, multi-topic capability
+
+**Analysis (Objective):**
+
+| Issue | Mentions | Data Evidence | Impact |
+|---|---|---|---|
+| **Accuracy** | 3+ | 15% search failures | HIGH (user trust) |
+| **Speed** | 2+ mentions + metrics | P95 450ms vs 300ms target | HIGH (user experience) |
+| **Multi-topic** | 5 mentions | Feature request | MEDIUM (workaround exists) |
+| **Explainability** | 2 interviews | Need to verify answers | MEDIUM (power users) |
+| **Onboarding** | 1 mention + observation | User couldn't use tool | MEDIUM (adoption barrier) |
+
+**Response Implementation:**
+- Quick wins (8 hours): Documentation, citations, caching
+- Main improvements (60 hours): Accuracy (GPT-4 → GPT-4-turbo, 85%→92%), multi-topic support, explainability features
+
+**Results:** Accuracy 85%→92% ✓, Latency P95 450ms→300ms (cached)/350ms (new) ✓, Adoption 40%→60% ✓, Satisfaction 3.8→4.2/5 ✓
+
+**Loop Closure:** Individual emails to key users thanking for feedback, showing exactly what changed because of their input. Second feedback loop already generating 8 additional improvement requests (continuous improvement).
+
+---
+
+**Real Example 2: Code Review Feedback Response – Project 4**
+
+**Feedback Received:** 6 code review comments on authentication validation PR
+
+| Feedback | Priority | My Initial Response | Objective Analysis |
+|---|---|---|---|
+| Error masking | Important | "Code works fine" (defensive) | Valid - masks real failures, harder to debug |
+| Hardcoded secret | CRITICAL | "Simple change" (dismissive) | Valid - security vulnerability, OWASP A07:2021 |
+| Missing test | Important | "Covers main cases" | Valid - expired token edge case untested |
+| Missing docs | Nice-to-have | "Self-explanatory" | Valid - next developer won't understand intent |
+| Timing attack | CRITICAL | "Not a real risk" (dismissive) | Valid - real vulnerability, OWASP A02:2021 |
+| Info disclosure | Important | "Harmless timestamp" | Valid - removes information helping attackers |
+
+**Behavior Change:** Recognized initial defensiveness, shifted to objective analysis. Realized reviewers had expertise I lacked.
+
+**Response:** 4 commits addressing all feedback
+1. Fixed critical security issues (hardcoded secret, timing attack)
+2. Improved error handling (separate JWT vs server errors)
+3. Added missing test case (expired tokens)
+4. Added documentation (docstring + inline comments)
+
+**Communication:** Replied to reviewers thanking them specifically, acknowledging I was initially defensive, expressing appreciation for helping improve code.
+
+**Result:** PR approved by both reviewers, security vulnerabilities fixed, test coverage improved 85%→95%, code quality improved.
+
+---
+
+**Real Example 3: Monitoring-Driven Root Cause Analysis – Project 1**
+
+**Incident Detection:** CloudWatch alert: Error rate 3.2% (threshold 1%)
+
+**Initial Response (Reactive):**
+- Restart affected instances
+- Error rate drops to 0.1% ✓ (problem solved)
+- Assumption: "Probably a fluke"
+
+**Issue:** This was the 2nd incident in 1 week (pattern emerging)
+
+**Root Cause Investigation:**
+- Application logs: OutOfMemory errors on 2 instances
+- Memory pattern: 300MB baseline → 900MB after 12 hours (linear growth)
+- Code review: Caching code added without eviction policy
+- Problem: Cache grows unbounded (100MB/hour), instances crash when OOM
+
+**Response Implementation (Proper Fix):**
+1. Add cache eviction policy: lru_cache(maxsize=10000) - caps memory at 100MB
+2. Add memory monitoring alert: Alert at 80% usage (warning before failure)
+3. Add pre-deployment memory testing: Would catch this before production
+4. Update code review policy: Caching/memory code requires architecture review
+
+**Prevention:** Process improvements prevent recurrence, team learns from incident
+
+**Communication:** 
+- Incident postmortem to team: What happened, root cause, what we fixed, what we learned
+- Acknowledged: "I should have investigated more thoroughly after first incident"
+- Emphasized: "This process has made us better"
+
+**Measurable Impact:**
+- Memory usage: Stable at 100MB (no growth)
+- Error rate: <0.1% (healthy)
+- New instances: Deploy without issue
+- Team: Memory management awareness improved
+- Prevention: Won't repeat this incident
+
+---
+
+**Competency Demonstration Summary:**
+
+✅ **Collect feedback systematically:** Users (surveys + interviews), code review (6 comments), monitoring (CloudWatch metrics)
+
+✅ **Analyze objectively:** Separate signal from noise, quantify impact, check for bias, investigate root causes
+
+✅ **Respond appropriately:** Implement valid feedback (user feature requests, security fixes), communicate decisions
+
+✅ **Close the loop:** Individual emails to users showing impact, team postmortems sharing learnings
+
+✅ **Continuous improvement:** Second feedback loops in progress, process improvements prevent recurrence
+
+✅ **Handle defensiveness:** Recognized and corrected defensive reactions (code review example), shifted to learning mindset
+
+**Business Impact:**
+- User satisfaction: 3.8 → 4.2/5 (10% improvement)
+- Product adoption: 40% → 60% (50% improvement)
+- Code quality: 85% test coverage → 95% (security vulnerabilities fixed)
+- System reliability: Prevented future memory leak incidents (process improvements)
+- Team culture: Transparent communication, learning from mistakes, continuous improvement
+
+---
+
 ### K24: How to Interpret and Implement Design with Requirements
 
 **Project 6 Enhancement:**
