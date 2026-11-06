@@ -412,6 +412,126 @@ Weekly dashboard:
 
 ---
 
+## ORANGE Items: Advanced Competencies
+
+### K16: Systems & Software Architecture
+
+**Mapped to:** Project 6 - AI Governance Assistant (Multi-tier system design)
+
+**Definitional Understanding:** Systems architecture encompasses **multi-tier design**, **microservices patterns**, **scalability considerations**, **resilience & high availability**, and **technology trade-offs**.
+
+**System Architecture: Multi-Tier Design**
+
+```
+User Devices (React) 
+    ↓ HTTPS
+CloudFront CDN (Global caching, DDoS protection)
+    ↓ HTTPS
+ALB (Load balancing, health checks, auto-scaling)
+    ↓ HTTP (Private VPC)
+Microservices (4 services: Governance, Document, User, Policy)
+    ↓ SQL
+PostgreSQL RDS (Multi-AZ, 99.99% uptime)
+    ↓ Replication
+S3 Medallion + Athena (Analytics, cost-efficient)
+```
+
+**Why Multi-Tier?**
+- Separation of concerns (each layer has single responsibility)
+- Independent scaling (heavy layer scales without others)
+- Resilience (one layer fails, others keep working)
+- Security (private subnets for sensitive data)
+
+**Microservices Design:**
+- 4 independent services (Governance, Document, User, Policy)
+- Each scales independently (Governance high-traffic → scale it)
+- Each deploys independently (update User service without others)
+- Resilience patterns: Circuit breaker, retry with backoff, timeout, fallback
+
+**Trade-offs (Microservices):**
+| Aspect | Monolith | Microservices |
+|--------|----------|---|
+| **Scaling** | Entire app | By service (efficient) |
+| **Deployment** | Entire app redeploy | One service (fast) |
+| **Complexity** | Simple architecture | Distributed systems (hard) |
+| **Result** | **Simpler, slower to iterate** | **Complex, fast to scale** |
+
+---
+
+**Architectural Decision Records (ADRs):**
+
+1. **Microservices vs Monolith:** Chose microservices for independent scaling/deployment
+2. **SQL + Redis vs NoSQL:** Chose both (consistency via SQL, speed via cache)
+3. **Auto-scaling vs Fixed:** Chose auto-scaling (min 2, max 10 instances) → 80% cost savings
+4. **Multi-AZ vs Single AZ:** Chose Multi-AZ (£2,400/year → £389K/year risk reduction, 162x ROI)
+
+---
+
+**Scalability Patterns:**
+
+*Horizontal (Add More Instances):*
+- Auto-scaling: 70% CPU → provision new instance
+- Load balancer routes to new instance
+- No downtime, automatic
+
+*Vertical (Bigger Machines):*
+- Database: db.t3.medium → db.t3.large (more memory)
+- Used when single instance better (database workload)
+- Brief downtime handled by Multi-AZ failover
+
+*Read Replicas:*
+- Analytics queries hit replica (not primary)
+- Primary stays available for application
+- Spreads database load
+
+---
+
+**Resilience Architecture:**
+
+| Failure Scenario | Architecture Response | Recovery Time |
+|---|---|---|
+| **One AZ fails** | Auto-failover to secondary AZ (RDS, instances) | < 1 min |
+| **Service crashes** | ALB health check removes unhealthy, routes to healthy | Automatic |
+| **Data corruption** | Replay from Bronze layer (S3 medallion) | 2 hours |
+| **Database down** | Multi-AZ standby auto-promotes | < 1 min |
+
+**Result:** 99.99% uptime SLA maintained
+
+---
+
+**Technology Selection Rationale:**
+
+| Component | Choice | Why | Alternative | Trade-off |
+|---|---|---|---|---|
+| **Client** | React | Ecosystem, code reuse | Vue/Angular | Larger bundle |
+| **Cache** | Redis | Speed (10x faster) | Memcached | Persistence needed |
+| **Database** | PostgreSQL | ACID, JSON, ecosystem | MySQL | More operational overhead |
+| **Data Lake** | S3+Athena | Cost-effective (89% cheaper) | Redshift | Query complexity |
+| **App** | FastAPI | Fast, modern, Python | Django | Less batteries-included |
+
+---
+
+**Cost-Benefit Analysis (Multi-AZ Decision):**
+
+| Aspect | Single AZ | Multi-AZ | Benefit |
+|--------|---|---|---|
+| **Monthly cost** | £400 | £600 | +£200 |
+| **Annual cost** | £4,800 | £7,200 | +£2,400 |
+| **Uptime** | 99.9% | 99.99% | 10x better |
+| **Downtime/year** | 8.7 hours | 52 minutes | 10x less |
+| **Risk: downtime cost** | £435K | £43.5K | £391.5K saved |
+| **ROI** | — | 162x | **Worth it** |
+
+---
+
+**Current Architecture Serves:**
+- 200+ users
+- £600/month infrastructure cost
+- 99.99% uptime (4 nines)
+- Handles 10x growth with auto-scaling
+
+---
+
 ## Evidence Appendix: Critical KSB Mapping
 
 ### K12: Data Management Systems (Previously Unmapped)
