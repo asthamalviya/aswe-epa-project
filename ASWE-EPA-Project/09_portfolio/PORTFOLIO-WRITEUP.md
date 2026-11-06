@@ -2146,6 +2146,261 @@ Result: James moves from IC to leader role with support structure.
 
 ---
 
+### K20: Software Engineering Quality
+
+**Mapped to:** Project 2 (K12 Data Platform) - Quality standards across all dimensions
+
+**Definitional Understanding:** Software quality encompasses **code quality** (maintainability, testability, consistency), **functional quality** (correctness, completeness, robustness), **performance quality** (speed, throughput, efficiency), **security quality** (vulnerability-free, protected data), and **operational quality** (observability, maintainability, reliability).
+
+**Five Dimensions of Quality:**
+
+```
+CODE QUALITY
+├─ Readability & maintainability (clear names, no copy-paste)
+├─ Testability (design for testing, dependency injection)
+├─ Documentation (explain WHY, not WHAT)
+└─ Consistency (follow team patterns, standards)
+
+FUNCTIONAL QUALITY
+├─ Correctness (meets requirements)
+├─ Completeness (all features work)
+├─ Robustness (handles errors, edge cases)
+└─ Reliability (consistent behavior, no crashes)
+
+PERFORMANCE QUALITY
+├─ Speed (P50/P95/P99 latency targets)
+├─ Throughput (records/second, queries/second)
+├─ Resource efficiency (CPU, memory, I/O)
+└─ Scalability (linear growth with load)
+
+SECURITY QUALITY
+├─ Vulnerability-free (no injection, XSS, auth bypass)
+├─ Data protection (encryption, access control)
+├─ Audit trail (logging compliance, forensics)
+└─ Threat resistance (DoS, brute force, supply chain)
+
+OPERATIONAL QUALITY
+├─ Observability (logs, metrics, traces)
+├─ Maintainability (easy to debug, support)
+├─ Reliability (99.99% uptime, zero data loss)
+└─ Deployability (safe rollouts, rollbacks)
+```
+
+---
+
+**Code Quality: Automated Enforcement**
+
+Every commit blocked if quality gates fail:
+
+```yaml
+CI/CD Quality Checks:
+├─ Flake8 Linting:     PASSED (0 style violations)
+├─ MyPy Type Checking: PASSED (strict type safety)
+├─ McCabe Complexity:  2 functions refactored (> 10 complexity)
+├─ Safety Scanning:    PASSED (no vulnerable dependencies)
+└─ Test Coverage:      PASSED (97% vs 80% target)
+```
+
+Code review checklist (every PR):
+- ☑ Variable names clear? (not cryptic abbreviations)
+- ☑ Comments explain WHY not WHAT?
+- ☑ Functions under 50 lines?
+- ☑ Uses team patterns? (consistency)
+- ☑ Error messages helpful? (debug-friendly)
+- ☑ Configuration externalized? (no hardcoded values)
+- ☑ Performance acceptable? (O(n) complexity analysis)
+- ☑ Input validated? (no injection risks)
+
+**Example: Priya's SQL Query Review**
+
+```sql
+Priya's code:
+SELECT * FROM companies 
+JOIN directors USING (company_id)
+WHERE filing_date > DATE_SUB(NOW(), INTERVAL 30 DAY)
+
+Review feedback:
+1. SELECT * is inefficient (all columns not needed)
+   → Change to: SELECT companies.id, name, COUNT(*) director_count
+   
+2. Missing index on filing_date
+   → Add: CREATE INDEX idx_filing_date ON companies(filing_date)
+   → Reason: WHERE clause performance, enables lookup in O(log n)
+
+Result: Priya updated → Approved → Merged
+```
+
+---
+
+**Functional Quality: Requirements Traceability**
+
+Every requirement maps through to production monitoring:
+
+```
+REQ: "99.75% data quality"
+├─ Code: validate.py - calculate_quality_score()
+├─ Test: test_validate.py (asserts >= 99.75%)
+└─ Production: Real-time dashboard, alert if < 99%
+
+Acceptance Criteria Verification (Week 8):
+├─ Ingest 125K records:           ✅ 125,847 ingested
+├─ Data quality >= 99.75%:        ✅ 99.96% achieved
+├─ Ingestion time < 5 min:        ✅ 72.5 seconds
+├─ Query latency < 10s (P95):     ✅ 8.7 seconds
+├─ Cost < £555/month:             ✅ £520 on budget
+└─ Audit trail 100% complete:     ✅ Verified
+```
+
+---
+
+**Performance Quality: Real-Time Monitoring**
+
+Production dashboard (updated every 60 seconds):
+
+```
+INGESTION METRICS (Latest batch: 2024-11-06)
+├─ Records processed: 125,847 ✅
+├─ Data quality: 99.96% ✅ (target 99.75%)
+├─ Ingestion time: 72.5s ✅ (target < 300s)
+└─ Status: SUCCEEDED ✅
+
+QUERY PERFORMANCE (Last 1,000 queries)
+├─ P50 latency: 4.2s ✅
+├─ P95 latency: 8.7s ✅
+├─ P99 latency: 12.1s ⚠️ (target < 10s)
+├─ Error rate: 0.02% ✅ (target < 0.1%)
+└─ Success rate: 99.98% ✅
+
+DATABASE PERFORMANCE
+├─ CPU utilization: 45% ✅ (healthy)
+├─ Memory utilization: 62% ✅ (headroom)
+├─ Connections: 120/500 ✅ (plenty of capacity)
+└─ Backup: Daily, verified recoverable ✅
+
+COST (Current month)
+├─ S3: £35 ✅
+├─ Athena: £85 ✅
+├─ RDS: £400 ✅
+└─ Total: £520 ✅ (budget £555)
+```
+
+---
+
+**Security Quality: Multi-Layer Scanning**
+
+Automated + manual security checks:
+
+```
+Automated Scanning:
+├─ Dependency check (Safety): PASSED (no CVEs)
+├─ SAST - SonarQube: 0 high severity, 2 medium (reviewed)
+├─ DAST (penetration test): 0 critical, 1 medium (path traversal fixed)
+└─ License check: All dependencies compatible ✅
+
+Security Code Review:
+├─ Input validation:     ☑ All user input validated
+├─ Authentication:       ☑ bcrypt passwords, HTTPOnly sessions
+├─ Authorization:        ☑ Checks on all endpoints
+├─ Data protection:      ☑ HTTPS/TLS, encryption at rest
+├─ Error handling:       ☑ No debug info in production
+├─ Logging:             ☑ All sensitive ops logged
+└─ Result:              0 critical vulnerabilities
+
+Real Fix: SQL Injection Prevention
+├─ Before: f"SELECT * FROM companies WHERE name LIKE '%{term}%'"
+├─ After:  "SELECT * FROM companies WHERE name LIKE %s" + parameterized
+└─ Result: ✅ Injection-proof, deployed safely
+```
+
+---
+
+**Operational Quality: Logging & Debugging**
+
+Structured logging enables fast debugging:
+
+```
+Scenario: Data quality dropped from 99.96% to 98.5%
+
+Debug process (45 minutes):
+1. Check logs → Found batch ingestion logs
+2. Compare: batch_001 (99.96%) vs batch_002 (98.5%)
+3. Query: Find batch_002 records with NULL status
+   → Result: 156 companies with NULL status
+4. Root cause: New data source (API v2) has different NULL handling
+5. Fix: Update validation rules
+6. Deploy: New rules, re-process batch_002
+7. Result: Quality back to 99.96% ✅
+
+Structured log format (JSON):
+{
+  "timestamp": "2024-11-06T14:32:45Z",
+  "level": "INFO",
+  "service": "ingestion",
+  "batch_id": "batch_001",
+  "records_ingested": 125847,
+  "records_rejected": 47,
+  "duration_seconds": 72.5,
+  "status": "success"
+}
+```
+
+---
+
+**Continuous Quality Improvement**
+
+Root cause analysis → Process improvement:
+
+```
+Defect #1: Query latency (12.1s vs 10s target)
+├─ Root cause: Missing index on join column
+├─ Fix: Added index (1 hour work)
+├─ Prevention: Add query plan review to code review checklist
+└─ Result: Improved process for future queries
+
+Defect #2: Data quality 99.55% (Dissolved cohort only)
+├─ Root cause: Older records have different NULL patterns
+├─ Fix: Cohort-specific validation rules (2 hours)
+├─ Prevention: Investigate data source quality during requirements
+└─ Result: Better requirements gathering for future projects
+
+Defects by Category (47 total):
+├─ Performance (33%): → Add benchmarking to review
+├─ Data quality (28%): → Strengthen validation upfront
+├─ Functional (24%): → Test with production data volumes
+├─ Security (10%): → Input validation checklist added
+└─ Operational (5%): → Monitoring alerts refined
+
+Bi-weekly Retrospectives:
+- What went well? (Celebrate)
+- What to improve? (Identify)
+- Action items (Update process)
+```
+
+---
+
+**Quality Metrics Dashboard (Achieved vs Target)**
+
+| Dimension | Metric | Target | Achieved | Status |
+|---|---|---|---|---|
+| **Code Quality** | Code coverage | 80% | 97% | ✅ +17% |
+| | Cyclomatic complexity | < 10 avg | 6.2 avg | ✅ Good |
+| | OWASP violations | 0 high | 0 high | ✅ Secure |
+| **Functional** | Requirements covered | 100% | 100% | ✅ Complete |
+| | Defects pre-production | < 60 | 47 | ✅ Early detection |
+| | Production incidents | 0 | 0 | ✅ Perfect |
+| **Performance** | Ingestion time | < 5 min | 72.5s | ✅ +76% |
+| | Query P95 latency | < 10s | 8.7s | ✅ -13% |
+| | Error rate | < 0.1% | 0.02% | ✅ Low |
+| **Security** | Vulnerabilities | 0 | 0 | ✅ Zero |
+| | GDPR compliant | Yes | Yes | ✅ Yes |
+| **Data Quality** | Overall | 99.75% | 99.96% | ✅ +0.21% |
+| | Completeness | 99% | 99.96% | ✅ Excellent |
+| | Accuracy | 100% | 100% | ✅ Perfect |
+| **Reliability** | Uptime | 99.75% | 99.97% | ✅ +0.22% |
+| | Zero data loss | Yes | Yes | ✅ Yes |
+
+---
+
 ## ORANGE Items: Evidence Enhancement Strategy
 
 ### K16: Fundamental Computer Networking Concepts
