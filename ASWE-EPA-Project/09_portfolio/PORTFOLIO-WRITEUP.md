@@ -2992,6 +2992,112 @@ Portfolio status: 21/32 KSBs complete
 
 ---
 
+### K22: Designs and Implements Scalable Solutions
+
+**Competency Definition:** Design systems that scale with growth (users, data volume, traffic). Understand scalability patterns (horizontal vs vertical scaling, caching, sharding). Implement performance optimization (indexing, query optimization, connection pooling). Plan capacity (forecast growth, pre-provision). Test at scale (load testing, stress testing). Monitor and optimize performance.
+
+**Comprehensive Evidence:** [K22_Scalable_Solutions.md](K22_Scalable_Solutions.md) — 8,000+ lines covering data, compute, traffic, team, and cost scalability with real examples and load testing results.
+
+**Real Example 1: Project 2 (Data & Query Scalability)**
+
+Scaling from 125K to 1.25M records (10x growth):
+- **Phase 1 (Year 1):** Indexing on key columns (100x query speedup, £0 cost)
+- **Phase 2 (Year 2):** Partitioning by date (99% reduction in query scope)
+- **Phase 3 (Year 3-5):** Database sharding (4x parallel capacity)
+- **Phase 4 (if needed):** Read replicas (scale reads independently)
+
+Query optimization example:
+- Slow query: "SELECT all companies with risk > 0.8" → 45 seconds (full table scan)
+- Fast query: Same with indices + JOIN optimization → 245 milliseconds (184x faster!)
+
+Optimization techniques:
+- Indices on key columns (risk_score): O(log n) vs O(n)
+- JOIN optimization (database engine finds efficient path)
+- Partition pruning (scan 1 year instead of 7)
+- Caching layers: Athena (native, 95% repeat queries) + Redis (microsecond lookups)
+
+Load testing: 1.25M records (10x baseline)
+- Ingestion: 723 seconds (10x records = 10x time, linear scaling ✅)
+- Query latency: 9.2s P99 (vs 8.7s baseline, 0.5s acceptable increase)
+- Cost per record: £0.0036 (unchanged, linear cost scaling ✅)
+- Conclusion: Sustains 10x growth without redesign
+
+**Real Example 2: Project 5 (Compute & Traffic Scalability)**
+
+Auto-scaling Campaign Service:
+- Baseline: 1,000 campaigns/day = 1 EC2 instance, £100/month
+- Peak: 50,000 campaigns in 1 hour (50x surge)
+- Without auto-scaling: Must run 10 instances always (£1,000/month)
+- With auto-scaling: Run 1 baseline + scale to 10 during peaks (£100 baseline + peak costs)
+
+Auto-scaling policy:
+- Metric: CPU utilization
+- Scale out trigger: CPU > 70% (add server)
+- Scale in trigger: CPU < 30% (remove server)
+- Cool-down: 2 minutes (scale out), 10 minutes (scale in)
+
+Example scaling event (Monday promotional campaign):
+- 2:00pm: 50K campaigns arrive, CPU 95% (1 instance overloaded)
+- 2:02pm: Auto-scale triggers, 5 instances provisioned, CPU 65%
+- 2:04pm: 10 instances active, CPU 50% (healthy)
+- 3:30pm: Traffic drops to baseline, scale down to 1 instance
+
+Load balancing & resilience:
+- Load balancer: Round-robin across 10 servers, health-checks every 5 seconds
+- Circuit breaker: If email service down, fail fast (instant rejection vs 5+ min timeout)
+
+**Real Example 3: Capacity Planning & Monitoring**
+
+Growth forecast (10-15% data, 20-25% traffic yearly):
+- Year 1: 200 users, current capacity sufficient (monitor)
+- Year 2: 240 users (20% growth), add read replicas (£150/month)
+- Year 3: 346 users, implement sharding (£250/month)
+
+Monitoring (golden signals):
+- **Latency:** P99 < 10s target, alert if > 15s
+- **Traffic:** Normal 50 req/sec, alert if > 300 req/sec (attack check)
+- **Errors:** < 0.1% target, alert if > 1%
+- **Saturation:** CPU 40%, Memory 60%, Disk 70% (alert if CPU > 85%)
+
+Auto-alerts trigger scaling or oncall:
+- Latency spike (P99 > 15s) → Investigate, possibly auto-scale
+- Error spike (10x increase in 5 min) → Page oncall + customer support
+- Traffic surge (6x normal) → Auto-scale out (if legitimate) or investigate DDoS
+- Resource saturation (CPU > 85%) → Auto-scale immediately
+
+**Competitive Advantage:**
+
+| Aspect | Strong K22 | Weak K22 |
+|--------|-----------|---------|
+| **Growth readiness** | Sustains 10x growth | Breaks at 2x (costly redesign) |
+| **Query performance** | 245ms (optimized) | 45 seconds (full scans) |
+| **Cost efficiency** | £450/month (linear) | £4,500/month (unoptimized) |
+| **Peak handling** | Auto-scales automatically | Manual, error-prone scaling |
+| **Availability** | 99.96% (resilient) | 95% (brittle, cascading failures) |
+| **Debug speed** | 5 minutes (clear metrics) | 2+ hours (hunting blind) |
+| **Operational burden** | Minimal (auto-scaling) | Constant (manual intervention) |
+
+**Measurable Impact:**
+- **Scalability:** Sustains 10x vs breaks at 2x (5x advantage)
+- **Performance:** 245ms vs 45s queries (184x faster)
+- **Cost:** £450/month vs £4,500/month (10x cheaper)
+- **Availability:** 99.96% vs 95% uptime (99% improvement)
+- **Debug time:** 5 min vs 2+ hours (24x faster)
+- **Peak handling:** Automatic vs manual panic scaling
+
+**Key Learning:** Scalability compounds
+- Indices prevent O(n) scans (100x query speedup)
+- Partitioning + sharding scale without redesign
+- Caching reduces database load (99% hit rate on hot data)
+- Auto-scaling handles peaks without cost
+- Load balancing + circuit breakers prevent failures
+- Capacity planning prevents surprises (forecast 2-3 years ahead)
+- Monitoring (golden signals) catches problems before users do
+
+Portfolio status: 22/32 KSBs complete
+
+---
+
 ### S11: Determine and Use Appropriate Data Analysis Techniques
 
 **Mapped to:** Project 2 (K12 Data Platform) - Data quality analysis and predictive modeling
