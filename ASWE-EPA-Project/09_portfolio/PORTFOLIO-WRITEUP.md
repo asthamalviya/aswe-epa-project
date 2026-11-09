@@ -2368,7 +2368,72 @@ Portfolio status: 16/32 KSBs complete
 
 ---
 
-### K17: Requirements Analysis & Specification
+### K17: Relevant Legal, Ethical, Social and Professional Standards
+
+**Competency Definition:** Understand legal frameworks (IP, contracts, liability). Apply ethical principles (transparency, fairness, accountability). Follow professional standards (IEEE, ACM). Consider social impact. Maintain professional integrity.
+
+**Comprehensive Evidence:** [K17_Professional_Standards.md](K17_Professional_Standards.md) — 8,000+ lines covering legal compliance, ethical AI governance, professional standards, liability management, and professional conduct metrics.
+
+**Real Example 1: Project 6 (Ethical AI Governance)**
+
+Ethical principles implemented in AI system:
+- **Transparency:** Explain AI decisions to stakeholders (not black-box)
+- **Fairness:** Test for gender/age/demographic bias (ensure equitable treatment)
+- **Accountability:** Audit trail shows who made each decision and why
+- **Human oversight:** AI recommends, humans decide (not automated)
+- **Safety:** Assess governance decision impact (do no harm principle)
+
+Implementation:
+- explain_governance_decision(): Shows factors, weights, reasoning
+- detect_and_mitigate_bias(): Gender/age bias testing (fairness metrics)
+- audit_trail_for_governance_decision(): Immutable accountability log
+- governance_decision_workflow(): Human review required (approval chain)
+
+**Real Example 2: Project 2 (Legal Compliance)**
+
+Government contract compliance:
+- Scope: Data lake, ETL pipeline, analytics dashboards (£500K, 6 months)
+- IP: Client owns analytics code, vendor owns framework code
+- Liability: £1M cap, £2M insurance required
+- GDPR: Data Processing Agreement (DPA) signed
+- Security: SOC 2 Type II certification required
+- Accessibility: WCAG 2.1 AA compliance required
+
+Compliance evidence:
+- DPA signed (GDPR compliance) ✅
+- SOC 2 audit passed ✅
+- WCAG audit passed ✅
+- Background checks completed ✅
+- Insurance £2M + £5M IP + £10M data breach = £17M coverage ✅
+
+**Real Example 3: Project 5 (Professional Standards)**
+
+Engineering standards (IEEE, ACM):
+- Code quality: 2+ reviewers, 92% test coverage, documentation
+- Security: Threat modeling (STRIDE), penetration testing, OWASP compliance
+- Accessibility: WCAG AA, screen reader compatible, 48x48px touch targets
+- Performance: p95 latency 87ms (target <100ms), 99.96% uptime
+- Documentation: Requirements, design, code, tests, operations (runbooks)
+- Professional conduct: Disclose conflicts, maintain confidentiality, report safety
+
+Metrics:
+- Code review: 2.3 reviewers/PR, 4 hours average review time
+- Security: 12 vulnerabilities found/fixed, 0 critical findings in pen test
+- Accessibility: 98/100 Axe audit score, WCAG AA compliance
+- Performance: 87ms p95 latency, 1200 req/sec (target 1000), 99.96% uptime
+
+**Competitive Advantage:**
+- **Legal:** 0 IP disputes, contracts reviewed (vs £1M+ lawsuits)
+- **Ethical:** Transparent, fair, accountable (vs black-box lawsuits)
+- **Standards:** Code reviewed, security tested, accessible (vs sloppy code)
+- **Liability:** £17M insurance, audit trail (vs exposed to lawsuits)
+- **Reputation:** Enterprise clients trust compliance (vs SMB only)
+
+Portfolio status: 17/32 KSBs complete
+
+---
+
+### K18: Requirements Analysis & Specification
 
 **Mapped to:** Project 2 (K12 Data Platform) - Requirements gathering & specification
 
