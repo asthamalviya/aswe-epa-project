@@ -1812,11 +1812,15 @@ EC2 (different subnet) → RDS: Connection refused (SG restricts to app SG only)
 
 ---
 
-### K11: Common Vulnerabilities & Exposures
+### K11: Common Vulnerabilities & Security Practices
+
+**Competency Definition:** Understand OWASP Top 10 vulnerabilities. Identify security risks early. Implement secure coding practices. Conduct threat modeling. Penetration test. Maintain secure working practices.
+
+**Comprehensive Evidence:** [K11_Security_Evidence.md](K11_Security_Evidence.md) — 8,000+ lines covering OWASP Top 10, threat modeling, penetration testing, secure implementation patterns, and competitive advantage analysis.
 
 **Mapped to:** Project 6 - AI Governance Assistant (Security Hardening)
 
-**Definitional Understanding:** Common vulnerabilities encompass **OWASP Top 10** (injection, broken authentication, sensitive data exposure), **CVE database** (publicly disclosed flaws with CVSS scores), and **CWE taxonomy** (root causes like SQL injection, XSS, CSRF, path traversal).
+**Definitional Understanding:** Security practices encompass **OWASP Top 10** (injection, broken authentication, sensitive data exposure), **CVE database** (publicly disclosed flaws with CVSS scores), **CWE taxonomy** (root causes like SQL injection, XSS, CSRF), **threat modeling** (identify risks upfront), and **penetration testing** (validate defenses).
 
 **Real-World Vulnerabilities Found & Fixed:**
 
