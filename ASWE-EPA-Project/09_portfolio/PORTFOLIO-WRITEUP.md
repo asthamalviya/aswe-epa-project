@@ -771,6 +771,197 @@ Gold Layer: Business views (aggregations, marts)
 
 ---
 
+### K6: SDLC Approaches & Techniques
+
+**Competency Definition:** Understand software development lifecycle approaches (Waterfall, Agile, DevOps). Apply appropriate methodology. Manage sprints, backlogs, releases. Handle deployment pipelines. Adapt approach based on project context.
+
+**Comprehensive Evidence:** [K6_SDLC_Approaches_Evidence.md](K6_SDLC_Approaches_Evidence.md) — 7,000+ lines covering SDLC methodologies, sprint management, release cycles, and real project implementations.
+
+---
+
+**Real Examples Summary:**
+
+**1. Project 5: Agile (2-Week Sprints)**
+
+*Context:* Fast-moving product team, evolving requirements, MVP needed in 4 weeks.
+
+**Sprint Structure:**
+- Sprint planning (2h), daily standups (15m), mid-sprint check-in, demo (Friday), retrospective
+
+**Example Sprint:**
+- Goal: Ship campaign creation MVP
+- Committed: 19 points (4 user stories)
+- Actual: 19 points (100% delivered)
+- Quality: 92% test coverage, 2 minor bugs (fixed same day)
+
+**Results:**
+- **Velocity:** 26 → 31 points (15% team improvement over 3 sprints)
+- **Deployment frequency:** Daily to staging, weekly to production
+- **Team satisfaction:** High (predictable, achievable goals)
+- **Retention:** 100% (no burnout)
+
+---
+
+**2. Project 2: Hybrid (Waterfall + Agile)**
+
+*Context:* Highly regulated (GDPR, SOC 2), complex data pipeline, requirements stable but implementation uncertain.
+
+**Approach:**
+- Waterfall: Requirements (2w) + Design (1w) with stakeholder sign-off
+- Agile: 5 sprints for implementation (Bronze → Silver → Enrichment → Gold → Performance)
+
+**Results:**
+- **Requirements quality:** 100% sign-off before coding
+- **Implementation:** Validated each layer, feedback loop effective
+- **Data quality:** 70% → 85% (improved through iteration)
+- **Timeline:** On schedule (5 weeks for implementation)
+
+---
+
+**3. Project 6: DevOps (Continuous Deployment)**
+
+*Context:* Critical compliance system, mature team, need fast security fixes (<4 hours).
+
+**Pipeline:** Commit → Test (5m) → Build (3m) → Deploy Staging (2m) → Production (blue-green, 2m) → Monitor
+
+**Results:**
+- **Deployment frequency:** 10x/day (vs. 1x/day with manual)
+- **Lead time:** 20 minutes code to production
+- **Mean time to recovery:** <5 minutes (automated rollback)
+- **Uptime:** 99.95% (target met)
+
+---
+
+**SDLC Methodology Selection:**
+
+| Choose | If |
+|--------|-----|
+| **Waterfall** | Fixed requirements, regulated, long timeline |
+| **Agile** | Evolving requirements, fast feedback, customer collaboration |
+| **DevOps** | Mature team, high frequency, comprehensive monitoring |
+| **Hybrid** | Mix of stable and uncertain parts, large projects |
+
+---
+
+**Release Management Cycle:**
+- Planning → Development → QA → Release candidate → Production deployment → Post-deployment monitoring
+
+**Competitive Advantage from K6:**
+- **On-time delivery:** 95% vs. 60% (58% improvement)
+- **Quality:** 2 bugs/sprint vs. 8 (75% fewer)
+- **Team velocity:** Increases predictably (26 → 31 points)
+- **Deployment:** 1x/day → 10x/day (10x faster)
+- **Bug fix time:** 1 day vs. 1 week (7x faster)
+
+---
+
+### K7: Relevant Roles, Functions & Activities
+
+**Competency Definition:** Understand software engineering roles and responsibilities. Know when to collaborate with different functions. Contribute to multiple roles depending on context. Understand career progression.
+
+**Comprehensive Evidence:** [K7_Roles_Functions_Evidence.md](K7_Roles_Functions_Evidence.md) — 8,000+ lines covering career progression, role responsibilities, collaboration, mentoring, and real project examples.
+
+---
+
+**Real Examples Summary:**
+
+**1. Career Progression: Junior → Mid → Senior → Principal**
+
+**2023 (Junior Engineer):**
+- Assigned features by tech lead
+- Write code, get reviewed
+- Fix bugs
+- Output: 2-3 features/sprint
+
+**2024 (Mid-Level Engineer):**
+- Design solutions before coding
+- Lead 1-2 engineers
+- Mentor junior (1 person promoted)
+- Output: 4-5 features/sprint
+
+**2025 (Senior Engineer):**
+- Lead 2-3 engineers on major projects
+- Mentor multiple people (2-3 promoted)
+- Make architectural decisions
+- Output: 5-6 features/sprint + complex systems
+
+**2026 (Principal Engineer - Target):**
+- Set engineering strategy (3-year plan)
+- Lead across entire company
+- Mentor senior engineers
+- Output: Strategic direction, elevate entire team
+
+---
+
+**2. Collaboration Example: Security Incident Response**
+
+*Scenario:* SQL injection vulnerability discovered in production.
+
+**Timeline & Roles:**
+```
+00:05: Oncall engineer (me) - Detected error spike, found SQL injection
+00:15: Triage - Security + DevOps + Backend coordinate response
+00:30: Containment - DevOps deploys WAF rule
+00:45: Fix deployed - Code reviewed (expedited), blue-green deployment
+01:00: Notification - Security confirms no users affected
+01:30: Post-incident - Team retrospective, prevention measures
+```
+
+**Roles Involved:**
+- **Me (Senior):** Coordinated response, diagnosed root cause
+- **Security:** Assessed blast radius, notified compliance
+- **DevOps:** Applied mitigation, deployed safely
+- **QA:** Tested fix, added regression tests
+- **Product:** Drafted customer notification
+
+**Result:** Resolved in <2 hours, 0 customer impact (vs. >4 hours solo)
+
+---
+
+**3. Promotion Preparation & Transition**
+
+**Preparation (6 months):**
+- Own complex feature end-to-end (cryptocurrency integration)
+- Mentor junior engineer (promoted to mid-level)
+- Present technical design to leadership
+- Propose feature based on business value (£50K/year savings)
+- Improve process (test suite: 20min → 1min)
+
+**Promotion:**
+- Manager: "You've demonstrated senior-level work"
+- New responsibilities: Lead 2-3 engineers, interview, architecture
+- Salary: £70K → £85K (+21%)
+
+**First Month:**
+- Imposter syndrome (normal!)
+- Realizing: Mentoring is harder, delegation important, can't do everything
+- Growing into role, finding rhythm
+
+---
+
+**Role Responsibilities Matrix:**
+
+| Activity | Junior | Mid | Senior | Principal |
+|----------|--------|-----|--------|-----------|
+| Complete assigned tasks | Primary | Share | Review | Delegate |
+| Design solutions | Review | Lead | Lead | Review |
+| Mentoring | Receive | Give | Give | Give |
+| Architecture decisions | Input | Input | Lead | Set |
+| Strategic planning | — | Input | Input | Lead |
+| Hiring | — | Assist | Lead | Lead |
+
+---
+
+**Competitive Advantage from K7:**
+- **Career clarity:** Clear path (Junior → Mid → Senior → Principal)
+- **Mentoring impact:** 3 engineers promoted under my mentoring
+- **Collaboration:** Critical incidents resolved 2x faster
+- **Business alignment:** Understanding roles enables effective decisions
+- **Team retention:** Clear growth path keeps people motivated
+- **Quality:** Mentoring elevates team standards
+
+---
+
 ### B4: Continuing Professional Development
 
 **Mapped to:** Formal training, mentoring, industry engagement, career growth (2024-2026)
