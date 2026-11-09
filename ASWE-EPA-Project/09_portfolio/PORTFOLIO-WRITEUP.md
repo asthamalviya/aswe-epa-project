@@ -2746,6 +2746,35 @@ NEXT WEEK:
 - Production deployment planning
 ```
 
+**Competitive Advantage from K19:**
+
+| Aspect | Strong K19 | Weak K19 |
+|--------|-----------|---------|
+| **Time to build** | 8 weeks (clear spec) | 16+ weeks (clarifying mid-build) |
+| **Rework** | 5% (caught early) | 40% (built wrong thing) |
+| **Cost** | £250K (on budget) | £400K (20% overrun) |
+| **Stakeholder satisfaction** | 95% (got what asked) | 40% (not what wanted) |
+| **Production defects** | 3 (known edge cases) | 50+ (missed requirements) |
+| **Scope creep** | Controlled (formal change) | Uncontrolled (constantly growing) |
+| **Timeline predictability** | 100% (delivered on date) | 50% (slipped 2+ months) |
+
+**Measurable Impact:**
+- **Time saved:** 50% faster (8 weeks vs 16 weeks)
+- **Rework reduced:** 35 percentage-point improvement (40% → 5%)
+- **Cost reduction:** £150K saved (£250K vs £400K)
+- **Satisfaction:** 55 percentage-point improvement (40% → 95%)
+- **Quality:** 47 fewer defects (3 vs 50)
+- **Predictability:** 50 percentage-point improvement
+
+**Key Learning:** Specifications prevent waste
+- 1 hour clarifying requirements = 10 hours saved in rework
+- Written spec + stakeholder sign-off = legal contract (protection)
+- Acceptance criteria = pass/fail test (no ambiguity)
+- Traceability matrix = proof of compliance (audit trail)
+- Change control = protect scope (prevent burnout and overruns)
+
+Portfolio status: 19/32 KSBs complete
+
 ---
 
 ### S11: Determine and Use Appropriate Data Analysis Techniques
