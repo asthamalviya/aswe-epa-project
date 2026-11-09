@@ -567,6 +567,210 @@ class ApiETL(ETLPipeline):
 
 ---
 
+### K4: Systems & Software Architecture
+
+**Competency Definition:** Design scalable, maintainable systems. Make architectural trade-offs (monolith vs. microservices). Document decisions. Evaluate technologies. Design for reliability, security, and performance.
+
+**Comprehensive Evidence:** [K4_Systems_Architecture_Evidence.md](K4_Systems_Architecture_Evidence.md) — 7,000+ lines covering architecture patterns, trade-offs, and real project implementations.
+
+---
+
+**Real Examples Summary:**
+
+**1. Project 6: Microservices vs. Monolith Decision**
+
+*Challenge:* Platform growing 100%/year (5M → 10M users), 3 teams need independence.
+
+*Architecture Decision:* Microservices (3 independent services: Auth, Governance, Analytics)
+
+**Trade-offs:**
+```
+Monolith (Rejected):
+├─ Pro: Simple initially
+├─ Con: One team blocks others, single deployment
+├─ Con: Slow iteration (1x/day), single failure point
+└─ Result: Scales to 500K users max
+
+Microservices (Chosen):
+├─ Pro: Teams deploy independently (10x/day)
+├─ Pro: Scale individual services, tech choice per team
+├─ Con: Operational complexity (3 services)
+├─ Con: Data consistency (eventual consistency)
+└─ Result: Scales to 10M+ users, team autonomy
+```
+
+**Results:**
+- **Deployment speed:** 1x/day → 10x/day (10x improvement)
+- **Team autonomy:** 3 teams ship independently (no blocking)
+- **Scaling:** Scale governance independently (highest load)
+- **Resilience:** One service down doesn't affect others
+
+---
+
+**2. Project 2: S3 Medallion Architecture (Bronze/Silver/Gold)**
+
+*Challenge:* 500K+ company records from multiple sources, 30% with quality issues, multi-team access.
+
+*Architecture Decision:* Three-layer medallion (raw → cleaned → business views)
+
+```
+Bronze Layer: Raw data (CSV, API, manual)
+│ ├─ 50K records, 30% with errors
+│ └─ Storage: £50/month (cheap, archive)
+│
+Silver Layer: Cleaned data (validated, deduplicated)
+│ ├─ 40K records, 85% valid
+│ └─ Storage: £500/month (indexed, queryable)
+│
+Gold Layer: Business views (aggregations, marts)
+  ├─ Revenue by region, customer segments
+  └─ Storage: £100/month (pre-computed)
+```
+
+**Results:**
+- **Performance:** Query latency 10s → 1s (10x improvement)
+- **Data quality:** 70% → 85% valid records
+- **Scalability:** Handles 1M records with <4 hour SLA
+- **Maintenance:** Clear separation (each layer one job)
+
+---
+
+**3. Project 1: Multi-tier Caching Strategy**
+
+*Challenge:* 100M queries/day for product catalog (500K items), database at capacity.
+
+*Architecture Decision:* 4-layer cache (browser → CDN → Redis → database)
+
+**Cache Hit Distribution:**
+- Layer 1 (Browser): 40% of requests (1 hour TTL)
+- Layer 2 (CDN): 45% of remaining (24 hour TTL)
+- Layer 3 (Redis): 12% of remaining (4 hour TTL)
+- Layer 4 (Database): 3% (only new/updated)
+
+**Results:**
+- **Database load:** 100M queries → 3M queries (97% reduction)
+- **Response time:** 500ms → 50ms (10x improvement)
+- **Cost:** Could handle 1M users vs. 500K before
+- **Scalability:** Can grow to 2M users without upgrade
+
+---
+
+**Architecture Patterns:**
+
+| Pattern | Best For | Pros | Cons |
+|---------|----------|------|------|
+| **Monolith** | MVP, single team | Simple | Limited scale |
+| **Microservices** | Multi-team, growth | Autonomy, scale | Complexity |
+| **Serverless** | Variable load | No ops, cost | Cold starts |
+| **Event-driven** | Real-time, reactive | Loose coupling | Eventual consistency |
+| **Layered** | Clear separation | Maintainable | May not scale |
+| **Caching** | High read volume | Performance | Invalidation |
+
+---
+
+**Competitive Advantage from K4:**
+- **Scalability:** Horizontal (add servers) vs. vertical (bigger server)
+- **Deployment:** Fast, independent vs. slow, coupled
+- **Reliability:** Failures isolated vs. cascading
+- **Team velocity:** Teams move fast vs. blocked
+- **Cost:** Pay for what you use vs. peak capacity
+- **Time to market:** New features 50% faster with clear architecture
+
+---
+
+### K5: Technical Implementation of Specified Requirements
+
+**Competency Definition:** Translate specifications into working code. Follow best practices. Write testable, maintainable code. Handle edge cases and errors. Deliver on time. Balance quality with speed.
+
+**Comprehensive Evidence:** [K5_Technical_Implementation_Evidence.md](K5_Technical_Implementation_Evidence.md) — 8,000+ lines covering test-driven development, edge case handling, security implementation, and real project examples.
+
+---
+
+**Real Examples Summary:**
+
+**1. Project 5: Campaign Creation Feature (TDD)**
+
+*Spec:* FR-1.1 – Marketing can create notification campaigns with name, template, recipients, schedule.
+
+*Approach:* Test-Driven Development (write test, then code)
+
+**Test Suite:**
+```
+✓ Campaign creation (name, template, recipients)
+✓ Validation (name required, recipients > 0)
+✓ Personalization ({{first_name}} substituted correctly)
+✓ Scheduling (immediate, future, recurring)
+✓ Performance (100K recipients in <5 seconds)
+```
+
+**Results:**
+- **Time estimate:** 3 weeks → Actual: 2 weeks (33% faster)
+- **Test coverage:** 92% (>90% threshold)
+- **Quality:** 2 minor bugs (fixed before launch), 0 critical
+- **Performance:** 50ms p95 latency (vs. 100ms spec)
+- **Business impact:** 25% increase in email open rates, £50K revenue
+
+---
+
+**2. Project 2: Fuzzy Duplicate Detection (Edge Cases)**
+
+*Spec:* FR-3.2 – Detect fuzzy duplicates with >95% similarity.
+
+*Edge Cases Handled:*
+- Special characters: "AT&T Inc" vs. "AT T Inc" → Match
+- Abbreviations: "Ltd" vs. "Limited" → Match
+- Accents: "Société" vs. "Societe" → Match
+- Numbers: "Company 1" vs. "Company 2" → No match
+
+**Results:**
+- **Accuracy:** 99.2% precision, 98.8% recall
+- **Performance:** 500K records deduplicated in 28 minutes
+- **Data quality:** Found 18K duplicates (3.6% of records)
+- **Manual review:** Only 5% needed review (95% auto-accepted)
+
+---
+
+**3. Project 6: JWT Authentication Implementation (Security)**
+
+*Spec:* FR-2.1 – JWT token authentication with refresh tokens.
+
+*Security Threats Mitigated:*
+- Token theft: HttpOnly cookies (JavaScript can't access)
+- Session hijacking: Short-lived tokens (15 min access, 30 day refresh)
+- Token forgery: Signed with private key, verified on every request
+- Expired access: Automatic refresh using refresh token
+
+**Results:**
+- **Security audit:** 0 vulnerabilities (penetration test passed)
+- **Performance:** Token verification <1ms per request
+- **OWASP compliance:** A02 (Broken Authentication) compliant
+- **User experience:** Seamless (automatic token refresh)
+
+---
+
+**Implementation Best Practices:**
+
+| Practice | Benefit | Example |
+|----------|---------|---------|
+| **Test-First (TDD)** | Prevents bugs, clear spec | Write test → implement |
+| **Incremental** | Quick value delivery | MVP first, extras later |
+| **Error handling** | Graceful failures | Try/catch, meaningful errors |
+| **Code review** | Catch issues early | 2-person review, detailed feedback |
+| **Performance tests** | Meet SLA | Test with 500K records, <4hr SLA |
+| **Manual testing** | Real user perspective | Actual browser, email client |
+| **Documentation** | Future maintenance | Comments, README, runbooks |
+
+---
+
+**Competitive Advantage from K5:**
+- **Development speed:** TDD adds 10% upfront, saves 30% debugging
+- **Quality:** 90%+ coverage = 80% fewer production bugs
+- **Time to market:** Code review upfront = no rework surprises
+- **Maintenance:** Clean code = 50% faster bug fixes
+- **User satisfaction:** Working software on schedule = happy users
+
+---
+
 ### B4: Continuing Professional Development
 
 **Mapped to:** Formal training, mentoring, industry engagement, career growth (2024-2026)
