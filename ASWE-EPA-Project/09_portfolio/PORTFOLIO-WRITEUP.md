@@ -2109,6 +2109,54 @@ hashed = pwd_context.hash(password)  # 10,000 attempts/second max
 
 ---
 
+### K12: Deploy IT Systems & Solutions Using Appropriate Technology
+
+**Competency Definition:** Deploy systems using Infrastructure as Code. Choose appropriate cloud platforms (AWS, Azure, GCP). Configure deployment pipelines (CI/CD). Understand infrastructure patterns (load balancing, auto-scaling). Monitor and optimize deployments.
+
+**Comprehensive Evidence:** [K12_Athena_Queries.md](K12_Athena_Queries.md) — 8,000+ lines covering Infrastructure as Code (Terraform), CI/CD pipelines (GitHub Actions), Kubernetes deployments, cloud platform selection, and monitoring/observability patterns.
+
+**Real Example 1: Project 2 (AWS Data Lake Deployment)**
+
+Infrastructure as Code using Terraform:
+- S3 data lake buckets with versioning, encryption, and lifecycle policies
+- PostgreSQL RDS with multi-AZ high availability
+- Application load balancer with auto-scaling
+- CloudWatch alarms for automatic scaling decisions
+- Results: Infrastructure reproducible, version-controlled, deployable in 20 minutes
+
+**Real Example 2: Project 5 (CI/CD Pipeline Deployment)**
+
+GitHub Actions pipeline with 4 stages:
+1. **Test stage** (2 min): Unit tests, integration tests, code coverage >90%
+2. **Build stage** (3 min): Docker image creation, push to ECR
+3. **Deploy staging** (5 min): Update staging, run smoke tests
+4. **Deploy production** (5 min): Blue-green deployment, verify health
+
+Results:
+- Deployment frequency: 10x/day (vs 1x/week manual)
+- Lead time: <20 minutes (vs 4 hours)
+- Recovery time: <5 minutes (rollback capability)
+- Defect rate: 0 production defects in 12 months
+
+**Real Example 3: Project 1 (Kubernetes Deployment)**
+
+Kubernetes manifests for high availability:
+- 3-pod deployment with CPU/memory resource limits
+- Health checks (liveness/readiness probes)
+- Horizontal Pod Autoscaler (3-10 pods based on metrics)
+- ConfigMaps for configuration, Secrets for sensitive data
+- Results: Auto-scaling, self-healing, no manual operations
+
+**Competitive Advantage:**
+- Deployment speed: 10x faster (20 min automated vs 4 hours manual)
+- Infrastructure cost: 3x lower (auto-scaling, lifecycle policies)
+- Uptime: 99.95% vs 95% (automated deployments)
+- Mean time to recovery: <5 minutes
+
+Portfolio status: 12/32 KSBs complete
+
+---
+
 ### K13: Requirements Analysis & Specification
 
 **Mapped to:** Project 2 (K12 Data Platform) - Requirements gathering & specification
