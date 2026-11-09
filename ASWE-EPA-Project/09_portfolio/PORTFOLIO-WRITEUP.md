@@ -2208,7 +2208,60 @@ Portfolio status: 13/32 KSBs complete
 
 ---
 
-### K14: Requirements Analysis & Specification
+### K14: Implements Compliant and Well-Designed Systems
+
+**Competency Definition:** Understand regulatory requirements (GDPR, SOC 2, OWASP). Design systems that meet compliance from the start. Conduct design reviews. Optimize performance. Document technical decisions. Maintain code quality.
+
+**Comprehensive Evidence:** [K14_Compliance_Design.md](K14_Compliance_Design.md) — 8,000+ lines covering GDPR/SOC 2 compliance, architecture decision records, code quality gates, and design review processes.
+
+**Real Example 1: Project 2 (GDPR Compliance)**
+
+Data minimization: Reduced collected fields from 15 to 5 (collect only data needed):
+- Before: Full addresses, multiple emails/phones, bank details, director names
+- After: Company name, registration number, status, industry (PII eliminated)
+- Result: Smaller database (10GB vs 50GB), less exposed if breached
+
+Right to erasure: Users can request complete data deletion:
+- Implemented transactional delete (all-or-nothing)
+- Deletes user, campaigns, recipients, events in single transaction
+- Audit trail maintained (prove compliance)
+- Metrics: 3 DSAR requests/quarter, 100% response rate <30 days
+
+**Real Example 2: Project 6 (SOC 2 Type II Compliance)**
+
+Annual external audit (12-month observation period):
+- Finding: 0 material weaknesses, 3 minor observations (resolved in 30 days)
+- Audit opinion: "Controls operating effectively"
+- Result: Enterprise customers satisfied (compliance requirement met)
+- ROI: £15K audit cost → £500K+ enterprise deals enabled
+
+**Real Example 3: Project 5 (Architecture Decision Record)**
+
+PostgreSQL + Redis cache selected for campaign service:
+- Rationale: PostgreSQL (correctness via ACID) + Redis (speed via cache)
+- Trade-offs: Complexity vs performance, dual system requires cache invalidation
+- Results: 95ms query latency (target <100ms), 99.95% uptime, £8K/month cost
+- Measurement: Architecture review prevented costly redesigns
+
+**Code Quality Gates (enforced in CI/CD):**
+- Test coverage: ≥90% required
+- Type safety: mypy with zero type errors
+- Security: bandit scanning, no vulnerabilities allowed
+- Dependencies: pip-audit, no vulnerable packages
+- Performance: p95 latency <100ms required
+
+**Competitive Advantage:**
+- **Compliance:** Pass audits (vs failed with findings)
+- **GDPR fines prevented:** £4.4M+ potential avoided
+- **Enterprise sales:** Can now sell to compliance-required customers
+- **Code quality:** 91% coverage (vs 40% without gates)
+- **Architecture:** Scales to 100M+ records
+
+Portfolio status: 14/32 KSBs complete
+
+---
+
+### K15: Requirements Analysis & Specification
 
 **Mapped to:** Project 2 (K12 Data Platform) - Requirements gathering & specification
 
