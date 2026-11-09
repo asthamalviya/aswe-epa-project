@@ -2261,7 +2261,63 @@ Portfolio status: 14/32 KSBs complete
 
 ---
 
-### K15: Requirements Analysis & Specification
+### K15: Understands Appropriate Use of Data & Data Governance
+
+**Competency Definition:** Understand data governance policies. Classify data by sensitivity (public, internal, confidential, restricted). Implement access controls. Ensure appropriate data retention. Apply ethical principles. Prevent data misuse.
+
+**Comprehensive Evidence:** [K15_Data_Governance.md](K15_Data_Governance.md) — 8,000+ lines covering data classification, role-based access control, retention policies, privacy by design, and audit enforcement.
+
+**Real Example 1: Project 2 (Data Classification & Access Control)**
+
+Data lake classified by sensitivity:
+- **PUBLIC** (companies table): Registration number, name, status → No restrictions
+- **CONFIDENTIAL** (financials): Revenue, profit, tax details → Finance team only, audit logged
+- **RESTRICTED** (officers): Director names/addresses (PII) → Legal + approval required, MFA mandatory
+
+Implementation:
+- Database-level access control enforced
+- Audit logs: Every access attempt recorded
+- Retention: Delete old data per policy (3 years for companies, 7 years audit logs)
+
+**Real Example 2: Project 6 (Role-Based Access Control & Privacy)**
+
+RBAC implementation:
+- **Viewer**: Read own campaigns only
+- **Editor**: Read/write own campaigns
+- **Admin**: Global access + manage users (MFA required)
+
+Privacy by design:
+- Pseudonymize user data (user_7f4c2b91 instead of email)
+- Anonymize old records (>30 days: remove identifiers)
+- Encrypt PII (emails, phone numbers encrypted at rest)
+- Field-level security (different users see different data)
+
+**Real Example 3: Project 5 (Data Governance Policy & Audit)**
+
+Policy enforcement:
+- Emails collected for campaigns only (consent explicit)
+- No third-party sharing (vendor DPA required)
+- Data retention: Delete after 90 days (GDPR)
+- Conflict of interest: Developers cannot access own company's data
+
+Quarterly audit:
+- 47,293 access events reviewed
+- 99.8% legitimate, 0.2% suspicious, 0.02% violations
+- Violations: Jane downloaded all emails → access revoked, training
+- Compliance: 100% audit-ready
+
+**Competitive Advantage:**
+- **Governance:** 100% classified data with access controls (vs 0% in weak systems)
+- **Compliance:** Audit logs prove privacy respected
+- **Unauthorized access:** Prevented by least-privilege (principle of least privilege)
+- **GDPR:** Automated data deletion, 0 breaches (vs £4.4M+ risk)
+- **Customer trust:** Enterprise customers feel data is safe
+
+Portfolio status: 15/32 KSBs complete
+
+---
+
+### K16: Requirements Analysis & Specification
 
 **Mapped to:** Project 2 (K12 Data Platform) - Requirements gathering & specification
 
