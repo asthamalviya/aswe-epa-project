@@ -94,12 +94,9 @@ I keep up to date through [EVIDENCE NEEDED: two or three named sources, e.g. a n
 
 ### B1. The leadership approach I use (K9)
 
-> Guidance: pick one leadership concept and show it in a real decision. Candidates:
-> - **Situational leadership** (Hersey and Blanchard, 1969): adjusting how much direction or support you give based on a person's competence and commitment. Good for mentoring or delegating.
-> - **Servant leadership** (Greenleaf, 1970): good if your role is removing blockers for others.
-> - **Transformational leadership** (Bass, 1985): good if you rallied people behind a change.
+As technical lead of a team of ten, I lead without line management authority over the people whose decisions I need, including database architects outside my team. I apply transformational leadership (Bass, 1985), which builds support for a change through a clear, shared case rather than instruction. Its intellectual stimulation component, which challenges established assumptions and invites new ways of working, is the part I use most.
 
-My role as [EVIDENCE NEEDED: role] requires me to lead without [EVIDENCE NEEDED: e.g. "line management authority"]. I apply [EVIDENCE NEEDED: concept and citation]. For example, when [EVIDENCE NEEDED: situation, e.g. "I mentored a junior developer on their first production change"], I [EVIDENCE NEEDED: what you did differently because of the concept, e.g. "moved from directing to coaching after the second review"]. As a result, [EVIDENCE NEEDED: outcome].
+When our trust data was spread across several linked tables and new frontend features kept needing schema changes, I presented the full data architecture, how the new data would be stored, and why the existing tables could not hold it. Winning agreement took two sprints of calls with the architects, implementation took three sprints, and the end-to-end change took three more: eight sprints of 15 days each, about four months. The feature shipped with the information users had asked for. [EVIDENCE NEEDED: the number of calls with the architects]. The lesson was that a clear design argument carried more weight than my role.
 
 ### B2. The management techniques I use (K10)
 
