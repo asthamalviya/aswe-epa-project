@@ -74,11 +74,11 @@ In the last 12 months I have [EVIDENCE NEEDED: CPD beyond the apprenticeship, e.
 
 ### A4. How I share best practice (B6)
 
-I shared [EVIDENCE NEEDED: what, e.g. "a lunchtime session on testing legacy code"] with [EVIDENCE NEEDED: audience and number, e.g. "14 engineers across three teams"] in [EVIDENCE NEEDED: month and year]. Afterwards [EVIDENCE NEEDED: evidence of impact, e.g. "two teams adopted the characterisation-test approach"; include feedback if you have it].
+I designed and ran seven sessions on AI coding tools between [EVIDENCE NEEDED: start and end month and year] for engineering and analytics staff in a UK government department. I invited 20 staff, and 13 (65%) responded to a survey after the final session. Each respondent had attended at least one session.
 
-Outside my organisation, I [EVIDENCE NEEDED: wider community activity, e.g. meetup, blog post, open-source contribution, cross-government community of practice; delete if none].
+The survey asked about the AI coding tool, not the sessions alone, so the results show how staff rated the tool after the programme. Average satisfaction was 8.2 out of 10. The net recommend score was +69: nine respondents scored 9 or 10, four scored 7 or 8, and none scored below 7. Eight of the 13 said the sessions made them more confident using the tool. Eight reported time saved, from up to 30 minutes to 3 to 5 hours a day.
 
-> Guidance: M2 mentions a brown-bag session, a checklist and a meetup. Only include them if they actually happened, and give the date and audience size.
+These results have limits. The survey was self-reported, ran once with no baseline, and had 13 responses. Five respondents reported no change in time spent, and one rated satisfaction at 3 while recommending the tool at 10. [EVIDENCE NEEDED: what you changed or passed on from the feedback, e.g. the request for agent-configuration sessions, or the token-limit problem and who you reported it to. Delete if no action was taken.]
 
 ### A5. How I track trends and bring them into the team (B7)
 
