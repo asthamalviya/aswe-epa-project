@@ -74,11 +74,13 @@ In the last 12 months I have [EVIDENCE NEEDED: CPD beyond the apprenticeship, e.
 
 ### A4. How I share best practice (B6)
 
-I designed and ran seven sessions on AI coding tools between [EVIDENCE NEEDED: start and end month and year] for engineering and analytics staff in a UK government department. I invited 20 staff, and 13 (65%) responded to a survey after the final session. Each respondent had attended at least one session.
+I designed and ran seven sessions on AI coding tools for each of six UK government departments and agencies, between [EVIDENCE NEEDED: start and end month and year]. For the largest of these, I invited 20 staff, and 14 (70%) responded to a survey after the final session. Each respondent had attended at least one session.
 
-The survey asked about the AI coding tool, not the sessions alone, so the results show how staff rated the tool after the programme. Average satisfaction was 8.2 out of 10. The net recommend score was +69: nine respondents scored 9 or 10, four scored 7 or 8, and none scored below 7. Eight of the 13 said the sessions made them more confident using the tool. Eight reported time saved, from up to 30 minutes to 3 to 5 hours a day.
+The survey asked about the AI coding tool, not the sessions alone, so the results show how staff rated the tool after the programme. Average satisfaction was 8.3 out of 10. The net recommend score was +71: ten respondents scored 9 or 10, four scored 7 or 8, and none scored below 7. Nine of the 14 said the sessions made them more confident using the tool. Nine reported time saved, from up to 30 minutes to 3 to 5 hours a day, and ten agreed the tool had improved their productivity.
 
-These results have limits. The survey was self-reported, ran once with no baseline, and had 13 responses. Five respondents reported no change in time spent, and one rated satisfaction at 3 while recommending the tool at 10. [EVIDENCE NEEDED: what you changed or passed on from the feedback, e.g. the request for agent-configuration sessions, or the token-limit problem and who you reported it to. Delete if no action was taken.]
+The Lab-wide impact survey holds 199 responses, 54 of them from the six departments I worked with. Across those 54, average satisfaction was 8.3, the net recommend score was +59, and 45 agreed the tool had improved their productivity. This survey also covers sessions run by other Lab members, so I cite these figures as context, not as results from my sessions alone.
+
+These results have limits. The survey was self-reported, ran once after the final session with no baseline, and had 14 responses. Five respondents reported no change in time spent, and one rated satisfaction at 3 while recommending the tool at 10. [EVIDENCE NEEDED: what you changed or passed on from the feedback, e.g. the request for agent-configuration sessions, or the token-limit problem and who you reported it to. Delete if no action was taken.]
 
 ### A5. How I track trends and bring them into the team (B7)
 
