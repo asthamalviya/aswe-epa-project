@@ -100,11 +100,7 @@ When our trust data was spread across several linked tables and new frontend fea
 
 ### B2. The management techniques I use (K10)
 
-> Guidance: the KSB lists decision making, delegation, planning methods, time management and change management. Pick one or two you actually used. Your M5 work already names MoSCoW, Kepner-Tregoe, WBS and RACI: reuse one here, but describe using it in your real job rather than in a proposal.
-
-When [EVIDENCE NEEDED: situation, e.g. "the team had 23 backlog items and capacity for 9 in a release"], I used [EVIDENCE NEEDED: technique, e.g. "MoSCoW prioritisation with the product owner"] because [EVIDENCE NEEDED: why this technique suited the situation]. I [EVIDENCE NEEDED: steps you took]. The outcome was [EVIDENCE NEEDED: measured result].
-
-I also [EVIDENCE NEEDED: a delegation or time management example; delete if you only have one strong example].
+I use timeboxing to make technical decisions on uncertain work. When a feature depended on an unproven design, I set a two-day spike with one question: can the draft table store the data, and can the DTOs fetch it correctly? The spike built the draft table locally, inserted sample data, and tested data fetching through the DTOs. It worked, so the team went ahead with the design. I also led the team's decisions on story points and spike results. [EVIDENCE NEEDED: whether this spike was the trust-table change, or a different feature.]
 
 **Draft from Module 5 (edit to match your real use):** On the knowledge search proposal I used four management techniques, each for a different decision. A weighted decision matrix (Kepner and Tregoe, 1965) compared doing nothing, an off-the-shelf product and a bespoke system against cost, data protection, fit and speed. MoSCoW, framed by the Iron Triangle, kept scope fixed once time (six months) and cost (£12,100) were fixed. A work breakdown structure and a 12-sprint chronogram turned the plan into owned workstreams. A RACI matrix made clear who decided, who did the work and who needed to know. [EVIDENCE NEEDED: which of these you now use in your day-to-day role, and one decision it improved.]
 
